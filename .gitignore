@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies / build output
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment / caches
+.env
+.env.*
+.cache
+.tmp
+coverage
+.vitest
+*.tsbuildinfo
+gcm-diagnose.log
+
+# Python / scripts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Local source material / archives
+Source
+Docs
+*.zip
+*.7z
+
+# Excel files
+*.xlsx
+
+# Staging artwork kept outside runtime public assets
+/idiomHome.webp
+/idiom_appicon.webp
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
