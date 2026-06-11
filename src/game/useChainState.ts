@@ -43,6 +43,13 @@ export type ChainAction =
   | { type: 'TOGGLE_HINT' }
   | { type: 'TOGGLE_IDIOM_DETAIL'; payload: string | null };
 
+type MissingLevelStrategy = 'retry-current-level' | 'error';
+
+type UseChainStateOptions = {
+  missingLevelStrategy: MissingLevelStrategy;
+  maxNullLevelRetries?: number;
+};
+
 const initialState: ChainState = {
   level: null,
   board: [],
@@ -188,45 +195,54 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
   }
 }
 
-export function useChainState(getLevelData: (levelNumber: number) => LevelData | null) {
+export function useChainState(
+  getLevelData: (levelNumber: number) => LevelData | null,
+  options: UseChainStateOptions,
+) {
   const [state, dispatch] = useReducer(chainReducer, initialState);
   const boardRef = useRef<Cell[][]>([]);
   useEffect(() => { boardRef.current = state.board; }, [state.board]);
+  const { missingLevelStrategy, maxNullLevelRetries = 0 } = options;
 
   const loadLevel = useCallback((lvl: number) => {
     dispatch({ type: 'START_GENERATING' });
-    const doGenerate = () => {
-      if (!isDbReady()) {
-        idiomDbReady.then(() => {
-          requestAnimationFrame(doGenerate);
-        });
-        return;
-      }
-      const levelData = getLevelData(lvl);
-      if (!levelData) {
-        if (lvl <= 1) {
+    const tryLoadLevel = (nullRetryCount: number) => {
+      const doGenerate = () => {
+        if (!isDbReady()) {
+          idiomDbReady.then(() => {
+            requestAnimationFrame(doGenerate);
+          });
+          return;
+        }
+        const levelData = getLevelData(lvl);
+        if (!levelData) {
+          if (missingLevelStrategy === 'retry-current-level' && nullRetryCount < maxNullLevelRetries) {
+            requestAnimationFrame(() => {
+              tryLoadLevel(nullRetryCount + 1);
+            });
+            return;
+          }
           dispatch({ type: 'GENERATE_ERROR' });
           return;
         }
-        loadLevel(lvl - 1);
-        return;
-      }
-      const newBoard = buildBoardFromLevel(levelData);
-      const newTiles = createCharTiles(levelData.charBank);
-      dispatch({
-        type: 'LEVEL_LOADED',
-        payload: {
-          level: levelData,
-          board: newBoard,
-          charTiles: newTiles,
-          levelNumber: lvl,
-          filledCount: countFilledCells(newBoard),
-          totalActive: countActiveCells(newBoard),
-        },
-      });
+        const newBoard = buildBoardFromLevel(levelData);
+        const newTiles = createCharTiles(levelData.charBank);
+        dispatch({
+          type: 'LEVEL_LOADED',
+          payload: {
+            level: levelData,
+            board: newBoard,
+            charTiles: newTiles,
+            levelNumber: lvl,
+            filledCount: countFilledCells(newBoard),
+            totalActive: countActiveCells(newBoard),
+          },
+        });
+      };
+      requestAnimationFrame(doGenerate);
     };
-    requestAnimationFrame(doGenerate);
-  }, [getLevelData]);
+    tryLoadLevel(0);
+  }, [getLevelData, maxNullLevelRetries, missingLevelStrategy]);
 
   return { state, dispatch, boardRef, loadLevel };
 }

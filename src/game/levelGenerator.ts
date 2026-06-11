@@ -19,6 +19,26 @@ type BoardCell = {
   idiomIds: string[];
 };
 
+export type LevelGenerationConfig = {
+  targetCount: number;
+  maxRows: number;
+  maxCols: number;
+  maxAttempts: number;
+};
+
+export function normalizeLevelGenerationConfig(config: LevelGenerationConfig): LevelGenerationConfig {
+  const normalized = { ...config };
+
+  // Small 8x8 boards become unreliable when asked to place 7-8 crossing idioms.
+  // We clamp this combination centrally so future callers do not accidentally
+  // reintroduce a high-failure configuration.
+  if (normalized.maxRows <= 8 && normalized.maxCols <= 8) {
+    normalized.targetCount = Math.min(normalized.targetCount, 6);
+  }
+
+  return normalized;
+}
+
 function createEmptyBoard(rows: number, cols: number): (BoardCell | null)[][] {
   return Array.from({ length: rows }, () =>
     Array.from({ length: cols }, () => null)
@@ -138,8 +158,21 @@ export function generateLevel(
   maxAttempts: number = 50,
   random: () => number = Math.random
 ): LevelData | null {
-  for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const result = tryGenerateLevel(levelId, targetCount, maxRows, maxCols, random);
+  const normalized = normalizeLevelGenerationConfig({
+    targetCount,
+    maxRows,
+    maxCols,
+    maxAttempts,
+  });
+
+  for (let attempt = 0; attempt < normalized.maxAttempts; attempt++) {
+    const result = tryGenerateLevel(
+      levelId,
+      normalized.targetCount,
+      normalized.maxRows,
+      normalized.maxCols,
+      random,
+    );
     if (result) return result;
   }
   return null;

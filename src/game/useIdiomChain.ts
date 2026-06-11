@@ -29,7 +29,10 @@ export function useIdiomChain({
     return generateRandomChainLevel(levelNumber);
   }, [challengeLevels, mode]);
 
-  const { state, dispatch, boardRef, loadLevel } = useChainState(getLevelData);
+  const { state, dispatch, boardRef, loadLevel } = useChainState(getLevelData, {
+    missingLevelStrategy: mode === 'challenge' ? 'error' : 'retry-current-level',
+    maxNullLevelRetries: mode === 'challenge' ? 0 : 2,
+  });
   const initialLoadKey = useMemo(
     () => `${mode}:${initialLevelNumber}:${challengeLevels?.length ?? 0}`,
     [challengeLevels?.length, initialLevelNumber, mode],

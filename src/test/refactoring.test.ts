@@ -82,8 +82,8 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
     const content = await readFile('src/components/HomeScreen.tsx');
     expect(content).toContain('onOpenIdiomChainRandom');
     expect(content).toContain('onOpenIdiomChainChallenge');
-    expect(content).toContain('(隨機模式)');
-    expect(content).toContain('(挑戰模式)');
+    expect(content).toContain('（隨機模式）');
+    expect(content).toContain('（挑戰模式）');
   });
 });
 
@@ -611,6 +611,8 @@ describe('Core logic still works after refactoring', () => {
     const content = await readFile('src/game/useChainState.ts');
     expect(content).toContain('idiomDbReady');
     expect(content).toContain('const loadLevel = useCallback');
+    expect(content).not.toContain('loadLevel(lvl - 1)');
+    expect(content).toContain("missingLevelStrategy === 'retry-current-level'");
   });
 
   it('generateLevel returns LevelData or null', () => {
