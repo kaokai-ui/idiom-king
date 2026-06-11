@@ -60,33 +60,33 @@ const HomeScreen: FC<Props> = ({
 
       <section className="home-grid">
         <button className="feature-card feature-card--flashcard" type="button" onClick={onStartRandomFlashcards}>
-          <span className="card-icon">卡</span>
+          <span className="card-icon" aria-hidden="true">🎴</span>
           <h2>隨機單字卡</h2>
           <p>快速複習常見成語</p>
         </button>
         <button className="feature-card feature-card--unfamiliar" type="button" onClick={onStartUnfamiliarFlashcards}>
-          <span className="card-icon">星</span>
+          <span className="card-icon" aria-hidden="true">📝</span>
           <h2>陌生成語卡</h2>
           <p>集中練習待加強項目</p>
         </button>
         <button className="feature-card feature-card--chain" type="button" onClick={onOpenIdiomChainRandom}>
-          <span className="card-icon">龍</span>
+          <span className="card-icon" aria-hidden="true">🔀</span>
           <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">(隨機模式)</p>
+          <p className="feature-card-subtitle">（隨機模式）</p>
         </button>
         <button className="feature-card feature-card--chain-challenge" type="button" onClick={onOpenIdiomChainChallenge}>
-          <span className="card-icon">關</span>
+          <span className="card-icon" aria-hidden="true">🏆</span>
           <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">(挑戰模式)</p>
+          <p className="feature-card-subtitle">（挑戰模式）</p>
         </button>
         <button className="feature-card feature-card--cloze" type="button" onClick={onOpenIdiomCloze}>
-          <span className="card-icon">填</span>
+          <span className="card-icon" aria-hidden="true">🧩</span>
           <h2>成語填空</h2>
           <p>練習上下文辨識能力</p>
         </button>
         {settings.developerMode && (
           <button className="feature-card feature-card--chain-test" type="button" onClick={onOpenIdiomChainTest}>
-            <span className="card-icon">測</span>
+            <span className="card-icon" aria-hidden="true">🧪</span>
             <h2>接龍測試 50 關</h2>
             <p>快速檢查棋盤重疊問題</p>
           </button>
@@ -99,7 +99,7 @@ const HomeScreen: FC<Props> = ({
           type="button"
           onClick={() => onOpenDetail('unfamiliar')}
         >
-          <div className="summary-card-icon">星</div>
+          <div className="summary-card-icon" aria-hidden="true">⭐</div>
           <div className="summary-card-info">
             <span className="summary-card-label">待加強成語</span>
             <strong className="summary-card-count">{starredIds.length}</strong>
@@ -112,7 +112,7 @@ const HomeScreen: FC<Props> = ({
           type="button"
           onClick={() => onOpenDetail('mastered')}
         >
-          <div className="summary-card-icon">熟</div>
+          <div className="summary-card-icon" aria-hidden="true">✅</div>
           <div className="summary-card-info">
             <span className="summary-card-label">已掌握成語</span>
             <strong className="summary-card-count">{knownIds.length}</strong>
