@@ -34,10 +34,12 @@ const HomeScreen: FC<Props> = ({
   onOpenDetail,
   onToggleSetting,
 }) => {
+  const logoSrc = `${import.meta.env.BASE_URL}idiomHome.webp`;
+
   return (
     <main className="page-shell app-shell">
       <section className="hero-panel">
-        <img className="hero-logo" src="/idiomHome.webp" alt="我是成語王" />
+        <img className="hero-logo" src={logoSrc} alt="我是成語王" />
         <div className="hero-stats">
           <div className="metric-card">
             <span>成語典數量</span>

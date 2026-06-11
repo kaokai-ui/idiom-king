@@ -5,6 +5,7 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/idiom-king/',
   plugins: [react()],
   server: {
     host: "0.0.0.0",

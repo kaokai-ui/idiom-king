@@ -35,8 +35,6 @@ Thumbs.db
 # Local source material / archives
 Source
 /Docs/
-!/docs/
-!/docs/**
 *.zip
 *.7z
 
