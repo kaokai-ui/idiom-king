@@ -456,8 +456,8 @@ button:disabled { cursor: default; }
   line-height: 1.3;
 }
 
-.feature-card-subtitle {
-  font-size: 0.82rem;
+.feature-card .feature-card-subtitle {
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--ink);
 }
@@ -1253,6 +1253,7 @@ button:disabled { cursor: default; }
   .feature-card .card-icon { font-size: 1.3rem; }
   .feature-card h2 { font-size: 0.9rem; }
   .feature-card p { font-size: 0.68rem; }
+  .feature-card .feature-card-subtitle { font-size: 0.78rem; }
   .flashcard-stage { padding: 18px 14px; }
   .flashcard-word { font-size: 2.2rem; }
   .flashcard-layout { align-items: center; }
