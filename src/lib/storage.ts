@@ -2,6 +2,8 @@ const STORAGE_KEYS = {
   settings: 'idiom-king:settings',
   progress: 'idiom-king:progress',
   session: 'idiom-king:session',
+  chainChallengePack: 'idiom-king:chain-challenge-pack:v1',
+  chainChallengeProgress: 'idiom-king:chain-challenge-progress:v1',
 };
 
 const defaultSettings: import('../types/game').AppSettings = {

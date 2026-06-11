@@ -273,7 +273,7 @@ function tryGenerateLevel(
     const cell = trimmedBoard[r][c];
     if (cell) {
       presetCells.push({ row: r, col: c, char: cell.char! });
-      presetSet.add(crossingCellKeys[i]);
+      presetSet.add(shuffledCrossingKeys[i]);
     }
   }
 

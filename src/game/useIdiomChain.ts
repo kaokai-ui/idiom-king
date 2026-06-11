@@ -1,12 +1,41 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
+import type { ChallengeLevelRecord, ChainMode } from '../types/game';
 import {
   isBoardComplete, isBoardCorrect, getWrongCells, getCellKey,
   findTileByCellRef, countFilledCells,
 } from '../game/boardUtils';
 import { useChainState } from './useChainState';
+import { generateRandomChainLevel } from './chainLevelSources';
 
-export function useIdiomChain() {
-  const { state, dispatch, boardRef, loadLevel } = useChainState();
+type UseIdiomChainOptions = {
+  mode: ChainMode;
+  challengeLevels?: ChallengeLevelRecord[];
+  initialLevelNumber?: number;
+  maxLevelNumber?: number;
+  onLevelComplete?: (levelNumber: number) => void;
+};
+
+export function useIdiomChain({
+  mode,
+  challengeLevels,
+  initialLevelNumber = 1,
+  maxLevelNumber,
+  onLevelComplete,
+}: UseIdiomChainOptions) {
+  const getLevelData = useCallback((levelNumber: number) => {
+    if (mode === 'challenge') {
+      return challengeLevels?.[levelNumber - 1]?.level ?? null;
+    }
+    return generateRandomChainLevel(levelNumber);
+  }, [challengeLevels, mode]);
+
+  const { state, dispatch, boardRef, loadLevel } = useChainState(getLevelData);
+  const initialLoadKey = useMemo(
+    () => `${mode}:${initialLevelNumber}:${challengeLevels?.length ?? 0}`,
+    [challengeLevels?.length, initialLevelNumber, mode],
+  );
+  const lastInitialLoadKeyRef = useRef<string | null>(null);
+  const completedLevelKeyRef = useRef<string | null>(null);
 
   const onCellClick = useCallback((row: number, col: number) => {
     if (state.phase !== 'playing' && state.phase !== 'checking') return;
@@ -124,10 +153,49 @@ export function useIdiomChain() {
     }
   }, [state.wrongCells, state.phase]);
 
-  useEffect(() => { loadLevel(1); }, [loadLevel]);
+  useEffect(() => {
+    if (mode === 'challenge' && (!challengeLevels || challengeLevels.length === 0)) {
+      return;
+    }
+    if (lastInitialLoadKeyRef.current === initialLoadKey) {
+      return;
+    }
+    lastInitialLoadKeyRef.current = initialLoadKey;
+    loadLevel(initialLevelNumber);
+  }, [challengeLevels, initialLevelNumber, initialLoadKey, loadLevel, mode]);
 
-  const onNextLevel = useCallback(() => loadLevel(state.levelNumber + 1), [state.levelNumber, loadLevel]);
-  const onSkipLevel = useCallback(() => loadLevel(state.levelNumber + 1), [state.levelNumber, loadLevel]);
+  useEffect(() => {
+    if (state.phase !== 'complete' || !state.level) {
+      return;
+    }
+    const completionKey = `${mode}:${state.levelNumber}:${state.level.id}`;
+    if (completedLevelKeyRef.current === completionKey) {
+      return;
+    }
+    completedLevelKeyRef.current = completionKey;
+    onLevelComplete?.(state.levelNumber);
+  }, [mode, onLevelComplete, state.level, state.levelNumber, state.phase]);
+
+  const hasNextLevel = maxLevelNumber === undefined || state.levelNumber < maxLevelNumber;
+
+  const onNextLevel = useCallback(() => {
+    const nextLevelNumber = maxLevelNumber === undefined
+      ? state.levelNumber + 1
+      : Math.min(maxLevelNumber, state.levelNumber + 1);
+    if (nextLevelNumber === state.levelNumber && maxLevelNumber !== undefined) {
+      return;
+    }
+    loadLevel(nextLevelNumber);
+  }, [loadLevel, maxLevelNumber, state.levelNumber]);
+  const onSkipLevel = useCallback(() => {
+    const nextLevelNumber = maxLevelNumber === undefined
+      ? state.levelNumber + 1
+      : Math.min(maxLevelNumber, state.levelNumber + 1);
+    if (nextLevelNumber === state.levelNumber && maxLevelNumber !== undefined) {
+      return;
+    }
+    loadLevel(nextLevelNumber);
+  }, [loadLevel, maxLevelNumber, state.levelNumber]);
   const onRestart = useCallback(() => loadLevel(state.levelNumber), [state.levelNumber, loadLevel]);
   const onToggleHint = useCallback(() => dispatch({ type: 'TOGGLE_HINT' }), []);
   const onToggleIdiomDetail = useCallback((id: string) => dispatch({ type: 'TOGGLE_IDIOM_DETAIL', payload: id }), []);
@@ -149,6 +217,7 @@ export function useIdiomChain() {
     totalActive: state.totalActive,
     hintVisible: state.hintVisible,
     expandedIdiomId: state.expandedIdiomId,
+    hasNextLevel,
     canDeleteCell,
     onCellClick,
     onTileClick,

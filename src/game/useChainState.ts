@@ -3,9 +3,6 @@ import type { Cell, CharTile, LevelData } from '../types/game';
 import type { ChainPhase } from '../types/chain';
 import { ready as idiomDbReady, isDbReady } from '../data/idiomDb';
 import {
-  generateLevel,
-} from '../game/levelGenerator';
-import {
   buildBoardFromLevel, createCharTiles,
   countActiveCells, countFilledCells,
 } from '../game/boardUtils';
@@ -191,7 +188,7 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
   }
 }
 
-export function useChainState() {
+export function useChainState(getLevelData: (levelNumber: number) => LevelData | null) {
   const [state, dispatch] = useReducer(chainReducer, initialState);
   const boardRef = useRef<Cell[][]>([]);
   useEffect(() => { boardRef.current = state.board; }, [state.board]);
@@ -205,8 +202,7 @@ export function useChainState() {
         });
         return;
       }
-      const idiomCount = Math.min(5 + Math.floor((lvl - 1) / 3), 8);
-      const levelData = generateLevel(lvl, idiomCount, 12, 12, 100);
+      const levelData = getLevelData(lvl);
       if (!levelData) {
         if (lvl <= 1) {
           dispatch({ type: 'GENERATE_ERROR' });
@@ -230,7 +226,7 @@ export function useChainState() {
       });
     };
     requestAnimationFrame(doGenerate);
-  }, []);
+  }, [getLevelData]);
 
   return { state, dispatch, boardRef, loadLevel };
 }

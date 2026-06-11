@@ -89,8 +89,12 @@ function App() {
     );
   }
 
-  if (screen === 'idiomChain') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} />;
+  if (screen === 'idiomChain' || screen === 'idiomChainRandom') {
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" />;
+  }
+
+  if (screen === 'idiomChainChallenge') {
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="challenge" />;
   }
 
   if (screen === 'idiomChainTest') {
@@ -124,7 +128,8 @@ function App() {
       settings={settings}
       onStartRandomFlashcards={() => startFlashcards('random')}
       onStartUnfamiliarFlashcards={() => startFlashcards('unfamiliar')}
-      onOpenIdiomChain={() => openScreen('idiomChain')}
+      onOpenIdiomChainRandom={() => openScreen('idiomChainRandom')}
+      onOpenIdiomChainChallenge={() => openScreen('idiomChainChallenge')}
       onOpenIdiomChainTest={() => openScreen('idiomChainTest')}
       onOpenIdiomCloze={() => openScreen('idiomCloze')}
       onOpenDetail={setDetailView}

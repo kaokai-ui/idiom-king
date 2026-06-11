@@ -61,7 +61,38 @@ export type ChainTestBatch = {
   levels: ChainTestLevelRecord[];
 };
 
-export type AppScreen = 'home' | 'flashcardRandom' | 'flashcardUnfamiliar' | 'idiomChain' | 'idiomChainTest' | 'idiomCloze';
+export type ChainMode = 'random' | 'challenge';
+
+export type ChallengeLevelRecord = {
+  sequence: number;
+  sourceIndex: number;
+  seed: number;
+  difficultyScore: number;
+  level: LevelData;
+};
+
+export type ChainChallengePack = {
+  version: string;
+  generatedAt: string;
+  nextSourceIndex: number;
+  complete: boolean;
+  levels: ChallengeLevelRecord[];
+};
+
+export type ChainChallengeProgress = {
+  completedCount: number;
+  updatedAt: string | null;
+};
+
+export type AppScreen =
+  | 'home'
+  | 'flashcardRandom'
+  | 'flashcardUnfamiliar'
+  | 'idiomChain'
+  | 'idiomChainRandom'
+  | 'idiomChainChallenge'
+  | 'idiomChainTest'
+  | 'idiomCloze';
 
 export type FlashcardState = {
   mode: 'random' | 'unfamiliar';

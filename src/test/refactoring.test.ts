@@ -77,6 +77,14 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
     expect(content).toContain('onOpenIdiomChainTest');
     expect(content).toContain('settings.developerMode &&');
   });
+
+  it('HomeScreen should expose random and challenge chain entries', async () => {
+    const content = await readFile('src/components/HomeScreen.tsx');
+    expect(content).toContain('onOpenIdiomChainRandom');
+    expect(content).toContain('onOpenIdiomChainChallenge');
+    expect(content).toContain('(隨機模式)');
+    expect(content).toContain('(挑戰模式)');
+  });
 });
 
 describe('R2: useIdiomChain refactored (no god hook)', () => {
@@ -621,5 +629,38 @@ describe('Core logic still works after refactoring', () => {
     expect(levelA).not.toBeNull();
     expect(levelB).not.toBeNull();
     expect(levelA).toEqual(levelB);
+  });
+
+  it('generateLevel keeps charBank aligned with every non-preset board cell', () => {
+    const generatedLevels: LevelData[] = [];
+
+    for (let seed = 20260611; seed < 20260731; seed++) {
+      const level = generateLevel(3, 5, 10, 10, 30, createSeededRandom(seed));
+      if (level) {
+        generatedLevels.push(level);
+      }
+    }
+
+    expect(generatedLevels.length).toBeGreaterThan(0);
+
+    for (const level of generatedLevels) {
+      const presetKeys = new Set(level.presetCells.map((cell) => `${cell.row},${cell.col}`));
+      const expectedChars: string[] = [];
+      const seenKeys = new Set<string>();
+
+      for (const idiom of level.idioms) {
+        for (let i = 0; i < idiom.chars.length; i++) {
+          const row = idiom.direction === 'vertical' ? idiom.startRow + i : idiom.startRow;
+          const col = idiom.direction === 'horizontal' ? idiom.startCol + i : idiom.startCol;
+          const key = `${row},${col}`;
+          if (!presetKeys.has(key) && !seenKeys.has(key)) {
+            expectedChars.push(idiom.chars[i]);
+            seenKeys.add(key);
+          }
+        }
+      }
+
+      expect([...level.charBank].sort()).toEqual(expectedChars.sort());
+    }
   });
 });
