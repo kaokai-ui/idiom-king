@@ -27,6 +27,7 @@ export type ChainAction =
   | { type: 'LEVEL_LOADED'; payload: {
     level: LevelData; board: Cell[][]; charTiles: CharTile[];
     levelNumber: number; filledCount: number; totalActive: number;
+    seed: number | null;
   } }
   | { type: 'SELECT_CELL'; payload: { row: number; col: number } | null }
   | { type: 'PLACE_TILE'; payload: {
@@ -196,15 +197,16 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
 }
 
 export function useChainState(
-  getLevelData: (levelNumber: number) => LevelData | null,
+  getLevelData: (levelNumber: number, seed?: number) => { level: LevelData | null; seed: number | null },
   options: UseChainStateOptions,
 ) {
   const [state, dispatch] = useReducer(chainReducer, initialState);
   const boardRef = useRef<Cell[][]>([]);
   useEffect(() => { boardRef.current = state.board; }, [state.board]);
   const { missingLevelStrategy, maxNullLevelRetries = 0 } = options;
+  const lastSeedRef = useRef<number | null>(null);
 
-  const loadLevel = useCallback((lvl: number) => {
+  const loadLevel = useCallback((lvl: number, seed?: number) => {
     dispatch({ type: 'START_GENERATING' });
     const tryLoadLevel = (nullRetryCount: number) => {
       const doGenerate = () => {
@@ -214,8 +216,8 @@ export function useChainState(
           });
           return;
         }
-        const levelData = getLevelData(lvl);
-        if (!levelData) {
+        const result = getLevelData(lvl, seed);
+        if (!result.level) {
           if (missingLevelStrategy === 'retry-current-level' && nullRetryCount < maxNullLevelRetries) {
             requestAnimationFrame(() => {
               tryLoadLevel(nullRetryCount + 1);
@@ -225,17 +227,19 @@ export function useChainState(
           dispatch({ type: 'GENERATE_ERROR' });
           return;
         }
-        const newBoard = buildBoardFromLevel(levelData);
-        const newTiles = createCharTiles(levelData.charBank);
+        lastSeedRef.current = result.seed;
+        const newBoard = buildBoardFromLevel(result.level);
+        const newTiles = createCharTiles(result.level.charBank);
         dispatch({
           type: 'LEVEL_LOADED',
           payload: {
-            level: levelData,
+            level: result.level,
             board: newBoard,
             charTiles: newTiles,
             levelNumber: lvl,
             filledCount: countFilledCells(newBoard),
             totalActive: countActiveCells(newBoard),
+            seed: result.seed,
           },
         });
       };
@@ -244,5 +248,5 @@ export function useChainState(
     tryLoadLevel(0);
   }, [getLevelData, maxNullLevelRetries, missingLevelStrategy]);
 
-  return { state, dispatch, boardRef, loadLevel };
+  return { state, dispatch, boardRef, loadLevel, lastSeedRef };
 }

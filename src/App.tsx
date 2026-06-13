@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { IdiomEntry } from './types/game';
 import { idiomsById } from './data/idiomDb';
 import { useIdiomApp } from './hooks/useIdiomApp';
@@ -60,12 +60,17 @@ function App() {
   };
 
   const screen = session.screen;
+  const requiresIdiomDb = !dataReady && (
+    detailView !== null
+    || screen === 'flashcardRandom'
+    || screen === 'flashcardUnfamiliar'
+  );
 
-  if (!dataReady) {
+  if (requiresIdiomDb) {
     return (
       <div className="game-page loading">
         <div className="loading-spinner" />
-        <p>載入中...</p>
+        <p>正在載入成語資料...</p>
       </div>
     );
   }

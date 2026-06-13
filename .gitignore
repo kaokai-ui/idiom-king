@@ -37,6 +37,8 @@ Source
 /Docs/
 *.zip
 *.7z
+BUG.md
+DEV.md
 
 # Excel files
 *.xlsx

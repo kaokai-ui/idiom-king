@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { FC } from 'react';
 import ChainBoard from './ChainBoard';
 import { buildBoardFromLevel } from '../game/boardUtils';
 import { generateLevel } from '../game/levelGenerator';
 import { createSeededRandom } from '../lib/utils';
+import { CHAIN_CONFIG } from '../game/chainConfig';
 import type { Cell, ChainTestBatch, ChainTestLevelRecord, LevelData } from '../types/game';
 
 type Props = {
@@ -11,10 +12,10 @@ type Props = {
 };
 
 const BATCH_STORAGE_KEY = 'idiom-king:chain-test-batch:v1';
-const TOTAL_TEST_LEVELS = 50;
+const TOTAL_TEST_LEVELS = CHAIN_CONFIG.batchTest.totalLevels;
 const EMPTY_WRONG_CELLS = new Set<string>();
-const FIXED_BATCH_ID = 'chain-test-fixed-v1';
-const FIXED_BATCH_SEED = 20260611;
+const FIXED_BATCH_ID = CHAIN_CONFIG.batchTest.batchId;
+const FIXED_BATCH_SEED = CHAIN_CONFIG.batchTest.seedBase;
 
 function buildSolvedBoard(level: LevelData): Cell[][] {
   return buildBoardFromLevel(level).map(row =>
@@ -44,9 +45,13 @@ function buildLayoutSignature(level: LevelData): string {
 function generateTestLevel(sequence: number, seedBase: number): ChainTestLevelRecord {
   const idiomCount = Math.min(5 + Math.floor((sequence - 1) / 3), 8);
 
-  for (let retry = 0; retry < 24; retry++) {
+  for (let retry = 0; retry < CHAIN_CONFIG.batchTest.innerRetries; retry++) {
     const seed = (seedBase + sequence * 1009 + retry * 7919) >>> 0;
-    const level = generateLevel(sequence, idiomCount, 12, 12, 100, createSeededRandom(seed));
+    const level = generateLevel(
+      sequence, idiomCount,
+      CHAIN_CONFIG.batchTest.maxRows, CHAIN_CONFIG.batchTest.maxCols,
+      CHAIN_CONFIG.batchTest.maxAttempts, createSeededRandom(seed),
+    );
     if (!level) continue;
 
     return {
@@ -58,7 +63,7 @@ function generateTestLevel(sequence: number, seedBase: number): ChainTestLevelRe
     };
   }
 
-  throw new Error(`無法產生第 ${sequence} 關測試資料`);
+  throw new Error(`無法生成第 ${sequence} 關測試關卡`);
 }
 
 function createBatch(): ChainTestBatch {
@@ -95,6 +100,7 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [copyLabel, setCopyLabel] = useState('複製本關資料');
+  const initializedRef = useRef(false);
 
   const loadBatch = useCallback((forceRegenerate: boolean) => {
     setLoading(true);
@@ -115,6 +121,8 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
   }, []);
 
   useEffect(() => {
+    if (initializedRef.current) return;
+    initializedRef.current = true;
     loadBatch(false);
   }, [loadBatch]);
 

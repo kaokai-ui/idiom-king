@@ -63,3 +63,25 @@ export function countProgress(
     progressRate: idioms.length === 0 ? 0 : Math.round((masteredSet.size / idioms.length) * 100),
   };
 }
+
+export function countProgressLite(progress: AppProgress, totalCount: number) {
+  const masteredSet = new Set<string>();
+
+  Object.entries(progress.wordStats ?? {}).forEach(([id, stats]) => {
+    if (isMasteredWord(stats)) {
+      masteredSet.add(id);
+    }
+  });
+
+  for (const id of progress.knownIds ?? []) {
+    masteredSet.add(id);
+  }
+
+  const masteredCount = Math.min(masteredSet.size, totalCount);
+  return {
+    totalCount,
+    masteredCount,
+    unfamiliarCount: Math.max(totalCount - masteredCount, 0),
+    progressRate: totalCount === 0 ? 0 : Math.round((masteredCount / totalCount) * 100),
+  };
+}

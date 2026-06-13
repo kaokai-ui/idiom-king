@@ -76,10 +76,14 @@ export function useIdiomCloze(onWrong?: (idiomText: string) => void) {
   const [streak, setStreak] = useState(0);
   const [unfamiliar, setUnfamiliar] = useState<Set<string>>(new Set());
   const usedRef = useRef<Set<string>>(new Set());
+  const dataReadyRef = useRef(false);
   const [dataReady, setDataReady] = useState(false);
 
   useEffect(() => {
-    sentencesReady.then(() => setDataReady(true));
+    sentencesReady.then(() => {
+      dataReadyRef.current = true;
+      setDataReady(true);
+    });
   }, []);
 
   const nextQuestion = useCallback((lvl: number) => {
@@ -105,7 +109,9 @@ export function useIdiomCloze(onWrong?: (idiomText: string) => void) {
   }, []);
 
   useEffect(() => {
-    if (dataReady) nextQuestion(1);
+    if (!dataReady) return;
+    const timer = setTimeout(() => nextQuestion(1), 0);
+    return () => clearTimeout(timer);
   }, [dataReady, nextQuestion]);
 
   const onSelect = useCallback((idx: number) => {

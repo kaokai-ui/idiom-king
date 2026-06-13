@@ -1,16 +1,18 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import type { ChallengeLevelRecord, ChainMode } from '../types/game';
+import type { ChallengeLevelRecord, ChainMode, LevelData } from '../types/game';
 import {
   isBoardComplete, isBoardCorrect, getWrongCells, getCellKey,
   findTileByCellRef, countFilledCells,
 } from '../game/boardUtils';
+import { CHAIN_CONFIG } from './chainConfig';
 import { useChainState } from './useChainState';
-import { generateRandomChainLevel } from './chainLevelSources';
+import { generateRandomChainLevelWithSeed } from './chainLevelSources';
 
 type UseIdiomChainOptions = {
   mode: ChainMode;
   challengeLevels?: ChallengeLevelRecord[];
   initialLevelNumber?: number;
+  sessionKey?: number;
   maxLevelNumber?: number;
   onLevelComplete?: (levelNumber: number) => void;
 };
@@ -19,23 +21,29 @@ export function useIdiomChain({
   mode,
   challengeLevels,
   initialLevelNumber = 1,
+  sessionKey = 0,
   maxLevelNumber,
   onLevelComplete,
 }: UseIdiomChainOptions) {
-  const getLevelData = useCallback((levelNumber: number) => {
+  const getLevelData = useCallback((levelNumber: number, seed?: number): { level: LevelData | null; seed: number | null } => {
     if (mode === 'challenge') {
-      return challengeLevels?.[levelNumber - 1]?.level ?? null;
+      const level = challengeLevels?.[levelNumber - 1]?.level ?? null;
+      return { level, seed: null };
     }
-    return generateRandomChainLevel(levelNumber);
+    const result = generateRandomChainLevelWithSeed(levelNumber, seed ?? undefined);
+    if (result) {
+      return { level: result.level, seed: result.seed };
+    }
+    return { level: null, seed: null };
   }, [challengeLevels, mode]);
 
-  const { state, dispatch, boardRef, loadLevel } = useChainState(getLevelData, {
+  const { state, dispatch, boardRef, loadLevel, lastSeedRef } = useChainState(getLevelData, {
     missingLevelStrategy: mode === 'challenge' ? 'error' : 'retry-current-level',
-    maxNullLevelRetries: mode === 'challenge' ? 0 : 2,
+    maxNullLevelRetries: mode === 'challenge' ? 0 : CHAIN_CONFIG.random.levelRetryCount,
   });
   const initialLoadKey = useMemo(
-    () => `${mode}:${initialLevelNumber}:${challengeLevels?.length ?? 0}`,
-    [challengeLevels?.length, initialLevelNumber, mode],
+    () => `${mode}:${initialLevelNumber}:${challengeLevels?.length ?? 0}:${sessionKey}`,
+    [challengeLevels?.length, initialLevelNumber, mode, sessionKey],
   );
   const lastInitialLoadKeyRef = useRef<string | null>(null);
   const completedLevelKeyRef = useRef<string | null>(null);
@@ -49,7 +57,7 @@ export function useIdiomChain({
       return;
     }
     dispatch({ type: 'SELECT_CELL', payload: { row, col } });
-  }, [state.board, state.selectedCell, state.phase]);
+  }, [state.board, state.selectedCell, state.phase, dispatch]);
 
   const onTileClick = useCallback((tileId: string) => {
     if ((state.phase !== 'playing' && state.phase !== 'checking') || !state.selectedCell) return;
@@ -102,7 +110,7 @@ export function useIdiomChain({
         nextSelectedCell,
       },
     });
-  }, [state.board, state.charTiles, state.selectedCell, state.phase]);
+  }, [state.board, state.charTiles, state.selectedCell, state.phase, dispatch]);
 
   const onDeleteCell = useCallback(() => {
     if ((state.phase !== 'playing' && state.phase !== 'checking') || !state.selectedCell) return;
@@ -115,7 +123,7 @@ export function useIdiomChain({
       type: 'DELETE_CELL',
       payload: { cellKey, filledCount: countFilledCells(newBoard) },
     });
-  }, [state.board, state.selectedCell, state.phase]);
+  }, [state.board, state.selectedCell, state.phase, dispatch]);
 
   const onClearAll = useCallback(() => {
     if (state.phase !== 'playing' && state.phase !== 'checking') return;
@@ -127,7 +135,7 @@ export function useIdiomChain({
       type: 'CLEAR_ALL',
       payload: { filledCount: countFilledCells(newBoard) },
     });
-  }, [state.board, state.phase]);
+  }, [state.board, state.phase, dispatch]);
 
   const doCheck = useCallback(() => {
     const currentBoard = boardRef.current;
@@ -138,13 +146,13 @@ export function useIdiomChain({
       const wrong = getWrongCells(currentBoard);
       dispatch({ type: 'SET_CHECKING', payload: { wrongCells: new Set(wrong.map(w => getCellKey(w.row, w.col))) } });
     }
-  }, [state.phase]);
+  }, [state.phase, boardRef, dispatch]);
 
   useEffect(() => {
     if (state.phase === 'playing' && isBoardComplete(boardRef.current)) {
       doCheck();
     }
-  }, [state.filledCount, state.phase, doCheck]);
+  }, [state.filledCount, state.phase, doCheck, boardRef]);
 
   useEffect(() => {
     if (state.phase === 'checking' && state.wrongCells.size === 0 && isBoardComplete(boardRef.current)) {
@@ -154,7 +162,7 @@ export function useIdiomChain({
         dispatch({ type: 'SET_PLAYING' });
       }
     }
-  }, [state.wrongCells, state.phase]);
+  }, [state.wrongCells, state.phase, boardRef, dispatch]);
 
   useEffect(() => {
     if (mode === 'challenge' && (!challengeLevels || challengeLevels.length === 0)) {
@@ -199,9 +207,16 @@ export function useIdiomChain({
     }
     loadLevel(nextLevelNumber);
   }, [loadLevel, maxLevelNumber, state.levelNumber]);
-  const onRestart = useCallback(() => loadLevel(state.levelNumber), [state.levelNumber, loadLevel]);
-  const onToggleHint = useCallback(() => dispatch({ type: 'TOGGLE_HINT' }), []);
-  const onToggleIdiomDetail = useCallback((id: string) => dispatch({ type: 'TOGGLE_IDIOM_DETAIL', payload: id }), []);
+  const onRestart = useCallback(() => {
+    const cachedSeed = lastSeedRef.current;
+    if (cachedSeed !== null) {
+      loadLevel(state.levelNumber, cachedSeed);
+    } else {
+      loadLevel(state.levelNumber);
+    }
+  }, [state.levelNumber, loadLevel, lastSeedRef]);
+  const onToggleHint = useCallback(() => dispatch({ type: 'TOGGLE_HINT' }), [dispatch]);
+  const onToggleIdiomDetail = useCallback((id: string) => dispatch({ type: 'TOGGLE_IDIOM_DETAIL', payload: id }), [dispatch]);
 
   const canDeleteCell = state.selectedCell !== null
     && (state.phase === 'playing' || state.phase === 'checking')

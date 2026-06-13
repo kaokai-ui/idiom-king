@@ -2,18 +2,52 @@ import type { ChainChallengePack, ChainChallengeProgress, ChallengeLevelRecord, 
 import { STORAGE_KEYS, readStoredValue, writeStoredValue } from '../lib/storage';
 import { createSeededRandom } from '../lib/utils';
 import { generateLevel } from './levelGenerator';
+import { CHAIN_CONFIG } from './chainConfig';
 
 export const CHALLENGE_PACK_VERSION = 'chain-challenge-v1';
-export const CHALLENGE_TOTAL_LEVELS = 500;
-export const CHALLENGE_BATCH_SIZE = 100;
-
-const CHALLENGE_SEED_BASE = 20260611;
-const CHALLENGE_SEED_STEP = 7919;
+export const CHALLENGE_TOTAL_LEVELS = CHAIN_CONFIG.challenge.totalLevels;
+export const CHALLENGE_BATCH_SIZE = CHAIN_CONFIG.challenge.batchSize;
 
 const defaultChallengeProgress: ChainChallengeProgress = {
   completedCount: 0,
   updatedAt: null,
 };
+
+function isValidLevelData(value: unknown): value is LevelData {
+  if (!value || typeof value !== 'object') return false;
+  const obj = value as Record<string, unknown>;
+  return (
+    typeof obj.id === 'number' &&
+    typeof obj.rows === 'number' &&
+    typeof obj.cols === 'number' &&
+    Array.isArray(obj.idioms) &&
+    Array.isArray(obj.charBank) &&
+    Array.isArray(obj.presetCells)
+  );
+}
+
+function isValidChallengeLevel(value: unknown): value is ChallengeLevelRecord {
+  if (!value || typeof value !== 'object') return false;
+  const obj = value as Record<string, unknown>;
+  return (
+    Number.isInteger(obj.sequence) &&
+    Number.isInteger(obj.sourceIndex) &&
+    Number.isInteger(obj.seed) &&
+    typeof obj.difficultyScore === 'number' &&
+    isValidLevelData(obj.level)
+  );
+}
+
+function validateChallengeLevels(levels: unknown): ChallengeLevelRecord[] {
+  if (!Array.isArray(levels)) return [];
+  const valid: ChallengeLevelRecord[] = [];
+  for (const item of levels) {
+    if (isValidChallengeLevel(item)) {
+      valid.push(item);
+    }
+  }
+  return valid;
+}
 
 function readChallengePack(): ChainChallengePack | null {
   const fallback: ChainChallengePack = {
@@ -27,12 +61,29 @@ function readChallengePack(): ChainChallengePack | null {
   if (parsed.version !== CHALLENGE_PACK_VERSION || !Array.isArray(parsed.levels)) {
     return null;
   }
+  const validatedLevels = validateChallengeLevels(parsed.levels);
+  if (validatedLevels.length !== (parsed.levels as unknown[]).length) {
+    window.localStorage.removeItem(STORAGE_KEYS.chainChallengePack);
+    return null;
+  }
+  const nextSourceIndex = typeof parsed.nextSourceIndex === 'number' && parsed.nextSourceIndex >= 1
+    ? Math.floor(parsed.nextSourceIndex)
+    : validatedLevels.length + 1;
+  const complete = Boolean(parsed.complete);
+  if (validatedLevels.length > CHALLENGE_TOTAL_LEVELS) {
+    window.localStorage.removeItem(STORAGE_KEYS.chainChallengePack);
+    return null;
+  }
+  if (complete && validatedLevels.length !== CHALLENGE_TOTAL_LEVELS) {
+    window.localStorage.removeItem(STORAGE_KEYS.chainChallengePack);
+    return null;
+  }
   return {
     version: CHALLENGE_PACK_VERSION,
     generatedAt: typeof parsed.generatedAt === 'string' ? parsed.generatedAt : '',
-    nextSourceIndex: typeof parsed.nextSourceIndex === 'number' ? parsed.nextSourceIndex : parsed.levels.length + 1,
-    complete: Boolean(parsed.complete),
-    levels: parsed.levels,
+    nextSourceIndex,
+    complete,
+    levels: validatedLevels,
   };
 }
 
@@ -42,8 +93,12 @@ function writeChallengePack(pack: ChainChallengePack): void {
 
 export function readChallengeProgress(): ChainChallengeProgress {
   const parsed = readStoredValue(STORAGE_KEYS.chainChallengeProgress, defaultChallengeProgress);
+  const completedCount = typeof parsed.completedCount === 'number' ? parsed.completedCount : 0;
+  if (completedCount < 0 || completedCount > CHALLENGE_TOTAL_LEVELS) {
+    return { ...defaultChallengeProgress };
+  }
   return {
-    completedCount: typeof parsed.completedCount === 'number' ? parsed.completedCount : 0,
+    completedCount,
     updatedAt: typeof parsed.updatedAt === 'string' ? parsed.updatedAt : null,
   };
 }
@@ -58,9 +113,22 @@ export function markChallengeLevelComplete(levelNumber: number): ChainChallengeP
   return next;
 }
 
-export function getChallengeResumeLevelNumber(progress: ChainChallengeProgress = readChallengeProgress()): number {
+export function isChallengeCompleted(progress: ChainChallengeProgress = readChallengeProgress()): boolean {
+  return progress.completedCount >= CHALLENGE_TOTAL_LEVELS;
+}
+
+export function resetChallengeProgress(): ChainChallengeProgress {
+  const next: ChainChallengeProgress = {
+    completedCount: 0,
+    updatedAt: new Date().toISOString(),
+  };
+  writeStoredValue(STORAGE_KEYS.chainChallengeProgress, next);
+  return next;
+}
+
+export function getChallengeResumeLevelNumber(progress: ChainChallengeProgress = readChallengeProgress()): number | null {
   if (progress.completedCount >= CHALLENGE_TOTAL_LEVELS) {
-    return CHALLENGE_TOTAL_LEVELS;
+    return null;
   }
   return Math.max(1, progress.completedCount + 1);
 }
@@ -108,14 +176,18 @@ function scoreChallengeLevel(level: LevelData): number {
 }
 
 function buildChallengeLevel(sourceIndex: number): ChallengeLevelRecord | null {
-  const seed = CHALLENGE_SEED_BASE + sourceIndex * CHALLENGE_SEED_STEP;
-  const baseIdiomCount = 5 + Math.min(3, Math.floor((sourceIndex - 1) / 125));
+  const seed = CHAIN_CONFIG.challenge.seedBase + sourceIndex * CHAIN_CONFIG.challenge.seedStep;
+  const baseIdiomCount = 5 + Math.min(3, Math.floor((sourceIndex - 1) / CHAIN_CONFIG.challenge.idiomCountGroups));
 
-  for (let attempt = 0; attempt < 6; attempt++) {
-    const attemptSeed = seed + attempt * 101;
+  for (let attempt = 0; attempt < CHAIN_CONFIG.challenge.generatorAttempts; attempt++) {
+    const attemptSeed = seed + attempt * CHAIN_CONFIG.challenge.attemptSeedStep;
     const random = createSeededRandom(attemptSeed);
-    const idiomCount = Math.min(8, baseIdiomCount + Math.floor(random() * 2));
-    const level = generateLevel(sourceIndex, idiomCount, 12, 12, 100, random);
+    const idiomCount = Math.min(8, baseIdiomCount + Math.floor(random() * CHAIN_CONFIG.challenge.idiomCountRange));
+    const level = generateLevel(
+      sourceIndex, idiomCount,
+      CHAIN_CONFIG.challenge.maxRows, CHAIN_CONFIG.challenge.maxCols,
+      CHAIN_CONFIG.challenge.maxAttempts, random,
+    );
     if (!level) {
       continue;
     }
@@ -180,13 +252,21 @@ export async function ensureChallengePack(
 
   while (pack.levels.length < CHALLENGE_TOTAL_LEVELS) {
     const batchTarget = Math.min(pack.levels.length + CHALLENGE_BATCH_SIZE, CHALLENGE_TOTAL_LEVELS);
+    let consecutiveFails = 0;
 
     while (pack.levels.length < batchTarget) {
       const levelRecord = buildChallengeLevel(pack.nextSourceIndex);
       pack.nextSourceIndex += 1;
       if (!levelRecord) {
+        consecutiveFails++;
+        if (consecutiveFails >= CHAIN_CONFIG.challenge.maxConsecutiveFails) {
+          throw new Error(
+            `Challenge pack generation failed: ${CHAIN_CONFIG.challenge.maxConsecutiveFails} consecutive failures`,
+          );
+        }
         continue;
       }
+      consecutiveFails = 0;
       pack.levels.push(levelRecord);
     }
 

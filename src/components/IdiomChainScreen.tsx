@@ -17,6 +17,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
   const challengeCampaign = useChallengeCampaign(mode === 'challenge');
   const isChallengeMode = mode === 'challenge';
   const challengeLevels = challengeCampaign.pack?.levels;
+  const resumeLevel = challengeCampaign.resumeLevelNumber ?? 1;
 
   const {
     level,
@@ -44,7 +45,8 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
   } = useIdiomChain({
     mode,
     challengeLevels,
-    initialLevelNumber: isChallengeMode ? challengeCampaign.resumeLevelNumber : 1,
+    initialLevelNumber: isChallengeMode ? resumeLevel : 1,
+    sessionKey: isChallengeMode ? challengeCampaign.sessionKey : 0,
     maxLevelNumber: isChallengeMode ? challengeCampaign.totalLevels : undefined,
     onLevelComplete: isChallengeMode ? challengeCampaign.onLevelComplete : undefined,
   });
@@ -62,6 +64,24 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
     );
   }
 
+  if (isChallengeMode && challengeCampaign.phase === 'completed') {
+    return (
+      <div className="page-shell game-page loading">
+        <header className="game-topbar">
+          <button className="ghost-button" onClick={onHome}>← 主畫面</button>
+        </header>
+        <div className="complete-msg">恭喜！已全部完成 {challengeCampaign.totalLevels} 關！</div>
+        <p>你已完成挑戰模式所有關卡。</p>
+        <div className="action-buttons">
+          <div className="action-row">
+            <button className="btn btn-secondary" onClick={challengeCampaign.onRestartCampaign}>重新開始</button>
+            <button className="btn btn-primary" onClick={onHome}>回主畫面</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if ((phase === 'generating' || !level) && (!isChallengeMode || challengeCampaign.phase === 'ready')) {
     return (
       <div className="page-shell game-page loading">
@@ -69,7 +89,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
           <button className="ghost-button" onClick={onHome}>← 主畫面</button>
         </header>
         <div className="loading-spinner" />
-        <p>{isChallengeMode ? '正在載入挑戰關卡...' : '正在產生隨機關卡...'}</p>
+        <p>{isChallengeMode ? '正在載入挑戰模式關卡...' : '正在生成隨機關卡...'}</p>
       </div>
     );
   }
@@ -80,8 +100,8 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
         <header className="game-topbar">
           <button className="ghost-button" onClick={onHome}>← 主畫面</button>
         </header>
-        <p>{isChallengeMode ? '挑戰模式關卡準備失敗。' : '隨機關卡產生失敗。'}</p>
-        <button className="btn btn-secondary" onClick={onSkipLevel}>再試一次</button>
+        <p>{isChallengeMode ? '挑戰模式關卡準備失敗。' : '隨機關卡生成失敗。'}</p>
+        <button className="btn btn-secondary" onClick={onSkipLevel}>跳到下一關</button>
       </div>
     );
   }
@@ -89,8 +109,8 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
   const modeLabel = isChallengeMode ? '挑戰模式' : '隨機模式';
   const levelLabel = isChallengeMode
     ? `${levelNumber}/${challengeCampaign.totalLevels}`
-    : `隨機 ${levelNumber}`;
-  const nextLevelLabel = isChallengeMode && levelNumber >= challengeCampaign.totalLevels ? '已完成全部關卡' : '下一關';
+    : `第 ${levelNumber} 關`;
+  const nextLevelLabel = isChallengeMode && levelNumber >= challengeCampaign.totalLevels ? '完成挑戰' : '下一關';
   const currentLevel = level!;
 
   return (

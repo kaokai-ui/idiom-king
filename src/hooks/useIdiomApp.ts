@@ -3,8 +3,9 @@ import type { AppScreen, AppSettings, IdiomEntry } from '../types/game';
 import { appReducer, createInitialState } from '../state/appReducer';
 import { actionTypes } from '../state/actionTypes';
 import { idioms, idiomsById, ready } from '../data/idiomDb';
+import { IDIOM_TOTAL_COUNT } from '../data/idiomMeta';
 import { writeStoredValue, STORAGE_KEYS, readSettings, readProgress, readSession } from '../lib/storage';
-import { shuffle, createPracticeDeck, countProgress } from '../lib/utils';
+import { shuffle, createPracticeDeck, countProgress, countProgressLite } from '../lib/utils';
 
 export function useIdiomApp() {
   const [state, dispatch] = useReducer(appReducer, undefined, createInitialState);
@@ -43,7 +44,10 @@ export function useIdiomApp() {
     });
   }, []);
 
-  const stats = useMemo(() => countProgress(progress, idioms), [progress, dataReady]);
+  const stats = useMemo(
+    () => (dataReady ? countProgress(progress, idioms) : countProgressLite(progress, IDIOM_TOTAL_COUNT)),
+    [dataReady, progress],
+  );
 
   const currentFlashcardIdiom = useMemo<IdiomEntry | null>(() => {
     if (!dataReady || !session.flashcards) return null;
@@ -100,18 +104,24 @@ export function useIdiomApp() {
 
   const startFlashcards = useCallback(
     (mode: 'random' | 'unfamiliar') => {
-      if (!dataReady) return;
-      const deck = createPracticeDeck(mode, progress, idioms);
-      dispatch({
-        type: actionTypes.START_FLASHCARDS,
-        payload: {
-          mode,
-          idiomIds: deck.map(i => i.id),
-          showBopomofo: settings.autoShowBopomofo,
-          showUsage: settings.autoShowUsage,
-          showDefinition: settings.autoShowDefinition,
-        },
-      });
+      const launch = () => {
+        const deck = createPracticeDeck(mode, progress, idioms);
+        dispatch({
+          type: actionTypes.START_FLASHCARDS,
+          payload: {
+            mode,
+            idiomIds: deck.map(i => i.id),
+            showBopomofo: settings.autoShowBopomofo,
+            showUsage: settings.autoShowUsage,
+            showDefinition: settings.autoShowDefinition,
+          },
+        });
+      };
+      if (!dataReady) {
+        void ready.then(launch);
+        return;
+      }
+      launch();
     },
     [progress, settings, dataReady]
   );
