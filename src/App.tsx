@@ -98,6 +98,10 @@ function App() {
     return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" />;
   }
 
+  if (screen === 'idiomChainModeTest') {
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="test" />;
+  }
+
   if (screen === 'idiomChainChallenge') {
     return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="challenge" />;
   }
@@ -134,6 +138,7 @@ function App() {
       onStartRandomFlashcards={() => startFlashcards('random')}
       onStartUnfamiliarFlashcards={() => startFlashcards('unfamiliar')}
       onOpenIdiomChainRandom={() => openScreen('idiomChainRandom')}
+      onOpenIdiomChainModeTest={() => openScreen('idiomChainModeTest')}
       onOpenIdiomChainChallenge={() => openScreen('idiomChainChallenge')}
       onOpenIdiomChainTest={() => openScreen('idiomChainTest')}
       onOpenIdiomCloze={() => openScreen('idiomCloze')}

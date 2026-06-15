@@ -1,8 +1,13 @@
-import type { FC } from 'react'; import { useMemo } from 'react'; import type { Cell } from '../types/game'; import type { ChainPhase } from '../types/chain'; import ChainBoardCellComp from './ChainBoardCell';
+import { useMemo } from 'react';
+import type { FC } from 'react';
+import type { Cell } from '../types/game';
+import type { ChainPhase } from '../types/chain';
+import ChainBoardCellComp from './ChainBoardCell';
 
 type Props = {
   board: Cell[][];
   selectedCell: { row: number; col: number } | null;
+  highlightedCellKeys?: Set<string>;
   wrongCells: Set<string>;
   phase: ChainPhase;
   onCellClick: (row: number, col: number) => void;
@@ -22,7 +27,7 @@ function calcCellSize(cols: number, rows: number, containerW: number, containerH
   return Math.min(fromW, fromH);
 }
 
-const ChainBoard: FC<Props> = ({ board, selectedCell, wrongCells, phase, onCellClick }) => {
+const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrongCells, phase, onCellClick }) => {
   const cols = board[0]?.length || 1;
   const rows = board.length || 1;
 
@@ -61,6 +66,7 @@ const ChainBoard: FC<Props> = ({ board, selectedCell, wrongCells, phase, onCellC
               key={`${r}-${c}`}
               cell={cell}
               isSelected={selectedCell?.row === r && selectedCell?.col === c}
+              isLineHighlighted={highlightedCellKeys?.has(`${r}-${c}`) ?? false}
               isWrong={wrongCells.has(`${r}-${c}`)}
               phase={phase}
               onClick={() => onCellClick(r, c)}

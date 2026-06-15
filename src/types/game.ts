@@ -61,7 +61,7 @@ export type ChainTestBatch = {
   levels: ChainTestLevelRecord[];
 };
 
-export type ChainMode = 'random' | 'challenge';
+export type ChainMode = 'random' | 'challenge' | 'test';
 
 export type ChallengeLevelRecord = {
   sequence: number;
@@ -90,6 +90,7 @@ export type AppScreen =
   | 'flashcardUnfamiliar'
   | 'idiomChain'
   | 'idiomChainRandom'
+  | 'idiomChainModeTest'
   | 'idiomChainChallenge'
   | 'idiomChainTest'
   | 'idiomCloze';

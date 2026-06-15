@@ -12,6 +12,7 @@ type Props = {
   onStartRandomFlashcards: () => void;
   onStartUnfamiliarFlashcards: () => void;
   onOpenIdiomChainRandom: () => void;
+  onOpenIdiomChainModeTest: () => void;
   onOpenIdiomChainChallenge: () => void;
   onOpenIdiomChainTest: () => void;
   onOpenIdiomCloze: () => void;
@@ -30,6 +31,7 @@ const HomeScreen: FC<Props> = ({
   onStartRandomFlashcards,
   onStartUnfamiliarFlashcards,
   onOpenIdiomChainRandom,
+  onOpenIdiomChainModeTest,
   onOpenIdiomChainChallenge,
   onOpenIdiomChainTest,
   onOpenIdiomCloze,
@@ -73,6 +75,11 @@ const HomeScreen: FC<Props> = ({
           <span className="card-icon" aria-hidden="true">🔀</span>
           <h2>成語接龍</h2>
           <p className="feature-card-subtitle">（隨機模式）</p>
+        </button>
+        <button className="feature-card feature-card--chain-mode-test" type="button" onClick={onOpenIdiomChainModeTest}>
+          <span className="card-icon" aria-hidden="true">🧭</span>
+          <h2>成語接龍</h2>
+          <p className="feature-card-subtitle">（測試模式）</p>
         </button>
         <button className="feature-card feature-card--chain-challenge" type="button" onClick={onOpenIdiomChainChallenge}>
           <span className="card-icon" aria-hidden="true">🏆</span>

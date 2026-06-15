@@ -1,10 +1,16 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
-import type { ChallengeLevelRecord, ChainMode, LevelData } from '../types/game';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { ChallengeLevelRecord, ChainMode, Direction, LevelData } from '../types/game';
 import {
   isBoardComplete, isBoardCorrect, getWrongCells, getCellKey,
   findTileByCellRef, countFilledCells,
 } from '../game/boardUtils';
 import { CHAIN_CONFIG } from './chainConfig';
+import {
+  buildHighlightedCellKeys,
+  getDefaultDirectionForCell,
+  getIdiomForDirection,
+  getIdiomsAtCell,
+} from './chainSelection';
 import { useChainState } from './useChainState';
 import { generateRandomChainLevelWithSeed } from './chainLevelSources';
 
@@ -25,6 +31,11 @@ export function useIdiomChain({
   maxLevelNumber,
   onLevelComplete,
 }: UseIdiomChainOptions) {
+  const [selectedDirectionPreference, setSelectedDirectionPreference] = useState<{
+    cellKey: string;
+    direction: Direction;
+  } | null>(null);
+
   const getLevelData = useCallback((levelNumber: number, seed?: number): { level: LevelData | null; seed: number | null } => {
     if (mode === 'challenge') {
       const level = challengeLevels?.[levelNumber - 1]?.level ?? null;
@@ -47,17 +58,61 @@ export function useIdiomChain({
   );
   const lastInitialLoadKeyRef = useRef<string | null>(null);
   const completedLevelKeyRef = useRef<string | null>(null);
+  const selectedCellKey = state.selectedCell ? getCellKey(state.selectedCell.row, state.selectedCell.col) : null;
+  const selectedCellIdioms = useMemo(() => {
+    if (!state.level || !state.selectedCell) return [];
+    return getIdiomsAtCell(state.level.idioms, state.selectedCell.row, state.selectedCell.col);
+  }, [state.level, state.selectedCell]);
+  const selectedDirection = useMemo(() => {
+    if (selectedCellIdioms.length === 0) return null;
+    if (
+      selectedCellKey
+      && selectedDirectionPreference?.cellKey === selectedCellKey
+      && selectedCellIdioms.some((idiom) => idiom.direction === selectedDirectionPreference.direction)
+    ) {
+      return selectedDirectionPreference.direction;
+    }
+    return getDefaultDirectionForCell(selectedCellIdioms);
+  }, [selectedCellIdioms, selectedCellKey, selectedDirectionPreference]);
+  const selectedIdiom = useMemo(
+    () => (mode === 'test' ? getIdiomForDirection(selectedCellIdioms, selectedDirection) : null),
+    [mode, selectedCellIdioms, selectedDirection],
+  );
+  const highlightedCellKeys = useMemo(
+    () => (mode === 'test' ? buildHighlightedCellKeys(selectedIdiom) : new Set<string>()),
+    [mode, selectedIdiom],
+  );
 
   const onCellClick = useCallback((row: number, col: number) => {
     if (state.phase !== 'playing' && state.phase !== 'checking') return;
     const cell = state.board[row]?.[col];
     if (!cell || !cell.isActive) return;
     if (state.selectedCell && state.selectedCell.row === row && state.selectedCell.col === col) {
+      if (mode === 'test' && state.level) {
+        const idiomsAtCell = getIdiomsAtCell(state.level.idioms, row, col);
+        const hasHorizontal = idiomsAtCell.some((idiom) => idiom.direction === 'horizontal');
+        const hasVertical = idiomsAtCell.some((idiom) => idiom.direction === 'vertical');
+        if (hasHorizontal && hasVertical) {
+          const cellKey = getCellKey(row, col);
+          const currentDirection = (
+            selectedDirectionPreference?.cellKey === cellKey
+              ? selectedDirectionPreference.direction
+              : getDefaultDirectionForCell(idiomsAtCell)
+          ) ?? 'horizontal';
+          setSelectedDirectionPreference({
+            cellKey,
+            direction: currentDirection === 'horizontal' ? 'vertical' : 'horizontal',
+          });
+          return;
+        }
+        return;
+      }
       dispatch({ type: 'SELECT_CELL', payload: null });
       return;
     }
+    setSelectedDirectionPreference(null);
     dispatch({ type: 'SELECT_CELL', payload: { row, col } });
-  }, [state.board, state.selectedCell, state.phase, dispatch]);
+  }, [mode, state.board, state.level, state.selectedCell, state.phase, dispatch, selectedDirectionPreference]);
 
   const onTileClick = useCallback((tileId: string) => {
     if ((state.phase !== 'playing' && state.phase !== 'checking') || !state.selectedCell) return;
@@ -228,6 +283,9 @@ export function useIdiomChain({
     board: state.board,
     charTiles: state.charTiles,
     selectedCell: state.selectedCell,
+    selectedDirection,
+    selectedIdiom,
+    highlightedCellKeys,
     levelNumber: state.levelNumber,
     phase: state.phase,
     wrongCells: state.wrongCells,

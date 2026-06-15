@@ -6,17 +6,19 @@ import type { ChainPhase } from '../types/chain';
 type Props = {
   cell: Cell;
   isSelected: boolean;
+  isLineHighlighted: boolean;
   isWrong: boolean;
   phase: ChainPhase;
   onClick: () => void;
 };
 
-const ChainBoardCell: FC<Props> = memo(({ cell, isSelected, isWrong, phase, onClick }) => {
+const ChainBoardCell: FC<Props> = memo(({ cell, isSelected, isLineHighlighted, isWrong, phase, onClick }) => {
   if (!cell.isActive) return <div className="board-cell disabled" />;
 
   const canInteract = phase === 'playing' || phase === 'checking';
   let className = 'board-cell active';
   if (cell.isPreset) className += ' preset';
+  if (isLineHighlighted) className += ' line-highlighted';
   if (isSelected && !cell.isPreset && canInteract) className += ' selected';
   if (isWrong) className += ' wrong';
   if (phase === 'complete' && cell.currentValue !== null && cell.currentValue === cell.answer) className += ' correct';

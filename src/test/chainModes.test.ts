@@ -9,6 +9,11 @@ import {
 } from '../game/challengePack';
 import { ready } from '../data/idiomDb';
 import { normalizeLevelGenerationConfig } from '../game/levelGenerator';
+import {
+  buildHighlightedCellKeys,
+  getDefaultDirectionForCell,
+  getIdiomsAtCell,
+} from '../game/chainSelection';
 import { countProgressLite } from '../lib/utils';
 
 describe('chain modes', () => {
@@ -78,5 +83,26 @@ describe('chain modes', () => {
     expect(stats.totalCount).toBe(1659);
     expect(stats.masteredCount).toBe(3);
     expect(stats.unfamiliarCount).toBe(1656);
+  });
+
+  it('test mode defaults crossing cells to horizontal hints first', () => {
+    const level = generateRandomChainLevelWithSeed(2, 24680)?.level;
+    expect(level).not.toBeNull();
+    const crossingIdiom = level!.idioms.find((idiom) => {
+      const peers = getIdiomsAtCell(level!.idioms, idiom.startRow, idiom.startCol);
+      return peers.length > 1;
+    });
+    expect(crossingIdiom).toBeTruthy();
+    const idiomsAtCrossing = getIdiomsAtCell(level!.idioms, crossingIdiom!.startRow, crossingIdiom!.startCol);
+    expect(getDefaultDirectionForCell(idiomsAtCrossing)).toBe('horizontal');
+  });
+
+  it('buildHighlightedCellKeys covers every cell of the selected idiom', () => {
+    const level = generateRandomChainLevelWithSeed(4, 13579)?.level;
+    expect(level).not.toBeNull();
+    const idiom = level!.idioms[0];
+    const keys = buildHighlightedCellKeys(idiom);
+    expect(keys.size).toBe(idiom.chars.length);
+    expect(keys.has(`${idiom.startRow}-${idiom.startCol}`)).toBe(true);
   });
 });

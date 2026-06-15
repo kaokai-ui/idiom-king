@@ -81,8 +81,10 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
   it('HomeScreen should expose random and challenge chain entries', async () => {
     const content = await readFile('src/components/HomeScreen.tsx');
     expect(content).toContain('onOpenIdiomChainRandom');
+    expect(content).toContain('onOpenIdiomChainModeTest');
     expect(content).toContain('onOpenIdiomChainChallenge');
     expect(content).toContain('（隨機模式）');
+    expect(content).toContain('（測試模式）');
     expect(content).toContain('（挑戰模式）');
   });
 });
