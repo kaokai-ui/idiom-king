@@ -11,6 +11,7 @@ type Props = {
   wrongCells: Set<string>;
   phase: ChainPhase;
   onCellClick: (row: number, col: number) => void;
+  onSkipLevel?: () => void;
 };
 
 const MIN_CELL = 28;
@@ -27,7 +28,7 @@ function calcCellSize(cols: number, rows: number, containerW: number, containerH
   return Math.min(fromW, fromH);
 }
 
-const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrongCells, phase, onCellClick }) => {
+const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrongCells, phase, onCellClick, onSkipLevel }) => {
   const cols = board[0]?.length || 1;
   const rows = board.length || 1;
 
@@ -45,6 +46,7 @@ const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrong
     return (
       <div className="board-container board-container--overflow">
         <p className="board-overflow-msg">此關卡棋盤過大，請跳過</p>
+        {onSkipLevel && <button className="btn btn-skip" onClick={onSkipLevel}>跳過</button>}
       </div>
     );
   }

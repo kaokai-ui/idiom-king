@@ -151,6 +151,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         wrongCells={wrongCells}
         phase={phase}
         onCellClick={onCellClick}
+        onSkipLevel={onSkipLevel}
       />
       <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />
       <ChainActions

@@ -871,6 +871,7 @@ button:disabled { cursor: default; }
 .board-container--overflow {
   align-items: center;
   justify-content: center;
+  gap: 12px;
 }
 
 .board-overflow-msg {
@@ -878,6 +879,10 @@ button:disabled { cursor: default; }
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
+}
+
+.board-container--overflow .btn-skip {
+  margin-top: 4px;
 }
 
 .board {
