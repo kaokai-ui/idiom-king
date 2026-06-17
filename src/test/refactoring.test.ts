@@ -84,7 +84,7 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
     expect(content).toContain('onOpenIdiomChainModeTest');
     expect(content).toContain('onOpenIdiomChainChallenge');
     expect(content).toContain('（隨機模式）');
-    expect(content).toContain('（測試模式）');
+    expect(content).toContain('（隨機模式）');
     expect(content).toContain('（挑戰模式）');
   });
 });

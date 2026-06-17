@@ -31,7 +31,7 @@ const ChainHintPanel: FC<Props> = ({
   onToggleStarred,
   isStarred,
 }) => {
-  if (mode === 'test') {
+  if (mode === 'random' || mode === 'challenge') {
     const entry = selectedIdiom ? idiomsById[selectedIdiom.id] : null;
     const starred = selectedIdiom && isStarred ? isStarred(selectedIdiom.id) : false;
     const idiomId = selectedIdiom?.id;
@@ -56,7 +56,7 @@ const ChainHintPanel: FC<Props> = ({
                         {starred ? '已加生字' : '+生字'}
                       </button>
                     )}
-                    {!answerVisible && (
+                    {mode === 'random' && !answerVisible && (
                       <button className="hint-action-btn hint-action-btn--reveal" onClick={onRevealAnswer}>
                         看答案
                       </button>
@@ -64,7 +64,7 @@ const ChainHintPanel: FC<Props> = ({
                   </span>
                 </div>
                 <p className="hint-focused-usage">{entry.usage || '這條成語目前沒有可顯示的用法說明。'}</p>
-                {answerVisible && (
+                {mode === 'random' && answerVisible && (
                   <p className="hint-focused-answer">{entry.text}</p>
                 )}
               </div>

@@ -71,15 +71,10 @@ const HomeScreen: FC<Props> = ({
           <h2>陌生成語卡</h2>
           <p>集中練習待加強項目</p>
         </button>
-        <button className="feature-card feature-card--chain" type="button" onClick={onOpenIdiomChainRandom}>
-          <span className="card-icon" aria-hidden="true">🔀</span>
-          <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">（隨機模式）</p>
-        </button>
         <button className="feature-card feature-card--chain-mode-test" type="button" onClick={onOpenIdiomChainModeTest}>
           <span className="card-icon" aria-hidden="true">🧭</span>
           <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">（測試模式）</p>
+          <p className="feature-card-subtitle">（隨機模式）</p>
         </button>
         <button className="feature-card feature-card--chain-challenge" type="button" onClick={onOpenIdiomChainChallenge}>
           <span className="card-icon" aria-hidden="true">🏆</span>
@@ -91,6 +86,13 @@ const HomeScreen: FC<Props> = ({
           <h2>成語填空</h2>
           <p>練習上下文辨識能力</p>
         </button>
+        {settings.developerMode && (
+          <button className="feature-card feature-card--chain" type="button" onClick={onOpenIdiomChainRandom}>
+            <span className="card-icon" aria-hidden="true">🔀</span>
+            <h2>成語接龍</h2>
+            <p className="feature-card-subtitle">（舊版隨機）</p>
+          </button>
+        )}
         {settings.developerMode && (
           <button className="feature-card feature-card--chain-test" type="button" onClick={onOpenIdiomChainTest}>
             <span className="card-icon" aria-hidden="true">🧪</span>
