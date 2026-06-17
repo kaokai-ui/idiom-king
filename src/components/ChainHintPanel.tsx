@@ -9,8 +9,12 @@ type Props = {
   selectedDirection: Direction | null;
   hintVisible: boolean;
   expandedIdiomId: string | null;
+  answerVisible: boolean;
   onToggleHint: () => void;
   onToggleIdiomDetail: (id: string) => void;
+  onRevealAnswer: () => void;
+  onToggleStarred?: (id: string) => void;
+  isStarred?: (id: string) => boolean;
 };
 
 const ChainHintPanel: FC<Props> = ({
@@ -20,11 +24,17 @@ const ChainHintPanel: FC<Props> = ({
   selectedDirection,
   hintVisible,
   expandedIdiomId,
+  answerVisible,
   onToggleHint,
   onToggleIdiomDetail,
+  onRevealAnswer,
+  onToggleStarred,
+  isStarred,
 }) => {
   if (mode === 'test') {
     const entry = selectedIdiom ? idiomsById[selectedIdiom.id] : null;
+    const starred = selectedIdiom && isStarred ? isStarred(selectedIdiom.id) : false;
+    const idiomId = selectedIdiom?.id;
     return (
       <div className="hint-panel">
         <button className="hint-toggle-btn" onClick={onToggleHint}>
@@ -33,10 +43,30 @@ const ChainHintPanel: FC<Props> = ({
         </button>
         {hintVisible && (
           <div className="hint-content hint-content--focused">
-            {entry ? (
+            {entry && idiomId ? (
               <div className="hint-focused-card">
-                <p className="hint-focused-label">{selectedDirection === 'vertical' ? '直向用法提示' : '橫向用法提示'}</p>
+                <div className="hint-focused-label-row">
+                  <p className="hint-focused-label">{selectedDirection === 'vertical' ? '直向用法提示' : '橫向用法提示'}</p>
+                  <span className="hint-action-btns">
+                    {onToggleStarred && (
+                      <button
+                        className={`hint-action-btn${starred ? ' hint-action-btn--active' : ''}`}
+                        onClick={() => onToggleStarred(idiomId)}
+                      >
+                        {starred ? '已加生字' : '+生字'}
+                      </button>
+                    )}
+                    {!answerVisible && (
+                      <button className="hint-action-btn hint-action-btn--reveal" onClick={onRevealAnswer}>
+                        看答案
+                      </button>
+                    )}
+                  </span>
+                </div>
                 <p className="hint-focused-usage">{entry.usage || '這條成語目前沒有可顯示的用法說明。'}</p>
+                {answerVisible && (
+                  <p className="hint-focused-answer">{entry.text}</p>
+                )}
               </div>
             ) : (
               <p className="hint-empty-msg">請先選擇一個單字，再查看該行成語的用法說明。</p>

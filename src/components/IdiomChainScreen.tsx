@@ -11,9 +11,11 @@ type Props = {
   onHome: () => void;
   developerMode: boolean;
   mode: ChainMode;
+  onToggleStarred?: (id: string) => void;
+  isStarred?: (id: string) => boolean;
 };
 
-const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
+const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStarred, isStarred }) => {
   const challengeCampaign = useChallengeCampaign(mode === 'challenge');
   const isChallengeMode = mode === 'challenge';
   const challengeLevels = challengeCampaign.pack?.levels;
@@ -34,6 +36,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
     totalActive,
     hintVisible,
     expandedIdiomId,
+    answerVisible,
     hasNextLevel,
     canDeleteCell,
     onCellClick,
@@ -45,6 +48,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
     onRestart,
     onToggleHint,
     onToggleIdiomDetail,
+    onRevealAnswer,
   } = useIdiomChain({
     mode,
     challengeLevels,
@@ -133,8 +137,12 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode }) => {
         selectedDirection={selectedDirection}
         hintVisible={hintVisible}
         expandedIdiomId={expandedIdiomId}
+        answerVisible={answerVisible}
         onToggleHint={onToggleHint}
         onToggleIdiomDetail={onToggleIdiomDetail}
+        onRevealAnswer={onRevealAnswer}
+        onToggleStarred={onToggleStarred}
+        isStarred={isStarred}
       />
       <ChainBoard
         board={board}

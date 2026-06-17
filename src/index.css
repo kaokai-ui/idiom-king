@@ -784,6 +784,68 @@ button:disabled { cursor: default; }
   margin-bottom: 4px;
 }
 
+.hint-focused-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.hint-focused-label-row .hint-focused-label {
+  margin-bottom: 0;
+}
+
+.hint-action-btns {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.hint-action-btn {
+  background: none;
+  border: 1px solid rgba(84, 148, 214, 0.35);
+  border-radius: 12px;
+  color: #4d7ca6;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 2px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.hint-action-btn:hover {
+  background: rgba(84, 148, 214, 0.1);
+}
+
+.hint-action-btn--active {
+  background: rgba(84, 148, 214, 0.15);
+  border-color: rgba(84, 148, 214, 0.4);
+  color: #3a6a9e;
+  cursor: pointer;
+}
+
+.hint-action-btn--reveal {
+  color: var(--gold-strong);
+  border-color: rgba(220, 170, 60, 0.35);
+}
+
+.hint-action-btn--reveal:hover {
+  background: rgba(220, 170, 60, 0.08);
+}
+
+.hint-focused-answer {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(84, 148, 214, 0.2);
+  animation: fadeIn 0.2s ease;
+}
+
 .hint-focused-usage {
   font-size: 0.82rem;
   color: var(--ink-light);

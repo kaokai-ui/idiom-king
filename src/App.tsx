@@ -95,15 +95,15 @@ function App() {
   }
 
   if (screen === 'idiomChain' || screen === 'idiomChainRandom') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" />;
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainModeTest') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="test" />;
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="test" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainChallenge') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="challenge" />;
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="challenge" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainTest') {

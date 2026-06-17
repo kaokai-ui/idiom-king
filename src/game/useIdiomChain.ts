@@ -272,6 +272,7 @@ export function useIdiomChain({
   }, [state.levelNumber, loadLevel, lastSeedRef]);
   const onToggleHint = useCallback(() => dispatch({ type: 'TOGGLE_HINT' }), [dispatch]);
   const onToggleIdiomDetail = useCallback((id: string) => dispatch({ type: 'TOGGLE_IDIOM_DETAIL', payload: id }), [dispatch]);
+  const onRevealAnswer = useCallback(() => dispatch({ type: 'REVEAL_ANSWER' }), [dispatch]);
 
   const canDeleteCell = state.selectedCell !== null
     && (state.phase === 'playing' || state.phase === 'checking')
@@ -293,6 +294,7 @@ export function useIdiomChain({
     totalActive: state.totalActive,
     hintVisible: state.hintVisible,
     expandedIdiomId: state.expandedIdiomId,
+    answerVisible: state.answerVisible,
     hasNextLevel,
     canDeleteCell,
     onCellClick,
@@ -304,5 +306,6 @@ export function useIdiomChain({
     onRestart,
     onToggleHint,
     onToggleIdiomDetail,
+    onRevealAnswer,
   };
 }

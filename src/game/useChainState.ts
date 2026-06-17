@@ -19,6 +19,7 @@ export type ChainState = {
   totalActive: number;
   hintVisible: boolean;
   expandedIdiomId: string | null;
+  answerVisible: boolean;
 };
 
 export type ChainAction =
@@ -42,7 +43,8 @@ export type ChainAction =
   | { type: 'SET_PLAYING' }
   | { type: 'REMOVE_WRONG_CELL'; payload: { cellKey: string } }
   | { type: 'TOGGLE_HINT' }
-  | { type: 'TOGGLE_IDIOM_DETAIL'; payload: string | null };
+  | { type: 'TOGGLE_IDIOM_DETAIL'; payload: string | null }
+  | { type: 'REVEAL_ANSWER' };
 
 type MissingLevelStrategy = 'retry-current-level' | 'error';
 
@@ -63,6 +65,7 @@ const initialState: ChainState = {
   totalActive: 0,
   hintVisible: false,
   expandedIdiomId: null,
+  answerVisible: false,
 };
 
 function chainReducer(state: ChainState, action: ChainAction): ChainState {
@@ -74,6 +77,7 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
         wrongCells: new Set(),
         hintVisible: false,
         expandedIdiomId: null,
+        answerVisible: false,
       };
 
     case 'GENERATE_ERROR':
@@ -93,6 +97,7 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
         wrongCells: new Set(),
         hintVisible: false,
         expandedIdiomId: null,
+        answerVisible: false,
       };
 
     case 'SELECT_CELL':
@@ -183,6 +188,7 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
         ...state,
         hintVisible: !state.hintVisible,
         expandedIdiomId: null,
+        answerVisible: false,
       };
 
     case 'TOGGLE_IDIOM_DETAIL':
@@ -190,6 +196,9 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
         ...state,
         expandedIdiomId: state.expandedIdiomId === action.payload ? null : action.payload,
       };
+
+    case 'REVEAL_ANSWER':
+      return { ...state, answerVisible: true };
 
     default:
       return state;
