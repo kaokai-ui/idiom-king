@@ -74,7 +74,7 @@ const HomeScreen: FC<Props> = ({
         <button className="feature-card feature-card--chain-mode-test" type="button" onClick={onOpenIdiomChainModeTest}>
           <span className="card-icon" aria-hidden="true">🧭</span>
           <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">（隨機模式）</p>
+          <p className="feature-card-subtitle">（測試模式）</p>
         </button>
         <button className="feature-card feature-card--chain-challenge" type="button" onClick={onOpenIdiomChainChallenge}>
           <span className="card-icon" aria-hidden="true">🏆</span>

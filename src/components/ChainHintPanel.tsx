@@ -31,7 +31,7 @@ const ChainHintPanel: FC<Props> = ({
   onToggleStarred,
   isStarred,
 }) => {
-  if (mode === 'random' || mode === 'challenge') {
+  if (mode !== 'legacy') {
     const entry = selectedIdiom ? idiomsById[selectedIdiom.id] : null;
     const starred = selectedIdiom && isStarred ? isStarred(selectedIdiom.id) : false;
     const idiomId = selectedIdiom?.id;

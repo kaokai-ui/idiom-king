@@ -1,3 +1,4 @@
+import { useCallback, useState } from 'react';
 import type { FC } from 'react';
 import type { ChainMode } from '../types/game';
 import { useChallengeCampaign } from '../game/useChallengeCampaign';
@@ -58,6 +59,23 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
     onLevelComplete: isChallengeMode ? challengeCampaign.onLevelComplete : undefined,
   });
 
+  const [boardOverflow, setBoardOverflow] = useState(false);
+  const handleBoardOverflowChange = useCallback((tooSmall: boolean) => setBoardOverflow(tooSmall), []);
+  const loadingLabel = isChallengeMode
+    ? '正在載入挑戰模式關卡...'
+    : mode === 'test'
+      ? '正在生成測試模式關卡...'
+      : mode === 'random'
+        ? '正在生成隨機關卡...'
+        : '正在生成舊版隨機關卡...';
+  const errorLabel = isChallengeMode
+    ? '挑戰模式關卡準備失敗。'
+    : mode === 'test'
+      ? '測試模式關卡生成失敗。'
+      : mode === 'random'
+        ? '隨機關卡生成失敗。'
+        : '舊版隨機關卡生成失敗。';
+
   if (isChallengeMode && challengeCampaign.phase === 'generating') {
     return (
       <div className="page-shell game-page loading">
@@ -96,7 +114,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
           <button className="ghost-button" onClick={onHome}>← 主畫面</button>
         </header>
         <div className="loading-spinner" />
-        <p>{isChallengeMode ? '正在載入挑戰模式關卡...' : mode === 'random' ? '正在生成隨機關卡...' : '正在生成隨機關卡...'}</p>
+        <p>{loadingLabel}</p>
       </div>
     );
   }
@@ -107,13 +125,19 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         <header className="game-topbar">
           <button className="ghost-button" onClick={onHome}>← 主畫面</button>
         </header>
-        <p>{isChallengeMode ? '挑戰模式關卡準備失敗。' : mode === 'random' ? '隨機模式關卡生成失敗。' : '隨機關卡生成失敗。'}</p>
+        <p>{errorLabel}</p>
         <button className="btn btn-secondary" onClick={onSkipLevel}>跳到下一關</button>
       </div>
     );
   }
 
-  const modeLabel = isChallengeMode ? '挑戰模式' : mode === 'random' ? '隨機模式' : '隨機模式';
+  const modeLabel = isChallengeMode
+    ? '挑戰模式'
+    : mode === 'test'
+      ? '測試模式'
+      : mode === 'random'
+        ? '隨機模式'
+        : '舊版隨機';
   const levelLabel = isChallengeMode
     ? `${levelNumber}/${challengeCampaign.totalLevels}`
     : `第 ${levelNumber} 關`;
@@ -152,20 +176,24 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         phase={phase}
         onCellClick={onCellClick}
         onSkipLevel={onSkipLevel}
+        canSkipLevel={hasNextLevel}
+        onBoardOverflowChange={handleBoardOverflowChange}
       />
-      <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />
-      <ChainActions
-        phase={phase}
-        canDeleteCell={canDeleteCell}
-        onDeleteCell={onDeleteCell}
-        onClearAll={onClearAll}
-        onNextLevel={onNextLevel}
-        onRestart={onRestart}
-        hasNextLevel={hasNextLevel}
-        nextLevelLabel={nextLevelLabel}
-        developerMode={developerMode}
-        onSkipLevel={onSkipLevel}
-      />
+      {!boardOverflow && <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />}
+      {!boardOverflow && (
+        <ChainActions
+          phase={phase}
+          canDeleteCell={canDeleteCell}
+          onDeleteCell={onDeleteCell}
+          onClearAll={onClearAll}
+          onNextLevel={onNextLevel}
+          onRestart={onRestart}
+          hasNextLevel={hasNextLevel}
+          nextLevelLabel={nextLevelLabel}
+          developerMode={developerMode}
+          onSkipLevel={onSkipLevel}
+        />
+      )}
     </div>
   );
 };

@@ -75,11 +75,11 @@ export function useIdiomChain({
     return getDefaultDirectionForCell(selectedCellIdioms);
   }, [selectedCellIdioms, selectedCellKey, selectedDirectionPreference]);
   const selectedIdiom = useMemo(
-    () => (mode === 'random' || mode === 'challenge' ? getIdiomForDirection(selectedCellIdioms, selectedDirection) : null),
+    () => (mode !== 'legacy' ? getIdiomForDirection(selectedCellIdioms, selectedDirection) : null),
     [mode, selectedCellIdioms, selectedDirection],
   );
   const highlightedCellKeys = useMemo(
-    () => (mode === 'random' || mode === 'challenge' ? buildHighlightedCellKeys(selectedIdiom) : new Set<string>()),
+    () => (mode !== 'legacy' ? buildHighlightedCellKeys(selectedIdiom) : new Set<string>()),
     [mode, selectedIdiom],
   );
 
@@ -88,7 +88,7 @@ export function useIdiomChain({
     const cell = state.board[row]?.[col];
     if (!cell || !cell.isActive) return;
     if (state.selectedCell && state.selectedCell.row === row && state.selectedCell.col === col) {
-      if (mode === 'random' && state.level) {
+      if (mode !== 'legacy' && state.level) {
         const idiomsAtCell = getIdiomsAtCell(state.level.idioms, row, col);
         const hasHorizontal = idiomsAtCell.some((idiom) => idiom.direction === 'horizontal');
         const hasVertical = idiomsAtCell.some((idiom) => idiom.direction === 'vertical');
@@ -244,7 +244,7 @@ export function useIdiomChain({
 
   const hasNextLevel = maxLevelNumber === undefined || state.levelNumber < maxLevelNumber;
 
-  const onNextLevel = useCallback(() => {
+  const goToNextLevel = useCallback(() => {
     const nextLevelNumber = maxLevelNumber === undefined
       ? state.levelNumber + 1
       : Math.min(maxLevelNumber, state.levelNumber + 1);
@@ -253,15 +253,8 @@ export function useIdiomChain({
     }
     loadLevel(nextLevelNumber);
   }, [loadLevel, maxLevelNumber, state.levelNumber]);
-  const onSkipLevel = useCallback(() => {
-    const nextLevelNumber = maxLevelNumber === undefined
-      ? state.levelNumber + 1
-      : Math.min(maxLevelNumber, state.levelNumber + 1);
-    if (nextLevelNumber === state.levelNumber && maxLevelNumber !== undefined) {
-      return;
-    }
-    loadLevel(nextLevelNumber);
-  }, [loadLevel, maxLevelNumber, state.levelNumber]);
+  const onNextLevel = goToNextLevel;
+  const onSkipLevel = goToNextLevel;
   const onRestart = useCallback(() => {
     const cachedSeed = lastSeedRef.current;
     if (cachedSeed !== null) {

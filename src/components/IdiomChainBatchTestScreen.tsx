@@ -127,6 +127,7 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
   }, [loadBatch]);
 
   const currentRecord = batch?.levels[currentIndex] ?? null;
+  const totalLevels = batch?.levels.length ?? 0;
   const solvedBoard = useMemo(
     () => (currentRecord ? buildSolvedBoard(currentRecord.level) : []),
     [currentRecord],
@@ -145,6 +146,12 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
       layoutSignature: currentRecord.layoutSignature,
     }, null, 2);
   }, [batch, currentRecord]);
+  const handlePrevLevel = useCallback(() => {
+    setCurrentIndex(index => Math.max(0, index - 1));
+  }, []);
+  const handleNextLevel = useCallback(() => {
+    setCurrentIndex(index => Math.min(totalLevels - 1, index + 1));
+  }, [totalLevels]);
 
   const handleCopy = useCallback(async () => {
     if (!currentPayload) return;
@@ -187,7 +194,7 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
       <header className="game-topbar">
         <button className="ghost-button" onClick={onHome}>← 主畫面</button>
         <div className="status-pills">
-          <span className="pill">測試關 {currentRecord.sequence}/{batch.levels.length}</span>
+          <span className="pill">測試關 {currentRecord.sequence}/{totalLevels}</span>
           <span className="pill">{currentRecord.level.rows}×{currentRecord.level.cols}</span>
         </div>
       </header>
@@ -214,6 +221,8 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
         wrongCells={EMPTY_WRONG_CELLS}
         phase="playing"
         onCellClick={() => {}}
+        onSkipLevel={handleNextLevel}
+        canSkipLevel={currentIndex < totalLevels - 1}
       />
 
       <details className="chain-test-detail">
@@ -238,15 +247,15 @@ const IdiomChainBatchTestScreen: FC<Props> = ({ onHome }) => {
         <div className="action-row">
           <button
             className="btn btn-secondary"
-            onClick={() => setCurrentIndex(index => Math.max(0, index - 1))}
+            onClick={handlePrevLevel}
             disabled={currentIndex === 0}
           >
             上一關
           </button>
           <button
             className="btn btn-skip"
-            onClick={() => setCurrentIndex(index => Math.min(batch.levels.length - 1, index + 1))}
-            disabled={currentIndex >= batch.levels.length - 1}
+            onClick={handleNextLevel}
+            disabled={currentIndex >= totalLevels - 1}
           >
             跳關
           </button>

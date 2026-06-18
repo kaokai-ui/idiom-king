@@ -61,7 +61,7 @@ export type ChainTestBatch = {
   levels: ChainTestLevelRecord[];
 };
 
-export type ChainMode = 'legacy' | 'challenge' | 'random';
+export type ChainMode = 'legacy' | 'challenge' | 'random' | 'test';
 
 export type ChallengeLevelRecord = {
   sequence: number;

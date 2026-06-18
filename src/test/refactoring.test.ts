@@ -83,9 +83,9 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
     expect(content).toContain('onOpenIdiomChainRandom');
     expect(content).toContain('onOpenIdiomChainModeTest');
     expect(content).toContain('onOpenIdiomChainChallenge');
-    expect(content).toContain('（隨機模式）');
-    expect(content).toContain('（隨機模式）');
+    expect(content).toContain('（測試模式）');
     expect(content).toContain('（挑戰模式）');
+    expect(content).toContain('（舊版隨機）');
   });
 });
 
@@ -99,6 +99,19 @@ describe('R2: useIdiomChain refactored (no god hook)', () => {
     const content = await readFile('src/game/useIdiomChain.ts');
     const useStateMatches = content.match(/useState</g) || [];
     expect(useStateMatches.length).toBeLessThan(11);
+  });
+});
+
+describe('Test mode wiring', () => {
+  it('App should open idiomChainModeTest with mode="test"', async () => {
+    const content = await readFile('src/App.tsx');
+    expect(content).toContain('screen === \'idiomChainModeTest\'');
+    expect(content).toContain('mode="test"');
+  });
+
+  it('ChainHintPanel should use focused hints for every non-legacy chain mode', async () => {
+    const content = await readFile('src/components/ChainHintPanel.tsx');
+    expect(content).toContain("if (mode !== 'legacy')");
   });
 });
 
