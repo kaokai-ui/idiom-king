@@ -94,12 +94,12 @@ function App() {
     );
   }
 
-  if (screen === 'idiomChain' || screen === 'idiomChainRandom') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="legacy" onToggleStarred={toggleStarred} isStarred={isStarred} />;
+  if (screen === 'idiomChainModeRandom') {
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
-  if (screen === 'idiomChainModeTest') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="test" onToggleStarred={toggleStarred} isStarred={isStarred} />;
+  if (screen === 'idiomChain' || screen === 'idiomChainRandom') {
+    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="legacy" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainChallenge') {
@@ -137,8 +137,8 @@ function App() {
       settings={settings}
       onStartRandomFlashcards={() => startFlashcards('random')}
       onStartUnfamiliarFlashcards={() => startFlashcards('unfamiliar')}
+      onOpenIdiomChainModeRandom={() => openScreen('idiomChainModeRandom')}
       onOpenIdiomChainRandom={() => openScreen('idiomChainRandom')}
-      onOpenIdiomChainModeTest={() => openScreen('idiomChainModeTest')}
       onOpenIdiomChainChallenge={() => openScreen('idiomChainChallenge')}
       onOpenIdiomChainTest={() => openScreen('idiomChainTest')}
       onOpenIdiomCloze={() => openScreen('idiomCloze')}

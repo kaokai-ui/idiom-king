@@ -43,6 +43,20 @@ export default defineConfig([
 ])
 ```
 
+---
+
+## Product Guardrails
+
+- Do not add a public home entry named `成語接龍（測試模式）` back into the app.
+- The supported public chain entries are only:
+  - `成語接龍（隨機模式）`
+  - `成語接龍（挑戰模式）`
+- Developer-only entries may include:
+  - `成語接龍（舊版隨機）`
+  - `接龍測試 50 關`
+- `成語接龍（隨機模式）` must open `mode="random"` and keep the `看答案` button available in the hint panel.
+- If a debug-only interaction mode is needed later, keep it behind developer mode or a dedicated debug route, not the main home grid.
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js

@@ -11,8 +11,8 @@ type Props = {
   settings: AppSettings;
   onStartRandomFlashcards: () => void;
   onStartUnfamiliarFlashcards: () => void;
+  onOpenIdiomChainModeRandom: () => void;
   onOpenIdiomChainRandom: () => void;
-  onOpenIdiomChainModeTest: () => void;
   onOpenIdiomChainChallenge: () => void;
   onOpenIdiomChainTest: () => void;
   onOpenIdiomCloze: () => void;
@@ -30,8 +30,8 @@ const HomeScreen: FC<Props> = ({
   settings,
   onStartRandomFlashcards,
   onStartUnfamiliarFlashcards,
+  onOpenIdiomChainModeRandom,
   onOpenIdiomChainRandom,
-  onOpenIdiomChainModeTest,
   onOpenIdiomChainChallenge,
   onOpenIdiomChainTest,
   onOpenIdiomCloze,
@@ -71,10 +71,10 @@ const HomeScreen: FC<Props> = ({
           <h2>陌生成語卡</h2>
           <p>集中練習待加強項目</p>
         </button>
-        <button className="feature-card feature-card--chain-mode-test" type="button" onClick={onOpenIdiomChainModeTest}>
+        <button className="feature-card feature-card--chain-mode-test" type="button" onClick={onOpenIdiomChainModeRandom}>
           <span className="card-icon" aria-hidden="true">🧭</span>
           <h2>成語接龍</h2>
-          <p className="feature-card-subtitle">（測試模式）</p>
+          <p className="feature-card-subtitle">（隨機模式）</p>
         </button>
         <button className="feature-card feature-card--chain-challenge" type="button" onClick={onOpenIdiomChainChallenge}>
           <span className="card-icon" aria-hidden="true">🏆</span>

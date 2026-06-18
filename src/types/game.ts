@@ -89,8 +89,8 @@ export type AppScreen =
   | 'flashcardRandom'
   | 'flashcardUnfamiliar'
   | 'idiomChain'
+  | 'idiomChainModeRandom'
   | 'idiomChainRandom'
-  | 'idiomChainModeTest'
   | 'idiomChainChallenge'
   | 'idiomChainTest'
   | 'idiomCloze';

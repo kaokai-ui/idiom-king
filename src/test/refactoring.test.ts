@@ -80,10 +80,10 @@ describe('R1: HomeScreen split into HomeMain + IdiomDetailScreen', () => {
 
   it('HomeScreen should expose random and challenge chain entries', async () => {
     const content = await readFile('src/components/HomeScreen.tsx');
+    expect(content).toContain('onOpenIdiomChainModeRandom');
     expect(content).toContain('onOpenIdiomChainRandom');
-    expect(content).toContain('onOpenIdiomChainModeTest');
     expect(content).toContain('onOpenIdiomChainChallenge');
-    expect(content).toContain('（測試模式）');
+    expect(content).toContain('（隨機模式）');
     expect(content).toContain('（挑戰模式）');
     expect(content).toContain('（舊版隨機）');
   });
@@ -103,10 +103,10 @@ describe('R2: useIdiomChain refactored (no god hook)', () => {
 });
 
 describe('Test mode wiring', () => {
-  it('App should open idiomChainModeTest with mode="test"', async () => {
+  it('App should open idiomChainModeRandom with mode="random"', async () => {
     const content = await readFile('src/App.tsx');
-    expect(content).toContain('screen === \'idiomChainModeTest\'');
-    expect(content).toContain('mode="test"');
+    expect(content).toContain('screen === \'idiomChainModeRandom\'');
+    expect(content).toContain('mode="random"');
   });
 
   it('ChainHintPanel should use focused hints for every non-legacy chain mode', async () => {
