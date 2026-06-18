@@ -113,6 +113,17 @@ describe('Test mode wiring', () => {
     const content = await readFile('src/components/ChainHintPanel.tsx');
     expect(content).toContain("if (mode !== 'legacy')");
   });
+
+  it('main.tsx should trigger legacy PWA cleanup on startup', async () => {
+    const content = await readFile('src/main.tsx');
+    expect(content).toContain('cleanupLegacyPwa');
+    expect(content).toContain('void cleanupLegacyPwa();');
+  });
+
+  it('self-destroy service worker shims should exist for stale Android installs', async () => {
+    expect(await fileExists('public/sw.js')).toBe(true);
+    expect(await fileExists('public/service-worker.js')).toBe(true);
+  });
 });
 
 describe('R3: Action types are fully typed (no unknown payload)', () => {
