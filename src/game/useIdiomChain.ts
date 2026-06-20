@@ -271,6 +271,9 @@ export function useIdiomChain({
     && (state.phase === 'playing' || state.phase === 'checking')
     && state.board[state.selectedCell.row]?.[state.selectedCell.col]?.currentValue !== null
     && !state.board[state.selectedCell.row]?.[state.selectedCell.col]?.isPreset;
+  const currentSeed = mode === 'challenge'
+    ? (challengeLevels?.[state.levelNumber - 1]?.seed ?? null)
+    : state.currentSeed;
 
   return {
     level: state.level,
@@ -288,6 +291,7 @@ export function useIdiomChain({
     hintVisible: state.hintVisible,
     expandedIdiomId: state.expandedIdiomId,
     answerVisible: state.answerVisible,
+    currentSeed,
     hasNextLevel,
     canDeleteCell,
     onCellClick,

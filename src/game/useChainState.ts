@@ -9,6 +9,7 @@ import {
 
 export type ChainState = {
   level: LevelData | null;
+  currentSeed: number | null;
   board: Cell[][];
   charTiles: CharTile[];
   selectedCell: { row: number; col: number } | null;
@@ -55,6 +56,7 @@ type UseChainStateOptions = {
 
 const initialState: ChainState = {
   level: null,
+  currentSeed: null,
   board: [],
   charTiles: [],
   selectedCell: null,
@@ -74,6 +76,7 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
       return {
         ...state,
         phase: 'generating',
+        currentSeed: null,
         wrongCells: new Set(),
         hintVisible: false,
         expandedIdiomId: null,
@@ -81,12 +84,13 @@ function chainReducer(state: ChainState, action: ChainAction): ChainState {
       };
 
     case 'GENERATE_ERROR':
-      return { ...state, phase: 'error' };
+      return { ...state, phase: 'error', currentSeed: null };
 
     case 'LEVEL_LOADED':
       return {
         ...state,
         level: action.payload.level,
+        currentSeed: action.payload.seed,
         board: action.payload.board,
         charTiles: action.payload.charTiles,
         selectedCell: null,

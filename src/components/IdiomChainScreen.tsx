@@ -38,6 +38,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
     hintVisible,
     expandedIdiomId,
     answerVisible,
+    currentSeed,
     hasNextLevel,
     canDeleteCell,
     onCellClick,
@@ -59,22 +60,16 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
     onLevelComplete: isChallengeMode ? challengeCampaign.onLevelComplete : undefined,
   });
 
-  const [boardOverflow, setBoardOverflow] = useState(false);
   const [footerCompactedForHint, setFooterCompactedForHint] = useState(false);
   const handleBoardOverflowChange = useCallback((tooSmall: boolean) => {
     if (tooSmall && hintVisible && !footerCompactedForHint) {
       setFooterCompactedForHint(true);
-      setBoardOverflow(false);
-      return;
     }
-
-    setBoardOverflow(tooSmall);
   }, [footerCompactedForHint, hintVisible]);
-  const footerHidden = boardOverflow || footerCompactedForHint;
+  const footerHidden = footerCompactedForHint;
   const handleToggleHint = useCallback(() => {
     if (hintVisible) {
       setFooterCompactedForHint(false);
-      setBoardOverflow(false);
     }
     onToggleHint();
   }, [hintVisible, onToggleHint]);
@@ -169,6 +164,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
           <span className="pill">{modeLabel}</span>
           <span className="pill">{levelLabel}</span>
           <span className="pill">{filledCount}/{totalActive}</span>
+          {mode === 'random' && currentSeed !== null ? <span className="pill">ID {currentSeed}</span> : null}
         </div>
       </header>
       <ChainHintPanel
