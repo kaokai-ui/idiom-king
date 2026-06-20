@@ -568,6 +568,7 @@ button:disabled { cursor: default; }
   user-select: text;
   -webkit-user-select: text;
   font-family: Consolas, "Courier New", monospace;
+  white-space: nowrap;
 }
 
 /* ===== Flashcard ===== */
@@ -582,13 +583,33 @@ button:disabled { cursor: default; }
   padding: 6px 0;
   gap: 10px;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .status-pills {
   display: flex;
   gap: 6px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex: 1;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.status-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.status-pills > * {
+  flex: 0 0 auto;
+}
+
+.game-topbar .pill {
+  padding: 3px 8px;
+  font-size: 0.7rem;
 }
 
 .flashcard-layout {
