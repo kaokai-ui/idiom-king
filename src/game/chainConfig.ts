@@ -12,6 +12,7 @@ const VIEWPORT_GUARD = {
   pagePadPx: 8,
   minViewportWidth: 360,
   safeBoardHeight: 300,
+  maxCharBankTiles: 20,
 } as const;
 
 export const CHAIN_CONFIG = {

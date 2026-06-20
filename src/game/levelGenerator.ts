@@ -60,6 +60,10 @@ export function isBoardViewportSafe(rows: number, cols: number): boolean {
   return Number.isFinite(projectedCellSize) && projectedCellSize >= minCellPx;
 }
 
+export function isCharBankViewportSafe(charBankCount: number): boolean {
+  return charBankCount <= CHAIN_CONFIG.viewportGuard.maxCharBankTiles;
+}
+
 function createEmptyBoard(rows: number, cols: number): (BoardCell | null)[][] {
   return Array.from({ length: rows }, () =>
     Array.from({ length: cols }, () => null)
@@ -334,6 +338,8 @@ function tryGenerateLevel(
       }
     }
   }
+
+  if (!isCharBankViewportSafe(charBank.length)) return null;
 
   return { id: levelId, rows, cols, idioms: adjustedPlaced, charBank: shuffle(charBank, random), presetCells };
 }

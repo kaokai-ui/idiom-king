@@ -8,7 +8,7 @@ import {
   resetChallengeProgress,
 } from '../game/challengePack';
 import { ready } from '../data/idiomDb';
-import { isBoardViewportSafe, normalizeLevelGenerationConfig } from '../game/levelGenerator';
+import { isBoardViewportSafe, isCharBankViewportSafe, normalizeLevelGenerationConfig } from '../game/levelGenerator';
 import {
   buildHighlightedCellKeys,
   getDefaultDirectionForCell,
@@ -76,6 +76,21 @@ describe('chain modes', () => {
     expect(isBoardViewportSafe(9, 10)).toBe(true);
     expect(isBoardViewportSafe(10, 10)).toBe(false);
     expect(isBoardViewportSafe(8, 12)).toBe(false);
+  });
+
+  it('rejects char banks that would spill into a third row', () => {
+    expect(isCharBankViewportSafe(20)).toBe(true);
+    expect(isCharBankViewportSafe(21)).toBe(false);
+    expect(isCharBankViewportSafe(22)).toBe(false);
+  });
+
+  it('regenerates the reported overflow seeds into two-row char banks', () => {
+    const seeds = [1782122006807, 1782137281449, 1782153193472, 1782184033125];
+    for (const seed of seeds) {
+      const result = generateRandomChainLevelWithSeed(1, seed);
+      expect(result).not.toBeNull();
+      expect(result!.level.charBank.length).toBeLessThanOrEqual(20);
+    }
   });
 
   it('countProgressLite can render home stats before idiom data is ready', () => {
