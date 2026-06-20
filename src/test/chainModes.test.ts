@@ -8,7 +8,7 @@ import {
   resetChallengeProgress,
 } from '../game/challengePack';
 import { ready } from '../data/idiomDb';
-import { normalizeLevelGenerationConfig } from '../game/levelGenerator';
+import { isBoardViewportSafe, normalizeLevelGenerationConfig } from '../game/levelGenerator';
 import {
   buildHighlightedCellKeys,
   getDefaultDirectionForCell,
@@ -70,6 +70,12 @@ describe('chain modes', () => {
       maxCols: 12,
       maxAttempts: 100,
     }).targetCount).toBe(8);
+  });
+
+  it('rejects board footprints that are too large for the in-game viewport guard', () => {
+    expect(isBoardViewportSafe(9, 10)).toBe(true);
+    expect(isBoardViewportSafe(10, 10)).toBe(false);
+    expect(isBoardViewportSafe(8, 12)).toBe(false);
   });
 
   it('countProgressLite can render home stats before idiom data is ready', () => {

@@ -1,6 +1,7 @@
 import type { Direction, PlacedIdiom, LevelData, IdiomEntry } from '../types/game';
 import { idioms, getCharIndex } from '../data/idiomDb';
 import { shuffle } from '../lib/utils';
+import { CHAIN_CONFIG } from './chainConfig';
 
 export {
   buildBoardFromLevel,
@@ -37,6 +38,26 @@ export function normalizeLevelGenerationConfig(config: LevelGenerationConfig): L
   }
 
   return normalized;
+}
+
+export function isBoardViewportSafe(rows: number, cols: number): boolean {
+  const {
+    minCellPx,
+    gapPx,
+    boardPadPx,
+    boardBorderPx,
+    pagePadPx,
+    minViewportWidth,
+    safeBoardHeight,
+  } = CHAIN_CONFIG.viewportGuard;
+
+  const containerW = Math.max(minViewportWidth - pagePadPx * 2, 0);
+  const containerH = Math.max(safeBoardHeight, 0);
+  const innerW = containerW - boardBorderPx * 2 - boardPadPx * 2 - gapPx * (cols - 1);
+  const innerH = containerH - boardBorderPx * 2 - boardPadPx * 2 - gapPx * (rows - 1);
+  const projectedCellSize = Math.min(innerW / cols, innerH / rows);
+
+  return Number.isFinite(projectedCellSize) && projectedCellSize >= minCellPx;
 }
 
 function createEmptyBoard(rows: number, cols: number): (BoardCell | null)[][] {
@@ -254,19 +275,9 @@ function tryGenerateLevel(
   const rows = maxR - minR + 1;
   const cols = maxC - minC + 1;
 
-  const MIN_CELL_PX = 28;
-  const GAP_PX = 2;
-  const BOARD_PAD_PX = 6;
-  const BOARD_BORDER_PX = 1;
-  const GAME_PAD_PX = 8;
-  const MIN_VP_W = 375;
-  const MIN_VP_H = 667;
-  const BOARD_H_RATIO = 0.55;
-  const containerW = MIN_VP_W - GAME_PAD_PX * 2;
-  const containerH = MIN_VP_H * BOARD_H_RATIO;
-  const innerW = containerW - BOARD_BORDER_PX * 2 - BOARD_PAD_PX * 2 - GAP_PX * (cols - 1);
-  const innerH = containerH - BOARD_BORDER_PX * 2 - BOARD_PAD_PX * 2 - GAP_PX * (rows - 1);
-  if (Math.min(innerW / cols, innerH / rows) < MIN_CELL_PX) return null;
+  // Reserve enough room for the random/challenge game chrome so oversized
+  // layouts get regenerated instead of surfacing "board too large" to players.
+  if (!isBoardViewportSafe(rows, cols)) return null;
 
   const adjustedPlaced: PlacedIdiom[] = placed.map(p => ({
     ...p,

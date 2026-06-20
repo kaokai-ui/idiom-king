@@ -4,7 +4,18 @@ const DEFAULT_BOARD = {
   maxAttempts: 100,
 } as const;
 
+const VIEWPORT_GUARD = {
+  minCellPx: 28,
+  gapPx: 2,
+  boardPadPx: 6,
+  boardBorderPx: 1,
+  pagePadPx: 8,
+  minViewportWidth: 360,
+  safeBoardHeight: 300,
+} as const;
+
 export const CHAIN_CONFIG = {
+  viewportGuard: VIEWPORT_GUARD,
   random: {
     ...DEFAULT_BOARD,
     levelRetryCount: 2,

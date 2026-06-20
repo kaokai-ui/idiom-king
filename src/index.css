@@ -550,6 +550,26 @@ button:disabled { cursor: default; }
   color: var(--ink);
 }
 
+.pill-button {
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.pill-button:hover {
+  background: var(--gold-soft);
+  border-color: rgba(200, 150, 46, 0.3);
+}
+
+.pill-button:active {
+  transform: scale(0.98);
+}
+
+.pill-copy {
+  user-select: text;
+  -webkit-user-select: text;
+  font-family: Consolas, "Courier New", monospace;
+}
+
 /* ===== Flashcard ===== */
 .game-shell {
   padding: 12px 12px 24px;
@@ -564,7 +584,12 @@ button:disabled { cursor: default; }
   flex-shrink: 0;
 }
 
-.status-pills { display: flex; gap: 6px; }
+.status-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 
 .flashcard-layout {
   flex: 1;
