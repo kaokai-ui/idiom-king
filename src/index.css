@@ -879,8 +879,7 @@ button:disabled { cursor: default; }
 }
 
 .chain-footer-slot--hidden {
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 .board-overflow-msg {

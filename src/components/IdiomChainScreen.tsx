@@ -60,7 +60,24 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
   });
 
   const [boardOverflow, setBoardOverflow] = useState(false);
-  const handleBoardOverflowChange = useCallback((tooSmall: boolean) => setBoardOverflow(tooSmall), []);
+  const [footerCompactedForHint, setFooterCompactedForHint] = useState(false);
+  const handleBoardOverflowChange = useCallback((tooSmall: boolean) => {
+    if (tooSmall && hintVisible && !footerCompactedForHint) {
+      setFooterCompactedForHint(true);
+      setBoardOverflow(false);
+      return;
+    }
+
+    setBoardOverflow(tooSmall);
+  }, [footerCompactedForHint, hintVisible]);
+  const footerHidden = boardOverflow || footerCompactedForHint;
+  const handleToggleHint = useCallback(() => {
+    if (hintVisible) {
+      setFooterCompactedForHint(false);
+      setBoardOverflow(false);
+    }
+    onToggleHint();
+  }, [hintVisible, onToggleHint]);
   const loadingLabel = isChallengeMode
     ? '正在載入挑戰模式關卡...'
     : mode === 'test'
@@ -162,7 +179,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         hintVisible={hintVisible}
         expandedIdiomId={expandedIdiomId}
         answerVisible={answerVisible}
-        onToggleHint={onToggleHint}
+        onToggleHint={handleToggleHint}
         onToggleIdiomDetail={onToggleIdiomDetail}
         onRevealAnswer={onRevealAnswer}
         onToggleStarred={onToggleStarred}
@@ -179,10 +196,10 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         canSkipLevel={hasNextLevel}
         onBoardOverflowChange={handleBoardOverflowChange}
       />
-      <div className={`chain-footer-slot${boardOverflow ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={boardOverflow}>
+      <div className={`chain-footer-slot${footerHidden ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={footerHidden}>
         <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />
       </div>
-      <div className={`chain-footer-slot${boardOverflow ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={boardOverflow}>
+      <div className={`chain-footer-slot${footerHidden ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={footerHidden}>
         <ChainActions
           phase={phase}
           canDeleteCell={canDeleteCell}
