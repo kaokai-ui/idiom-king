@@ -18,6 +18,7 @@ type UseIdiomChainOptions = {
   mode: ChainMode;
   challengeLevels?: ChallengeLevelRecord[];
   initialLevelNumber?: number;
+  initialSeed?: number | null;
   sessionKey?: number;
   maxLevelNumber?: number;
   onLevelComplete?: (levelNumber: number) => void;
@@ -27,6 +28,7 @@ export function useIdiomChain({
   mode,
   challengeLevels,
   initialLevelNumber = 1,
+  initialSeed = null,
   sessionKey = 0,
   maxLevelNumber,
   onLevelComplete,
@@ -53,8 +55,8 @@ export function useIdiomChain({
     maxNullLevelRetries: mode === 'challenge' ? 0 : CHAIN_CONFIG.random.levelRetryCount,
   });
   const initialLoadKey = useMemo(
-    () => `${mode}:${initialLevelNumber}:${challengeLevels?.length ?? 0}:${sessionKey}`,
-    [challengeLevels?.length, initialLevelNumber, mode, sessionKey],
+    () => `${mode}:${initialLevelNumber}:${initialSeed ?? 'auto'}:${challengeLevels?.length ?? 0}:${sessionKey}`,
+    [challengeLevels?.length, initialLevelNumber, initialSeed, mode, sessionKey],
   );
   const lastInitialLoadKeyRef = useRef<string | null>(null);
   const completedLevelKeyRef = useRef<string | null>(null);
@@ -227,8 +229,8 @@ export function useIdiomChain({
       return;
     }
     lastInitialLoadKeyRef.current = initialLoadKey;
-    loadLevel(initialLevelNumber);
-  }, [challengeLevels, initialLevelNumber, initialLoadKey, loadLevel, mode]);
+    loadLevel(initialLevelNumber, initialSeed ?? undefined);
+  }, [challengeLevels, initialLevelNumber, initialLoadKey, initialSeed, loadLevel, mode]);
 
   useEffect(() => {
     if (state.phase !== 'complete' || !state.level) {

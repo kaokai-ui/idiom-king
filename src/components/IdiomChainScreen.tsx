@@ -12,11 +12,12 @@ type Props = {
   onHome: () => void;
   developerMode: boolean;
   mode: ChainMode;
+  initialSeed?: number | null;
   onToggleStarred?: (id: string) => void;
   isStarred?: (id: string) => boolean;
 };
 
-const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStarred, isStarred }) => {
+const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, initialSeed = null, onToggleStarred, isStarred }) => {
   const challengeCampaign = useChallengeCampaign(mode === 'challenge');
   const isChallengeMode = mode === 'challenge';
   const challengeLevels = challengeCampaign.pack?.levels;
@@ -55,6 +56,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
     mode,
     challengeLevels,
     initialLevelNumber: isChallengeMode ? resumeLevel : 1,
+    initialSeed,
     sessionKey: isChallengeMode ? challengeCampaign.sessionKey : 0,
     maxLevelNumber: isChallengeMode ? challengeCampaign.totalLevels : undefined,
     onLevelComplete: isChallengeMode ? challengeCampaign.onLevelComplete : undefined,

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { IdiomEntry } from './types/game';
 import { idiomsById } from './data/idiomDb';
 import { useIdiomApp } from './hooks/useIdiomApp';
@@ -10,6 +10,29 @@ import IdiomChainBatchTestScreen from './components/IdiomChainBatchTestScreen';
 import IdiomClozeScreen from './components/IdiomClozeScreen';
 
 type DetailView = null | 'unfamiliar' | 'mastered';
+
+const CHAIN_SEED_QUERY_KEY = 'chainSeed';
+
+function readChainSeedFromUrl(): number | null {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+  const raw = new URLSearchParams(window.location.search).get(CHAIN_SEED_QUERY_KEY);
+  if (!raw) {
+    return null;
+  }
+  const parsed = Number(raw);
+  return Number.isSafeInteger(parsed) && parsed > 0 ? parsed : null;
+}
+
+function clearChainSeedFromUrl(): void {
+  if (typeof window === 'undefined') {
+    return;
+  }
+  const url = new URL(window.location.href);
+  url.searchParams.delete(CHAIN_SEED_QUERY_KEY);
+  window.history.replaceState({}, '', url.toString());
+}
 
 function App() {
   const {
@@ -32,6 +55,7 @@ function App() {
   } = useIdiomApp();
 
   const [detailView, setDetailView] = useState<DetailView>(null);
+  const [forcedChainSeed, setForcedChainSeed] = useState<number | null>(() => readChainSeedFromUrl());
 
   const starredIdioms = useMemo(() => {
     const result: IdiomEntry[] = [];
@@ -59,6 +83,21 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    if (forcedChainSeed === null) {
+      return;
+    }
+    openScreen('idiomChainModeRandom');
+  }, [forcedChainSeed, openScreen]);
+
+  const goHomeAndClearSeed = useCallback(() => {
+    if (forcedChainSeed !== null) {
+      clearChainSeedFromUrl();
+      setForcedChainSeed(null);
+    }
+    goHome();
+  }, [forcedChainSeed, goHome]);
+
   const screen = session.screen;
   const requiresIdiomDb = !dataReady && (
     detailView !== null
@@ -83,7 +122,7 @@ function App() {
         totalCount={session.flashcards?.idiomIds.length ?? 0}
         isStarred={currentFlashcardIdiom ? isStarred(currentFlashcardIdiom.id) : false}
         isKnown={currentFlashcardIdiom ? isKnown(currentFlashcardIdiom.id) : false}
-        onHome={goHome}
+        onHome={goHomeAndClearSeed}
         onToggleBopomofo={() => toggleFlashcardPanel('showBopomofo')}
         onToggleUsage={() => toggleFlashcardPanel('showUsage')}
         onToggleDefinition={() => toggleFlashcardPanel('showDefinition')}
@@ -95,23 +134,23 @@ function App() {
   }
 
   if (screen === 'idiomChainModeRandom') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="random" onToggleStarred={toggleStarred} isStarred={isStarred} />;
+    return <IdiomChainScreen onHome={goHomeAndClearSeed} developerMode={settings.developerMode} mode="random" initialSeed={forcedChainSeed} onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChain' || screen === 'idiomChainRandom') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="legacy" onToggleStarred={toggleStarred} isStarred={isStarred} />;
+    return <IdiomChainScreen onHome={goHomeAndClearSeed} developerMode={settings.developerMode} mode="legacy" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainChallenge') {
-    return <IdiomChainScreen onHome={goHome} developerMode={settings.developerMode} mode="challenge" onToggleStarred={toggleStarred} isStarred={isStarred} />;
+    return <IdiomChainScreen onHome={goHomeAndClearSeed} developerMode={settings.developerMode} mode="challenge" onToggleStarred={toggleStarred} isStarred={isStarred} />;
   }
 
   if (screen === 'idiomChainTest') {
-    return <IdiomChainBatchTestScreen onHome={goHome} />;
+    return <IdiomChainBatchTestScreen onHome={goHomeAndClearSeed} />;
   }
 
   if (screen === 'idiomCloze') {
-    return <IdiomClozeScreen onHome={goHome} onMarkUnfamiliar={toggleStarred} />;
+    return <IdiomClozeScreen onHome={goHomeAndClearSeed} onMarkUnfamiliar={toggleStarred} />;
   }
 
   if (detailView && screen === 'home') {

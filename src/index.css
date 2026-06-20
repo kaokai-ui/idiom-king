@@ -1432,7 +1432,6 @@ button:disabled { cursor: default; }
 }
 
 @media (min-width: 431px) {
-  .char-tile { width: 42px; height: 46px; font-size: 18px; }
   .hero-logo { width: 240px; }
   /* 240 */
 }
