@@ -22,6 +22,7 @@ const BOARD_PAD = 6;
 const BOARD_BORDER = 1;
 const GAME_PAD = 8;
 const MAX_PAGE_WIDTH = 430;
+const OVERFLOW_SETTLE_MS = 160;
 
 function calcCellSize(cols: number, rows: number, containerW: number, containerH: number): number {
   const innerW = Math.max(containerW - BOARD_BORDER * 2 - BOARD_PAD * 2 - GAP * (cols - 1), 0);
@@ -87,17 +88,26 @@ const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrong
     const fontSize = cellSize <= 32 ? 13 : cellSize <= 38 ? 14 : cellSize <= 44 ? 16 : 18;
     return { cellSize, fontSize, tooSmall };
   }, [cols, rows, containerSize]);
+  const [stableTooSmall, setStableTooSmall] = useState(false);
 
   useEffect(() => {
-    onBoardOverflowChange?.(tooSmall);
-  }, [tooSmall, onBoardOverflowChange]);
+    const timerId = window.setTimeout(() => {
+      setStableTooSmall(tooSmall);
+    }, tooSmall ? OVERFLOW_SETTLE_MS : 0);
+
+    return () => window.clearTimeout(timerId);
+  }, [tooSmall]);
+
+  useEffect(() => {
+    onBoardOverflowChange?.(stableTooSmall);
+  }, [stableTooSmall, onBoardOverflowChange]);
 
   return (
     <div
       ref={containerRef}
-      className={`board-container${tooSmall ? ' board-container--overflow' : ''}`}
+      className={`board-container${stableTooSmall ? ' board-container--overflow' : ''}`}
     >
-      {tooSmall ? (
+      {stableTooSmall ? (
         <>
         <p className="board-overflow-msg">此關卡棋盤過大，請跳過</p>
         <button className="btn btn-skip" onClick={onSkipLevel} disabled={!canSkipLevel}>跳過</button>

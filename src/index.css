@@ -874,6 +874,15 @@ button:disabled { cursor: default; }
   gap: 12px;
 }
 
+.chain-footer-slot {
+  flex-shrink: 0;
+}
+
+.chain-footer-slot--hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .board-overflow-msg {
   color: var(--muted);
   font-size: 0.9rem;

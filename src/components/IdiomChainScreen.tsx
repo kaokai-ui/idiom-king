@@ -179,8 +179,10 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
         canSkipLevel={hasNextLevel}
         onBoardOverflowChange={handleBoardOverflowChange}
       />
-      {!boardOverflow && <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />}
-      {!boardOverflow && (
+      <div className={`chain-footer-slot${boardOverflow ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={boardOverflow}>
+        <ChainCharBank tiles={charTiles} onTileClick={onTileClick} />
+      </div>
+      <div className={`chain-footer-slot${boardOverflow ? ' chain-footer-slot--hidden' : ''}`} aria-hidden={boardOverflow}>
         <ChainActions
           phase={phase}
           canDeleteCell={canDeleteCell}
@@ -193,7 +195,7 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, onToggleStar
           developerMode={developerMode}
           onSkipLevel={onSkipLevel}
         />
-      )}
+      </div>
     </div>
   );
 };
