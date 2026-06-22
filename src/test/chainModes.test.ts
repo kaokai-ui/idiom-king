@@ -2,6 +2,7 @@ import { beforeAll, describe, expect, it } from 'vitest';
 
 import { generateRandomChainLevel, generateRandomChainLevelWithSeed } from '../game/chainLevelSources';
 import {
+  buildChallengeLevel,
   CHALLENGE_TOTAL_LEVELS,
   getChallengeResumeLevelNumber,
   isChallengeCompleted,
@@ -54,6 +55,14 @@ describe('chain modes', () => {
     expect(result2).not.toBeNull();
     expect(result1!.seed).toBe(result2!.seed);
     expect(result1!.level.idioms.length).toBe(result2!.level.idioms.length);
+  });
+
+  it('buildChallengeLevel produces a playable static challenge record', () => {
+    const record = buildChallengeLevel(1);
+    expect(record).not.toBeNull();
+    expect(record?.sequence).toBe(1);
+    expect(record?.level.id).toBe(1);
+    expect(record?.level.idioms.length ?? 0).toBeGreaterThanOrEqual(5);
   });
 
   it('normalizes unsafe small-board requests before generation', () => {

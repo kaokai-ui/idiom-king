@@ -1,0 +1,6909 @@
+{
+  "version": "chain-challenge-static-v1",
+  "generatedAt": "2026-06-22T04:17:58.692Z",
+  "shardIndex": 5,
+  "startSequence": 201,
+  "endSequence": 250,
+  "levels": [
+    {
+      "sequence": 201,
+      "sourceIndex": 381,
+      "seed": 23277750,
+      "difficultyScore": 1110,
+      "level": {
+        "id": 201,
+        "rows": 8,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_1547",
+            "text": "百戰百勝",
+            "chars": [
+              "百",
+              "戰",
+              "百",
+              "勝"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0833",
+            "text": "百步穿楊",
+            "chars": [
+              "百",
+              "步",
+              "穿",
+              "楊"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0814",
+            "text": "望穿秋水",
+            "chars": [
+              "望",
+              "穿",
+              "秋",
+              "水"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0179",
+            "text": "水滴石穿",
+            "chars": [
+              "水",
+              "滴",
+              "石",
+              "穿"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0346",
+            "text": "望眼欲穿",
+            "chars": [
+              "望",
+              "眼",
+              "欲",
+              "穿"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0569",
+            "text": "人定勝天",
+            "chars": [
+              "人",
+              "定",
+              "勝",
+              "天"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0579",
+            "text": "推己及人",
+            "chars": [
+              "推",
+              "己",
+              "及",
+              "人"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          }
+        ],
+        "charBank": [
+          "眼",
+          "勝",
+          "楊",
+          "戰",
+          "定",
+          "望",
+          "秋",
+          "天",
+          "穿",
+          "石",
+          "滴",
+          "百",
+          "人",
+          "望",
+          "己",
+          "穿",
+          "步",
+          "及",
+          "欲",
+          "推"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 1,
+            "char": "百"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "char": "水"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 202,
+      "sourceIndex": 414,
+      "seed": 23539077,
+      "difficultyScore": 1110,
+      "level": {
+        "id": 202,
+        "rows": 4,
+        "cols": 10,
+        "idioms": [
+          {
+            "id": "idiom_0134",
+            "text": "一視同仁",
+            "chars": [
+              "一",
+              "視",
+              "同",
+              "仁"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1197",
+            "text": "聞一知十",
+            "chars": [
+              "聞",
+              "一",
+              "知",
+              "十"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0468",
+            "text": "置若罔聞",
+            "chars": [
+              "置",
+              "若",
+              "罔",
+              "聞"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0475",
+            "text": "當仁不讓",
+            "chars": [
+              "當",
+              "仁",
+              "不",
+              "讓"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0174",
+            "text": "不脛而走",
+            "chars": [
+              "不",
+              "脛",
+              "而",
+              "走"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0212",
+            "text": "背道而馳",
+            "chars": [
+              "背",
+              "道",
+              "而",
+              "馳"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 8
+          },
+          {
+            "id": "idiom_1643",
+            "text": "一無所知",
+            "chars": [
+              "一",
+              "無",
+              "所",
+              "知"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "十",
+          "讓",
+          "道",
+          "一",
+          "走",
+          "無",
+          "背",
+          "一",
+          "而",
+          "所",
+          "若",
+          "置",
+          "罔",
+          "知",
+          "脛",
+          "聞",
+          "當",
+          "視",
+          "同",
+          "馳"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 6,
+            "char": "仁"
+          },
+          {
+            "row": 2,
+            "col": 6,
+            "char": "不"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 203,
+      "sourceIndex": 461,
+      "seed": 23911270,
+      "difficultyScore": 1110,
+      "level": {
+        "id": 203,
+        "rows": 4,
+        "cols": 10,
+        "idioms": [
+          {
+            "id": "idiom_0029",
+            "text": "夜郎自大",
+            "chars": [
+              "夜",
+              "郎",
+              "自",
+              "大"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1539",
+            "text": "大喜過望",
+            "chars": [
+              "大",
+              "喜",
+              "過",
+              "望"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0918",
+            "text": "望洋興嘆",
+            "chars": [
+              "望",
+              "洋",
+              "興",
+              "嘆"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0787",
+            "text": "夜長夢多",
+            "chars": [
+              "夜",
+              "長",
+              "夢",
+              "多"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0757",
+            "text": "山高水長",
+            "chars": [
+              "山",
+              "高",
+              "水",
+              "長"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1074",
+            "text": "人山人海",
+            "chars": [
+              "人",
+              "山",
+              "人",
+              "海"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0704",
+            "text": "喜出望外",
+            "chars": [
+              "喜",
+              "出",
+              "望",
+              "外"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 6
+          }
+        ],
+        "charBank": [
+          "自",
+          "人",
+          "人",
+          "望",
+          "興",
+          "過",
+          "多",
+          "望",
+          "郎",
+          "出",
+          "夢",
+          "夜",
+          "高",
+          "外",
+          "洋",
+          "水",
+          "喜",
+          "嘆",
+          "海",
+          "大"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 0,
+            "char": "山"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "char": "長"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 204,
+      "sourceIndex": 141,
+      "seed": 21377190,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 204,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_5131",
+            "text": "應有盡有",
+            "chars": [
+              "應",
+              "有",
+              "盡",
+              "有"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1278",
+            "text": "有目共睹",
+            "chars": [
+              "有",
+              "目",
+              "共",
+              "睹"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0399",
+            "text": "目中無人",
+            "chars": [
+              "目",
+              "中",
+              "無",
+              "人"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0085",
+            "text": "庸人自擾",
+            "chars": [
+              "庸",
+              "人",
+              "自",
+              "擾"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_1279",
+            "text": "慘不忍睹",
+            "chars": [
+              "慘",
+              "不",
+              "忍",
+              "睹"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0407",
+            "text": "手不釋卷",
+            "chars": [
+              "手",
+              "不",
+              "釋",
+              "卷"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0284",
+            "text": "開卷有益",
+            "chars": [
+              "開",
+              "卷",
+              "有",
+              "益"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "手",
+          "應",
+          "慘",
+          "人",
+          "益",
+          "目",
+          "有",
+          "忍",
+          "開",
+          "中",
+          "卷",
+          "庸",
+          "釋",
+          "共",
+          "盡",
+          "無",
+          "自",
+          "有",
+          "擾",
+          "不"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 3,
+            "char": "睹"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "char": "有"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 205,
+      "sourceIndex": 199,
+      "seed": 21836492,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 205,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_5102",
+            "text": "眉清目秀",
+            "chars": [
+              "眉",
+              "清",
+              "目",
+              "秀"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0108",
+            "text": "目不識丁",
+            "chars": [
+              "目",
+              "不",
+              "識",
+              "丁"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0036",
+            "text": "老馬識途",
+            "chars": [
+              "老",
+              "馬",
+              "識",
+              "途"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0831",
+            "text": "老成持重",
+            "chars": [
+              "老",
+              "成",
+              "持",
+              "重"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0151",
+            "text": "水到渠成",
+            "chars": [
+              "水",
+              "到",
+              "渠",
+              "成"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1421",
+            "text": "近水樓臺",
+            "chars": [
+              "近",
+              "水",
+              "樓",
+              "臺"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0986",
+            "text": "避重就輕",
+            "chars": [
+              "避",
+              "重",
+              "就",
+              "輕"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "老",
+          "秀",
+          "臺",
+          "就",
+          "避",
+          "丁",
+          "不",
+          "樓",
+          "渠",
+          "輕",
+          "近",
+          "馬",
+          "途",
+          "目",
+          "到",
+          "識",
+          "眉",
+          "水",
+          "清",
+          "持"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 3,
+            "char": "成"
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "char": "重"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 206,
+      "sourceIndex": 229,
+      "seed": 22074062,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 206,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0107",
+            "text": "出爾反爾",
+            "chars": [
+              "出",
+              "爾",
+              "反",
+              "爾"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0518",
+            "text": "出生入死",
+            "chars": [
+              "出",
+              "生",
+              "入",
+              "死"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0446",
+            "text": "九死一生",
+            "chars": [
+              "九",
+              "死",
+              "一",
+              "生"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0088",
+            "text": "一言九鼎",
+            "chars": [
+              "一",
+              "言",
+              "九",
+              "鼎"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0956",
+            "text": "起死回生",
+            "chars": [
+              "起",
+              "死",
+              "回",
+              "生"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1431",
+            "text": "義無反顧",
+            "chars": [
+              "義",
+              "無",
+              "反",
+              "顧"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0586",
+            "text": "開宗明義",
+            "chars": [
+              "開",
+              "宗",
+              "明",
+              "義"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "言",
+          "生",
+          "鼎",
+          "一",
+          "九",
+          "爾",
+          "一",
+          "起",
+          "回",
+          "爾",
+          "開",
+          "出",
+          "明",
+          "顧",
+          "入",
+          "宗",
+          "死",
+          "死",
+          "義",
+          "無"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 5,
+            "char": "反"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "char": "生"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 207,
+      "sourceIndex": 262,
+      "seed": 22335389,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 207,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0720",
+            "text": "學富五車",
+            "chars": [
+              "學",
+              "富",
+              "五",
+              "車"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0993",
+            "text": "五光十色",
+            "chars": [
+              "五",
+              "光",
+              "十",
+              "色"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0038",
+            "text": "一暴十寒",
+            "chars": [
+              "一",
+              "暴",
+              "十",
+              "寒"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0423",
+            "text": "一舉兩得",
+            "chars": [
+              "一",
+              "舉",
+              "兩",
+              "得"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1128",
+            "text": "不識抬舉",
+            "chars": [
+              "不",
+              "識",
+              "抬",
+              "舉"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0625",
+            "text": "一成不變",
+            "chars": [
+              "一",
+              "成",
+              "不",
+              "變"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1090",
+            "text": "不得要領",
+            "chars": [
+              "不",
+              "得",
+              "要",
+              "領"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "十",
+          "識",
+          "領",
+          "一",
+          "舉",
+          "車",
+          "色",
+          "寒",
+          "得",
+          "兩",
+          "不",
+          "暴",
+          "抬",
+          "要",
+          "成",
+          "富",
+          "五",
+          "變",
+          "學",
+          "光"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 3,
+            "char": "一"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "char": "不"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 208,
+      "sourceIndex": 276,
+      "seed": 22446255,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 208,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0419",
+            "text": "心心相印",
+            "chars": [
+              "心",
+              "心",
+              "相",
+              "印"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0503",
+            "text": "陳陳相因",
+            "chars": [
+              "陳",
+              "陳",
+              "相",
+              "因"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1266",
+            "text": "暗度陳倉",
+            "chars": [
+              "暗",
+              "度",
+              "陳",
+              "倉"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1332",
+            "text": "心驚膽戰",
+            "chars": [
+              "心",
+              "驚",
+              "膽",
+              "戰"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0198",
+            "text": "臥薪嘗膽",
+            "chars": [
+              "臥",
+              "薪",
+              "嘗",
+              "膽"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0162",
+            "text": "曲突徙薪",
+            "chars": [
+              "曲",
+              "突",
+              "徙",
+              "薪"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0145",
+            "text": "戰戰兢兢",
+            "chars": [
+              "戰",
+              "戰",
+              "兢",
+              "兢"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "印",
+          "驚",
+          "戰",
+          "度",
+          "徙",
+          "臥",
+          "暗",
+          "戰",
+          "曲",
+          "薪",
+          "心",
+          "兢",
+          "陳",
+          "因",
+          "相",
+          "心",
+          "突",
+          "嘗",
+          "倉",
+          "兢"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 3,
+            "char": "膽"
+          },
+          {
+            "row": 0,
+            "col": 5,
+            "char": "陳"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 209,
+      "sourceIndex": 278,
+      "seed": 22462093,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 209,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1327",
+            "text": "腰纏萬貫",
+            "chars": [
+              "腰",
+              "纏",
+              "萬",
+              "貫"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0765",
+            "text": "萬象更新",
+            "chars": [
+              "萬",
+              "象",
+              "更",
+              "新"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1189",
+            "text": "改弦更張",
+            "chars": [
+              "改",
+              "弦",
+              "更",
+              "張"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1143",
+            "text": "改邪歸正",
+            "chars": [
+              "改",
+              "邪",
+              "歸",
+              "正"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0678",
+            "text": "視死如歸",
+            "chars": [
+              "視",
+              "死",
+              "如",
+              "歸"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1277",
+            "text": "槁木死灰",
+            "chars": [
+              "槁",
+              "木",
+              "死",
+              "灰"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0398",
+            "text": "正襟危坐",
+            "chars": [
+              "正",
+              "襟",
+              "危",
+              "坐"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "邪",
+          "改",
+          "正",
+          "萬",
+          "纏",
+          "危",
+          "貫",
+          "槁",
+          "象",
+          "視",
+          "新",
+          "如",
+          "腰",
+          "木",
+          "坐",
+          "灰",
+          "死",
+          "襟",
+          "張",
+          "弦"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 5,
+            "char": "更"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "char": "歸"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 210,
+      "sourceIndex": 307,
+      "seed": 22691744,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 210,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1473",
+            "text": "與虎謀皮",
+            "chars": [
+              "與",
+              "虎",
+              "謀",
+              "皮"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0129",
+            "text": "虎頭蛇尾",
+            "chars": [
+              "虎",
+              "頭",
+              "蛇",
+              "尾"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0463",
+            "text": "虛與委蛇",
+            "chars": [
+              "虛",
+              "與",
+              "委",
+              "蛇"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1537",
+            "text": "向壁虛造",
+            "chars": [
+              "向",
+              "壁",
+              "虛",
+              "造"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0280",
+            "text": "尾大不掉",
+            "chars": [
+              "尾",
+              "大",
+              "不",
+              "掉"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1121",
+            "text": "名不副實",
+            "chars": [
+              "名",
+              "不",
+              "副",
+              "實"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0377",
+            "text": "腳踏實地",
+            "chars": [
+              "腳",
+              "踏",
+              "實",
+              "地"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "壁",
+          "謀",
+          "地",
+          "與",
+          "皮",
+          "蛇",
+          "與",
+          "掉",
+          "委",
+          "實",
+          "向",
+          "副",
+          "腳",
+          "虎",
+          "大",
+          "造",
+          "名",
+          "頭",
+          "虛",
+          "踏"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 5,
+            "char": "不"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "char": "尾"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 211,
+      "sourceIndex": 355,
+      "seed": 23071856,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 211,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1528",
+            "text": "坐懷不亂",
+            "chars": [
+              "坐",
+              "懷",
+              "不",
+              "亂"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0856",
+            "text": "不苟言笑",
+            "chars": [
+              "不",
+              "苟",
+              "言",
+              "笑"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1406",
+            "text": "暢所欲言",
+            "chars": [
+              "暢",
+              "所",
+              "欲",
+              "言"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0661",
+            "text": "所向披靡",
+            "chars": [
+              "所",
+              "向",
+              "披",
+              "靡"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0347",
+            "text": "笑容可掬",
+            "chars": [
+              "笑",
+              "容",
+              "可",
+              "掬"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_5127",
+            "text": "牢不可破",
+            "chars": [
+              "牢",
+              "不",
+              "可",
+              "破"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0734",
+            "text": "靡靡之音",
+            "chars": [
+              "靡",
+              "靡",
+              "之",
+              "音"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "容",
+          "靡",
+          "之",
+          "不",
+          "暢",
+          "懷",
+          "牢",
+          "苟",
+          "不",
+          "笑",
+          "言",
+          "亂",
+          "音",
+          "破",
+          "坐",
+          "披",
+          "靡",
+          "欲",
+          "向",
+          "掬"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 5,
+            "char": "可"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "char": "所"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 212,
+      "sourceIndex": 410,
+      "seed": 23507401,
+      "difficultyScore": 1112,
+      "level": {
+        "id": 212,
+        "rows": 6,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0123",
+            "text": "言不由衷",
+            "chars": [
+              "言",
+              "不",
+              "由",
+              "衷"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1455",
+            "text": "人言可畏",
+            "chars": [
+              "人",
+              "言",
+              "可",
+              "畏"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1132",
+            "text": "自欺欺人",
+            "chars": [
+              "自",
+              "欺",
+              "欺",
+              "人"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1234",
+            "text": "率由舊章",
+            "chars": [
+              "率",
+              "由",
+              "舊",
+              "章"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0465",
+            "text": "後生可畏",
+            "chars": [
+              "後",
+              "生",
+              "可",
+              "畏"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0710",
+            "text": "改過自新",
+            "chars": [
+              "改",
+              "過",
+              "自",
+              "新"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0558",
+            "text": "改弦易轍",
+            "chars": [
+              "改",
+              "弦",
+              "易",
+              "轍"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "率",
+          "新",
+          "不",
+          "可",
+          "過",
+          "欺",
+          "由",
+          "欺",
+          "易",
+          "可",
+          "弦",
+          "轍",
+          "舊",
+          "言",
+          "改",
+          "衷",
+          "後",
+          "生",
+          "畏",
+          "章"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 0,
+            "char": "自"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "char": "人"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 213,
+      "sourceIndex": 139,
+      "seed": 21361352,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 213,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_1724",
+            "text": "舞文弄法",
+            "chars": [
+              "舞",
+              "文",
+              "弄",
+              "法"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1101",
+            "text": "龍飛鳳舞",
+            "chars": [
+              "龍",
+              "飛",
+              "鳳",
+              "舞"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0880",
+            "text": "飛黃騰達",
+            "chars": [
+              "飛",
+              "黃",
+              "騰",
+              "達"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0143",
+            "text": "弄巧成拙",
+            "chars": [
+              "弄",
+              "巧",
+              "成",
+              "拙"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1471",
+            "text": "鑄成大錯",
+            "chars": [
+              "鑄",
+              "成",
+              "大",
+              "錯"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1342",
+            "text": "四通八達",
+            "chars": [
+              "四",
+              "通",
+              "八",
+              "達"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0006",
+            "text": "朝三暮四",
+            "chars": [
+              "朝",
+              "三",
+              "暮",
+              "四"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "四",
+          "文",
+          "黃",
+          "大",
+          "騰",
+          "朝",
+          "舞",
+          "弄",
+          "錯",
+          "龍",
+          "鳳",
+          "拙",
+          "暮",
+          "通",
+          "三",
+          "巧",
+          "八",
+          "法",
+          "鑄",
+          "達"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 0,
+            "char": "飛"
+          },
+          {
+            "row": 7,
+            "col": 2,
+            "char": "成"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 214,
+      "sourceIndex": 154,
+      "seed": 21480137,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 214,
+        "rows": 5,
+        "cols": 9,
+        "idioms": [
+          {
+            "id": "idiom_1338",
+            "text": "寸步不離",
+            "chars": [
+              "寸",
+              "步",
+              "不",
+              "離"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0574",
+            "text": "大惑不解",
+            "chars": [
+              "大",
+              "惑",
+              "不",
+              "解"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1265",
+            "text": "大庭廣眾",
+            "chars": [
+              "大",
+              "庭",
+              "廣",
+              "眾"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0456",
+            "text": "得寸進尺",
+            "chars": [
+              "得",
+              "寸",
+              "進",
+              "尺"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0655",
+            "text": "垂涎三尺",
+            "chars": [
+              "垂",
+              "涎",
+              "三",
+              "尺"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0970",
+            "text": "眾叛親離",
+            "chars": [
+              "眾",
+              "叛",
+              "親",
+              "離"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 8
+          },
+          {
+            "id": "idiom_0585",
+            "text": "心安理得",
+            "chars": [
+              "心",
+              "安",
+              "理",
+              "得"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "惑",
+          "離",
+          "眾",
+          "垂",
+          "心",
+          "廣",
+          "理",
+          "三",
+          "得",
+          "安",
+          "涎",
+          "步",
+          "離",
+          "尺",
+          "親",
+          "庭",
+          "叛",
+          "不",
+          "解",
+          "進"
+        ],
+        "presetCells": [
+          {
+            "row": 0,
+            "col": 5,
+            "char": "大"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "char": "寸"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 215,
+      "sourceIndex": 252,
+      "seed": 22256199,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 215,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_0234",
+            "text": "大公無私",
+            "chars": [
+              "大",
+              "公",
+              "無",
+              "私"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0844",
+            "text": "大千世界",
+            "chars": [
+              "大",
+              "千",
+              "世",
+              "界"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1176",
+            "text": "玩世不恭",
+            "chars": [
+              "玩",
+              "世",
+              "不",
+              "恭"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0345",
+            "text": "鐵面無私",
+            "chars": [
+              "鐵",
+              "面",
+              "無",
+              "私"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0909",
+            "text": "斬釘截鐵",
+            "chars": [
+              "斬",
+              "釘",
+              "截",
+              "鐵"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0947",
+            "text": "披荊斬棘",
+            "chars": [
+              "披",
+              "荊",
+              "斬",
+              "棘"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1404",
+            "text": "披肝瀝膽",
+            "chars": [
+              "披",
+              "肝",
+              "瀝",
+              "膽"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          }
+        ],
+        "charBank": [
+          "世",
+          "截",
+          "不",
+          "瀝",
+          "膽",
+          "玩",
+          "釘",
+          "棘",
+          "界",
+          "荊",
+          "面",
+          "恭",
+          "無",
+          "肝",
+          "公",
+          "鐵",
+          "無",
+          "大",
+          "披",
+          "千"
+        ],
+        "presetCells": [
+          {
+            "row": 5,
+            "col": 4,
+            "char": "私"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "char": "斬"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 216,
+      "sourceIndex": 292,
+      "seed": 22572959,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 216,
+        "rows": 5,
+        "cols": 9,
+        "idioms": [
+          {
+            "id": "idiom_0529",
+            "text": "循循善誘",
+            "chars": [
+              "循",
+              "循",
+              "善",
+              "誘"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1310",
+            "text": "隱惡揚善",
+            "chars": [
+              "隱",
+              "惡",
+              "揚",
+              "善"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_5150",
+            "text": "不念舊惡",
+            "chars": [
+              "不",
+              "念",
+              "舊",
+              "惡"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1176",
+            "text": "玩世不恭",
+            "chars": [
+              "玩",
+              "世",
+              "不",
+              "恭"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1383",
+            "text": "隱姓埋名",
+            "chars": [
+              "隱",
+              "姓",
+              "埋",
+              "名"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1121",
+            "text": "名不副實",
+            "chars": [
+              "名",
+              "不",
+              "副",
+              "實"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0494",
+            "text": "名副其實",
+            "chars": [
+              "名",
+              "副",
+              "其",
+              "實"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 5
+          }
+        ],
+        "charBank": [
+          "世",
+          "揚",
+          "善",
+          "恭",
+          "玩",
+          "實",
+          "不",
+          "埋",
+          "惡",
+          "其",
+          "舊",
+          "念",
+          "姓",
+          "隱",
+          "實",
+          "循",
+          "名",
+          "名",
+          "誘",
+          "循"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 6,
+            "char": "副"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "char": "不"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 217,
+      "sourceIndex": 299,
+      "seed": 22628392,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 217,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_0282",
+            "text": "熟能生巧",
+            "chars": [
+              "熟",
+              "能",
+              "生",
+              "巧"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0768",
+            "text": "巧奪天工",
+            "chars": [
+              "巧",
+              "奪",
+              "天",
+              "工"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0101",
+            "text": "不共戴天",
+            "chars": [
+              "不",
+              "共",
+              "戴",
+              "天"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1088",
+            "text": "不合時宜",
+            "chars": [
+              "不",
+              "合",
+              "時",
+              "宜"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1105",
+            "text": "權宜之計",
+            "chars": [
+              "權",
+              "宜",
+              "之",
+              "計"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0352",
+            "text": "駕輕就熟",
+            "chars": [
+              "駕",
+              "輕",
+              "就",
+              "熟"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1399",
+            "text": "輕而易舉",
+            "chars": [
+              "輕",
+              "而",
+              "易",
+              "舉"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 1
+          }
+        ],
+        "charBank": [
+          "不",
+          "生",
+          "之",
+          "舉",
+          "能",
+          "共",
+          "權",
+          "駕",
+          "易",
+          "巧",
+          "工",
+          "而",
+          "奪",
+          "計",
+          "時",
+          "戴",
+          "合",
+          "宜",
+          "熟",
+          "就"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 1,
+            "char": "輕"
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "char": "天"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 218,
+      "sourceIndex": 323,
+      "seed": 22818448,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 218,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_0864",
+            "text": "以身試法",
+            "chars": [
+              "以",
+              "身",
+              "試",
+              "法"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_5398",
+            "text": "獨善其身",
+            "chars": [
+              "獨",
+              "善",
+              "其",
+              "身"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1236",
+            "text": "獨木難支",
+            "chars": [
+              "獨",
+              "木",
+              "難",
+              "支"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0651",
+            "text": "積重難返",
+            "chars": [
+              "積",
+              "重",
+              "難",
+              "返"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0646",
+            "text": "處心積慮",
+            "chars": [
+              "處",
+              "心",
+              "積",
+              "慮"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0972",
+            "text": "以逸待勞",
+            "chars": [
+              "以",
+              "逸",
+              "待",
+              "勞"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0510",
+            "text": "待價而沽",
+            "chars": [
+              "待",
+              "價",
+              "而",
+              "沽"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "待",
+          "試",
+          "身",
+          "價",
+          "重",
+          "處",
+          "難",
+          "而",
+          "沽",
+          "其",
+          "法",
+          "心",
+          "慮",
+          "木",
+          "返",
+          "以",
+          "勞",
+          "支",
+          "逸",
+          "善"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 1,
+            "char": "獨"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "char": "積"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 219,
+      "sourceIndex": 334,
+      "seed": 22905557,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 219,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_0107",
+            "text": "出爾反爾",
+            "chars": [
+              "出",
+              "爾",
+              "反",
+              "爾"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0857",
+            "text": "出言不遜",
+            "chars": [
+              "出",
+              "言",
+              "不",
+              "遜"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0817",
+            "text": "不可一世",
+            "chars": [
+              "不",
+              "可",
+              "一",
+              "世"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1058",
+            "text": "一言難盡",
+            "chars": [
+              "一",
+              "言",
+              "難",
+              "盡"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_5131",
+            "text": "應有盡有",
+            "chars": [
+              "應",
+              "有",
+              "盡",
+              "有"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1060",
+            "text": "物極必反",
+            "chars": [
+              "物",
+              "極",
+              "必",
+              "反"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0644",
+            "text": "探囊取物",
+            "chars": [
+              "探",
+              "囊",
+              "取",
+              "物"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "遜",
+          "言",
+          "爾",
+          "不",
+          "反",
+          "有",
+          "言",
+          "爾",
+          "必",
+          "難",
+          "世",
+          "取",
+          "應",
+          "有",
+          "可",
+          "囊",
+          "探",
+          "物",
+          "出",
+          "極"
+        ],
+        "presetCells": [
+          {
+            "row": 8,
+            "col": 3,
+            "char": "盡"
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "char": "一"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 220,
+      "sourceIndex": 372,
+      "seed": 23206479,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 220,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_1222",
+            "text": "高風亮節",
+            "chars": [
+              "高",
+              "風",
+              "亮",
+              "節"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0420",
+            "text": "空穴來風",
+            "chars": [
+              "空",
+              "穴",
+              "來",
+              "風"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0130",
+            "text": "空中樓閣",
+            "chars": [
+              "空",
+              "中",
+              "樓",
+              "閣"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0375",
+            "text": "節外生枝",
+            "chars": [
+              "節",
+              "外",
+              "生",
+              "枝"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0446",
+            "text": "九死一生",
+            "chars": [
+              "九",
+              "死",
+              "一",
+              "生"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1271",
+            "text": "死心塌地",
+            "chars": [
+              "死",
+              "心",
+              "塌",
+              "地"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0838",
+            "text": "因地制宜",
+            "chars": [
+              "因",
+              "地",
+              "制",
+              "宜"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "空",
+          "塌",
+          "外",
+          "一",
+          "制",
+          "樓",
+          "來",
+          "風",
+          "中",
+          "高",
+          "亮",
+          "因",
+          "死",
+          "宜",
+          "心",
+          "穴",
+          "九",
+          "節",
+          "枝",
+          "閣"
+        ],
+        "presetCells": [
+          {
+            "row": 8,
+            "col": 1,
+            "char": "地"
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "char": "生"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 221,
+      "sourceIndex": 419,
+      "seed": 23578672,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 221,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_5134",
+            "text": "龍潭虎穴",
+            "chars": [
+              "龍",
+              "潭",
+              "虎",
+              "穴"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0070",
+            "text": "騎虎難下",
+            "chars": [
+              "騎",
+              "虎",
+              "難",
+              "下"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0438",
+            "text": "上行下效",
+            "chars": [
+              "上",
+              "行",
+              "下",
+              "效"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0486",
+            "text": "葉公好龍",
+            "chars": [
+              "葉",
+              "公",
+              "好",
+              "龍"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1068",
+            "text": "一葉知秋",
+            "chars": [
+              "一",
+              "葉",
+              "知",
+              "秋"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0516",
+            "text": "上下其手",
+            "chars": [
+              "上",
+              "下",
+              "其",
+              "手"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1261",
+            "text": "赤手空拳",
+            "chars": [
+              "赤",
+              "手",
+              "空",
+              "拳"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "手",
+          "難",
+          "龍",
+          "騎",
+          "效",
+          "拳",
+          "知",
+          "下",
+          "一",
+          "赤",
+          "公",
+          "穴",
+          "潭",
+          "秋",
+          "其",
+          "行",
+          "下",
+          "上",
+          "好",
+          "空"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 3,
+            "char": "虎"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "char": "葉"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 222,
+      "sourceIndex": 460,
+      "seed": 23903351,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 222,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_1548",
+            "text": "藍田生玉",
+            "chars": [
+              "藍",
+              "田",
+              "生",
+              "玉"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0206",
+            "text": "民不聊生",
+            "chars": [
+              "民",
+              "不",
+              "聊",
+              "生"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0370",
+            "text": "樂不可支",
+            "chars": [
+              "樂",
+              "不",
+              "可",
+              "支"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0541",
+            "text": "玉石俱焚",
+            "chars": [
+              "玉",
+              "石",
+              "俱",
+              "焚"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1648",
+            "text": "玩火自焚",
+            "chars": [
+              "玩",
+              "火",
+              "自",
+              "焚"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1437",
+            "text": "趁火打劫",
+            "chars": [
+              "趁",
+              "火",
+              "打",
+              "劫"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0592",
+            "text": "萬劫不復",
+            "chars": [
+              "萬",
+              "劫",
+              "不",
+              "復"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "藍",
+          "俱",
+          "焚",
+          "趁",
+          "萬",
+          "聊",
+          "玩",
+          "石",
+          "不",
+          "不",
+          "可",
+          "民",
+          "劫",
+          "復",
+          "支",
+          "田",
+          "打",
+          "自",
+          "玉",
+          "樂"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 2,
+            "char": "生"
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "char": "火"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 223,
+      "sourceIndex": 467,
+      "seed": 23958784,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 223,
+        "rows": 9,
+        "cols": 5,
+        "idioms": [
+          {
+            "id": "idiom_0082",
+            "text": "推心置腹",
+            "chars": [
+              "推",
+              "心",
+              "置",
+              "腹"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0290",
+            "text": "口是心非",
+            "chars": [
+              "口",
+              "是",
+              "心",
+              "非"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0016",
+            "text": "口若懸河",
+            "chars": [
+              "口",
+              "若",
+              "懸",
+              "河"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1426",
+            "text": "腹背受敵",
+            "chars": [
+              "腹",
+              "背",
+              "受",
+              "敵"
+            ],
+            "direction": "vertical",
+            "startRow": 5,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1283",
+            "text": "寡不敵眾",
+            "chars": [
+              "寡",
+              "不",
+              "敵",
+              "眾"
+            ],
+            "direction": "horizontal",
+            "startRow": 8,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0361",
+            "text": "暴虎馮河",
+            "chars": [
+              "暴",
+              "虎",
+              "馮",
+              "河"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0847",
+            "text": "生龍活虎",
+            "chars": [
+              "生",
+              "龍",
+              "活",
+              "虎"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 1
+          }
+        ],
+        "charBank": [
+          "受",
+          "馮",
+          "龍",
+          "背",
+          "生",
+          "寡",
+          "眾",
+          "河",
+          "非",
+          "活",
+          "若",
+          "敵",
+          "懸",
+          "是",
+          "心",
+          "暴",
+          "置",
+          "推",
+          "不",
+          "腹"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 4,
+            "char": "虎"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "char": "口"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 224,
+      "sourceIndex": 498,
+      "seed": 24204273,
+      "difficultyScore": 1115,
+      "level": {
+        "id": 224,
+        "rows": 5,
+        "cols": 9,
+        "idioms": [
+          {
+            "id": "idiom_0631",
+            "text": "老氣橫秋",
+            "chars": [
+              "老",
+              "氣",
+              "橫",
+              "秋"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1159",
+            "text": "盛氣凌人",
+            "chars": [
+              "盛",
+              "氣",
+              "凌",
+              "人"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0881",
+            "text": "息事寧人",
+            "chars": [
+              "息",
+              "事",
+              "寧",
+              "人"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0814",
+            "text": "望穿秋水",
+            "chars": [
+              "望",
+              "穿",
+              "秋",
+              "水"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0026",
+            "text": "望梅止渴",
+            "chars": [
+              "望",
+              "梅",
+              "止",
+              "渴"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0440",
+            "text": "川流不息",
+            "chars": [
+              "川",
+              "流",
+              "不",
+              "息"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0330",
+            "text": "水泄不通",
+            "chars": [
+              "水",
+              "泄",
+              "不",
+              "通"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 5
+          }
+        ],
+        "charBank": [
+          "不",
+          "泄",
+          "事",
+          "秋",
+          "凌",
+          "不",
+          "水",
+          "望",
+          "橫",
+          "止",
+          "人",
+          "盛",
+          "通",
+          "流",
+          "渴",
+          "梅",
+          "老",
+          "穿",
+          "川",
+          "寧"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 0,
+            "char": "息"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "char": "氣"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 225,
+      "sourceIndex": 197,
+      "seed": 21820654,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 225,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0868",
+            "text": "付之一炬",
+            "chars": [
+              "付",
+              "之",
+              "一",
+              "炬"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0550",
+            "text": "一觸即發",
+            "chars": [
+              "一",
+              "觸",
+              "即",
+              "發"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0293",
+            "text": "大發雷霆",
+            "chars": [
+              "大",
+              "發",
+              "雷",
+              "霆"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0763",
+            "text": "雷霆萬鈞",
+            "chars": [
+              "雷",
+              "霆",
+              "萬",
+              "鈞"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0603",
+            "text": "雷厲風行",
+            "chars": [
+              "雷",
+              "厲",
+              "風",
+              "行"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1549",
+            "text": "響遏行雲",
+            "chars": [
+              "響",
+              "遏",
+              "行",
+              "雲"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 7
+          },
+          {
+            "id": "idiom_0842",
+            "text": "千鈞一髮",
+            "chars": [
+              "千",
+              "鈞",
+              "一",
+              "髮"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "之",
+          "一",
+          "雷",
+          "髮",
+          "千",
+          "即",
+          "炬",
+          "響",
+          "萬",
+          "遏",
+          "雲",
+          "一",
+          "發",
+          "厲",
+          "風",
+          "付",
+          "雷",
+          "大",
+          "霆",
+          "觸"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 7,
+            "char": "行"
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "char": "鈞"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 226,
+      "sourceIndex": 244,
+      "seed": 22192847,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 226,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_5458",
+            "text": "禍從口出",
+            "chars": [
+              "禍",
+              "從",
+              "口",
+              "出"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1512",
+            "text": "禍起蕭牆",
+            "chars": [
+              "禍",
+              "起",
+              "蕭",
+              "牆"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1488",
+            "text": "揭竿而起",
+            "chars": [
+              "揭",
+              "竿",
+              "而",
+              "起"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1102",
+            "text": "心直口快",
+            "chars": [
+              "心",
+              "直",
+              "口",
+              "快"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_1269",
+            "text": "福至心靈",
+            "chars": [
+              "福",
+              "至",
+              "心",
+              "靈"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0875",
+            "text": "昭然若揭",
+            "chars": [
+              "昭",
+              "然",
+              "若",
+              "揭"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1363",
+            "text": "躍然紙上",
+            "chars": [
+              "躍",
+              "然",
+              "紙",
+              "上"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "然",
+          "紙",
+          "竿",
+          "直",
+          "出",
+          "而",
+          "若",
+          "至",
+          "口",
+          "躍",
+          "牆",
+          "揭",
+          "快",
+          "蕭",
+          "靈",
+          "福",
+          "從",
+          "起",
+          "上",
+          "昭"
+        ],
+        "presetCells": [
+          {
+            "row": 0,
+            "col": 6,
+            "char": "心"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "char": "禍"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 227,
+      "sourceIndex": 246,
+      "seed": 22208685,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 227,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0804",
+            "text": "壯志凌雲",
+            "chars": [
+              "壯",
+              "志",
+              "凌",
+              "雲"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_5113",
+            "text": "青雲直上",
+            "chars": [
+              "青",
+              "雲",
+              "直",
+              "上"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0555",
+            "text": "力爭上游",
+            "chars": [
+              "力",
+              "爭",
+              "上",
+              "游"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0526",
+            "text": "專心致志",
+            "chars": [
+              "專",
+              "心",
+              "致",
+              "志"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0205",
+            "text": "青黃不接",
+            "chars": [
+              "青",
+              "黃",
+              "不",
+              "接"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0219",
+            "text": "格格不入",
+            "chars": [
+              "格",
+              "格",
+              "不",
+              "入"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_1414",
+            "text": "枉費心機",
+            "chars": [
+              "枉",
+              "費",
+              "心",
+              "機"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "雲",
+          "力",
+          "專",
+          "入",
+          "機",
+          "爭",
+          "接",
+          "致",
+          "青",
+          "枉",
+          "凌",
+          "格",
+          "壯",
+          "黃",
+          "上",
+          "格",
+          "費",
+          "志",
+          "直",
+          "游"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 2,
+            "char": "心"
+          },
+          {
+            "row": 2,
+            "col": 6,
+            "char": "不"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 228,
+      "sourceIndex": 254,
+      "seed": 22272037,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 228,
+        "rows": 8,
+        "cols": 6,
+        "idioms": [
+          {
+            "id": "idiom_0491",
+            "text": "出人頭地",
+            "chars": [
+              "出",
+              "人",
+              "頭",
+              "地"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_5156",
+            "text": "呼天搶地",
+            "chars": [
+              "呼",
+              "天",
+              "搶",
+              "地"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1357",
+            "text": "光天化日",
+            "chars": [
+              "光",
+              "天",
+              "化",
+              "日"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1370",
+            "text": "掩人耳目",
+            "chars": [
+              "掩",
+              "人",
+              "耳",
+              "目"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0108",
+            "text": "目不識丁",
+            "chars": [
+              "目",
+              "不",
+              "識",
+              "丁"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1665",
+            "text": "移天易日",
+            "chars": [
+              "移",
+              "天",
+              "易",
+              "日"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1066",
+            "text": "物換星移",
+            "chars": [
+              "物",
+              "換",
+              "星",
+              "移"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "日",
+          "天",
+          "天",
+          "物",
+          "搶",
+          "識",
+          "換",
+          "星",
+          "掩",
+          "不",
+          "耳",
+          "地",
+          "頭",
+          "呼",
+          "化",
+          "目",
+          "光",
+          "易",
+          "出",
+          "丁"
+        ],
+        "presetCells": [
+          {
+            "row": 5,
+            "col": 1,
+            "char": "人"
+          },
+          {
+            "row": 0,
+            "col": 5,
+            "char": "移"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 229,
+      "sourceIndex": 267,
+      "seed": 22374984,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 229,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_1202",
+            "text": "要言不煩",
+            "chars": [
+              "要",
+              "言",
+              "不",
+              "煩"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0735",
+            "text": "不勝枚舉",
+            "chars": [
+              "不",
+              "勝",
+              "枚",
+              "舉"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_1128",
+            "text": "不識抬舉",
+            "chars": [
+              "不",
+              "識",
+              "抬",
+              "舉"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0625",
+            "text": "一成不變",
+            "chars": [
+              "一",
+              "成",
+              "不",
+              "變"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0832",
+            "text": "一事無成",
+            "chars": [
+              "一",
+              "事",
+              "無",
+              "成"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_5101",
+            "text": "虛應故事",
+            "chars": [
+              "虛",
+              "應",
+              "故",
+              "事"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0719",
+            "text": "隨機應變",
+            "chars": [
+              "隨",
+              "機",
+              "應",
+              "變"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "不",
+          "要",
+          "識",
+          "成",
+          "虛",
+          "煩",
+          "事",
+          "無",
+          "一",
+          "抬",
+          "機",
+          "應",
+          "勝",
+          "言",
+          "枚",
+          "應",
+          "隨",
+          "不",
+          "一",
+          "故"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 6,
+            "char": "舉"
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "char": "變"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 230,
+      "sourceIndex": 281,
+      "seed": 22485850,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 230,
+        "rows": 8,
+        "cols": 6,
+        "idioms": [
+          {
+            "id": "idiom_0965",
+            "text": "化險為夷",
+            "chars": [
+              "化",
+              "險",
+              "為",
+              "夷"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1601",
+            "text": "嘆為觀止",
+            "chars": [
+              "嘆",
+              "為",
+              "觀",
+              "止"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0026",
+            "text": "望梅止渴",
+            "chars": [
+              "望",
+              "梅",
+              "止",
+              "渴"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1397",
+            "text": "潛移默化",
+            "chars": [
+              "潛",
+              "移",
+              "默",
+              "化"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0267",
+            "text": "愚公移山",
+            "chars": [
+              "愚",
+              "公",
+              "移",
+              "山"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0969",
+            "text": "大智若愚",
+            "chars": [
+              "大",
+              "智",
+              "若",
+              "愚"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0234",
+            "text": "大公無私",
+            "chars": [
+              "大",
+              "公",
+              "無",
+              "私"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "觀",
+          "山",
+          "公",
+          "大",
+          "公",
+          "嘆",
+          "潛",
+          "梅",
+          "若",
+          "渴",
+          "險",
+          "愚",
+          "望",
+          "無",
+          "止",
+          "化",
+          "夷",
+          "智",
+          "默",
+          "私"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 2,
+            "char": "移"
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "char": "為"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 231,
+      "sourceIndex": 356,
+      "seed": 23079775,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 231,
+        "rows": 8,
+        "cols": 6,
+        "idioms": [
+          {
+            "id": "idiom_1341",
+            "text": "打退堂鼓",
+            "chars": [
+              "打",
+              "退",
+              "堂",
+              "鼓"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1079",
+            "text": "冠冕堂皇",
+            "chars": [
+              "冠",
+              "冕",
+              "堂",
+              "皇"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0264",
+            "text": "怒髮衝冠",
+            "chars": [
+              "怒",
+              "髮",
+              "衝",
+              "冠"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0445",
+            "text": "心花怒放",
+            "chars": [
+              "心",
+              "花",
+              "怒",
+              "放"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_5126",
+            "text": "錦心繡口",
+            "chars": [
+              "錦",
+              "心",
+              "繡",
+              "口"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0055",
+            "text": "打草驚蛇",
+            "chars": [
+              "打",
+              "草",
+              "驚",
+              "蛇"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0059",
+            "text": "一鳴驚人",
+            "chars": [
+              "一",
+              "鳴",
+              "驚",
+              "人"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "打",
+          "冕",
+          "一",
+          "人",
+          "錦",
+          "放",
+          "蛇",
+          "皇",
+          "堂",
+          "草",
+          "冠",
+          "鳴",
+          "衝",
+          "花",
+          "髮",
+          "口",
+          "心",
+          "鼓",
+          "繡",
+          "退"
+        ],
+        "presetCells": [
+          {
+            "row": 2,
+            "col": 1,
+            "char": "怒"
+          },
+          {
+            "row": 6,
+            "col": 2,
+            "char": "驚"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 232,
+      "sourceIndex": 366,
+      "seed": 23158965,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 232,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0395",
+            "text": "茅塞頓開",
+            "chars": [
+              "茅",
+              "塞",
+              "頓",
+              "開"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0170",
+            "text": "開門見山",
+            "chars": [
+              "開",
+              "門",
+              "見",
+              "山"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1074",
+            "text": "人山人海",
+            "chars": [
+              "人",
+              "山",
+              "人",
+              "海"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0484",
+            "text": "敷衍塞責",
+            "chars": [
+              "敷",
+              "衍",
+              "塞",
+              "責"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0127",
+            "text": "門庭若市",
+            "chars": [
+              "門",
+              "庭",
+              "若",
+              "市"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0379",
+            "text": "招搖過市",
+            "chars": [
+              "招",
+              "搖",
+              "過",
+              "市"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 7
+          },
+          {
+            "id": "idiom_1070",
+            "text": "入不敷出",
+            "chars": [
+              "入",
+              "不",
+              "敷",
+              "出"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "開",
+          "頓",
+          "若",
+          "海",
+          "庭",
+          "搖",
+          "責",
+          "門",
+          "入",
+          "招",
+          "塞",
+          "茅",
+          "衍",
+          "市",
+          "過",
+          "人",
+          "不",
+          "人",
+          "出",
+          "見"
+        ],
+        "presetCells": [
+          {
+            "row": 0,
+            "col": 2,
+            "char": "敷"
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "char": "山"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 233,
+      "sourceIndex": 396,
+      "seed": 23396535,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 233,
+        "rows": 8,
+        "cols": 6,
+        "idioms": [
+          {
+            "id": "idiom_0020",
+            "text": "草木皆兵",
+            "chars": [
+              "草",
+              "木",
+              "皆",
+              "兵"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1509",
+            "text": "疾風勁草",
+            "chars": [
+              "疾",
+              "風",
+              "勁",
+              "草"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1113",
+            "text": "光風霽月",
+            "chars": [
+              "光",
+              "風",
+              "霽",
+              "月"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1506",
+            "text": "厲兵秣馬",
+            "chars": [
+              "厲",
+              "兵",
+              "秣",
+              "馬"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0534",
+            "text": "塞翁失馬",
+            "chars": [
+              "塞",
+              "翁",
+              "失",
+              "馬"
+            ],
+            "direction": "horizontal",
+            "startRow": 7,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0164",
+            "text": "吳牛喘月",
+            "chars": [
+              "吳",
+              "牛",
+              "喘",
+              "月"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0210",
+            "text": "泥牛入海",
+            "chars": [
+              "泥",
+              "牛",
+              "入",
+              "海"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "勁",
+          "厲",
+          "翁",
+          "兵",
+          "疾",
+          "光",
+          "海",
+          "牛",
+          "月",
+          "木",
+          "秣",
+          "泥",
+          "塞",
+          "霽",
+          "皆",
+          "入",
+          "失",
+          "草",
+          "吳",
+          "喘"
+        ],
+        "presetCells": [
+          {
+            "row": 7,
+            "col": 4,
+            "char": "馬"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "char": "風"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 234,
+      "sourceIndex": 402,
+      "seed": 23444049,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 234,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0514",
+            "text": "嗟來之食",
+            "chars": [
+              "嗟",
+              "來",
+              "之",
+              "食"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0828",
+            "text": "解衣推食",
+            "chars": [
+              "解",
+              "衣",
+              "推",
+              "食"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0903",
+            "text": "慷慨解囊",
+            "chars": [
+              "慷",
+              "慨",
+              "解",
+              "囊"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0893",
+            "text": "逆來順受",
+            "chars": [
+              "逆",
+              "來",
+              "順",
+              "受"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0634",
+            "text": "推波助瀾",
+            "chars": [
+              "推",
+              "波",
+              "助",
+              "瀾"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1613",
+            "text": "助紂為虐",
+            "chars": [
+              "助",
+              "紂",
+              "為",
+              "虐"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_5159",
+            "text": "好為人師",
+            "chars": [
+              "好",
+              "為",
+              "人",
+              "師"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 4
+          }
+        ],
+        "charBank": [
+          "囊",
+          "食",
+          "受",
+          "虐",
+          "來",
+          "解",
+          "人",
+          "衣",
+          "師",
+          "波",
+          "推",
+          "順",
+          "嗟",
+          "慨",
+          "逆",
+          "瀾",
+          "慷",
+          "之",
+          "紂",
+          "好"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 5,
+            "char": "為"
+          },
+          {
+            "row": 2,
+            "col": 5,
+            "char": "助"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 235,
+      "sourceIndex": 415,
+      "seed": 23546996,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 235,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0146",
+            "text": "瓜田李下",
+            "chars": [
+              "瓜",
+              "田",
+              "李",
+              "下"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0865",
+            "text": "正中下懷",
+            "chars": [
+              "正",
+              "中",
+              "下",
+              "懷"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0275",
+            "text": "中流砥柱",
+            "chars": [
+              "中",
+              "流",
+              "砥",
+              "柱"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0863",
+            "text": "膠柱鼓瑟",
+            "chars": [
+              "膠",
+              "柱",
+              "鼓",
+              "瑟"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 7
+          },
+          {
+            "id": "idiom_1143",
+            "text": "改邪歸正",
+            "chars": [
+              "改",
+              "邪",
+              "歸",
+              "正"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0544",
+            "text": "瓜熟蒂落",
+            "chars": [
+              "瓜",
+              "熟",
+              "蒂",
+              "落"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0008",
+            "text": "名落孫山",
+            "chars": [
+              "名",
+              "落",
+              "孫",
+              "山"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "歸",
+          "熟",
+          "下",
+          "蒂",
+          "瓜",
+          "落",
+          "中",
+          "膠",
+          "邪",
+          "砥",
+          "山",
+          "瑟",
+          "改",
+          "流",
+          "名",
+          "李",
+          "鼓",
+          "田",
+          "懷",
+          "孫"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 7,
+            "char": "柱"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "char": "正"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 236,
+      "sourceIndex": 432,
+      "seed": 23681619,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 236,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_1051",
+            "text": "事在人為",
+            "chars": [
+              "事",
+              "在",
+              "人",
+              "為"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0115",
+            "text": "拾人牙慧",
+            "chars": [
+              "拾",
+              "人",
+              "牙",
+              "慧"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0791",
+            "text": "秀外慧中",
+            "chars": [
+              "秀",
+              "外",
+              "慧",
+              "中"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1114",
+            "text": "少不更事",
+            "chars": [
+              "少",
+              "不",
+              "更",
+              "事"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0574",
+            "text": "大惑不解",
+            "chars": [
+              "大",
+              "惑",
+              "不",
+              "解"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_5451",
+            "text": "大功告成",
+            "chars": [
+              "大",
+              "功",
+              "告",
+              "成"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0936",
+            "text": "集腋成裘",
+            "chars": [
+              "集",
+              "腋",
+              "成",
+              "裘"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "解",
+          "為",
+          "在",
+          "集",
+          "大",
+          "人",
+          "告",
+          "秀",
+          "慧",
+          "更",
+          "外",
+          "裘",
+          "牙",
+          "腋",
+          "少",
+          "惑",
+          "功",
+          "拾",
+          "不",
+          "中"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 2,
+            "char": "成"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "char": "事"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 237,
+      "sourceIndex": 441,
+      "seed": 23752890,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 237,
+        "rows": 8,
+        "cols": 6,
+        "idioms": [
+          {
+            "id": "idiom_0539",
+            "text": "不修邊幅",
+            "chars": [
+              "不",
+              "修",
+              "邊",
+              "幅"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0265",
+            "text": "一塵不染",
+            "chars": [
+              "一",
+              "塵",
+              "不",
+              "染"
+            ],
+            "direction": "vertical",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0324",
+            "text": "一落千丈",
+            "chars": [
+              "一",
+              "落",
+              "千",
+              "丈"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0843",
+            "text": "光明磊落",
+            "chars": [
+              "光",
+              "明",
+              "磊",
+              "落"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1609",
+            "text": "明珠暗投",
+            "chars": [
+              "明",
+              "珠",
+              "暗",
+              "投"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1551",
+            "text": "以卵投石",
+            "chars": [
+              "以",
+              "卵",
+              "投",
+              "石"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1522",
+            "text": "相濡以沫",
+            "chars": [
+              "相",
+              "濡",
+              "以",
+              "沫"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "一",
+          "濡",
+          "丈",
+          "修",
+          "石",
+          "珠",
+          "邊",
+          "以",
+          "沫",
+          "磊",
+          "千",
+          "暗",
+          "相",
+          "明",
+          "幅",
+          "塵",
+          "光",
+          "落",
+          "染",
+          "卵"
+        ],
+        "presetCells": [
+          {
+            "row": 6,
+            "col": 0,
+            "char": "不"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "char": "投"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 238,
+      "sourceIndex": 483,
+      "seed": 24085488,
+      "difficultyScore": 1118,
+      "level": {
+        "id": 238,
+        "rows": 6,
+        "cols": 8,
+        "idioms": [
+          {
+            "id": "idiom_0580",
+            "text": "一貧如洗",
+            "chars": [
+              "一",
+              "貧",
+              "如",
+              "洗"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0074",
+            "text": "滄海一粟",
+            "chars": [
+              "滄",
+              "海",
+              "一",
+              "粟"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1052",
+            "text": "排山倒海",
+            "chars": [
+              "排",
+              "山",
+              "倒",
+              "海"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1252",
+            "text": "高山流水",
+            "chars": [
+              "高",
+              "山",
+              "流",
+              "水"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0344",
+            "text": "滄海遺珠",
+            "chars": [
+              "滄",
+              "海",
+              "遺",
+              "珠"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0035",
+            "text": "如火如荼",
+            "chars": [
+              "如",
+              "火",
+              "如",
+              "荼"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1387",
+            "text": "安如泰山",
+            "chars": [
+              "安",
+              "如",
+              "泰",
+              "山"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 4
+          }
+        ],
+        "charBank": [
+          "如",
+          "海",
+          "安",
+          "流",
+          "排",
+          "一",
+          "如",
+          "水",
+          "山",
+          "泰",
+          "火",
+          "荼",
+          "粟",
+          "珠",
+          "遺",
+          "海",
+          "洗",
+          "貧",
+          "倒",
+          "高"
+        ],
+        "presetCells": [
+          {
+            "row": 0,
+            "col": 3,
+            "char": "滄"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "char": "山"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 239,
+      "sourceIndex": 126,
+      "seed": 21258405,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 239,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1700",
+            "text": "勢不可當",
+            "chars": [
+              "勢",
+              "不",
+              "可",
+              "當"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0664",
+            "text": "門當戶對",
+            "chars": [
+              "門",
+              "當",
+              "戶",
+              "對"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0127",
+            "text": "門庭若市",
+            "chars": [
+              "門",
+              "庭",
+              "若",
+              "市"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0852",
+            "text": "寸草不留",
+            "chars": [
+              "寸",
+              "草",
+              "不",
+              "留"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_1571",
+            "text": "戶限為穿",
+            "chars": [
+              "戶",
+              "限",
+              "為",
+              "穿"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0379",
+            "text": "招搖過市",
+            "chars": [
+              "招",
+              "搖",
+              "過",
+              "市"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0968",
+            "text": "風雨飄搖",
+            "chars": [
+              "風",
+              "雨",
+              "飄",
+              "搖"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "對",
+          "限",
+          "為",
+          "戶",
+          "庭",
+          "可",
+          "寸",
+          "若",
+          "門",
+          "飄",
+          "當",
+          "市",
+          "雨",
+          "草",
+          "風",
+          "留",
+          "勢",
+          "招",
+          "過",
+          "穿"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 1,
+            "char": "不"
+          },
+          {
+            "row": 1,
+            "col": 6,
+            "char": "搖"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 240,
+      "sourceIndex": 134,
+      "seed": 21321757,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 240,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0946",
+            "text": "咄咄怪事",
+            "chars": [
+              "咄",
+              "咄",
+              "怪",
+              "事"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0832",
+            "text": "一事無成",
+            "chars": [
+              "一",
+              "事",
+              "無",
+              "成"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0252",
+            "text": "一意孤行",
+            "chars": [
+              "一",
+              "意",
+              "孤",
+              "行"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1323",
+            "text": "一心一意",
+            "chars": [
+              "一",
+              "心",
+              "一",
+              "意"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_5451",
+            "text": "大功告成",
+            "chars": [
+              "大",
+              "功",
+              "告",
+              "成"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1117",
+            "text": "孤苦伶仃",
+            "chars": [
+              "孤",
+              "苦",
+              "伶",
+              "仃"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1149",
+            "text": "忠心耿耿",
+            "chars": [
+              "忠",
+              "心",
+              "耿",
+              "耿"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "咄",
+          "忠",
+          "心",
+          "一",
+          "苦",
+          "大",
+          "耿",
+          "告",
+          "無",
+          "意",
+          "伶",
+          "一",
+          "一",
+          "怪",
+          "孤",
+          "咄",
+          "功",
+          "行",
+          "耿",
+          "仃"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 3,
+            "char": "事"
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "char": "成"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 241,
+      "sourceIndex": 137,
+      "seed": 21345514,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 241,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1316",
+            "text": "三頭六臂",
+            "chars": [
+              "三",
+              "頭",
+              "六",
+              "臂"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1408",
+            "text": "兩面三刀",
+            "chars": [
+              "兩",
+              "面",
+              "三",
+              "刀"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0149",
+            "text": "笑裡藏刀",
+            "chars": [
+              "笑",
+              "裡",
+              "藏",
+              "刀"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1030",
+            "text": "藏頭露尾",
+            "chars": [
+              "藏",
+              "頭",
+              "露",
+              "尾"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1582",
+            "text": "露出馬腳",
+            "chars": [
+              "露",
+              "出",
+              "馬",
+              "腳"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_1440",
+            "text": "貽笑大方",
+            "chars": [
+              "貽",
+              "笑",
+              "大",
+              "方"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0317",
+            "text": "兩全其美",
+            "chars": [
+              "兩",
+              "全",
+              "其",
+              "美"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "頭",
+          "臂",
+          "貽",
+          "其",
+          "兩",
+          "全",
+          "美",
+          "藏",
+          "出",
+          "露",
+          "馬",
+          "六",
+          "三",
+          "大",
+          "頭",
+          "尾",
+          "腳",
+          "面",
+          "方",
+          "裡"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 0,
+            "char": "笑"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "char": "刀"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 242,
+      "sourceIndex": 177,
+      "seed": 21662274,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 242,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_5427",
+            "text": "大失所望",
+            "chars": [
+              "大",
+              "失",
+              "所",
+              "望"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0846",
+            "text": "大刀闊斧",
+            "chars": [
+              "大",
+              "刀",
+              "闊",
+              "斧"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0005",
+            "text": "班門弄斧",
+            "chars": [
+              "班",
+              "門",
+              "弄",
+              "斧"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1483",
+            "text": "眾望所歸",
+            "chars": [
+              "眾",
+              "望",
+              "所",
+              "歸"
+            ],
+            "direction": "vertical",
+            "startRow": 2,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0149",
+            "text": "笑裡藏刀",
+            "chars": [
+              "笑",
+              "裡",
+              "藏",
+              "刀"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0727",
+            "text": "患得患失",
+            "chars": [
+              "患",
+              "得",
+              "患",
+              "失"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_1519",
+            "text": "防患未然",
+            "chars": [
+              "防",
+              "患",
+              "未",
+              "然"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "未",
+          "失",
+          "刀",
+          "弄",
+          "歸",
+          "所",
+          "大",
+          "然",
+          "闊",
+          "得",
+          "班",
+          "防",
+          "門",
+          "笑",
+          "眾",
+          "患",
+          "藏",
+          "斧",
+          "裡",
+          "所"
+        ],
+        "presetCells": [
+          {
+            "row": 0,
+            "col": 4,
+            "char": "患"
+          },
+          {
+            "row": 3,
+            "col": 6,
+            "char": "望"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 243,
+      "sourceIndex": 253,
+      "seed": 22264118,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 243,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_5409",
+            "text": "棄甲曳兵",
+            "chars": [
+              "棄",
+              "甲",
+              "曳",
+              "兵"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0829",
+            "text": "兵不厭詐",
+            "chars": [
+              "兵",
+              "不",
+              "厭",
+              "詐"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0855",
+            "text": "不言而喻",
+            "chars": [
+              "不",
+              "言",
+              "而",
+              "喻"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_5406",
+            "text": "鍥而不舍",
+            "chars": [
+              "鍥",
+              "而",
+              "不",
+              "舍"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1134",
+            "text": "爾虞我詐",
+            "chars": [
+              "爾",
+              "虞",
+              "我",
+              "詐"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0251",
+            "text": "自暴自棄",
+            "chars": [
+              "自",
+              "暴",
+              "自",
+              "棄"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0089",
+            "text": "自相矛盾",
+            "chars": [
+              "自",
+              "相",
+              "矛",
+              "盾"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "不",
+          "舍",
+          "言",
+          "鍥",
+          "兵",
+          "我",
+          "矛",
+          "曳",
+          "相",
+          "自",
+          "自",
+          "爾",
+          "虞",
+          "而",
+          "棄",
+          "暴",
+          "盾",
+          "喻",
+          "甲",
+          "厭"
+        ],
+        "presetCells": [
+          {
+            "row": 4,
+            "col": 3,
+            "char": "不"
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "char": "詐"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 244,
+      "sourceIndex": 266,
+      "seed": 22367065,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 244,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0697",
+            "text": "高談闊論",
+            "chars": [
+              "高",
+              "談",
+              "闊",
+              "論"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0301",
+            "text": "曲高和寡",
+            "chars": [
+              "曲",
+              "高",
+              "和",
+              "寡"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0100",
+            "text": "孤陋寡聞",
+            "chars": [
+              "孤",
+              "陋",
+              "寡",
+              "聞"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0366",
+            "text": "聞雞起舞",
+            "chars": [
+              "聞",
+              "雞",
+              "起",
+              "舞"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0731",
+            "text": "長袖善舞",
+            "chars": [
+              "長",
+              "袖",
+              "善",
+              "舞"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0252",
+            "text": "一意孤行",
+            "chars": [
+              "一",
+              "意",
+              "孤",
+              "行"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0474",
+            "text": "雞鳴狗盜",
+            "chars": [
+              "雞",
+              "鳴",
+              "狗",
+              "盜"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "論",
+          "鳴",
+          "意",
+          "曲",
+          "闊",
+          "善",
+          "陋",
+          "高",
+          "袖",
+          "談",
+          "和",
+          "聞",
+          "盜",
+          "舞",
+          "長",
+          "一",
+          "起",
+          "狗",
+          "行",
+          "孤"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 2,
+            "char": "寡"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "char": "雞"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 245,
+      "sourceIndex": 318,
+      "seed": 22778853,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 245,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1010",
+            "text": "溫故知新",
+            "chars": [
+              "溫",
+              "故",
+              "知",
+              "新"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0710",
+            "text": "改過自新",
+            "chars": [
+              "改",
+              "過",
+              "自",
+              "新"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0629",
+            "text": "自命不凡",
+            "chars": [
+              "自",
+              "命",
+              "不",
+              "凡"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_5406",
+            "text": "鍥而不舍",
+            "chars": [
+              "鍥",
+              "而",
+              "不",
+              "舍"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1531",
+            "text": "朝令夕改",
+            "chars": [
+              "朝",
+              "令",
+              "夕",
+              "改"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1191",
+            "text": "知難而退",
+            "chars": [
+              "知",
+              "難",
+              "而",
+              "退"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0464",
+            "text": "進退維谷",
+            "chars": [
+              "進",
+              "退",
+              "維",
+              "谷"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 1
+          }
+        ],
+        "charBank": [
+          "溫",
+          "谷",
+          "過",
+          "改",
+          "新",
+          "命",
+          "不",
+          "鍥",
+          "夕",
+          "故",
+          "而",
+          "進",
+          "而",
+          "凡",
+          "維",
+          "舍",
+          "令",
+          "知",
+          "朝",
+          "難"
+        ],
+        "presetCells": [
+          {
+            "row": 6,
+            "col": 2,
+            "char": "退"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "char": "自"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 246,
+      "sourceIndex": 345,
+      "seed": 22992666,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 246,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0238",
+            "text": "撲朔迷離",
+            "chars": [
+              "撲",
+              "朔",
+              "迷",
+              "離"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0989",
+            "text": "分崩離析",
+            "chars": [
+              "分",
+              "崩",
+              "離",
+              "析"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0058",
+            "text": "入木三分",
+            "chars": [
+              "入",
+              "木",
+              "三",
+              "分"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 1
+          },
+          {
+            "id": "idiom_0013",
+            "text": "舉一反三",
+            "chars": [
+              "舉",
+              "一",
+              "反",
+              "三"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0019",
+            "text": "一敗塗地",
+            "chars": [
+              "一",
+              "敗",
+              "塗",
+              "地"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1238",
+            "text": "赤地千里",
+            "chars": [
+              "赤",
+              "地",
+              "千",
+              "里"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_1128",
+            "text": "不識抬舉",
+            "chars": [
+              "不",
+              "識",
+              "抬",
+              "舉"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "敗",
+          "分",
+          "赤",
+          "抬",
+          "地",
+          "反",
+          "木",
+          "里",
+          "撲",
+          "塗",
+          "千",
+          "離",
+          "不",
+          "迷",
+          "識",
+          "朔",
+          "析",
+          "入",
+          "舉",
+          "崩"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 3,
+            "char": "一"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "char": "三"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 247,
+      "sourceIndex": 354,
+      "seed": 23063937,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 247,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1061",
+            "text": "推陳出新",
+            "chars": [
+              "推",
+              "陳",
+              "出",
+              "新"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0063",
+            "text": "出奇制勝",
+            "chars": [
+              "出",
+              "奇",
+              "制",
+              "勝"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0755",
+            "text": "美不勝收",
+            "chars": [
+              "美",
+              "不",
+              "勝",
+              "收"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1267",
+            "text": "耳目一新",
+            "chars": [
+              "耳",
+              "目",
+              "一",
+              "新"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0153",
+            "text": "一籌莫展",
+            "chars": [
+              "一",
+              "籌",
+              "莫",
+              "展"
+            ],
+            "direction": "horizontal",
+            "startRow": 2,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0730",
+            "text": "愛莫能助",
+            "chars": [
+              "愛",
+              "莫",
+              "能",
+              "助"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_1370",
+            "text": "掩人耳目",
+            "chars": [
+              "掩",
+              "人",
+              "耳",
+              "目"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "制",
+          "不",
+          "愛",
+          "奇",
+          "一",
+          "籌",
+          "推",
+          "莫",
+          "掩",
+          "耳",
+          "陳",
+          "展",
+          "助",
+          "收",
+          "能",
+          "勝",
+          "耳",
+          "美",
+          "目",
+          "人"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 3,
+            "char": "新"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "char": "出"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 248,
+      "sourceIndex": 384,
+      "seed": 23301507,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 248,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_0275",
+            "text": "中流砥柱",
+            "chars": [
+              "中",
+              "流",
+              "砥",
+              "柱"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0440",
+            "text": "川流不息",
+            "chars": [
+              "川",
+              "流",
+              "不",
+              "息"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 4
+          },
+          {
+            "id": "idiom_0112",
+            "text": "偃旗息鼓",
+            "chars": [
+              "偃",
+              "旗",
+              "息",
+              "鼓"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0945",
+            "text": "旗開得勝",
+            "chars": [
+              "旗",
+              "開",
+              "得",
+              "勝"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0063",
+            "text": "出奇制勝",
+            "chars": [
+              "出",
+              "奇",
+              "制",
+              "勝"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0823",
+            "text": "脫穎而出",
+            "chars": [
+              "脫",
+              "穎",
+              "而",
+              "出"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0913",
+            "text": "得不償失",
+            "chars": [
+              "得",
+              "不",
+              "償",
+              "失"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 3
+          }
+        ],
+        "charBank": [
+          "砥",
+          "得",
+          "勝",
+          "脫",
+          "而",
+          "鼓",
+          "制",
+          "柱",
+          "償",
+          "開",
+          "失",
+          "不",
+          "奇",
+          "息",
+          "穎",
+          "川",
+          "偃",
+          "中",
+          "旗",
+          "不"
+        ],
+        "presetCells": [
+          {
+            "row": 1,
+            "col": 4,
+            "char": "流"
+          },
+          {
+            "row": 6,
+            "col": 0,
+            "char": "出"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 249,
+      "sourceIndex": 390,
+      "seed": 23349021,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 249,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_5141",
+            "text": "不期而遇",
+            "chars": [
+              "不",
+              "期",
+              "而",
+              "遇"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0101",
+            "text": "不共戴天",
+            "chars": [
+              "不",
+              "共",
+              "戴",
+              "天"
+            ],
+            "direction": "vertical",
+            "startRow": 1,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0740",
+            "text": "天作之合",
+            "chars": [
+              "天",
+              "作",
+              "之",
+              "合"
+            ],
+            "direction": "horizontal",
+            "startRow": 4,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1349",
+            "text": "付之一笑",
+            "chars": [
+              "付",
+              "之",
+              "一",
+              "笑"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 5
+          },
+          {
+            "id": "idiom_0388",
+            "text": "張冠李戴",
+            "chars": [
+              "張",
+              "冠",
+              "李",
+              "戴"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0666",
+            "text": "劍拔弩張",
+            "chars": [
+              "劍",
+              "拔",
+              "弩",
+              "張"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1223",
+            "text": "眉開眼笑",
+            "chars": [
+              "眉",
+              "開",
+              "眼",
+              "笑"
+            ],
+            "direction": "horizontal",
+            "startRow": 6,
+            "startCol": 2
+          }
+        ],
+        "charBank": [
+          "作",
+          "共",
+          "李",
+          "劍",
+          "弩",
+          "眼",
+          "合",
+          "拔",
+          "一",
+          "之",
+          "開",
+          "期",
+          "天",
+          "眉",
+          "而",
+          "付",
+          "不",
+          "遇",
+          "冠",
+          "笑"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 0,
+            "char": "張"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "char": "戴"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 250,
+      "sourceIndex": 394,
+      "seed": 23380697,
+      "difficultyScore": 1119,
+      "level": {
+        "id": 250,
+        "rows": 7,
+        "cols": 7,
+        "idioms": [
+          {
+            "id": "idiom_1396",
+            "text": "身敗名裂",
+            "chars": [
+              "身",
+              "敗",
+              "名",
+              "裂"
+            ],
+            "direction": "horizontal",
+            "startRow": 3,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_1422",
+            "text": "四分五裂",
+            "chars": [
+              "四",
+              "分",
+              "五",
+              "裂"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_0041",
+            "text": "四面楚歌",
+            "chars": [
+              "四",
+              "面",
+              "楚",
+              "歌"
+            ],
+            "direction": "horizontal",
+            "startRow": 0,
+            "startCol": 3
+          },
+          {
+            "id": "idiom_1347",
+            "text": "名韁利鎖",
+            "chars": [
+              "名",
+              "韁",
+              "利",
+              "鎖"
+            ],
+            "direction": "vertical",
+            "startRow": 3,
+            "startCol": 2
+          },
+          {
+            "id": "idiom_0183",
+            "text": "因勢利導",
+            "chars": [
+              "因",
+              "勢",
+              "利",
+              "導"
+            ],
+            "direction": "horizontal",
+            "startRow": 5,
+            "startCol": 0
+          },
+          {
+            "id": "idiom_0917",
+            "text": "歌功頌德",
+            "chars": [
+              "歌",
+              "功",
+              "頌",
+              "德"
+            ],
+            "direction": "vertical",
+            "startRow": 0,
+            "startCol": 6
+          },
+          {
+            "id": "idiom_0058",
+            "text": "入木三分",
+            "chars": [
+              "入",
+              "木",
+              "三",
+              "分"
+            ],
+            "direction": "horizontal",
+            "startRow": 1,
+            "startCol": 0
+          }
+        ],
+        "charBank": [
+          "德",
+          "入",
+          "導",
+          "四",
+          "頌",
+          "功",
+          "分",
+          "五",
+          "木",
+          "身",
+          "敗",
+          "面",
+          "勢",
+          "韁",
+          "利",
+          "楚",
+          "名",
+          "因",
+          "鎖",
+          "三"
+        ],
+        "presetCells": [
+          {
+            "row": 3,
+            "col": 3,
+            "char": "裂"
+          },
+          {
+            "row": 0,
+            "col": 6,
+            "char": "歌"
+          }
+        ]
+      }
+    }
+  ]
+}

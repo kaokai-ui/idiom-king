@@ -16,7 +16,7 @@ import { generateRandomChainLevelWithSeed } from './chainLevelSources';
 
 type UseIdiomChainOptions = {
   mode: ChainMode;
-  challengeLevels?: ChallengeLevelRecord[];
+  challengeLevels?: Array<ChallengeLevelRecord | undefined>;
   initialLevelNumber?: number;
   initialSeed?: number | null;
   sessionKey?: number;
@@ -40,7 +40,8 @@ export function useIdiomChain({
 
   const getLevelData = useCallback((levelNumber: number, seed?: number): { level: LevelData | null; seed: number | null } => {
     if (mode === 'challenge') {
-      const level = challengeLevels?.[levelNumber - 1]?.level ?? null;
+      const record = challengeLevels?.[levelNumber - 1];
+      const level = record?.level ?? null;
       return { level, seed: null };
     }
     const result = generateRandomChainLevelWithSeed(levelNumber, seed ?? undefined);

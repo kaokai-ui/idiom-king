@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:levelgen-sim": "node ./scripts/run-levelgen-sim.mjs"
+    "test:levelgen-sim": "node ./scripts/run-levelgen-sim.mjs",
+    "generate:challenge-shards": "powershell -NoProfile -Command \"$env:GENERATE_CHALLENGE_SHARDS='1'; npm exec vitest run scripts/generate-challenge-shards.test.ts\""
   },
   "dependencies": {
     "react": "^19.2.6",

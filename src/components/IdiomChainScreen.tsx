@@ -20,7 +20,7 @@ type Props = {
 const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, initialSeed = null, onToggleStarred, isStarred }) => {
   const challengeCampaign = useChallengeCampaign(mode === 'challenge');
   const isChallengeMode = mode === 'challenge';
-  const challengeLevels = challengeCampaign.pack?.levels;
+  const challengeLevels = challengeCampaign.levels;
   const resumeLevel = challengeCampaign.resumeLevelNumber ?? 1;
 
   const {

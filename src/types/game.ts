@@ -71,11 +71,27 @@ export type ChallengeLevelRecord = {
   level: LevelData;
 };
 
-export type ChainChallengePack = {
+export type ChainChallengeShardMeta = {
+  index: number;
+  startSequence: number;
+  endSequence: number;
+  file: string;
+};
+
+export type ChainChallengeManifest = {
   version: string;
   generatedAt: string;
-  nextSourceIndex: number;
-  complete: boolean;
+  totalLevels: number;
+  shardSize: number;
+  shards: ChainChallengeShardMeta[];
+};
+
+export type ChainChallengeShard = {
+  version: string;
+  generatedAt: string;
+  shardIndex: number;
+  startSequence: number;
+  endSequence: number;
   levels: ChallengeLevelRecord[];
 };
 
