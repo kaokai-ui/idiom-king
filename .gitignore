@@ -24,6 +24,7 @@ coverage
 gcm-diagnose.log
 outputs/
 tmp_revised_test.txt
+newidioms.txt
 
 # Python / scripts
 __pycache__/
