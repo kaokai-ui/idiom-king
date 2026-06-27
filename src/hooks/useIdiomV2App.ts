@@ -6,6 +6,7 @@ import { V2_STORAGE_KEYS, writeStoredValue, readV2Settings, readV2Progress, read
 import { shuffle, isMasteredWord } from '../lib/utils';
 import { useIdiomV2Data } from './useIdiomV2Data';
 import { LATE_SHOW_IDIOMS } from '../constants/idiomLevels';
+import { trackIdiomV2LevelSelection } from '../lib/analytics';
 
 function createEntryFromStarred(entry: IdiomV2StarredEntry): IdiomV2Entry {
   const chars = entry.text.split('');
@@ -185,8 +186,12 @@ export function useIdiomV2App() {
   );
 
   const setIdiomLevel = useCallback(
-    (level: IdiomLevel) => dispatch({ type: idiomV2ActionTypes.SET_IDIOM_LEVEL, payload: level }),
-    []
+    (level: IdiomLevel) => {
+      if (level === activeLevel) return;
+      dispatch({ type: idiomV2ActionTypes.SET_IDIOM_LEVEL, payload: level });
+      trackIdiomV2LevelSelection(level, activeLevel);
+    },
+    [activeLevel]
   );
 
   const toggleStarred = useCallback(
