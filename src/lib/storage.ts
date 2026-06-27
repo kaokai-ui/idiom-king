@@ -60,6 +60,11 @@ function readProgress(): import('../types/game').AppProgress {
 
 function readSession(): import('../types/game').AppSession {
   const stored = readStoredValue(STORAGE_KEYS.session, defaultSession);
+  // We do not persist in-progress practice state yet,
+  // so a fresh app entry should always land on home.
+  if (stored.screen !== 'home') {
+    return defaultSession;
+  }
   return { screen: stored.screen ?? defaultSession.screen, flashcards: null };
 }
 

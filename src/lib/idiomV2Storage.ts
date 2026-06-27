@@ -78,6 +78,11 @@ function readV2Progress(): IdiomV2Progress {
 
 function readV2Session(): IdiomV2Session {
   const stored = readStoredValue(V2_STORAGE_KEYS.session, defaultSession);
+  // We do not persist in-progress flashcard/chain/cloze session state yet,
+  // so re-entering the app should always land on home instead of a stale screen.
+  if (stored.screen !== 'home') {
+    return defaultSession;
+  }
   return { screen: stored.screen ?? defaultSession.screen, flashcards: null };
 }
 
