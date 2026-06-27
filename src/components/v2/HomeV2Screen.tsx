@@ -47,7 +47,6 @@ const HomeV2Screen: FC<Props> = ({
     <main className="page-shell app-shell">
       <section className="hero-panel">
         <img className="hero-logo" src={logoSrc} alt="成語王2首頁標誌" />
-        <h1 style={{ textAlign: 'center', fontSize: '1.25rem', margin: '0.5rem 0' }}>我是成語王2</h1>
         <div className="level-segmented-control">
           {IDIOM_LEVELS.map(level => (
             <button
