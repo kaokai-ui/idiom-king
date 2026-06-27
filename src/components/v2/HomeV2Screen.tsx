@@ -41,7 +41,7 @@ const HomeV2Screen: FC<Props> = ({
   onToggleSetting,
   onSetIdiomLevel,
 }) => {
-  const logoSrc = `${import.meta.env.BASE_URL}idiomHome.webp`;
+  const logoSrc = `${import.meta.env.BASE_URL}idiom2Home.webp`;
 
   return (
     <main className="page-shell app-shell">
