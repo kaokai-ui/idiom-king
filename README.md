@@ -1,87 +1,54 @@
-# React + TypeScript + Vite
+# 我是成語王 / 我是成語王2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+這個專案是用 `Vite + React + TypeScript` 製作的成語學習遊戲，目前同時保留：
 
-Currently, two official plugins are available:
+- `index.html`：我是成語王（1 代）
+- `idiom2.html`：我是成語王2（2 代）
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 本地開發
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
----
+本地入口：
 
-## Product Guardrails
+- 1 代：`http://127.0.0.1:4173/idiom-king/`
+- 2 代：`http://127.0.0.1:4173/idiom-king/idiom2.html`
 
-- Do not add a public home entry named `成語接龍（測試模式）` back into the app.
-- The supported public chain entries are only:
-  - `成語接龍（隨機模式）`
-  - `成語接龍（挑戰模式）`
-- Developer-only entries may include:
-  - `成語接龍（舊版隨機）`
-  - `接龍測試 50 關`
-- `成語接龍（隨機模式）` must open `mode="random"` and keep the `看答案` button available in the hint panel.
-- If a debug-only interaction mode is needed later, keep it behind developer mode or a dedicated debug route, not the main home grid.
+## 常用指令
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+npm run build
+npm run test
+npm run preview
 ```
+
+## 我是成語王2 重點
+
+- 2 代使用 `idioms2.xlsx` 作為主要資料來源
+- 2 代支援 `國小 / 國中 / 高中以上`
+- 2 代入口與 1 代入口分離，避免互相干擾
+- 2 代的 localStorage key 使用 `idiom-king-2:*`
+- 2 代資料輸出位於 `public/data/idioms-v2/`
+
+## 發佈前檢查
+
+```bash
+npm run build
+npm run test
+```
+
+建議確認：
+
+- `index.html` 可正常開啟 1 代
+- `idiom2.html` 可正常開啟 2 代
+- 2 代首頁可切換等級
+- `成語接龍（隨機模式）`、`成語接龍（不分程度挑戰模式）`、`成語填空` 可正常進入
+
+## 專案備註
+
+- `BUG.md`、`DEV.md`、`IDIOM_KING_2_REVAMP_PLAN.md` 是本地工作文件，目前不納入 git
+- `outputs/`、`tmp_revised_test.txt` 為本地產物，已忽略

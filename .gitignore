@@ -22,6 +22,8 @@ coverage
 .vitest
 *.tsbuildinfo
 gcm-diagnose.log
+outputs/
+tmp_revised_test.txt
 
 # Python / scripts
 __pycache__/
@@ -39,6 +41,7 @@ Source
 *.7z
 BUG.md
 DEV.md
+IDIOM_KING_2_REVAMP_PLAN.md
 
 # Excel files
 *.xlsx

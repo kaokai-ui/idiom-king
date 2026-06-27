@@ -1,0 +1,9772 @@
+[
+  {
+    "id": "idiom2_1",
+    "sourceNo": "1",
+    "text": "一毛不拔",
+    "chars": [
+      "一",
+      "毛",
+      "不",
+      "拔"
+    ],
+    "uniqueChars": [
+      "一",
+      "毛",
+      "不",
+      "拔"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "毛": 1,
+      "不": 1,
+      "拔": 1
+    },
+    "bopomofo": "ㄧ　ㄇㄠˊ　ㄅㄨˋ　ㄅㄚˊ　（變）　ㄧˋ　ㄇㄠˊ　ㄅㄨˋ　ㄅㄚˊ",
+    "usage": "形容人非常吝嗇。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2",
+    "sourceNo": "2",
+    "text": "掩耳盜鈴",
+    "chars": [
+      "掩",
+      "耳",
+      "盜",
+      "鈴"
+    ],
+    "uniqueChars": [
+      "掩",
+      "耳",
+      "盜",
+      "鈴"
+    ],
+    "charCountMap": {
+      "掩": 1,
+      "耳": 1,
+      "盜": 1,
+      "鈴": 1
+    },
+    "bopomofo": "ㄧㄢˇ　ㄦˇ　ㄉㄠˋ　ㄌㄧㄥˊ",
+    "usage": "比喻妄想瞞騙他人，結果卻只是欺騙自己而已。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_3",
+    "sourceNo": "3",
+    "text": "一丘之貉",
+    "chars": [
+      "一",
+      "丘",
+      "之",
+      "貉"
+    ],
+    "uniqueChars": [
+      "一",
+      "丘",
+      "之",
+      "貉"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "丘": 1,
+      "之": 1,
+      "貉": 1
+    },
+    "bopomofo": "ㄧ　ㄑㄧㄡ　ㄓ　ㄏㄜˊ　（變）　ㄧˋ　ㄑㄧㄡ　ㄓ　ㄏㄜˊ",
+    "usage": "比喻彼此同樣低劣，並無 差異。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_6",
+    "sourceNo": "6",
+    "text": "朝三暮四",
+    "chars": [
+      "朝",
+      "三",
+      "暮",
+      "四"
+    ],
+    "uniqueChars": [
+      "朝",
+      "三",
+      "暮",
+      "四"
+    ],
+    "charCountMap": {
+      "朝": 1,
+      "三": 1,
+      "暮": 1,
+      "四": 1
+    },
+    "bopomofo": "ㄓㄠ　ㄙㄢ　ㄇㄨˋ　ㄙˋ",
+    "usage": "比喻人心意不定、反覆無常。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_8",
+    "sourceNo": "8",
+    "text": "名落孫山",
+    "chars": [
+      "名",
+      "落",
+      "孫",
+      "山"
+    ],
+    "uniqueChars": [
+      "名",
+      "落",
+      "孫",
+      "山"
+    ],
+    "charCountMap": {
+      "名": 1,
+      "落": 1,
+      "孫": 1,
+      "山": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ　ㄌㄨㄛˋ　ㄙㄨㄣ　ㄕㄢ",
+    "usage": "比喻考試不中。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_11",
+    "sourceNo": "11",
+    "text": "指鹿為馬",
+    "chars": [
+      "指",
+      "鹿",
+      "為",
+      "馬"
+    ],
+    "uniqueChars": [
+      "指",
+      "鹿",
+      "為",
+      "馬"
+    ],
+    "charCountMap": {
+      "指": 1,
+      "鹿": 1,
+      "為": 1,
+      "馬": 1
+    },
+    "bopomofo": "ㄓˇ　ㄌㄨˋ　ㄨㄟˊ　ㄇㄚˇ",
+    "usage": "比喻是非顛倒，黑白不分",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_14",
+    "sourceNo": "14",
+    "text": "江郎才盡",
+    "chars": [
+      "江",
+      "郎",
+      "才",
+      "盡"
+    ],
+    "uniqueChars": [
+      "江",
+      "郎",
+      "才",
+      "盡"
+    ],
+    "charCountMap": {
+      "江": 1,
+      "郎": 1,
+      "才": 1,
+      "盡": 1
+    },
+    "bopomofo": "ㄐㄧㄤ　ㄌㄤˊ　ㄘㄞˊ　ㄐㄧㄣˋ",
+    "usage": "比喻文思枯竭減退。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_16",
+    "sourceNo": "16",
+    "text": "口若懸河",
+    "chars": [
+      "口",
+      "若",
+      "懸",
+      "河"
+    ],
+    "uniqueChars": [
+      "口",
+      "若",
+      "懸",
+      "河"
+    ],
+    "charCountMap": {
+      "口": 1,
+      "若": 1,
+      "懸": 1,
+      "河": 1
+    },
+    "bopomofo": "ㄎㄡˇ　ㄖㄨㄛˋ　ㄒㄩㄢˊ　ㄏㄜˊ",
+    "usage": "比喻說話滔滔不絕，能言 舌辯。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_22",
+    "sourceNo": "22",
+    "text": "東窗事發",
+    "chars": [
+      "東",
+      "窗",
+      "事",
+      "發"
+    ],
+    "uniqueChars": [
+      "東",
+      "窗",
+      "事",
+      "發"
+    ],
+    "charCountMap": {
+      "東": 1,
+      "窗": 1,
+      "事": 1,
+      "發": 1
+    },
+    "bopomofo": "ㄉㄨㄥ　ㄔㄨㄤ　ㄕˋ　ㄈㄚ",
+    "usage": "比喻陰謀已被揭發。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_27",
+    "sourceNo": "27",
+    "text": "司空見慣",
+    "chars": [
+      "司",
+      "空",
+      "見",
+      "慣"
+    ],
+    "uniqueChars": [
+      "司",
+      "空",
+      "見",
+      "慣"
+    ],
+    "charCountMap": {
+      "司": 1,
+      "空": 1,
+      "見": 1,
+      "慣": 1
+    },
+    "bopomofo": "ㄙ　ㄎㄨㄥ　ㄐㄧㄢˋ　ㄍㄨㄢˋ",
+    "usage": "比喻經常看到，不足為 奇。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_33",
+    "sourceNo": "33",
+    "text": "作法自斃",
+    "chars": [
+      "作",
+      "法",
+      "自",
+      "斃"
+    ],
+    "uniqueChars": [
+      "作",
+      "法",
+      "自",
+      "斃"
+    ],
+    "charCountMap": {
+      "作": 1,
+      "法": 1,
+      "自": 1,
+      "斃": 1
+    },
+    "bopomofo": "ㄗㄨㄛˋ　ㄈㄚˇ　ㄗˋ　ㄅㄧˋ",
+    "usage": "比喻自作自受。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_37",
+    "sourceNo": "37",
+    "text": "杞人憂天",
+    "chars": [
+      "杞",
+      "人",
+      "憂",
+      "天"
+    ],
+    "uniqueChars": [
+      "杞",
+      "人",
+      "憂",
+      "天"
+    ],
+    "charCountMap": {
+      "杞": 1,
+      "人": 1,
+      "憂": 1,
+      "天": 1
+    },
+    "bopomofo": "ㄑㄧˇ　ㄖㄣˊ　ㄧㄡ　ㄊㄧㄢ",
+    "usage": "比喻缺乏根據且不必要的憂慮。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_38",
+    "sourceNo": "38",
+    "text": "一暴十寒",
+    "chars": [
+      "一",
+      "暴",
+      "十",
+      "寒"
+    ],
+    "uniqueChars": [
+      "一",
+      "暴",
+      "十",
+      "寒"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "暴": 1,
+      "十": 1,
+      "寒": 1
+    },
+    "bopomofo": "ㄧ　ㄆㄨˋ　ㄕˊ　ㄏㄢˊ　（變）　ㄧˊ　ㄆㄨˋ　ㄕˊ　ㄏㄢˊ",
+    "usage": "比喻人做事缺乏恆心，時 常中斷。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_39",
+    "sourceNo": "39",
+    "text": "守株待兔",
+    "chars": [
+      "守",
+      "株",
+      "待",
+      "兔"
+    ],
+    "uniqueChars": [
+      "守",
+      "株",
+      "待",
+      "兔"
+    ],
+    "charCountMap": {
+      "守": 1,
+      "株": 1,
+      "待": 1,
+      "兔": 1
+    },
+    "bopomofo": "ㄕㄡˇ　ㄓㄨ　ㄉㄞˋ　ㄊㄨˋ",
+    "usage": "比喻拘泥守成，不知變 通或妄想不勞而獲。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_40",
+    "sourceNo": "40",
+    "text": "不學無術",
+    "chars": [
+      "不",
+      "學",
+      "無",
+      "術"
+    ],
+    "uniqueChars": [
+      "不",
+      "學",
+      "無",
+      "術"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "學": 1,
+      "無": 1,
+      "術": 1
+    },
+    "bopomofo": "ㄅㄨˋ　ㄒㄩㄝˊ　ㄨˊ　ㄕㄨˋ",
+    "usage": "譏諷一個人不用心學習，而又沒有專 長。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_41",
+    "sourceNo": "41",
+    "text": "四面楚歌",
+    "chars": [
+      "四",
+      "面",
+      "楚",
+      "歌"
+    ],
+    "uniqueChars": [
+      "四",
+      "面",
+      "楚",
+      "歌"
+    ],
+    "charCountMap": {
+      "四": 1,
+      "面": 1,
+      "楚": 1,
+      "歌": 1
+    },
+    "bopomofo": "ㄙˋ　ㄇㄧㄢˋ　ㄔㄨˇ　ㄍㄜ",
+    "usage": "比喻四面受敵，孤立無 援。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_44",
+    "sourceNo": "44",
+    "text": "走馬看花",
+    "chars": [
+      "走",
+      "馬",
+      "看",
+      "花"
+    ],
+    "uniqueChars": [
+      "走",
+      "馬",
+      "看",
+      "花"
+    ],
+    "charCountMap": {
+      "走": 1,
+      "馬": 1,
+      "看": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄗㄡˇ　ㄇㄚˇ　ㄎㄢˋ　ㄏㄨㄚ",
+    "usage": "形容得意、愉快的心情。也比喻略觀事物外象，而不究其底。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_49",
+    "sourceNo": "49",
+    "text": "杯弓蛇影",
+    "chars": [
+      "杯",
+      "弓",
+      "蛇",
+      "影"
+    ],
+    "uniqueChars": [
+      "杯",
+      "弓",
+      "蛇",
+      "影"
+    ],
+    "charCountMap": {
+      "杯": 1,
+      "弓": 1,
+      "蛇": 1,
+      "影": 1
+    },
+    "bopomofo": "ㄅㄟ　ㄍㄨㄥ　ㄕㄜˊ　ㄧㄥˇ",
+    "usage": "比喻為不存在的事情枉 自驚擾。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_52",
+    "sourceNo": "52",
+    "text": "東山再起",
+    "chars": [
+      "東",
+      "山",
+      "再",
+      "起"
+    ],
+    "uniqueChars": [
+      "東",
+      "山",
+      "再",
+      "起"
+    ],
+    "charCountMap": {
+      "東": 1,
+      "山": 1,
+      "再": 1,
+      "起": 1
+    },
+    "bopomofo": "ㄉㄨㄥ　ㄕㄢ　ㄗㄞˋ　ㄑㄧˇ",
+    "usage": "表示失敗後捲土重來。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_55",
+    "sourceNo": "55",
+    "text": "打草驚蛇",
+    "chars": [
+      "打",
+      "草",
+      "驚",
+      "蛇"
+    ],
+    "uniqueChars": [
+      "打",
+      "草",
+      "驚",
+      "蛇"
+    ],
+    "charCountMap": {
+      "打": 1,
+      "草": 1,
+      "驚": 1,
+      "蛇": 1
+    },
+    "bopomofo": "ㄉㄚˇ　ㄘㄠˇ　ㄐㄧㄥ　ㄕㄜˊ",
+    "usage": "比喻對付敵人時，行事不密，致使對方有所警 覺，而預先防備。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_63",
+    "sourceNo": "63",
+    "text": "出奇制勝",
+    "chars": [
+      "出",
+      "奇",
+      "制",
+      "勝"
+    ],
+    "uniqueChars": [
+      "出",
+      "奇",
+      "制",
+      "勝"
+    ],
+    "charCountMap": {
+      "出": 1,
+      "奇": 1,
+      "制": 1,
+      "勝": 1
+    },
+    "bopomofo": "ㄔㄨ　ㄑㄧˊ　ㄓˋ　ㄕㄥˋ",
+    "usage": "比喻以奇特創新的方式取勝",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_67",
+    "sourceNo": "67",
+    "text": "一日千里",
+    "chars": [
+      "一",
+      "日",
+      "千",
+      "里"
+    ],
+    "uniqueChars": [
+      "一",
+      "日",
+      "千",
+      "里"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "日": 1,
+      "千": 1,
+      "里": 1
+    },
+    "bopomofo": "ㄧ　ㄖˋ　ㄑㄧㄢ　ㄌㄧˇ　（變）　ㄧˊ　ㄖˋ　ㄑㄧㄢ　ㄌㄧˇ",
+    "usage": "形容進步的很快。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_80",
+    "sourceNo": "80",
+    "text": "趾高氣揚",
+    "chars": [
+      "趾",
+      "高",
+      "氣",
+      "揚"
+    ],
+    "uniqueChars": [
+      "趾",
+      "高",
+      "氣",
+      "揚"
+    ],
+    "charCountMap": {
+      "趾": 1,
+      "高": 1,
+      "氣": 1,
+      "揚": 1
+    },
+    "bopomofo": "ㄓˇ　ㄍㄠ　ㄑㄧˋ　ㄧㄤˊ",
+    "usage": "指走路腳抬得很高，十分神氣。形容驕傲自 滿、得意忘形的樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_83",
+    "sourceNo": "83",
+    "text": "病入膏肓",
+    "chars": [
+      "病",
+      "入",
+      "膏",
+      "肓"
+    ],
+    "uniqueChars": [
+      "病",
+      "入",
+      "膏",
+      "肓"
+    ],
+    "charCountMap": {
+      "病": 1,
+      "入": 1,
+      "膏": 1,
+      "肓": 1
+    },
+    "bopomofo": "ㄅㄧㄥˋ　ㄖㄨˋ　ㄍㄠ　ㄏㄨㄤ",
+    "usage": "指一個人已經生很重的 病，就算再吃多少藥已經沒有救了。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_86",
+    "sourceNo": "86",
+    "text": "緣木求魚",
+    "chars": [
+      "緣",
+      "木",
+      "求",
+      "魚"
+    ],
+    "uniqueChars": [
+      "緣",
+      "木",
+      "求",
+      "魚"
+    ],
+    "charCountMap": {
+      "緣": 1,
+      "木": 1,
+      "求": 1,
+      "魚": 1
+    },
+    "bopomofo": "ㄩㄢˊ　ㄇㄨˋ　ㄑㄧㄡˊ　ㄩˊ",
+    "usage": "比喻用錯方法，徒勞無功。 語本。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_105",
+    "sourceNo": "105",
+    "text": "世外桃源",
+    "chars": [
+      "世",
+      "外",
+      "桃",
+      "源"
+    ],
+    "uniqueChars": [
+      "世",
+      "外",
+      "桃",
+      "源"
+    ],
+    "charCountMap": {
+      "世": 1,
+      "外": 1,
+      "桃": 1,
+      "源": 1
+    },
+    "bopomofo": "ㄕˋ　ㄨㄞˋ　ㄊㄠˊ　ㄩㄢˊ",
+    "usage": "比喻風景優美而人跡罕 至的地方。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_115",
+    "sourceNo": "115",
+    "text": "拾人牙慧",
+    "chars": [
+      "拾",
+      "人",
+      "牙",
+      "慧"
+    ],
+    "uniqueChars": [
+      "拾",
+      "人",
+      "牙",
+      "慧"
+    ],
+    "charCountMap": {
+      "拾": 1,
+      "人": 1,
+      "牙": 1,
+      "慧": 1
+    },
+    "bopomofo": "ㄕˊ　ㄖㄣˊ　ㄧㄚˊ　ㄏㄨㄟˋ",
+    "usage": "比喻蹈襲他人的言論或 主張。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_119",
+    "sourceNo": "119",
+    "text": "杯水車薪",
+    "chars": [
+      "杯",
+      "水",
+      "車",
+      "薪"
+    ],
+    "uniqueChars": [
+      "杯",
+      "水",
+      "車",
+      "薪"
+    ],
+    "charCountMap": {
+      "杯": 1,
+      "水": 1,
+      "車": 1,
+      "薪": 1
+    },
+    "bopomofo": "ㄅㄟ　ㄕㄨㄟˇ　ㄐㄩ　ㄒㄧㄣ",
+    "usage": "比喻無濟於事。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_122",
+    "sourceNo": "122",
+    "text": "燃眉之急",
+    "chars": [
+      "燃",
+      "眉",
+      "之",
+      "急"
+    ],
+    "uniqueChars": [
+      "燃",
+      "眉",
+      "之",
+      "急"
+    ],
+    "charCountMap": {
+      "燃": 1,
+      "眉": 1,
+      "之": 1,
+      "急": 1
+    },
+    "bopomofo": "ㄖㄢˊ　ㄇㄟˊ　ㄓ　ㄐㄧˊ",
+    "usage": "像火燒眉毛般緊迫。形容事 態嚴重，情況危急。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_127",
+    "sourceNo": "127",
+    "text": "門庭若市",
+    "chars": [
+      "門",
+      "庭",
+      "若",
+      "市"
+    ],
+    "uniqueChars": [
+      "門",
+      "庭",
+      "若",
+      "市"
+    ],
+    "charCountMap": {
+      "門": 1,
+      "庭": 1,
+      "若": 1,
+      "市": 1
+    },
+    "bopomofo": "ㄇㄣˊ　ㄊㄧㄥˊ　ㄖㄨㄛˋ　ㄕˋ",
+    "usage": "比喻來往的賓客眾多",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_128",
+    "sourceNo": "128",
+    "text": "不倫不類",
+    "chars": [
+      "不",
+      "倫",
+      "不",
+      "類"
+    ],
+    "uniqueChars": [
+      "不",
+      "倫",
+      "類"
+    ],
+    "charCountMap": {
+      "不": 2,
+      "倫": 1,
+      "類": 1
+    },
+    "bopomofo": "ㄅㄨˋ　ㄌㄨㄣˊ　ㄅㄨˋ　ㄌㄟˋ　（變）　ㄅㄨˋ　ㄌㄨㄣˊ　ㄅㄨˊ　ㄌㄟˋ",
+    "usage": "不像樣、不合適。與「不 三不四」同。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_135",
+    "sourceNo": "135",
+    "text": "雪中送炭",
+    "chars": [
+      "雪",
+      "中",
+      "送",
+      "炭"
+    ],
+    "uniqueChars": [
+      "雪",
+      "中",
+      "送",
+      "炭"
+    ],
+    "charCountMap": {
+      "雪": 1,
+      "中": 1,
+      "送": 1,
+      "炭": 1
+    },
+    "bopomofo": "ㄒㄩㄝˇ　ㄓㄨㄥ　ㄙㄨㄥˋ　ㄊㄢˋ",
+    "usage": "比喻在他人遇到困難 時，給予適時的援助",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_146",
+    "sourceNo": "146",
+    "text": "瓜田李下",
+    "chars": [
+      "瓜",
+      "田",
+      "李",
+      "下"
+    ],
+    "uniqueChars": [
+      "瓜",
+      "田",
+      "李",
+      "下"
+    ],
+    "charCountMap": {
+      "瓜": 1,
+      "田": 1,
+      "李": 1,
+      "下": 1
+    },
+    "bopomofo": "ㄍㄨㄚ　ㄊㄧㄢˊ　ㄌㄧˇ　ㄒㄧㄚˋ",
+    "usage": "比喻容易引起懷疑的場 合。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_156",
+    "sourceNo": "156",
+    "text": "莫逆之交",
+    "chars": [
+      "莫",
+      "逆",
+      "之",
+      "交"
+    ],
+    "uniqueChars": [
+      "莫",
+      "逆",
+      "之",
+      "交"
+    ],
+    "charCountMap": {
+      "莫": 1,
+      "逆": 1,
+      "之": 1,
+      "交": 1
+    },
+    "bopomofo": "ㄇㄛˋ　ㄋㄧˋ　ㄓ　ㄐㄧㄠ",
+    "usage": "指心意相投、至好無嫌 的朋友。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_174",
+    "sourceNo": "174",
+    "text": "不脛而走",
+    "chars": [
+      "不",
+      "脛",
+      "而",
+      "走"
+    ],
+    "uniqueChars": [
+      "不",
+      "脛",
+      "而",
+      "走"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "脛": 1,
+      "而": 1,
+      "走": 1
+    },
+    "bopomofo": "ㄅㄨˋ　ㄐㄧㄥˋ　ㄦˊ　ㄗㄡˇ　（變）　ㄅㄨˊ　ㄐㄧㄥˋ　ㄦˊ　ㄗㄡˇ",
+    "usage": "比喻事物不用推廣，也能迅 速傳播。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_176",
+    "sourceNo": "176",
+    "text": "東施效顰",
+    "chars": [
+      "東",
+      "施",
+      "效",
+      "顰"
+    ],
+    "uniqueChars": [
+      "東",
+      "施",
+      "效",
+      "顰"
+    ],
+    "charCountMap": {
+      "東": 1,
+      "施": 1,
+      "效": 1,
+      "顰": 1
+    },
+    "bopomofo": "ㄉㄨㄥ　ㄕ　ㄒㄧㄠˋ　ㄆㄧㄣˊ",
+    "usage": "比喻不衡量本身的條 件，而盲目胡亂模仿，結果適得其反。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_189",
+    "sourceNo": "189",
+    "text": "眾志成城",
+    "chars": [
+      "眾",
+      "志",
+      "成",
+      "城"
+    ],
+    "uniqueChars": [
+      "眾",
+      "志",
+      "成",
+      "城"
+    ],
+    "charCountMap": {
+      "眾": 1,
+      "志": 1,
+      "成": 1,
+      "城": 1
+    },
+    "bopomofo": "ㄓㄨㄥˋ　ㄓˋ　ㄔㄥˊ　ㄔㄥˊ",
+    "usage": "比喻團結一致，同心協力。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_192",
+    "sourceNo": "192",
+    "text": "名不虛傳",
+    "chars": [
+      "名",
+      "不",
+      "虛",
+      "傳"
+    ],
+    "uniqueChars": [
+      "名",
+      "不",
+      "虛",
+      "傳"
+    ],
+    "charCountMap": {
+      "名": 1,
+      "不": 1,
+      "虛": 1,
+      "傳": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ　ㄅㄨˋ　ㄒㄩ　ㄔㄨㄢˊ",
+    "usage": "名聲與實際相符，而非 徒有虛名。褒義。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_193",
+    "sourceNo": "193",
+    "text": "束之高閣",
+    "chars": [
+      "束",
+      "之",
+      "高",
+      "閣"
+    ],
+    "uniqueChars": [
+      "束",
+      "之",
+      "高",
+      "閣"
+    ],
+    "charCountMap": {
+      "束": 1,
+      "之": 1,
+      "高": 1,
+      "閣": 1
+    },
+    "bopomofo": "ㄕㄨˋ　ㄓ　ㄍㄠ　ㄍㄜˊ",
+    "usage": "把東西捆起來，放置於高樓 上。比喻棄置不用。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_199",
+    "sourceNo": "199",
+    "text": "買櫝還珠",
+    "chars": [
+      "買",
+      "櫝",
+      "還",
+      "珠"
+    ],
+    "uniqueChars": [
+      "買",
+      "櫝",
+      "還",
+      "珠"
+    ],
+    "charCountMap": {
+      "買": 1,
+      "櫝": 1,
+      "還": 1,
+      "珠": 1
+    },
+    "bopomofo": "ㄇㄞˇ　ㄉㄨˊ　ㄏㄨㄢˊ　ㄓㄨ",
+    "usage": "比喻沒有眼光，取捨失當。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_214",
+    "sourceNo": "214",
+    "text": "同舟共濟",
+    "chars": [
+      "同",
+      "舟",
+      "共",
+      "濟"
+    ],
+    "uniqueChars": [
+      "同",
+      "舟",
+      "共",
+      "濟"
+    ],
+    "charCountMap": {
+      "同": 1,
+      "舟": 1,
+      "共": 1,
+      "濟": 1
+    },
+    "bopomofo": "ㄊㄨㄥˊ　ㄓㄡ　ㄍㄨㄥˋ　ㄐㄧˋ",
+    "usage": "比喻同心協力，戰勝困 難。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_224",
+    "sourceNo": "224",
+    "text": "青梅竹馬",
+    "chars": [
+      "青",
+      "梅",
+      "竹",
+      "馬"
+    ],
+    "uniqueChars": [
+      "青",
+      "梅",
+      "竹",
+      "馬"
+    ],
+    "charCountMap": {
+      "青": 1,
+      "梅": 1,
+      "竹": 1,
+      "馬": 1
+    },
+    "bopomofo": "ㄑㄧㄥ　ㄇㄟˊ　ㄓㄨˊ　ㄇㄚˇ",
+    "usage": "形容小兒女天真無邪的結伴嬉戲。也指從小相識的伴侶。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_229",
+    "sourceNo": "229",
+    "text": "天花亂墜",
+    "chars": [
+      "天",
+      "花",
+      "亂",
+      "墜"
+    ],
+    "uniqueChars": [
+      "天",
+      "花",
+      "亂",
+      "墜"
+    ],
+    "charCountMap": {
+      "天": 1,
+      "花": 1,
+      "亂": 1,
+      "墜": 1
+    },
+    "bopomofo": "ㄊㄧㄢ　ㄏㄨㄚ　ㄌㄨㄢˋ　ㄓㄨㄟˋ",
+    "usage": "形容說話言詞巧 妙，有聲有色，非常 動聽。多指誇大而不切實際的事。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_245",
+    "sourceNo": "245",
+    "text": "明日黃花",
+    "chars": [
+      "明",
+      "日",
+      "黃",
+      "花"
+    ],
+    "uniqueChars": [
+      "明",
+      "日",
+      "黃",
+      "花"
+    ],
+    "charCountMap": {
+      "明": 1,
+      "日": 1,
+      "黃": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ　ㄖˋ　ㄏㄨㄤˊ　ㄏㄨㄚ",
+    "usage": "比喻為過時的事物。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_249",
+    "sourceNo": "249",
+    "text": "罄竹難書",
+    "chars": [
+      "罄",
+      "竹",
+      "難",
+      "書"
+    ],
+    "uniqueChars": [
+      "罄",
+      "竹",
+      "難",
+      "書"
+    ],
+    "charCountMap": {
+      "罄": 1,
+      "竹": 1,
+      "難": 1,
+      "書": 1
+    },
+    "bopomofo": "ㄑㄧㄥˋ　ㄓㄨˊ　ㄋㄢˊ　ㄕㄨ",
+    "usage": "即使用盡所有竹簡，也書 寫不完，多比喻罪狀極多。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_262",
+    "sourceNo": "262",
+    "text": "得意忘形",
+    "chars": [
+      "得",
+      "意",
+      "忘",
+      "形"
+    ],
+    "uniqueChars": [
+      "得",
+      "意",
+      "忘",
+      "形"
+    ],
+    "charCountMap": {
+      "得": 1,
+      "意": 1,
+      "忘": 1,
+      "形": 1
+    },
+    "bopomofo": "ㄉㄜˊ　ㄧˋ　ㄨㄤˋ　ㄒㄧㄥˊ",
+    "usage": "太高興而失去常態。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_268",
+    "sourceNo": "268",
+    "text": "口蜜腹劍",
+    "chars": [
+      "口",
+      "蜜",
+      "腹",
+      "劍"
+    ],
+    "uniqueChars": [
+      "口",
+      "蜜",
+      "腹",
+      "劍"
+    ],
+    "charCountMap": {
+      "口": 1,
+      "蜜": 1,
+      "腹": 1,
+      "劍": 1
+    },
+    "bopomofo": "ㄎㄡˇ　ㄇㄧˋ　ㄈㄨˋ　ㄐㄧㄢˋ",
+    "usage": "形容一個人嘴巴說的好聽，而內心險惡、處處想 陷害人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_278",
+    "sourceNo": "278",
+    "text": "按部就班",
+    "chars": [
+      "按",
+      "部",
+      "就",
+      "班"
+    ],
+    "uniqueChars": [
+      "按",
+      "部",
+      "就",
+      "班"
+    ],
+    "charCountMap": {
+      "按": 1,
+      "部": 1,
+      "就": 1,
+      "班": 1
+    },
+    "bopomofo": "ㄢˋ　ㄅㄨˋ　ㄐㄧㄡˋ　ㄅㄢ",
+    "usage": "比喻做事依照一定的層 次、步驟進行。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_291",
+    "sourceNo": "291",
+    "text": "毛遂自薦",
+    "chars": [
+      "毛",
+      "遂",
+      "自",
+      "薦"
+    ],
+    "uniqueChars": [
+      "毛",
+      "遂",
+      "自",
+      "薦"
+    ],
+    "charCountMap": {
+      "毛": 1,
+      "遂": 1,
+      "自": 1,
+      "薦": 1
+    },
+    "bopomofo": "ㄇㄠˊ　ㄙㄨㄟˋ　ㄗˋ　ㄐㄧㄢˋ",
+    "usage": "後比喻自告奮勇，自我推 薦。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_306",
+    "sourceNo": "306",
+    "text": "忍氣吞聲",
+    "chars": [
+      "忍",
+      "氣",
+      "吞",
+      "聲"
+    ],
+    "uniqueChars": [
+      "忍",
+      "氣",
+      "吞",
+      "聲"
+    ],
+    "charCountMap": {
+      "忍": 1,
+      "氣": 1,
+      "吞": 1,
+      "聲": 1
+    },
+    "bopomofo": "ㄖㄣˇ　ㄑㄧˋ　ㄊㄨㄣ　ㄕㄥ",
+    "usage": "形容受了氣也強自忍耐，不敢作聲抗爭。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_307",
+    "sourceNo": "307",
+    "text": "投桃報李",
+    "chars": [
+      "投",
+      "桃",
+      "報",
+      "李"
+    ],
+    "uniqueChars": [
+      "投",
+      "桃",
+      "報",
+      "李"
+    ],
+    "charCountMap": {
+      "投": 1,
+      "桃": 1,
+      "報": 1,
+      "李": 1
+    },
+    "bopomofo": "ㄊㄡˊ　ㄊㄠˊ　ㄅㄠˋ　ㄌㄧˇ",
+    "usage": "比喻彼此間的贈答。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_311",
+    "sourceNo": "311",
+    "text": "飲水思源",
+    "chars": [
+      "飲",
+      "水",
+      "思",
+      "源"
+    ],
+    "uniqueChars": [
+      "飲",
+      "水",
+      "思",
+      "源"
+    ],
+    "charCountMap": {
+      "飲": 1,
+      "水": 1,
+      "思": 1,
+      "源": 1
+    },
+    "bopomofo": "ㄧㄣˇ　ㄕㄨㄟˇ　ㄙ　ㄩㄢˊ",
+    "usage": "比喻人不忘本。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_315",
+    "sourceNo": "315",
+    "text": "克紹箕裘",
+    "chars": [
+      "克",
+      "紹",
+      "箕",
+      "裘"
+    ],
+    "uniqueChars": [
+      "克",
+      "紹",
+      "箕",
+      "裘"
+    ],
+    "charCountMap": {
+      "克": 1,
+      "紹": 1,
+      "箕": 1,
+      "裘": 1
+    },
+    "bopomofo": "ㄎㄜˋ　ㄕㄠˋ　ㄐㄧ　ㄑㄧㄡˊ",
+    "usage": "比喻能繼承其父的志業。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_316",
+    "sourceNo": "316",
+    "text": "兩敗俱傷",
+    "chars": [
+      "兩",
+      "敗",
+      "俱",
+      "傷"
+    ],
+    "uniqueChars": [
+      "兩",
+      "敗",
+      "俱",
+      "傷"
+    ],
+    "charCountMap": {
+      "兩": 1,
+      "敗": 1,
+      "俱": 1,
+      "傷": 1
+    },
+    "bopomofo": "ㄌㄧㄤˇ　ㄅㄞˋ　ㄐㄩˋ　ㄕㄤ",
+    "usage": "比喻兩者相爭，俱受損 傷。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_318",
+    "sourceNo": "318",
+    "text": "才高八斗",
+    "chars": [
+      "才",
+      "高",
+      "八",
+      "斗"
+    ],
+    "uniqueChars": [
+      "才",
+      "高",
+      "八",
+      "斗"
+    ],
+    "charCountMap": {
+      "才": 1,
+      "高": 1,
+      "八": 1,
+      "斗": 1
+    },
+    "bopomofo": "ㄘㄞˊ　ㄍㄠ　ㄅㄚ　ㄉㄡˇ",
+    "usage": "比喻才學極高。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_340",
+    "sourceNo": "340",
+    "text": "完璧歸趙",
+    "chars": [
+      "完",
+      "璧",
+      "歸",
+      "趙"
+    ],
+    "uniqueChars": [
+      "完",
+      "璧",
+      "歸",
+      "趙"
+    ],
+    "charCountMap": {
+      "完": 1,
+      "璧": 1,
+      "歸": 1,
+      "趙": 1
+    },
+    "bopomofo": "ㄨㄢˊ　ㄅㄧˋ　ㄍㄨㄟ　ㄓㄠˋ",
+    "usage": "比喻物歸原主。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_342",
+    "sourceNo": "342",
+    "text": "從容不迫",
+    "chars": [
+      "從",
+      "容",
+      "不",
+      "迫"
+    ],
+    "uniqueChars": [
+      "從",
+      "容",
+      "不",
+      "迫"
+    ],
+    "charCountMap": {
+      "從": 1,
+      "容": 1,
+      "不": 1,
+      "迫": 1
+    },
+    "bopomofo": "ㄘㄨㄥ　ㄖㄨㄥˊ　ㄅㄨˋ　ㄆㄛˋ　（變）　ㄘㄨㄥ　ㄖㄨㄥˊ　ㄅㄨˊ　ㄆㄛˋ",
+    "usage": "形容沈著鎮定，不慌 不忙。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_343",
+    "sourceNo": "343",
+    "text": "九牛一毛",
+    "chars": [
+      "九",
+      "牛",
+      "一",
+      "毛"
+    ],
+    "uniqueChars": [
+      "九",
+      "牛",
+      "一",
+      "毛"
+    ],
+    "charCountMap": {
+      "九": 1,
+      "牛": 1,
+      "一": 1,
+      "毛": 1
+    },
+    "bopomofo": "ㄐㄧㄡˇ　ㄋㄧㄡˊ　ㄧ　ㄇㄠˊ　（變）　ㄐㄧㄡˇ　ㄋㄧㄡˊ　ㄧˋ　ㄇㄠˊ",
+    "usage": "比喻多數中的極少部 分，對大體沒有什麼影 響。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_350",
+    "sourceNo": "350",
+    "text": "魚目混珠",
+    "chars": [
+      "魚",
+      "目",
+      "混",
+      "珠"
+    ],
+    "uniqueChars": [
+      "魚",
+      "目",
+      "混",
+      "珠"
+    ],
+    "charCountMap": {
+      "魚": 1,
+      "目": 1,
+      "混": 1,
+      "珠": 1
+    },
+    "bopomofo": "ㄩˊ　ㄇㄨˋ　ㄏㄨㄣˋ　ㄓㄨ",
+    "usage": "指以魚眼睛混充珍珠。 比喻以假亂真。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_359",
+    "sourceNo": "359",
+    "text": "赴湯蹈火",
+    "chars": [
+      "赴",
+      "湯",
+      "蹈",
+      "火"
+    ],
+    "uniqueChars": [
+      "赴",
+      "湯",
+      "蹈",
+      "火"
+    ],
+    "charCountMap": {
+      "赴": 1,
+      "湯": 1,
+      "蹈": 1,
+      "火": 1
+    },
+    "bopomofo": "ㄈㄨˋ　ㄊㄤ　ㄉㄠˋ　ㄏㄨㄛˇ",
+    "usage": "比喻奮不顧身，不避艱險。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_362",
+    "sourceNo": "362",
+    "text": "喋喋不休",
+    "chars": [
+      "喋",
+      "喋",
+      "不",
+      "休"
+    ],
+    "uniqueChars": [
+      "喋",
+      "不",
+      "休"
+    ],
+    "charCountMap": {
+      "喋": 2,
+      "不": 1,
+      "休": 1
+    },
+    "bopomofo": "ㄉㄧㄝˊ　ㄉㄧㄝˊ　ㄅㄨˋ　ㄒㄧㄡ",
+    "usage": "指言語囉嗦，沒完沒了的樣子",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_372",
+    "sourceNo": "372",
+    "text": "分道揚鑣",
+    "chars": [
+      "分",
+      "道",
+      "揚",
+      "鑣"
+    ],
+    "uniqueChars": [
+      "分",
+      "道",
+      "揚",
+      "鑣"
+    ],
+    "charCountMap": {
+      "分": 1,
+      "道": 1,
+      "揚": 1,
+      "鑣": 1
+    },
+    "bopomofo": "ㄈㄣ　ㄉㄠˋ　ㄧㄤˊ　ㄅㄧㄠ",
+    "usage": "本來共處的人，後因志向不同而各奔前程。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_373",
+    "sourceNo": "373",
+    "text": "曇花一現",
+    "chars": [
+      "曇",
+      "花",
+      "一",
+      "現"
+    ],
+    "uniqueChars": [
+      "曇",
+      "花",
+      "一",
+      "現"
+    ],
+    "charCountMap": {
+      "曇": 1,
+      "花": 1,
+      "一": 1,
+      "現": 1
+    },
+    "bopomofo": "ㄊㄢˊ　ㄏㄨㄚ　ㄧ　ㄒㄧㄢˋ　（變）　ㄊㄢˊ　ㄏㄨㄚ　ㄧˊ　ㄒㄧㄢˋ",
+    "usage": "比喻人或事物一出現便迅速消失。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_377",
+    "sourceNo": "377",
+    "text": "腳踏實地",
+    "chars": [
+      "腳",
+      "踏",
+      "實",
+      "地"
+    ],
+    "uniqueChars": [
+      "腳",
+      "踏",
+      "實",
+      "地"
+    ],
+    "charCountMap": {
+      "腳": 1,
+      "踏": 1,
+      "實": 1,
+      "地": 1
+    },
+    "bopomofo": "ㄐㄧㄠˇ　ㄊㄚˋ　ㄕˊ　ㄉㄧˋ",
+    "usage": "比喻做事切實穩健。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_381",
+    "sourceNo": "381",
+    "text": "梁上君子",
+    "chars": [
+      "梁",
+      "上",
+      "君",
+      "子"
+    ],
+    "uniqueChars": [
+      "梁",
+      "上",
+      "君",
+      "子"
+    ],
+    "charCountMap": {
+      "梁": 1,
+      "上": 1,
+      "君": 1,
+      "子": 1
+    },
+    "bopomofo": "ㄌㄧㄤˊ　ㄕㄤˋ　ㄐㄩㄣ　ㄗˇ",
+    "usage": "竊賊的代稱。用在「竊 盜小偷」的表述上。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_390",
+    "sourceNo": "390",
+    "text": "匹夫之勇",
+    "chars": [
+      "匹",
+      "夫",
+      "之",
+      "勇"
+    ],
+    "uniqueChars": [
+      "匹",
+      "夫",
+      "之",
+      "勇"
+    ],
+    "charCountMap": {
+      "匹": 1,
+      "夫": 1,
+      "之": 1,
+      "勇": 1
+    },
+    "bopomofo": "ㄆㄧˇ　ㄈㄨ　ㄓ　ㄩㄥˇ",
+    "usage": "只光憑藉個人的勇氣，卻無任何計畫",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_393",
+    "sourceNo": "393",
+    "text": "走投無路",
+    "chars": [
+      "走",
+      "投",
+      "無",
+      "路"
+    ],
+    "uniqueChars": [
+      "走",
+      "投",
+      "無",
+      "路"
+    ],
+    "charCountMap": {
+      "走": 1,
+      "投": 1,
+      "無": 1,
+      "路": 1
+    },
+    "bopomofo": "ㄗㄡˇ　ㄊㄡˊ　ㄨˊ　ㄌㄨˋ",
+    "usage": "無處可投靠。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_399",
+    "sourceNo": "399",
+    "text": "目中無人",
+    "chars": [
+      "目",
+      "中",
+      "無",
+      "人"
+    ],
+    "uniqueChars": [
+      "目",
+      "中",
+      "無",
+      "人"
+    ],
+    "charCountMap": {
+      "目": 1,
+      "中": 1,
+      "無": 1,
+      "人": 1
+    },
+    "bopomofo": "ㄇㄨˋ　ㄓㄨㄥ　ㄨˊ　ㄖㄣˊ",
+    "usage": "眼裡看不起人，比喻 一個人驕傲的樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_424",
+    "sourceNo": "424",
+    "text": "一介不取",
+    "chars": [
+      "一",
+      "介",
+      "不",
+      "取"
+    ],
+    "uniqueChars": [
+      "一",
+      "介",
+      "不",
+      "取"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "介": 1,
+      "不": 1,
+      "取": 1
+    },
+    "bopomofo": "ㄧ　ㄐㄧㄝˋ　ㄅㄨˋ　ㄑㄩˇ　（變）　ㄧˊ　ㄐㄧㄝˋ　ㄅㄨˋ　ㄑㄩˇ",
+    "usage": "一分一毫也不苟取。後用以形容人的操守清 廉。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_437",
+    "sourceNo": "437",
+    "text": "一刀兩斷",
+    "chars": [
+      "一",
+      "刀",
+      "兩",
+      "斷"
+    ],
+    "uniqueChars": [
+      "一",
+      "刀",
+      "兩",
+      "斷"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "刀": 1,
+      "兩": 1,
+      "斷": 1
+    },
+    "bopomofo": "ㄧ　ㄉㄠ　ㄌㄧㄤˇ　ㄉㄨㄢˋ　（變）　ㄧˋ　ㄉㄠ　ㄌㄧㄤˇ　ㄉㄨㄢˋ",
+    "usage": "比喻決心斷絕關係。也用來形容果斷。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_439",
+    "sourceNo": "439",
+    "text": "毛骨悚然",
+    "chars": [
+      "毛",
+      "骨",
+      "悚",
+      "然"
+    ],
+    "uniqueChars": [
+      "毛",
+      "骨",
+      "悚",
+      "然"
+    ],
+    "charCountMap": {
+      "毛": 1,
+      "骨": 1,
+      "悚": 1,
+      "然": 1
+    },
+    "bopomofo": "ㄇㄠˊ　ㄍㄨˇ　ㄙㄨㄥˇ　ㄖㄢˊ",
+    "usage": "形容極端驚懼害怕。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_440",
+    "sourceNo": "440",
+    "text": "天涯海角",
+    "chars": [
+      "天",
+      "涯",
+      "海",
+      "角"
+    ],
+    "uniqueChars": [
+      "天",
+      "涯",
+      "海",
+      "角"
+    ],
+    "charCountMap": {
+      "天": 1,
+      "涯": 1,
+      "海": 1,
+      "角": 1
+    },
+    "bopomofo": "ㄊㄧㄢ　ㄧㄚˊ　ㄏㄞˇ　ㄐㄧㄠˇ",
+    "usage": "形容偏僻或相距遙遠的 地方。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_442",
+    "sourceNo": "442",
+    "text": "心不在焉",
+    "chars": [
+      "心",
+      "不",
+      "在",
+      "焉"
+    ],
+    "uniqueChars": [
+      "心",
+      "不",
+      "在",
+      "焉"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "不": 1,
+      "在": 1,
+      "焉": 1
+    },
+    "bopomofo": "ㄒㄧㄣ　ㄅㄨˋ　ㄗㄞˋ　ㄧㄢ　（變）　ㄒㄧㄣ　ㄅㄨˊ　ㄗㄞˋ　ㄧㄢ",
+    "usage": "形容用心不專。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_443",
+    "sourceNo": "443",
+    "text": "心花怒放",
+    "chars": [
+      "心",
+      "花",
+      "怒",
+      "放"
+    ],
+    "uniqueChars": [
+      "心",
+      "花",
+      "怒",
+      "放"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "花": 1,
+      "怒": 1,
+      "放": 1
+    },
+    "bopomofo": "ㄒㄧㄣ　ㄏㄨㄚ　ㄋㄨˋ　ㄈㄤˋ",
+    "usage": "形容非常高興。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_468",
+    "sourceNo": "468",
+    "text": "捕風捉影",
+    "chars": [
+      "捕",
+      "風",
+      "捉",
+      "影"
+    ],
+    "uniqueChars": [
+      "捕",
+      "風",
+      "捉",
+      "影"
+    ],
+    "charCountMap": {
+      "捕": 1,
+      "風": 1,
+      "捉": 1,
+      "影": 1
+    },
+    "bopomofo": "ㄅㄨˇ　ㄈㄥ　ㄓㄨㄛ　ㄧㄥˇ",
+    "usage": "做的事或說的話都 毫無根據",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_485",
+    "sourceNo": "485",
+    "text": "雕蟲小技",
+    "chars": [
+      "雕",
+      "蟲",
+      "小",
+      "技"
+    ],
+    "uniqueChars": [
+      "雕",
+      "蟲",
+      "小",
+      "技"
+    ],
+    "charCountMap": {
+      "雕": 1,
+      "蟲": 1,
+      "小": 1,
+      "技": 1
+    },
+    "bopomofo": "ㄉㄧㄠ　ㄔㄨㄥˊ　ㄒㄧㄠˇ　ㄐㄧˋ",
+    "usage": "沒什麼了不起的小技 能。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_506",
+    "sourceNo": "506",
+    "text": "左右逢源",
+    "chars": [
+      "左",
+      "右",
+      "逢",
+      "源"
+    ],
+    "uniqueChars": [
+      "左",
+      "右",
+      "逢",
+      "源"
+    ],
+    "charCountMap": {
+      "左": 1,
+      "右": 1,
+      "逢": 1,
+      "源": 1
+    },
+    "bopomofo": "ㄗㄨㄛˇ　ㄧㄡˋ　ㄈㄥˊ　ㄩㄢˊ",
+    "usage": "比喻辦事得心應手 或處事圓滑。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_510",
+    "sourceNo": "510",
+    "text": "狡兔三窟",
+    "chars": [
+      "狡",
+      "兔",
+      "三",
+      "窟"
+    ],
+    "uniqueChars": [
+      "狡",
+      "兔",
+      "三",
+      "窟"
+    ],
+    "charCountMap": {
+      "狡": 1,
+      "兔": 1,
+      "三": 1,
+      "窟": 1
+    },
+    "bopomofo": "ㄐㄧㄠˇ　ㄊㄨˋ　ㄙㄢ　ㄎㄨ",
+    "usage": "比喻有多處藏身的地方或多種避禍的準備。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_515",
+    "sourceNo": "515",
+    "text": "一日三秋",
+    "chars": [
+      "一",
+      "日",
+      "三",
+      "秋"
+    ],
+    "uniqueChars": [
+      "一",
+      "日",
+      "三",
+      "秋"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "日": 1,
+      "三": 1,
+      "秋": 1
+    },
+    "bopomofo": "ㄧ　ㄖˋ　ㄙㄢ　ㄑㄧㄡ　（變）　ㄧˊ　ㄖˋ　ㄙㄢ　ㄑㄧㄡ",
+    "usage": "形容思念殷切。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_527",
+    "sourceNo": "527",
+    "text": "循循善誘",
+    "chars": [
+      "循",
+      "循",
+      "善",
+      "誘"
+    ],
+    "uniqueChars": [
+      "循",
+      "善",
+      "誘"
+    ],
+    "charCountMap": {
+      "循": 2,
+      "善": 1,
+      "誘": 1
+    },
+    "bopomofo": "ㄒㄩㄣˊ　ㄒㄩㄣˊ　ㄕㄢˋ　ㄧㄡˋ",
+    "usage": "形容善於循序漸進的誘 導別人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_529",
+    "sourceNo": "529",
+    "text": "暴殄天物",
+    "chars": [
+      "暴",
+      "殄",
+      "天",
+      "物"
+    ],
+    "uniqueChars": [
+      "暴",
+      "殄",
+      "天",
+      "物"
+    ],
+    "charCountMap": {
+      "暴": 1,
+      "殄": 1,
+      "天": 1,
+      "物": 1
+    },
+    "bopomofo": "ㄅㄠˋ　ㄊㄧㄢˇ　ㄊㄧㄢ　ㄨˋ",
+    "usage": "殄，滅絕。天物，鳥獸草木等自然界的生物。原指殘害各種生物。後比喻蹧蹋物力，不知珍惜。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_541",
+    "sourceNo": "541",
+    "text": "如雷貫耳",
+    "chars": [
+      "如",
+      "雷",
+      "貫",
+      "耳"
+    ],
+    "uniqueChars": [
+      "如",
+      "雷",
+      "貫",
+      "耳"
+    ],
+    "charCountMap": {
+      "如": 1,
+      "雷": 1,
+      "貫": 1,
+      "耳": 1
+    },
+    "bopomofo": "ㄖㄨˊ　ㄌㄟˊ　ㄍㄨㄢˋ　ㄦˇ",
+    "usage": "比喻人名氣很大，眾所共 聞。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_542",
+    "sourceNo": "542",
+    "text": "瓜熟蒂落",
+    "chars": [
+      "瓜",
+      "熟",
+      "蒂",
+      "落"
+    ],
+    "uniqueChars": [
+      "瓜",
+      "熟",
+      "蒂",
+      "落"
+    ],
+    "charCountMap": {
+      "瓜": 1,
+      "熟": 1,
+      "蒂": 1,
+      "落": 1
+    },
+    "bopomofo": "ㄍㄨㄚ　ㄕㄡˊ　ㄉㄧˋ　ㄌㄨㄛˋ",
+    "usage": "通常事情醞釀到一定程度，自然而然就成功了。 與「水到渠成」同義。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_545",
+    "sourceNo": "545",
+    "text": "一手遮天",
+    "chars": [
+      "一",
+      "手",
+      "遮",
+      "天"
+    ],
+    "uniqueChars": [
+      "一",
+      "手",
+      "遮",
+      "天"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "手": 1,
+      "遮": 1,
+      "天": 1
+    },
+    "bopomofo": "ㄧ　ㄕㄡˇ　ㄓㄜ　ㄊㄧㄢ　（變）　ㄧˋ　ㄕㄡˇ　ㄓㄜ　ㄊㄧㄢ",
+    "usage": "比喻玩弄權術、瞞上欺 下的行徑。貶義。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_554",
+    "sourceNo": "554",
+    "text": "心悅誠服",
+    "chars": [
+      "心",
+      "悅",
+      "誠",
+      "服"
+    ],
+    "uniqueChars": [
+      "心",
+      "悅",
+      "誠",
+      "服"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "悅": 1,
+      "誠": 1,
+      "服": 1
+    },
+    "bopomofo": "ㄒㄧㄣ　ㄩㄝˋ　ㄔㄥˊ　ㄈㄨˊ",
+    "usage": "內心感到喜悅而直 程的信服。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_555",
+    "sourceNo": "555",
+    "text": "一孔之見",
+    "chars": [
+      "一",
+      "孔",
+      "之",
+      "見"
+    ],
+    "uniqueChars": [
+      "一",
+      "孔",
+      "之",
+      "見"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "孔": 1,
+      "之": 1,
+      "見": 1
+    },
+    "bopomofo": "ㄧ　ㄎㄨㄥˇ　ㄓ　ㄐㄧㄢˋ　（變）　ㄧˋ　ㄎㄨㄥˇ　ㄓ　ㄐㄧㄢˋ",
+    "usage": "比喻見識淺薄狹窄。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_563",
+    "sourceNo": "563",
+    "text": "拖泥帶水",
+    "chars": [
+      "拖",
+      "泥",
+      "帶",
+      "水"
+    ],
+    "uniqueChars": [
+      "拖",
+      "泥",
+      "帶",
+      "水"
+    ],
+    "charCountMap": {
+      "拖": 1,
+      "泥": 1,
+      "帶": 1,
+      "水": 1
+    },
+    "bopomofo": "ㄊㄨㄛ　ㄋㄧˊ　ㄉㄞˋ　ㄕㄨㄟˇ",
+    "usage": "指做事、說話、寫作 等不夠簡潔、乾脆。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_565",
+    "sourceNo": "565",
+    "text": "居心叵測",
+    "chars": [
+      "居",
+      "心",
+      "叵",
+      "測"
+    ],
+    "uniqueChars": [
+      "居",
+      "心",
+      "叵",
+      "測"
+    ],
+    "charCountMap": {
+      "居": 1,
+      "心": 1,
+      "叵": 1,
+      "測": 1
+    },
+    "bopomofo": "ㄐㄩ　ㄒㄧㄣ　ㄆㄛˇ　ㄘㄜˋ",
+    "usage": "比喻心存險詐，難以預測。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_566",
+    "sourceNo": "566",
+    "text": "千方百計",
+    "chars": [
+      "千",
+      "方",
+      "百",
+      "計"
+    ],
+    "uniqueChars": [
+      "千",
+      "方",
+      "百",
+      "計"
+    ],
+    "charCountMap": {
+      "千": 1,
+      "方": 1,
+      "百": 1,
+      "計": 1
+    },
+    "bopomofo": "ㄑㄧㄢ　ㄈㄤ　ㄅㄞˇ　ㄐㄧˋ",
+    "usage": "費盡心機，想盡一切辦 法、計謀。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_567",
+    "sourceNo": "567",
+    "text": "人定勝天",
+    "chars": [
+      "人",
+      "定",
+      "勝",
+      "天"
+    ],
+    "uniqueChars": [
+      "人",
+      "定",
+      "勝",
+      "天"
+    ],
+    "charCountMap": {
+      "人": 1,
+      "定": 1,
+      "勝": 1,
+      "天": 1
+    },
+    "bopomofo": "ㄖㄣˊ　ㄉㄧㄥˋ　ㄕㄥˋ　ㄊㄧㄢ",
+    "usage": "比喻人力可以戰勝大自然。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_571",
+    "sourceNo": "571",
+    "text": "普天同慶",
+    "chars": [
+      "普",
+      "天",
+      "同",
+      "慶"
+    ],
+    "uniqueChars": [
+      "普",
+      "天",
+      "同",
+      "慶"
+    ],
+    "charCountMap": {
+      "普": 1,
+      "天": 1,
+      "同": 1,
+      "慶": 1
+    },
+    "bopomofo": "ㄆㄨˇ　ㄊㄧㄢ　ㄊㄨㄥˊ　ㄑㄧㄥˋ",
+    "usage": "用以指全天下的人共同慶 祝。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_575",
+    "sourceNo": "575",
+    "text": "金蟬脫殼",
+    "chars": [
+      "金",
+      "蟬",
+      "脫",
+      "殼"
+    ],
+    "uniqueChars": [
+      "金",
+      "蟬",
+      "脫",
+      "殼"
+    ],
+    "charCountMap": {
+      "金": 1,
+      "蟬": 1,
+      "脫": 1,
+      "殼": 1
+    },
+    "bopomofo": "ㄐㄧㄣ　ㄔㄢˊ　ㄊㄨㄛ　ㄎㄜˊ",
+    "usage": "金蟬成蟲時會脫殼而 出。後用以比喻藉計謀脫身。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_576",
+    "sourceNo": "576",
+    "text": "五花八門",
+    "chars": [
+      "五",
+      "花",
+      "八",
+      "門"
+    ],
+    "uniqueChars": [
+      "五",
+      "花",
+      "八",
+      "門"
+    ],
+    "charCountMap": {
+      "五": 1,
+      "花": 1,
+      "八": 1,
+      "門": 1
+    },
+    "bopomofo": "ㄨˇ　ㄏㄨㄚ　ㄅㄚ　ㄇㄣˊ",
+    "usage": "比喻形形色色、變化多端。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_580",
+    "sourceNo": "580",
+    "text": "吳下阿蒙",
+    "chars": [
+      "吳",
+      "下",
+      "阿",
+      "蒙"
+    ],
+    "uniqueChars": [
+      "吳",
+      "下",
+      "阿",
+      "蒙"
+    ],
+    "charCountMap": {
+      "吳": 1,
+      "下": 1,
+      "阿": 1,
+      "蒙": 1
+    },
+    "bopomofo": "ㄨˊ　ㄒㄧㄚˋ　ㄚˋ　ㄇㄥˊ",
+    "usage": "比喻人學識淺陋。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_603",
+    "sourceNo": "603",
+    "text": "十拿九穩",
+    "chars": [
+      "十",
+      "拿",
+      "九",
+      "穩"
+    ],
+    "uniqueChars": [
+      "十",
+      "拿",
+      "九",
+      "穩"
+    ],
+    "charCountMap": {
+      "十": 1,
+      "拿": 1,
+      "九": 1,
+      "穩": 1
+    },
+    "bopomofo": "ㄕˊ　ㄋㄚˊ　ㄐㄧㄡˇ　ㄨㄣˇ",
+    "usage": "比喻很有把握。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_605",
+    "sourceNo": "605",
+    "text": "聚精會神",
+    "chars": [
+      "聚",
+      "精",
+      "會",
+      "神"
+    ],
+    "uniqueChars": [
+      "聚",
+      "精",
+      "會",
+      "神"
+    ],
+    "charCountMap": {
+      "聚": 1,
+      "精": 1,
+      "會": 1,
+      "神": 1
+    },
+    "bopomofo": "ㄐㄩˋ　ㄐㄧㄥ　ㄏㄨㄟˋ　ㄕㄣˊ",
+    "usage": "專心一意，心無二用。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_607",
+    "sourceNo": "607",
+    "text": "寡廉鮮恥",
+    "chars": [
+      "寡",
+      "廉",
+      "鮮",
+      "恥"
+    ],
+    "uniqueChars": [
+      "寡",
+      "廉",
+      "鮮",
+      "恥"
+    ],
+    "charCountMap": {
+      "寡": 1,
+      "廉": 1,
+      "鮮": 1,
+      "恥": 1
+    },
+    "bopomofo": "ㄍㄨㄚˇ　ㄌㄧㄢˊ　ㄒㄧㄢˇ　ㄔˇ",
+    "usage": "沒有操守，不知廉恥。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_613",
+    "sourceNo": "613",
+    "text": "體貼入微",
+    "chars": [
+      "體",
+      "貼",
+      "入",
+      "微"
+    ],
+    "uniqueChars": [
+      "體",
+      "貼",
+      "入",
+      "微"
+    ],
+    "charCountMap": {
+      "體": 1,
+      "貼": 1,
+      "入": 1,
+      "微": 1
+    },
+    "bopomofo": "ㄊㄧˇ　ㄊㄧㄝ　ㄖㄨˋ　ㄨㄟˊ",
+    "usage": "形容對人的關懷與照 顧，十分細緻周到。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_620",
+    "sourceNo": "620",
+    "text": "文質彬彬",
+    "chars": [
+      "文",
+      "質",
+      "彬",
+      "彬"
+    ],
+    "uniqueChars": [
+      "文",
+      "質",
+      "彬"
+    ],
+    "charCountMap": {
+      "文": 1,
+      "質": 1,
+      "彬": 2
+    },
+    "bopomofo": "ㄨㄣˊ　ㄓˊ　ㄅㄧㄣ　ㄅㄧㄣ",
+    "usage": "形容人舉止文雅，態度 端莊。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_629",
+    "sourceNo": "629",
+    "text": "老氣橫秋",
+    "chars": [
+      "老",
+      "氣",
+      "橫",
+      "秋"
+    ],
+    "uniqueChars": [
+      "老",
+      "氣",
+      "橫",
+      "秋"
+    ],
+    "charCountMap": {
+      "老": 1,
+      "氣": 1,
+      "橫": 1,
+      "秋": 1
+    },
+    "bopomofo": "ㄌㄠˇ　ㄑㄧˋ　ㄏㄥˊ　ㄑㄧㄡ",
+    "usage": "用以形容人老練而自命不 凡，毫不謙虛的樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_630",
+    "sourceNo": "630",
+    "text": "移風易俗",
+    "chars": [
+      "移",
+      "風",
+      "易",
+      "俗"
+    ],
+    "uniqueChars": [
+      "移",
+      "風",
+      "易",
+      "俗"
+    ],
+    "charCountMap": {
+      "移": 1,
+      "風": 1,
+      "易": 1,
+      "俗": 1
+    },
+    "bopomofo": "ㄧˊ　ㄈㄥ　ㄧˋ　ㄙㄨˊ",
+    "usage": "指轉移風氣，改良習俗。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_639",
+    "sourceNo": "639",
+    "text": "作繭自縛",
+    "chars": [
+      "作",
+      "繭",
+      "自",
+      "縛"
+    ],
+    "uniqueChars": [
+      "作",
+      "繭",
+      "自",
+      "縛"
+    ],
+    "charCountMap": {
+      "作": 1,
+      "繭": 1,
+      "自": 1,
+      "縛": 1
+    },
+    "bopomofo": "ㄗㄨㄛˋ　ㄐㄧㄢˇ　ㄗˋ　ㄈㄨˊ",
+    "usage": "比喻自己做的事，牽累到自己",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_643",
+    "sourceNo": "643",
+    "text": "處心積慮",
+    "chars": [
+      "處",
+      "心",
+      "積",
+      "慮"
+    ],
+    "uniqueChars": [
+      "處",
+      "心",
+      "積",
+      "慮"
+    ],
+    "charCountMap": {
+      "處": 1,
+      "心": 1,
+      "積": 1,
+      "慮": 1
+    },
+    "bopomofo": "ㄔㄨˇ　ㄒㄧㄣ　ㄐㄧ　ㄌㄩˋ",
+    "usage": "指千方百慮，蓄意已久。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_646",
+    "sourceNo": "646",
+    "text": "以鄰為壑",
+    "chars": [
+      "以",
+      "鄰",
+      "為",
+      "壑"
+    ],
+    "uniqueChars": [
+      "以",
+      "鄰",
+      "為",
+      "壑"
+    ],
+    "charCountMap": {
+      "以": 1,
+      "鄰": 1,
+      "為": 1,
+      "壑": 1
+    },
+    "bopomofo": "ㄧˇ　ㄌㄧㄣˊ　ㄨㄟˊ　ㄏㄨㄛˋ",
+    "usage": "比喻損人利己。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_665",
+    "sourceNo": "665",
+    "text": "明知故犯",
+    "chars": [
+      "明",
+      "知",
+      "故",
+      "犯"
+    ],
+    "uniqueChars": [
+      "明",
+      "知",
+      "故",
+      "犯"
+    ],
+    "charCountMap": {
+      "明": 1,
+      "知": 1,
+      "故": 1,
+      "犯": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ　ㄓ　ㄍㄨˋ　ㄈㄢˋ",
+    "usage": "明明知道不該做而 故意去做。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_681",
+    "sourceNo": "681",
+    "text": "勞燕分飛",
+    "chars": [
+      "勞",
+      "燕",
+      "分",
+      "飛"
+    ],
+    "uniqueChars": [
+      "勞",
+      "燕",
+      "分",
+      "飛"
+    ],
+    "charCountMap": {
+      "勞": 1,
+      "燕": 1,
+      "分": 1,
+      "飛": 1
+    },
+    "bopomofo": "ㄌㄠˊ　ㄧㄢˋ　ㄈㄣ　ㄈㄟ",
+    "usage": "比喻別離，而多用於夫妻、 情人之間。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_683",
+    "sourceNo": "683",
+    "text": "惡貫滿盈",
+    "chars": [
+      "惡",
+      "貫",
+      "滿",
+      "盈"
+    ],
+    "uniqueChars": [
+      "惡",
+      "貫",
+      "滿",
+      "盈"
+    ],
+    "charCountMap": {
+      "惡": 1,
+      "貫": 1,
+      "滿": 1,
+      "盈": 1
+    },
+    "bopomofo": "ㄜˋ　ㄍㄨㄢˋ　ㄇㄢˇ　ㄧㄥˊ",
+    "usage": "比喻罪大惡極，末日已到。 用在「罪惡深重」的表述上。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_697",
+    "sourceNo": "697",
+    "text": "莫衷一是",
+    "chars": [
+      "莫",
+      "衷",
+      "一",
+      "是"
+    ],
+    "uniqueChars": [
+      "莫",
+      "衷",
+      "一",
+      "是"
+    ],
+    "charCountMap": {
+      "莫": 1,
+      "衷": 1,
+      "一": 1,
+      "是": 1
+    },
+    "bopomofo": "ㄇㄛˋ　ㄓㄨㄥ　ㄧ　ㄕˋ　（變）　ㄇㄛˋ　ㄓㄨㄥ　ㄧˊ　ㄕˋ",
+    "usage": "指眾說紛云，無法得到一 致的結論。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_701",
+    "sourceNo": "701",
+    "text": "喜出望外",
+    "chars": [
+      "喜",
+      "出",
+      "望",
+      "外"
+    ],
+    "uniqueChars": [
+      "喜",
+      "出",
+      "望",
+      "外"
+    ],
+    "charCountMap": {
+      "喜": 1,
+      "出": 1,
+      "望": 1,
+      "外": 1
+    },
+    "bopomofo": "ㄒㄧˇ　ㄔㄨ　ㄨㄤˋ　ㄨㄞˋ",
+    "usage": "因意想不到的喜事而特別 高興。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_714",
+    "sourceNo": "714",
+    "text": "鹿死誰手",
+    "chars": [
+      "鹿",
+      "死",
+      "誰",
+      "手"
+    ],
+    "uniqueChars": [
+      "鹿",
+      "死",
+      "誰",
+      "手"
+    ],
+    "charCountMap": {
+      "鹿": 1,
+      "死": 1,
+      "誰": 1,
+      "手": 1
+    },
+    "bopomofo": "ㄌㄨˋ　ㄙˇ　ㄕㄨㄟˊ　ㄕㄡˇ",
+    "usage": "比喻共同爭奪一件事物，不知道誰能取得最後的勝利。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_739",
+    "sourceNo": "739",
+    "text": "包羅萬象",
+    "chars": [
+      "包",
+      "羅",
+      "萬",
+      "象"
+    ],
+    "uniqueChars": [
+      "包",
+      "羅",
+      "萬",
+      "象"
+    ],
+    "charCountMap": {
+      "包": 1,
+      "羅": 1,
+      "萬": 1,
+      "象": 1
+    },
+    "bopomofo": "ㄅㄠ　ㄌㄨㄛˊ　ㄨㄢˋ　ㄒㄧㄤˋ",
+    "usage": "內容豐富，應有盡有。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_743",
+    "sourceNo": "743",
+    "text": "悲天憫人",
+    "chars": [
+      "悲",
+      "天",
+      "憫",
+      "人"
+    ],
+    "uniqueChars": [
+      "悲",
+      "天",
+      "憫",
+      "人"
+    ],
+    "charCountMap": {
+      "悲": 1,
+      "天": 1,
+      "憫": 1,
+      "人": 1
+    },
+    "bopomofo": "ㄅㄟ　ㄊㄧㄢ　ㄇㄧㄣˇ　ㄖㄣˊ",
+    "usage": "憂世局百變，哀百姓疾苦",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_747",
+    "sourceNo": "747",
+    "text": "半斤八兩",
+    "chars": [
+      "半",
+      "斤",
+      "八",
+      "兩"
+    ],
+    "uniqueChars": [
+      "半",
+      "斤",
+      "八",
+      "兩"
+    ],
+    "charCountMap": {
+      "半": 1,
+      "斤": 1,
+      "八": 1,
+      "兩": 1
+    },
+    "bopomofo": "ㄅㄢˋ　ㄐㄧㄣ　ㄅㄚ　ㄌㄧㄤˇ",
+    "usage": "比喻彼此不相上下。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_759",
+    "sourceNo": "759",
+    "text": "隔岸觀火",
+    "chars": [
+      "隔",
+      "岸",
+      "觀",
+      "火"
+    ],
+    "uniqueChars": [
+      "隔",
+      "岸",
+      "觀",
+      "火"
+    ],
+    "charCountMap": {
+      "隔": 1,
+      "岸": 1,
+      "觀": 1,
+      "火": 1
+    },
+    "bopomofo": "ㄍㄜˊ　ㄢˋ　ㄍㄨㄢ　ㄏㄨㄛˇ",
+    "usage": "比喻事不干己，袖手旁 觀，漠不關心。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_760",
+    "sourceNo": "760",
+    "text": "雷霆萬鈞",
+    "chars": [
+      "雷",
+      "霆",
+      "萬",
+      "鈞"
+    ],
+    "uniqueChars": [
+      "雷",
+      "霆",
+      "萬",
+      "鈞"
+    ],
+    "charCountMap": {
+      "雷": 1,
+      "霆": 1,
+      "萬": 1,
+      "鈞": 1
+    },
+    "bopomofo": "ㄌㄟˊ　ㄊㄧㄥˊ　ㄨㄢˋ　ㄐㄩㄣ",
+    "usage": "比喻威力強大，不可抗拒。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_769",
+    "sourceNo": "769",
+    "text": "古色古香",
+    "chars": [
+      "古",
+      "色",
+      "古",
+      "香"
+    ],
+    "uniqueChars": [
+      "古",
+      "色",
+      "香"
+    ],
+    "charCountMap": {
+      "古": 2,
+      "色": 1,
+      "香": 1
+    },
+    "bopomofo": "ㄍㄨˇ　ㄙㄜˋ　ㄍㄨˇ　ㄒㄧㄤ",
+    "usage": "高雅且具有古代的色彩與風味",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_794",
+    "sourceNo": "794",
+    "text": "含飴弄孫",
+    "chars": [
+      "含",
+      "飴",
+      "弄",
+      "孫"
+    ],
+    "uniqueChars": [
+      "含",
+      "飴",
+      "弄",
+      "孫"
+    ],
+    "charCountMap": {
+      "含": 1,
+      "飴": 1,
+      "弄": 1,
+      "孫": 1
+    },
+    "bopomofo": "ㄏㄢˊ　ㄧˊ　ㄋㄨㄥˋ　ㄙㄨㄣ",
+    "usage": "指老年人生活安適，以逗弄 孫兒為樂。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_795",
+    "sourceNo": "795",
+    "text": "作壁上觀",
+    "chars": [
+      "作",
+      "壁",
+      "上",
+      "觀"
+    ],
+    "uniqueChars": [
+      "作",
+      "壁",
+      "上",
+      "觀"
+    ],
+    "charCountMap": {
+      "作": 1,
+      "壁": 1,
+      "上": 1,
+      "觀": 1
+    },
+    "bopomofo": "ㄗㄨㄛˋ　ㄅㄧˋ　ㄕㄤˋ　ㄍㄨㄢ",
+    "usage": "比喻袖手旁觀，並不幫助 任何一方。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_802",
+    "sourceNo": "802",
+    "text": "眼高手低",
+    "chars": [
+      "眼",
+      "高",
+      "手",
+      "低"
+    ],
+    "uniqueChars": [
+      "眼",
+      "高",
+      "手",
+      "低"
+    ],
+    "charCountMap": {
+      "眼": 1,
+      "高": 1,
+      "手": 1,
+      "低": 1
+    },
+    "bopomofo": "ㄧㄢˇ　ㄍㄠ　ㄕㄡˇ　ㄉㄧ",
+    "usage": "比喻要求標準高，而實 際執行能力卻很低",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_803",
+    "sourceNo": "803",
+    "text": "圖窮匕見",
+    "chars": [
+      "圖",
+      "窮",
+      "匕",
+      "見"
+    ],
+    "uniqueChars": [
+      "圖",
+      "窮",
+      "匕",
+      "見"
+    ],
+    "charCountMap": {
+      "圖": 1,
+      "窮": 1,
+      "匕": 1,
+      "見": 1
+    },
+    "bopomofo": "ㄊㄨˊ　ㄑㄩㄥˊ　ㄅㄧˇ　ㄒㄧㄢˋ",
+    "usage": "比喻事情發展到最後，形跡敗露，現出真相。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_813",
+    "sourceNo": "813",
+    "text": "移花接木",
+    "chars": [
+      "移",
+      "花",
+      "接",
+      "木"
+    ],
+    "uniqueChars": [
+      "移",
+      "花",
+      "接",
+      "木"
+    ],
+    "charCountMap": {
+      "移": 1,
+      "花": 1,
+      "接": 1,
+      "木": 1
+    },
+    "bopomofo": "ㄧˊ　ㄏㄨㄚ　ㄐㄧㄝ　ㄇㄨˋ",
+    "usage": "暗中更換人、事、物以 欺騙他人",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_815",
+    "sourceNo": "815",
+    "text": "柳暗花明",
+    "chars": [
+      "柳",
+      "暗",
+      "花",
+      "明"
+    ],
+    "uniqueChars": [
+      "柳",
+      "暗",
+      "花",
+      "明"
+    ],
+    "charCountMap": {
+      "柳": 1,
+      "暗": 1,
+      "花": 1,
+      "明": 1
+    },
+    "bopomofo": "ㄌㄧㄡˇ　ㄢˋ　ㄏㄨㄚ　ㄇㄧㄥˊ",
+    "usage": "看似絕境，其實另有生機之處。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_819",
+    "sourceNo": "819",
+    "text": "如願以償",
+    "chars": [
+      "如",
+      "願",
+      "以",
+      "償"
+    ],
+    "uniqueChars": [
+      "如",
+      "願",
+      "以",
+      "償"
+    ],
+    "charCountMap": {
+      "如": 1,
+      "願": 1,
+      "以": 1,
+      "償": 1
+    },
+    "bopomofo": "ㄖㄨˊ　ㄩㄢˋ　ㄧˇ　ㄔㄤˊ",
+    "usage": "心願得以實現。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_820",
+    "sourceNo": "820",
+    "text": "脫穎而出",
+    "chars": [
+      "脫",
+      "穎",
+      "而",
+      "出"
+    ],
+    "uniqueChars": [
+      "脫",
+      "穎",
+      "而",
+      "出"
+    ],
+    "charCountMap": {
+      "脫": 1,
+      "穎": 1,
+      "而": 1,
+      "出": 1
+    },
+    "bopomofo": "ㄊㄨㄛ　ㄧㄥˇ　ㄦˊ　ㄔㄨ",
+    "usage": "顯露才能超越眾人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_830",
+    "sourceNo": "830",
+    "text": "百步穿楊",
+    "chars": [
+      "百",
+      "步",
+      "穿",
+      "楊"
+    ],
+    "uniqueChars": [
+      "百",
+      "步",
+      "穿",
+      "楊"
+    ],
+    "charCountMap": {
+      "百": 1,
+      "步": 1,
+      "穿": 1,
+      "楊": 1
+    },
+    "bopomofo": "ㄅㄞˇ　ㄅㄨˋ　ㄔㄨㄢ　ㄧㄤˊ",
+    "usage": "形容射箭技術高超。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_850",
+    "sourceNo": "850",
+    "text": "巧言令色",
+    "chars": [
+      "巧",
+      "言",
+      "令",
+      "色"
+    ],
+    "uniqueChars": [
+      "巧",
+      "言",
+      "令",
+      "色"
+    ],
+    "charCountMap": {
+      "巧": 1,
+      "言": 1,
+      "令": 1,
+      "色": 1
+    },
+    "bopomofo": "ㄑㄧㄠˇ　ㄧㄢˊ　ㄌㄧㄥˋ　ㄙㄜˋ",
+    "usage": "說話的內容很動聽，臉色裝作很和善，但是一 點都不誠懇",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_859",
+    "sourceNo": "859",
+    "text": "老蚌生珠",
+    "chars": [
+      "老",
+      "蚌",
+      "生",
+      "珠"
+    ],
+    "uniqueChars": [
+      "老",
+      "蚌",
+      "生",
+      "珠"
+    ],
+    "charCountMap": {
+      "老": 1,
+      "蚌": 1,
+      "生": 1,
+      "珠": 1
+    },
+    "bopomofo": "ㄌㄠˇ　ㄅㄤˋ　ㄕㄥ　ㄓㄨ",
+    "usage": "稱人父子都有美才。後引 申為老年得子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_861",
+    "sourceNo": "861",
+    "text": "以身試法",
+    "chars": [
+      "以",
+      "身",
+      "試",
+      "法"
+    ],
+    "uniqueChars": [
+      "以",
+      "身",
+      "試",
+      "法"
+    ],
+    "charCountMap": {
+      "以": 1,
+      "身": 1,
+      "試": 1,
+      "法": 1
+    },
+    "bopomofo": "ㄧˇ　ㄕㄣ　ㄕˋ　ㄈㄚˇ",
+    "usage": "明知道違法，仍要親身 去做。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_880",
+    "sourceNo": "880",
+    "text": "故態復萌",
+    "chars": [
+      "故",
+      "態",
+      "復",
+      "萌"
+    ],
+    "uniqueChars": [
+      "故",
+      "態",
+      "復",
+      "萌"
+    ],
+    "charCountMap": {
+      "故": 1,
+      "態": 1,
+      "復": 1,
+      "萌": 1
+    },
+    "bopomofo": "ㄍㄨˋ　ㄊㄞˋ　ㄈㄨˋ　ㄇㄥˊ",
+    "usage": "形容老毛病又犯了。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_894",
+    "sourceNo": "894",
+    "text": "逃之夭夭",
+    "chars": [
+      "逃",
+      "之",
+      "夭",
+      "夭"
+    ],
+    "uniqueChars": [
+      "逃",
+      "之",
+      "夭"
+    ],
+    "charCountMap": {
+      "逃": 1,
+      "之": 1,
+      "夭": 2
+    },
+    "bopomofo": "ㄊㄠˊ　ㄓ　ㄧㄠ　ㄧㄠ",
+    "usage": "逃得無影無蹤。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_905",
+    "sourceNo": "905",
+    "text": "深惡痛絕",
+    "chars": [
+      "深",
+      "惡",
+      "痛",
+      "絕"
+    ],
+    "uniqueChars": [
+      "深",
+      "惡",
+      "痛",
+      "絕"
+    ],
+    "charCountMap": {
+      "深": 1,
+      "惡": 1,
+      "痛": 1,
+      "絕": 1
+    },
+    "bopomofo": "ㄕㄣ　ㄨˋ　ㄊㄨㄥˋ　ㄐㄩㄝˊ",
+    "usage": "極為厭惡痛恨。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_911",
+    "sourceNo": "911",
+    "text": "冥頑不靈",
+    "chars": [
+      "冥",
+      "頑",
+      "不",
+      "靈"
+    ],
+    "uniqueChars": [
+      "冥",
+      "頑",
+      "不",
+      "靈"
+    ],
+    "charCountMap": {
+      "冥": 1,
+      "頑": 1,
+      "不": 1,
+      "靈": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ　ㄨㄢˊ　ㄅㄨˋ　ㄌㄧㄥˊ",
+    "usage": "愚昧頑固而不通靈性。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_921",
+    "sourceNo": "921",
+    "text": "樂極生悲",
+    "chars": [
+      "樂",
+      "極",
+      "生",
+      "悲"
+    ],
+    "uniqueChars": [
+      "樂",
+      "極",
+      "生",
+      "悲"
+    ],
+    "charCountMap": {
+      "樂": 1,
+      "極": 1,
+      "生": 1,
+      "悲": 1
+    },
+    "bopomofo": "ㄌㄜˋ　ㄐㄧˊ　ㄕㄥ　ㄅㄟ",
+    "usage": "歡樂到了極點，往往會轉生悲哀。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_926",
+    "sourceNo": "926",
+    "text": "貪小失大",
+    "chars": [
+      "貪",
+      "小",
+      "失",
+      "大"
+    ],
+    "uniqueChars": [
+      "貪",
+      "小",
+      "失",
+      "大"
+    ],
+    "charCountMap": {
+      "貪": 1,
+      "小": 1,
+      "失": 1,
+      "大": 1
+    },
+    "bopomofo": "ㄊㄢ　ㄒㄧㄠˇ　ㄕ　ㄉㄚˋ",
+    "usage": "因貪圖小利而造成重大 損失。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_936",
+    "sourceNo": "936",
+    "text": "幸災樂禍",
+    "chars": [
+      "幸",
+      "災",
+      "樂",
+      "禍"
+    ],
+    "uniqueChars": [
+      "幸",
+      "災",
+      "樂",
+      "禍"
+    ],
+    "charCountMap": {
+      "幸": 1,
+      "災": 1,
+      "樂": 1,
+      "禍": 1
+    },
+    "bopomofo": "ㄒㄧㄥˋ　ㄗㄞ　ㄌㄜˋ　ㄏㄨㄛˋ",
+    "usage": "指見到他人遭遇災 禍，不但不同情，反而引以為樂。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_951",
+    "sourceNo": "951",
+    "text": "揚眉吐氣",
+    "chars": [
+      "揚",
+      "眉",
+      "吐",
+      "氣"
+    ],
+    "uniqueChars": [
+      "揚",
+      "眉",
+      "吐",
+      "氣"
+    ],
+    "charCountMap": {
+      "揚": 1,
+      "眉": 1,
+      "吐": 1,
+      "氣": 1
+    },
+    "bopomofo": "ㄧㄤˊ　ㄇㄟˊ　ㄊㄨˇ　ㄑㄧˋ",
+    "usage": "形容擺脫長久的不如意而感到快慰、舒暢。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_975",
+    "sourceNo": "975",
+    "text": "因材施教",
+    "chars": [
+      "因",
+      "材",
+      "施",
+      "教"
+    ],
+    "uniqueChars": [
+      "因",
+      "材",
+      "施",
+      "教"
+    ],
+    "charCountMap": {
+      "因": 1,
+      "材": 1,
+      "施": 1,
+      "教": 1
+    },
+    "bopomofo": "ㄧㄣ　ㄘㄞˊ　ㄕ　ㄐㄧㄠˋ",
+    "usage": "依據受教者不同的資 材，而給予不同的教導。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_977",
+    "sourceNo": "977",
+    "text": "一目了然",
+    "chars": [
+      "一",
+      "目",
+      "了",
+      "然"
+    ],
+    "uniqueChars": [
+      "一",
+      "目",
+      "了",
+      "然"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "目": 1,
+      "了": 1,
+      "然": 1
+    },
+    "bopomofo": "ㄧ　ㄇㄨˋ　ㄌㄧㄠˇ　ㄖㄢˊ　（變）　ㄧˊ　ㄇㄨˋ　ㄌㄧㄠˇ　ㄖㄢˊ",
+    "usage": "看一眼就完全清楚明白",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_988",
+    "sourceNo": "988",
+    "text": "終南捷徑",
+    "chars": [
+      "終",
+      "南",
+      "捷",
+      "徑"
+    ],
+    "uniqueChars": [
+      "終",
+      "南",
+      "捷",
+      "徑"
+    ],
+    "charCountMap": {
+      "終": 1,
+      "南": 1,
+      "捷": 1,
+      "徑": 1
+    },
+    "bopomofo": "ㄓㄨㄥ　ㄋㄢˊ　ㄐㄧㄝˊ　ㄐㄧㄥˋ",
+    "usage": "比喻求官或求名利的便 捷途徑。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_989",
+    "sourceNo": "989",
+    "text": "刮目相看",
+    "chars": [
+      "刮",
+      "目",
+      "相",
+      "看"
+    ],
+    "uniqueChars": [
+      "刮",
+      "目",
+      "相",
+      "看"
+    ],
+    "charCountMap": {
+      "刮": 1,
+      "目": 1,
+      "相": 1,
+      "看": 1
+    },
+    "bopomofo": "ㄍㄨㄚ　ㄇㄨˋ　ㄒㄧㄤ　ㄎㄢˋ",
+    "usage": "另眼相看。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_992",
+    "sourceNo": "992",
+    "text": "牛刀小試",
+    "chars": [
+      "牛",
+      "刀",
+      "小",
+      "試"
+    ],
+    "uniqueChars": [
+      "牛",
+      "刀",
+      "小",
+      "試"
+    ],
+    "charCountMap": {
+      "牛": 1,
+      "刀": 1,
+      "小": 1,
+      "試": 1
+    },
+    "bopomofo": "ㄋㄧㄡˊ　ㄉㄠ　ㄒㄧㄠˇ　ㄕˋ",
+    "usage": "比喻有大才能，先在小事上施展一下。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_999",
+    "sourceNo": "999",
+    "text": "志同道合",
+    "chars": [
+      "志",
+      "同",
+      "道",
+      "合"
+    ],
+    "uniqueChars": [
+      "志",
+      "同",
+      "道",
+      "合"
+    ],
+    "charCountMap": {
+      "志": 1,
+      "同": 1,
+      "道": 1,
+      "合": 1
+    },
+    "bopomofo": "ㄓˋ　ㄊㄨㄥˊ　ㄉㄠˋ　ㄏㄜˊ",
+    "usage": "彼此的志趣和理想相同",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1023",
+    "sourceNo": "1023",
+    "text": "苟且偷安",
+    "chars": [
+      "苟",
+      "且",
+      "偷",
+      "安"
+    ],
+    "uniqueChars": [
+      "苟",
+      "且",
+      "偷",
+      "安"
+    ],
+    "charCountMap": {
+      "苟": 1,
+      "且": 1,
+      "偷": 1,
+      "安": 1
+    },
+    "bopomofo": "ㄍㄡˇ　ㄑㄧㄝˇ　ㄊㄡ　ㄢ",
+    "usage": "形容得過且過，只圖眼前安逸，不顧將來。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1038",
+    "sourceNo": "1038",
+    "text": "風花雪月",
+    "chars": [
+      "風",
+      "花",
+      "雪",
+      "月"
+    ],
+    "uniqueChars": [
+      "風",
+      "花",
+      "雪",
+      "月"
+    ],
+    "charCountMap": {
+      "風": 1,
+      "花": 1,
+      "雪": 1,
+      "月": 1
+    },
+    "bopomofo": "ㄈㄥ　ㄏㄨㄚ　ㄒㄩㄝˇ　ㄩㄝˋ",
+    "usage": "比喻風流場所中的女子行為。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1050",
+    "sourceNo": "1050",
+    "text": "小時了了",
+    "chars": [
+      "小",
+      "時",
+      "了",
+      "了"
+    ],
+    "uniqueChars": [
+      "小",
+      "時",
+      "了"
+    ],
+    "charCountMap": {
+      "小": 1,
+      "時": 1,
+      "了": 2
+    },
+    "bopomofo": "ㄒㄧㄠˇ　ㄕˊ　ㄌㄧㄠˇ　ㄌㄧㄠˇ",
+    "usage": "只小時候聰明長大不一 定有成就。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1058",
+    "sourceNo": "1058",
+    "text": "一語道破",
+    "chars": [
+      "一",
+      "語",
+      "道",
+      "破"
+    ],
+    "uniqueChars": [
+      "一",
+      "語",
+      "道",
+      "破"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "語": 1,
+      "道": 1,
+      "破": 1
+    },
+    "bopomofo": "ㄧ　ㄩˇ　ㄉㄠˋ　ㄆㄛˋ　（變）　ㄧˋ　ㄩˇ　ㄉㄠˋ　ㄆㄛˋ",
+    "usage": "一句話就拆穿對方的謊言、騙局 或是說一句話 就解除對方的疑惑",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1063",
+    "sourceNo": "1063",
+    "text": "一葉知秋",
+    "chars": [
+      "一",
+      "葉",
+      "知",
+      "秋"
+    ],
+    "uniqueChars": [
+      "一",
+      "葉",
+      "知",
+      "秋"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "葉": 1,
+      "知": 1,
+      "秋": 1
+    },
+    "bopomofo": "ㄧ　ㄧㄝˋ　ㄓ　ㄑㄧㄡ　（變）　ㄧˊ　ㄧㄝˋ　ㄓ　ㄑㄧㄡ",
+    "usage": "比喻由局部的、細小 的徵兆，可推知事物的演變和趨勢。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1068",
+    "sourceNo": "1068",
+    "text": "十全十美",
+    "chars": [
+      "十",
+      "全",
+      "十",
+      "美"
+    ],
+    "uniqueChars": [
+      "十",
+      "全",
+      "美"
+    ],
+    "charCountMap": {
+      "十": 2,
+      "全": 1,
+      "美": 1
+    },
+    "bopomofo": "ㄕˊ　ㄑㄩㄢˊ　ㄕˊ　ㄇㄟˇ",
+    "usage": "很多優點，而沒有缺點。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1075",
+    "sourceNo": "1075",
+    "text": "大同小異",
+    "chars": [
+      "大",
+      "同",
+      "小",
+      "異"
+    ],
+    "uniqueChars": [
+      "大",
+      "同",
+      "小",
+      "異"
+    ],
+    "charCountMap": {
+      "大": 1,
+      "同": 1,
+      "小": 1,
+      "異": 1
+    },
+    "bopomofo": "ㄉㄚˋ　ㄊㄨㄥˊ　ㄒㄧㄠˇ　ㄧˋ",
+    "usage": "差不多一樣。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1100",
+    "sourceNo": "1100",
+    "text": "權宜之計",
+    "chars": [
+      "權",
+      "宜",
+      "之",
+      "計"
+    ],
+    "uniqueChars": [
+      "權",
+      "宜",
+      "之",
+      "計"
+    ],
+    "charCountMap": {
+      "權": 1,
+      "宜": 1,
+      "之": 1,
+      "計": 1
+    },
+    "bopomofo": "ㄑㄩㄢˊ　ㄧˊ　ㄓ　ㄐㄧˋ",
+    "usage": "指因應某種時機而暫用 的計謀。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1107",
+    "sourceNo": "1107",
+    "text": "衣冠楚楚",
+    "chars": [
+      "衣",
+      "冠",
+      "楚",
+      "楚"
+    ],
+    "uniqueChars": [
+      "衣",
+      "冠",
+      "楚"
+    ],
+    "charCountMap": {
+      "衣": 1,
+      "冠": 1,
+      "楚": 2
+    },
+    "bopomofo": "ㄧ　ㄍㄨㄢ　ㄔㄨˇ　ㄔㄨˇ",
+    "usage": "楚楚：鮮明的樣子。形容 裝扮整齊體面，亦作「衣 裳楚楚」。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1122",
+    "sourceNo": "1122",
+    "text": "安居樂業",
+    "chars": [
+      "安",
+      "居",
+      "樂",
+      "業"
+    ],
+    "uniqueChars": [
+      "安",
+      "居",
+      "樂",
+      "業"
+    ],
+    "charCountMap": {
+      "安": 1,
+      "居": 1,
+      "樂": 1,
+      "業": 1
+    },
+    "bopomofo": "ㄢ　ㄐㄩ　ㄌㄜˋ　ㄧㄝˋ",
+    "usage": "人民生活安定和樂，且 喜好自己的工作。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1128",
+    "sourceNo": "1128",
+    "text": "有始無終",
+    "chars": [
+      "有",
+      "始",
+      "無",
+      "終"
+    ],
+    "uniqueChars": [
+      "有",
+      "始",
+      "無",
+      "終"
+    ],
+    "charCountMap": {
+      "有": 1,
+      "始": 1,
+      "無": 1,
+      "終": 1
+    },
+    "bopomofo": "ㄧㄡˇ　ㄕˇ　ㄨˊ　ㄓㄨㄥ",
+    "usage": "比喻做事半途而廢，不 能貫徹到底。貶義。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1146",
+    "sourceNo": "1146",
+    "text": "絡繹不絕",
+    "chars": [
+      "絡",
+      "繹",
+      "不",
+      "絕"
+    ],
+    "uniqueChars": [
+      "絡",
+      "繹",
+      "不",
+      "絕"
+    ],
+    "charCountMap": {
+      "絡": 1,
+      "繹": 1,
+      "不": 1,
+      "絕": 1
+    },
+    "bopomofo": "ㄌㄨㄛˋ　ㄧˋ　ㄅㄨˋ　ㄐㄩㄝˊ",
+    "usage": "形容連續不斷的樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1147",
+    "sourceNo": "1147",
+    "text": "顧此失彼",
+    "chars": [
+      "顧",
+      "此",
+      "失",
+      "彼"
+    ],
+    "uniqueChars": [
+      "顧",
+      "此",
+      "失",
+      "彼"
+    ],
+    "charCountMap": {
+      "顧": 1,
+      "此": 1,
+      "失": 1,
+      "彼": 1
+    },
+    "bopomofo": "ㄍㄨˋ　ㄘˇ　ㄕ　ㄅㄧˇ",
+    "usage": "不能全面兼顧。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1177",
+    "sourceNo": "1177",
+    "text": "閉月羞花",
+    "chars": [
+      "閉",
+      "月",
+      "羞",
+      "花"
+    ],
+    "uniqueChars": [
+      "閉",
+      "月",
+      "羞",
+      "花"
+    ],
+    "charCountMap": {
+      "閉": 1,
+      "月": 1,
+      "羞": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄅㄧˋ　ㄩㄝˋ　ㄒㄧㄡ　ㄏㄨㄚ",
+    "usage": "指形容女子容貌姣好，足 使花、月為之退掩、失色",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1183",
+    "sourceNo": "1183",
+    "text": "無可奈何",
+    "chars": [
+      "無",
+      "可",
+      "奈",
+      "何"
+    ],
+    "uniqueChars": [
+      "無",
+      "可",
+      "奈",
+      "何"
+    ],
+    "charCountMap": {
+      "無": 1,
+      "可": 1,
+      "奈": 1,
+      "何": 1
+    },
+    "bopomofo": "ㄨˊ　ㄎㄜˇ　ㄋㄞˋ　ㄏㄜˊ",
+    "usage": "絲毫沒有辦法。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1190",
+    "sourceNo": "1190",
+    "text": "精衛填海",
+    "chars": [
+      "精",
+      "衛",
+      "填",
+      "海"
+    ],
+    "uniqueChars": [
+      "精",
+      "衛",
+      "填",
+      "海"
+    ],
+    "charCountMap": {
+      "精": 1,
+      "衛": 1,
+      "填": 1,
+      "海": 1
+    },
+    "bopomofo": "ㄐㄧㄥ　ㄨㄟˋ　ㄊㄧㄢˊ　ㄏㄞˇ",
+    "usage": "比喻意志堅定，不懼艱苦。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1206",
+    "sourceNo": "1206",
+    "text": "如虎添翼",
+    "chars": [
+      "如",
+      "虎",
+      "添",
+      "翼"
+    ],
+    "uniqueChars": [
+      "如",
+      "虎",
+      "添",
+      "翼"
+    ],
+    "charCountMap": {
+      "如": 1,
+      "虎": 1,
+      "添": 1,
+      "翼": 1
+    },
+    "bopomofo": "ㄖㄨˊ　ㄏㄨˇ　ㄊㄧㄢ　ㄧˋ",
+    "usage": "喻強者增添新力量，更加強 盛。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1211",
+    "sourceNo": "1211",
+    "text": "一場春夢",
+    "chars": [
+      "一",
+      "場",
+      "春",
+      "夢"
+    ],
+    "uniqueChars": [
+      "一",
+      "場",
+      "春",
+      "夢"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "場": 1,
+      "春": 1,
+      "夢": 1
+    },
+    "bopomofo": "ㄧ　ㄔㄤˇ　ㄔㄨㄣ　ㄇㄥˋ",
+    "usage": "比喻世事變幻，轉眼成空。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1225",
+    "sourceNo": "1225",
+    "text": "一念之差",
+    "chars": [
+      "一",
+      "念",
+      "之",
+      "差"
+    ],
+    "uniqueChars": [
+      "一",
+      "念",
+      "之",
+      "差"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "念": 1,
+      "之": 1,
+      "差": 1
+    },
+    "bopomofo": "ㄧ　ㄋㄧㄢˋ　ㄓ　ㄔㄚ　（變）　ㄧˊ　ㄋㄧㄢˋ　ㄓ　ㄔㄚ",
+    "usage": "一個念頭的差錯，導致嚴重後果",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1226",
+    "sourceNo": "1226",
+    "text": "理直氣壯",
+    "chars": [
+      "理",
+      "直",
+      "氣",
+      "壯"
+    ],
+    "uniqueChars": [
+      "理",
+      "直",
+      "氣",
+      "壯"
+    ],
+    "charCountMap": {
+      "理": 1,
+      "直": 1,
+      "氣": 1,
+      "壯": 1
+    },
+    "bopomofo": "ㄌㄧˇ　ㄓˊ　ㄑㄧˋ　ㄓㄨㄤˋ",
+    "usage": "理由正當充分而無所畏懼。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1235",
+    "sourceNo": "1235",
+    "text": "逍遙法外",
+    "chars": [
+      "逍",
+      "遙",
+      "法",
+      "外"
+    ],
+    "uniqueChars": [
+      "逍",
+      "遙",
+      "法",
+      "外"
+    ],
+    "charCountMap": {
+      "逍": 1,
+      "遙": 1,
+      "法": 1,
+      "外": 1
+    },
+    "bopomofo": "ㄒㄧㄠ　ㄧㄠˊ　ㄈㄚˇ　ㄨㄞˋ",
+    "usage": "指犯罪者逃避了應受的 法律制裁，仍自由自在。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1240",
+    "sourceNo": "1240",
+    "text": "惱羞成怒",
+    "chars": [
+      "惱",
+      "羞",
+      "成",
+      "怒"
+    ],
+    "uniqueChars": [
+      "惱",
+      "羞",
+      "成",
+      "怒"
+    ],
+    "charCountMap": {
+      "惱": 1,
+      "羞": 1,
+      "成": 1,
+      "怒": 1
+    },
+    "bopomofo": "ㄋㄠˇ　ㄒㄧㄡ　ㄔㄥˊ　ㄋㄨˋ",
+    "usage": "因羞愧到極點而惱恨發怒。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1241",
+    "sourceNo": "1241",
+    "text": "椎心泣血",
+    "chars": [
+      "椎",
+      "心",
+      "泣",
+      "血"
+    ],
+    "uniqueChars": [
+      "椎",
+      "心",
+      "泣",
+      "血"
+    ],
+    "charCountMap": {
+      "椎": 1,
+      "心": 1,
+      "泣": 1,
+      "血": 1
+    },
+    "bopomofo": "ㄓㄨㄟ　ㄒㄧㄣ　ㄑㄧˋ　ㄒㄧㄝˇ",
+    "usage": "指自捶胸脯，哭的眼中流 出血來。形容哀痛到了極 點。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1254",
+    "sourceNo": "1254",
+    "text": "兔死狐悲",
+    "chars": [
+      "兔",
+      "死",
+      "狐",
+      "悲"
+    ],
+    "uniqueChars": [
+      "兔",
+      "死",
+      "狐",
+      "悲"
+    ],
+    "charCountMap": {
+      "兔": 1,
+      "死": 1,
+      "狐": 1,
+      "悲": 1
+    },
+    "bopomofo": "ㄊㄨˋ　ㄙˇ　ㄏㄨˊ　ㄅㄟ",
+    "usage": "兔子死了，狐狸感到悲傷。比喻因同類的死亡而感到 悲傷。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1258",
+    "sourceNo": "1258",
+    "text": "別有天地",
+    "chars": [
+      "別",
+      "有",
+      "天",
+      "地"
+    ],
+    "uniqueChars": [
+      "別",
+      "有",
+      "天",
+      "地"
+    ],
+    "charCountMap": {
+      "別": 1,
+      "有": 1,
+      "天": 1,
+      "地": 1
+    },
+    "bopomofo": "ㄅㄧㄝˊ　ㄧㄡˇ　ㄊㄧㄢ　ㄉㄧˋ",
+    "usage": "另一種境界。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1281",
+    "sourceNo": "1281",
+    "text": "目瞪口呆",
+    "chars": [
+      "目",
+      "瞪",
+      "口",
+      "呆"
+    ],
+    "uniqueChars": [
+      "目",
+      "瞪",
+      "口",
+      "呆"
+    ],
+    "charCountMap": {
+      "目": 1,
+      "瞪": 1,
+      "口": 1,
+      "呆": 1
+    },
+    "bopomofo": "ㄇㄨˋ　ㄉㄥˋ　ㄎㄡˇ　ㄉㄞ",
+    "usage": "因驚嚇而神情呆滯的樣 子",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1307",
+    "sourceNo": "1307",
+    "text": "粗枝大葉",
+    "chars": [
+      "粗",
+      "枝",
+      "大",
+      "葉"
+    ],
+    "uniqueChars": [
+      "粗",
+      "枝",
+      "大",
+      "葉"
+    ],
+    "charCountMap": {
+      "粗": 1,
+      "枝": 1,
+      "大": 1,
+      "葉": 1
+    },
+    "bopomofo": "ㄘㄨ　ㄓ　ㄉㄚˋ　ㄧㄝˋ",
+    "usage": "比喻一個人個性或做事 不夠細心謹慎。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1316",
+    "sourceNo": "1316",
+    "text": "捨本逐末",
+    "chars": [
+      "捨",
+      "本",
+      "逐",
+      "末"
+    ],
+    "uniqueChars": [
+      "捨",
+      "本",
+      "逐",
+      "末"
+    ],
+    "charCountMap": {
+      "捨": 1,
+      "本": 1,
+      "逐": 1,
+      "末": 1
+    },
+    "bopomofo": "ㄕㄜˇ　ㄅㄣˇ　ㄓㄨˊ　ㄇㄛˋ",
+    "usage": "不求事物的根本，只重視支 節。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1332",
+    "sourceNo": "1332",
+    "text": "寸步不離",
+    "chars": [
+      "寸",
+      "步",
+      "不",
+      "離"
+    ],
+    "uniqueChars": [
+      "寸",
+      "步",
+      "不",
+      "離"
+    ],
+    "charCountMap": {
+      "寸": 1,
+      "步": 1,
+      "不": 1,
+      "離": 1
+    },
+    "bopomofo": "ㄘㄨㄣˋ　ㄅㄨˋ　ㄅㄨˋ　ㄌㄧˊ",
+    "usage": "比喻關係密切，總是在一起。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1351",
+    "sourceNo": "1351",
+    "text": "粗茶淡飯",
+    "chars": [
+      "粗",
+      "茶",
+      "淡",
+      "飯"
+    ],
+    "uniqueChars": [
+      "粗",
+      "茶",
+      "淡",
+      "飯"
+    ],
+    "charCountMap": {
+      "粗": 1,
+      "茶": 1,
+      "淡": 1,
+      "飯": 1
+    },
+    "bopomofo": "ㄘㄨ　ㄔㄚˊ　ㄉㄢˋ　ㄈㄢˋ",
+    "usage": "指形容飲食簡單，生活 簡樸。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1359",
+    "sourceNo": "1359",
+    "text": "平分秋色",
+    "chars": [
+      "平",
+      "分",
+      "秋",
+      "色"
+    ],
+    "uniqueChars": [
+      "平",
+      "分",
+      "秋",
+      "色"
+    ],
+    "charCountMap": {
+      "平": 1,
+      "分": 1,
+      "秋": 1,
+      "色": 1
+    },
+    "bopomofo": "ㄆㄧㄥˊ　ㄈㄣ　ㄑㄧㄡ　ㄙㄜˋ",
+    "usage": "形容二者一樣出色，分 不出高下。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1360",
+    "sourceNo": "1360",
+    "text": "躍躍欲試",
+    "chars": [
+      "躍",
+      "躍",
+      "欲",
+      "試"
+    ],
+    "uniqueChars": [
+      "躍",
+      "欲",
+      "試"
+    ],
+    "charCountMap": {
+      "躍": 2,
+      "欲": 1,
+      "試": 1
+    },
+    "bopomofo": "ㄩㄝˋ　ㄩㄝˋ　ㄩˋ　ㄕˋ",
+    "usage": "心動技癢，急切的想嘗試一 下。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1367",
+    "sourceNo": "1367",
+    "text": "安分守己",
+    "chars": [
+      "安",
+      "分",
+      "守",
+      "己"
+    ],
+    "uniqueChars": [
+      "安",
+      "分",
+      "守",
+      "己"
+    ],
+    "charCountMap": {
+      "安": 1,
+      "分": 1,
+      "守": 1,
+      "己": 1
+    },
+    "bopomofo": "ㄢ　ㄈㄣˋ　ㄕㄡˇ　ㄐㄧˇ",
+    "usage": "安守自己的本分。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1385",
+    "sourceNo": "1385",
+    "text": "脫胎換骨",
+    "chars": [
+      "脫",
+      "胎",
+      "換",
+      "骨"
+    ],
+    "uniqueChars": [
+      "脫",
+      "胎",
+      "換",
+      "骨"
+    ],
+    "charCountMap": {
+      "脫": 1,
+      "胎": 1,
+      "換": 1,
+      "骨": 1
+    },
+    "bopomofo": "ㄊㄨㄛ　ㄊㄞ　ㄏㄨㄢˋ　ㄍㄨˇ",
+    "usage": "指比喻人徹底改變。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1387",
+    "sourceNo": "1387",
+    "text": "奮不顧身",
+    "chars": [
+      "奮",
+      "不",
+      "顧",
+      "身"
+    ],
+    "uniqueChars": [
+      "奮",
+      "不",
+      "顧",
+      "身"
+    ],
+    "charCountMap": {
+      "奮": 1,
+      "不": 1,
+      "顧": 1,
+      "身": 1
+    },
+    "bopomofo": "ㄈㄣˋ　ㄅㄨˋ　ㄍㄨˋ　ㄕㄣ　（變）　ㄈㄣˋ　ㄅㄨˊ　ㄍㄨˋ　ㄕㄣ",
+    "usage": "奮勇向前，不顧生命。是形容在危險或是戰爭中勇往直 前，毫不以自己安危 憂慮。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1389",
+    "sourceNo": "1389",
+    "text": "潛移默化",
+    "chars": [
+      "潛",
+      "移",
+      "默",
+      "化"
+    ],
+    "uniqueChars": [
+      "潛",
+      "移",
+      "默",
+      "化"
+    ],
+    "charCountMap": {
+      "潛": 1,
+      "移": 1,
+      "默": 1,
+      "化": 1
+    },
+    "bopomofo": "ㄑㄧㄢˊ　ㄧˊ　ㄇㄛˋ　ㄏㄨㄚˋ",
+    "usage": "人的思想、性格或習慣受到影響，不知不覺中起了變化。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1438",
+    "sourceNo": "1438",
+    "text": "雪上加霜",
+    "chars": [
+      "雪",
+      "上",
+      "加",
+      "霜"
+    ],
+    "uniqueChars": [
+      "雪",
+      "上",
+      "加",
+      "霜"
+    ],
+    "charCountMap": {
+      "雪": 1,
+      "上": 1,
+      "加": 1,
+      "霜": 1
+    },
+    "bopomofo": "ㄒㄩㄝˇ　ㄕㄤˋ　ㄐㄧㄚ　ㄕㄨㄤ",
+    "usage": "比喻災禍接二連三，又不斷遭受到新的打擊，苦上加苦，境況非常困窘。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1441",
+    "sourceNo": "1441",
+    "text": "野心勃勃",
+    "chars": [
+      "野",
+      "心",
+      "勃",
+      "勃"
+    ],
+    "uniqueChars": [
+      "野",
+      "心",
+      "勃"
+    ],
+    "charCountMap": {
+      "野": 1,
+      "心": 1,
+      "勃": 2
+    },
+    "bopomofo": "ㄧㄝˇ　ㄒㄧㄣ　ㄅㄛˊ　ㄅㄛˊ",
+    "usage": "指形容狂妄非分之心或 遠大的企圖。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1449",
+    "sourceNo": "1449",
+    "text": "微乎其微",
+    "chars": [
+      "微",
+      "乎",
+      "其",
+      "微"
+    ],
+    "uniqueChars": [
+      "微",
+      "乎",
+      "其"
+    ],
+    "charCountMap": {
+      "微": 2,
+      "乎": 1,
+      "其": 1
+    },
+    "bopomofo": "ㄨㄟˊ　ㄏㄨ　ㄑㄧˊ　ㄨㄟˊ",
+    "usage": "非常細微。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1480",
+    "sourceNo": "1480",
+    "text": "一決雌雄",
+    "chars": [
+      "一",
+      "決",
+      "雌",
+      "雄"
+    ],
+    "uniqueChars": [
+      "一",
+      "決",
+      "雌",
+      "雄"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "決": 1,
+      "雌": 1,
+      "雄": 1
+    },
+    "bopomofo": "ㄧ　ㄐㄩㄝˊ　ㄘ　ㄒㄩㄥˊ　（變）　ㄧˋ　ㄐㄩㄝˊ　ㄘ　ㄒㄩㄥˊ",
+    "usage": "以比賽來決定勝負。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1485",
+    "sourceNo": "1485",
+    "text": "氣象萬千",
+    "chars": [
+      "氣",
+      "象",
+      "萬",
+      "千"
+    ],
+    "uniqueChars": [
+      "氣",
+      "象",
+      "萬",
+      "千"
+    ],
+    "charCountMap": {
+      "氣": 1,
+      "象": 1,
+      "萬": 1,
+      "千": 1
+    },
+    "bopomofo": "ㄑㄧˋ　ㄒㄧㄤˋ　ㄨㄢˋ　ㄑㄧㄢ",
+    "usage": "形容景象千變萬化，極為壯 觀。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1486",
+    "sourceNo": "1486",
+    "text": "哀鴻遍野",
+    "chars": [
+      "哀",
+      "鴻",
+      "遍",
+      "野"
+    ],
+    "uniqueChars": [
+      "哀",
+      "鴻",
+      "遍",
+      "野"
+    ],
+    "charCountMap": {
+      "哀": 1,
+      "鴻": 1,
+      "遍": 1,
+      "野": 1
+    },
+    "bopomofo": "ㄞ　ㄏㄨㄥˊ　ㄅㄧㄢˋ　ㄧㄝˇ",
+    "usage": "比喻到處都是流離失所的 難民。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1499",
+    "sourceNo": "1499",
+    "text": "良藥苦口",
+    "chars": [
+      "良",
+      "藥",
+      "苦",
+      "口"
+    ],
+    "uniqueChars": [
+      "良",
+      "藥",
+      "苦",
+      "口"
+    ],
+    "charCountMap": {
+      "良": 1,
+      "藥": 1,
+      "苦": 1,
+      "口": 1
+    },
+    "bopomofo": "ㄌㄧㄤˊ　ㄧㄠˋ　ㄎㄨˇ　ㄎㄡˇ",
+    "usage": "比喻諫言多不順耳，但 卻有益於人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1500",
+    "sourceNo": "1500",
+    "text": "忘年之交",
+    "chars": [
+      "忘",
+      "年",
+      "之",
+      "交"
+    ],
+    "uniqueChars": [
+      "忘",
+      "年",
+      "之",
+      "交"
+    ],
+    "charCountMap": {
+      "忘": 1,
+      "年": 1,
+      "之": 1,
+      "交": 1
+    },
+    "bopomofo": "ㄨㄤˋ　ㄋㄧㄢˊ　ㄓ　ㄐㄧㄠ",
+    "usage": "忘掉年紀，不分年歲而 結交為友。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1510",
+    "sourceNo": "1510",
+    "text": "朝令夕改",
+    "chars": [
+      "朝",
+      "令",
+      "夕",
+      "改"
+    ],
+    "uniqueChars": [
+      "朝",
+      "令",
+      "夕",
+      "改"
+    ],
+    "charCountMap": {
+      "朝": 1,
+      "令": 1,
+      "夕": 1,
+      "改": 1
+    },
+    "bopomofo": "ㄓㄠ　ㄌㄧㄥˋ　ㄒㄧˋ　ㄍㄞˇ",
+    "usage": "比喻政令、主張或意見 反覆無常。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1529",
+    "sourceNo": "1529",
+    "text": "野人獻曝",
+    "chars": [
+      "野",
+      "人",
+      "獻",
+      "曝"
+    ],
+    "uniqueChars": [
+      "野",
+      "人",
+      "獻",
+      "曝"
+    ],
+    "charCountMap": {
+      "野": 1,
+      "人": 1,
+      "獻": 1,
+      "曝": 1
+    },
+    "bopomofo": "ㄧㄝˇ　ㄖㄣˊ　ㄒㄧㄢˋ　ㄆㄨˋ",
+    "usage": "指比喻平凡人所貢獻的平凡事物。亦用為人對所獻東西或意見的自謙之詞。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1565",
+    "sourceNo": "1565",
+    "text": "遊刃有餘",
+    "chars": [
+      "遊",
+      "刃",
+      "有",
+      "餘"
+    ],
+    "uniqueChars": [
+      "遊",
+      "刃",
+      "有",
+      "餘"
+    ],
+    "charCountMap": {
+      "遊": 1,
+      "刃": 1,
+      "有": 1,
+      "餘": 1
+    },
+    "bopomofo": "ㄧㄡˊ　ㄖㄣˋ　ㄧㄡˇ　ㄩˊ",
+    "usage": "比喻做事能勝任愉快，從容不迫。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1578",
+    "sourceNo": "1578",
+    "text": "拈花惹草",
+    "chars": [
+      "拈",
+      "花",
+      "惹",
+      "草"
+    ],
+    "uniqueChars": [
+      "拈",
+      "花",
+      "惹",
+      "草"
+    ],
+    "charCountMap": {
+      "拈": 1,
+      "花": 1,
+      "惹": 1,
+      "草": 1
+    },
+    "bopomofo": "ㄋㄧㄢˊ　ㄏㄨㄚ　ㄖㄜˇ　ㄘㄠˇ",
+    "usage": "比喻挑逗﹑勾引異性，到處留情。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1614",
+    "sourceNo": "1614",
+    "text": "我行我素",
+    "chars": [
+      "我",
+      "行",
+      "我",
+      "素"
+    ],
+    "uniqueChars": [
+      "我",
+      "行",
+      "素"
+    ],
+    "charCountMap": {
+      "我": 2,
+      "行": 1,
+      "素": 1
+    },
+    "bopomofo": "ㄨㄛˇ　ㄒㄧㄥˊ　ㄨㄛˇ　ㄙㄨˋ",
+    "usage": "形容人不受外界影響，完全依照自己的 心意行事。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1623",
+    "sourceNo": "1623",
+    "text": "鳥語花香",
+    "chars": [
+      "鳥",
+      "語",
+      "花",
+      "香"
+    ],
+    "uniqueChars": [
+      "鳥",
+      "語",
+      "花",
+      "香"
+    ],
+    "charCountMap": {
+      "鳥": 1,
+      "語": 1,
+      "花": 1,
+      "香": 1
+    },
+    "bopomofo": "ㄋㄧㄠˇ　ㄩˇ　ㄏㄨㄚ　ㄒㄧㄤ",
+    "usage": "指鳥兒歌唱，花開芬 芳。形容景色的美好。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1629",
+    "sourceNo": "1629",
+    "text": "雀屏中選",
+    "chars": [
+      "雀",
+      "屏",
+      "中",
+      "選"
+    ],
+    "uniqueChars": [
+      "雀",
+      "屏",
+      "中",
+      "選"
+    ],
+    "charCountMap": {
+      "雀": 1,
+      "屏": 1,
+      "中": 1,
+      "選": 1
+    },
+    "bopomofo": "ㄑㄩㄝˋ　ㄆㄧㄥˊ　ㄓㄨㄥˋ　ㄒㄩㄢˇ",
+    "usage": "指比喻中選為人婿。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1638",
+    "sourceNo": "1638",
+    "text": "竊竊私語",
+    "chars": [
+      "竊",
+      "竊",
+      "私",
+      "語"
+    ],
+    "uniqueChars": [
+      "竊",
+      "私",
+      "語"
+    ],
+    "charCountMap": {
+      "竊": 2,
+      "私": 1,
+      "語": 1
+    },
+    "bopomofo": "ㄑㄧㄝˋ　ㄑㄧㄝˋ　ㄙ　ㄩˇ",
+    "usage": "私下小聲的說話。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1641",
+    "sourceNo": "1641",
+    "text": "張牙舞爪",
+    "chars": [
+      "張",
+      "牙",
+      "舞",
+      "爪"
+    ],
+    "uniqueChars": [
+      "張",
+      "牙",
+      "舞",
+      "爪"
+    ],
+    "charCountMap": {
+      "張": 1,
+      "牙": 1,
+      "舞": 1,
+      "爪": 1
+    },
+    "bopomofo": "ㄓㄤ　ㄧㄚˊ　ㄨˇ　ㄓㄠˇ",
+    "usage": "比喻張揚作勢，猖狂凶惡的 樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1674",
+    "sourceNo": "1674",
+    "text": "悲憤填膺",
+    "chars": [
+      "悲",
+      "憤",
+      "填",
+      "膺"
+    ],
+    "uniqueChars": [
+      "悲",
+      "憤",
+      "填",
+      "膺"
+    ],
+    "charCountMap": {
+      "悲": 1,
+      "憤": 1,
+      "填": 1,
+      "膺": 1
+    },
+    "bopomofo": "ㄅㄟ ㄈㄣˋ ㄊㄧㄢˊ ㄧㄥ",
+    "usage": "形容悲痛和憤怒充滿了胸 膛。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1677",
+    "sourceNo": "1677",
+    "text": "碧血黃花",
+    "chars": [
+      "碧",
+      "血",
+      "黃",
+      "花"
+    ],
+    "uniqueChars": [
+      "碧",
+      "血",
+      "黃",
+      "花"
+    ],
+    "charCountMap": {
+      "碧": 1,
+      "血": 1,
+      "黃": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄅㄧˋ ㄒㄧㄝˇ ㄏㄨㄤˊ ㄏㄨㄚ\r\n(又音) ㄅㄧˋ ㄒㄩㄝˋ ㄏㄨㄤˊ ㄏㄨㄚ",
+    "usage": "形容黃花岡七十二 烈士的壯烈犧牲精神。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1683",
+    "sourceNo": "1683",
+    "text": "兵強馬壯",
+    "chars": [
+      "兵",
+      "強",
+      "馬",
+      "壯"
+    ],
+    "uniqueChars": [
+      "兵",
+      "強",
+      "馬",
+      "壯"
+    ],
+    "charCountMap": {
+      "兵": 1,
+      "強": 1,
+      "馬": 1,
+      "壯": 1
+    },
+    "bopomofo": "ㄅㄧㄥ ㄑㄧㄤˊ ㄇㄚˇ ㄓㄨㄤˋ",
+    "usage": "形容軍隊的武力雄 厚，又充滿戰鬥力。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1686",
+    "sourceNo": "1686",
+    "text": "步步蓮花",
+    "chars": [
+      "步",
+      "步",
+      "蓮",
+      "花"
+    ],
+    "uniqueChars": [
+      "步",
+      "蓮",
+      "花"
+    ],
+    "charCountMap": {
+      "步": 2,
+      "蓮": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄅㄨˋ ㄌㄧㄢˊ ㄏㄨㄚ",
+    "usage": "形容女子走路的美 妙姿態。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1690",
+    "sourceNo": "1690",
+    "text": "不甘示弱",
+    "chars": [
+      "不",
+      "甘",
+      "示",
+      "弱"
+    ],
+    "uniqueChars": [
+      "不",
+      "甘",
+      "示",
+      "弱"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "甘": 1,
+      "示": 1,
+      "弱": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄍㄢ ㄕˋ ㄖㄨㄛˋ",
+    "usage": "不服輸。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1697",
+    "sourceNo": "1697",
+    "text": "不櫛進士",
+    "chars": [
+      "不",
+      "櫛",
+      "進",
+      "士"
+    ],
+    "uniqueChars": [
+      "不",
+      "櫛",
+      "進",
+      "士"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "櫛": 1,
+      "進": 1,
+      "士": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄐㄧㄝˊ ㄐㄧㄣˋ ㄕˋ",
+    "usage": "形容有文才的女子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1699",
+    "sourceNo": "1699",
+    "text": "不知不覺",
+    "chars": [
+      "不",
+      "知",
+      "不",
+      "覺"
+    ],
+    "uniqueChars": [
+      "不",
+      "知",
+      "覺"
+    ],
+    "charCountMap": {
+      "不": 2,
+      "知": 1,
+      "覺": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄓ ㄅㄨˋ ㄐㄩㄝˊ",
+    "usage": "不自覺，完全沒有發 現。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1700",
+    "sourceNo": "1700",
+    "text": "不知去向",
+    "chars": [
+      "不",
+      "知",
+      "去",
+      "向"
+    ],
+    "uniqueChars": [
+      "不",
+      "知",
+      "去",
+      "向"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "知": 1,
+      "去": 1,
+      "向": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄓ ㄑㄩˋ ㄒㄧㄤˋ",
+    "usage": "不知道到哪裡去了。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1703",
+    "sourceNo": "1703",
+    "text": "不虞匱乏",
+    "chars": [
+      "不",
+      "虞",
+      "匱",
+      "乏"
+    ],
+    "uniqueChars": [
+      "不",
+      "虞",
+      "匱",
+      "乏"
+    ],
+    "charCountMap": {
+      "不": 1,
+      "虞": 1,
+      "匱": 1,
+      "乏": 1
+    },
+    "bopomofo": "ㄅㄨˋ ㄩˊ ㄎㄨㄟˋ ㄈㄚˊ",
+    "usage": "指不必憂慮會缺乏。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1705",
+    "sourceNo": "1705",
+    "text": "被髮左衽",
+    "chars": [
+      "被",
+      "髮",
+      "左",
+      "衽"
+    ],
+    "uniqueChars": [
+      "被",
+      "髮",
+      "左",
+      "衽"
+    ],
+    "charCountMap": {
+      "被": 1,
+      "髮": 1,
+      "左": 1,
+      "衽": 1
+    },
+    "bopomofo": "ㄆㄧ ㄈㄚˇ ㄗㄨㄛˇ ㄖㄣˋ",
+    "usage": "被髮，頭髮散亂。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1709",
+    "sourceNo": "1709",
+    "text": "莫名其妙",
+    "chars": [
+      "莫",
+      "名",
+      "其",
+      "妙"
+    ],
+    "uniqueChars": [
+      "莫",
+      "名",
+      "其",
+      "妙"
+    ],
+    "charCountMap": {
+      "莫": 1,
+      "名": 1,
+      "其": 1,
+      "妙": 1
+    },
+    "bopomofo": "ㄇㄛˋ ㄇㄧㄥˊ ㄑㄧˊ ㄇㄧㄠˋ",
+    "usage": "形容事情或現象使人無法理解，不能以言語表達 出來。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1714",
+    "sourceNo": "1714",
+    "text": "漫無目的",
+    "chars": [
+      "漫",
+      "無",
+      "目",
+      "的"
+    ],
+    "uniqueChars": [
+      "漫",
+      "無",
+      "目",
+      "的"
+    ],
+    "charCountMap": {
+      "漫": 1,
+      "無": 1,
+      "目": 1,
+      "的": 1
+    },
+    "bopomofo": "ㄇㄢˋ ㄨˊ ㄇㄨˋ ㄉㄧˋ",
+    "usage": "形容無所事事，沒有任何目標。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1719",
+    "sourceNo": "1719",
+    "text": "妙筆生花",
+    "chars": [
+      "妙",
+      "筆",
+      "生",
+      "花"
+    ],
+    "uniqueChars": [
+      "妙",
+      "筆",
+      "生",
+      "花"
+    ],
+    "charCountMap": {
+      "妙": 1,
+      "筆": 1,
+      "生": 1,
+      "花": 1
+    },
+    "bopomofo": "ㄇㄧㄠˋ ㄅㄧˇ ㄕㄥ ㄏㄨㄚ",
+    "usage": "文思俊逸，寫作能力特強。或稱譽文章佳 妙。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1722",
+    "sourceNo": "1722",
+    "text": "民窮財盡",
+    "chars": [
+      "民",
+      "窮",
+      "財",
+      "盡"
+    ],
+    "uniqueChars": [
+      "民",
+      "窮",
+      "財",
+      "盡"
+    ],
+    "charCountMap": {
+      "民": 1,
+      "窮": 1,
+      "財": 1,
+      "盡": 1
+    },
+    "bopomofo": "ㄇㄧㄣˊ ㄑㄩㄥˊ ㄘㄞˊ ㄐㄧㄣˋ",
+    "usage": "人民生活窘困，一點財物也 沒有了。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1723",
+    "sourceNo": "1723",
+    "text": "名花有主",
+    "chars": [
+      "名",
+      "花",
+      "有",
+      "主"
+    ],
+    "uniqueChars": [
+      "名",
+      "花",
+      "有",
+      "主"
+    ],
+    "charCountMap": {
+      "名": 1,
+      "花": 1,
+      "有": 1,
+      "主": 1
+    },
+    "bopomofo": "ㄇㄧㄥˊ ㄏㄨㄚ ㄧㄡˇ ㄓㄨˇ",
+    "usage": "名花有主，今多比喻女孩 子已經有了所屬對象。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1724",
+    "sourceNo": "1724",
+    "text": "目無法紀",
+    "chars": [
+      "目",
+      "無",
+      "法",
+      "紀"
+    ],
+    "uniqueChars": [
+      "目",
+      "無",
+      "法",
+      "紀"
+    ],
+    "charCountMap": {
+      "目": 1,
+      "無": 1,
+      "法": 1,
+      "紀": 1
+    },
+    "bopomofo": "ㄇㄨˋ ㄨˊ ㄈㄚˇ ㄐㄧˋ",
+    "usage": "膽大妄為，無視於法 律的存在。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1728",
+    "sourceNo": "1728",
+    "text": "泛泛之交",
+    "chars": [
+      "泛",
+      "泛",
+      "之",
+      "交"
+    ],
+    "uniqueChars": [
+      "泛",
+      "之",
+      "交"
+    ],
+    "charCountMap": {
+      "泛": 2,
+      "之": 1,
+      "交": 1
+    },
+    "bopomofo": "ㄈㄢˋ ㄈㄢˋ ㄓ ㄐㄧㄠ",
+    "usage": "普通膚淺的交情",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1729",
+    "sourceNo": "1729",
+    "text": "販夫走卒",
+    "chars": [
+      "販",
+      "夫",
+      "走",
+      "卒"
+    ],
+    "uniqueChars": [
+      "販",
+      "夫",
+      "走",
+      "卒"
+    ],
+    "charCountMap": {
+      "販": 1,
+      "夫": 1,
+      "走": 1,
+      "卒": 1
+    },
+    "bopomofo": "ㄈㄢˋ　ㄈㄨ　ㄗㄡˇ　ㄗㄨˊ",
+    "usage": "指經營小本生意或替人 跑腿的人。泛指生活在下 階層的老百姓。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1730",
+    "sourceNo": "1730",
+    "text": "反敗為勝",
+    "chars": [
+      "反",
+      "敗",
+      "為",
+      "勝"
+    ],
+    "uniqueChars": [
+      "反",
+      "敗",
+      "為",
+      "勝"
+    ],
+    "charCountMap": {
+      "反": 1,
+      "敗": 1,
+      "為": 1,
+      "勝": 1
+    },
+    "bopomofo": "ㄈㄢˇ ㄅㄞˋ ㄨㄟˊ ㄕㄥˋ",
+    "usage": "從失敗轉變成勝利。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1736",
+    "sourceNo": "1736",
+    "text": "逢凶化吉",
+    "chars": [
+      "逢",
+      "凶",
+      "化",
+      "吉"
+    ],
+    "uniqueChars": [
+      "逢",
+      "凶",
+      "化",
+      "吉"
+    ],
+    "charCountMap": {
+      "逢": 1,
+      "凶": 1,
+      "化": 1,
+      "吉": 1
+    },
+    "bopomofo": "ㄈㄥˊ ㄒㄩㄥ ㄏㄨㄚˋ ㄐㄧˊ",
+    "usage": "指遇到凶險而能安全度 過。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1737",
+    "sourceNo": "1737",
+    "text": "逢人說項",
+    "chars": [
+      "逢",
+      "人",
+      "說",
+      "項"
+    ],
+    "uniqueChars": [
+      "逢",
+      "人",
+      "說",
+      "項"
+    ],
+    "charCountMap": {
+      "逢": 1,
+      "人": 1,
+      "說": 1,
+      "項": 1
+    },
+    "bopomofo": "ㄈㄥˊ ㄖㄣˊ ㄕㄨㄛ ㄒㄧㄤˋ",
+    "usage": "比喻到處替人遊說或替 人講情。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1742",
+    "sourceNo": "1742",
+    "text": "大排長龍",
+    "chars": [
+      "大",
+      "排",
+      "長",
+      "龍"
+    ],
+    "uniqueChars": [
+      "大",
+      "排",
+      "長",
+      "龍"
+    ],
+    "charCountMap": {
+      "大": 1,
+      "排": 1,
+      "長": 1,
+      "龍": 1
+    },
+    "bopomofo": "ㄉㄚˋ ㄆㄞˊ ㄔㄤˊ ㄌㄨㄥˊ",
+    "usage": "形容隊伍排得很長",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1747",
+    "sourceNo": "1747",
+    "text": "大材小用",
+    "chars": [
+      "大",
+      "材",
+      "小",
+      "用"
+    ],
+    "uniqueChars": [
+      "大",
+      "材",
+      "小",
+      "用"
+    ],
+    "charCountMap": {
+      "大": 1,
+      "材": 1,
+      "小": 1,
+      "用": 1
+    },
+    "bopomofo": "ㄉㄚˋ ㄘㄞˊ ㄒㄧㄠˇ ㄩㄥˋ",
+    "usage": "能力高而職位低，浪 費人才",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1753",
+    "sourceNo": "1753",
+    "text": "荳蔻年華",
+    "chars": [
+      "荳",
+      "蔻",
+      "年",
+      "華"
+    ],
+    "uniqueChars": [
+      "荳",
+      "蔻",
+      "年",
+      "華"
+    ],
+    "charCountMap": {
+      "荳": 1,
+      "蔻": 1,
+      "年": 1,
+      "華": 1
+    },
+    "bopomofo": "ㄉㄡˋ ㄎㄡˋ ㄋㄧㄢˊ ㄏㄨㄚˊ",
+    "usage": "指形容年輕未婚的少 女。多指女子十三﹑四歲之時。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1754",
+    "sourceNo": "1754",
+    "text": "單槍匹馬",
+    "chars": [
+      "單",
+      "槍",
+      "匹",
+      "馬"
+    ],
+    "uniqueChars": [
+      "單",
+      "槍",
+      "匹",
+      "馬"
+    ],
+    "charCountMap": {
+      "單": 1,
+      "槍": 1,
+      "匹": 1,
+      "馬": 1
+    },
+    "bopomofo": "ㄉㄢ ㄑㄧㄤ ㄆㄧ ㄇㄚˇ",
+    "usage": "比喻單獨行動，沒有任何外力幫助。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1755",
+    "sourceNo": "1755",
+    "text": "跌跌撞撞",
+    "chars": [
+      "跌",
+      "跌",
+      "撞",
+      "撞"
+    ],
+    "uniqueChars": [
+      "跌",
+      "撞"
+    ],
+    "charCountMap": {
+      "跌": 2,
+      "撞": 2
+    },
+    "bopomofo": "ㄉㄧㄝˊ ㄉㄧㄝˊ ㄓㄨㄤˋ ㄓㄨㄤˋ",
+    "usage": "走不穩，像要跌倒的 樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1756",
+    "sourceNo": "1756",
+    "text": "調兵遣將",
+    "chars": [
+      "調",
+      "兵",
+      "遣",
+      "將"
+    ],
+    "uniqueChars": [
+      "調",
+      "兵",
+      "遣",
+      "將"
+    ],
+    "charCountMap": {
+      "調": 1,
+      "兵": 1,
+      "遣": 1,
+      "將": 1
+    },
+    "bopomofo": "ㄉㄧㄠˋ ㄅㄧㄥ ㄑㄧㄢˇ ㄐㄧㄤˋ",
+    "usage": "調遣士兵，派任將領。泛指 部署人力。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1758",
+    "sourceNo": "1758",
+    "text": "顛三倒四",
+    "chars": [
+      "顛",
+      "三",
+      "倒",
+      "四"
+    ],
+    "uniqueChars": [
+      "顛",
+      "三",
+      "倒",
+      "四"
+    ],
+    "charCountMap": {
+      "顛": 1,
+      "三": 1,
+      "倒": 1,
+      "四": 1
+    },
+    "bopomofo": "ㄉㄧㄢ ㄙㄢ ㄉㄠˇ ㄙˋ",
+    "usage": "形容混亂沒有條理或神志 不清、翻來覆去。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1759",
+    "sourceNo": "1759",
+    "text": "頂天立地",
+    "chars": [
+      "頂",
+      "天",
+      "立",
+      "地"
+    ],
+    "uniqueChars": [
+      "頂",
+      "天",
+      "立",
+      "地"
+    ],
+    "charCountMap": {
+      "頂": 1,
+      "天": 1,
+      "立": 1,
+      "地": 1
+    },
+    "bopomofo": "ㄉㄧㄥˇ ㄊㄧㄢ ㄌㄧˋ ㄉㄧˋ",
+    "usage": "指頭頂著天，腳立於 地。形容人處事光明磊 落，氣勢豪邁。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1764",
+    "sourceNo": "1764",
+    "text": "特立獨行",
+    "chars": [
+      "特",
+      "立",
+      "獨",
+      "行"
+    ],
+    "uniqueChars": [
+      "特",
+      "立",
+      "獨",
+      "行"
+    ],
+    "charCountMap": {
+      "特": 1,
+      "立": 1,
+      "獨": 1,
+      "行": 1
+    },
+    "bopomofo": "ㄊㄜˋ ㄌㄧˋ ㄉㄨˊ ㄒㄧㄥˊ",
+    "usage": "指行為獨特，不隨俗、不 和眾。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1765",
+    "sourceNo": "1765",
+    "text": "太平盛世",
+    "chars": [
+      "太",
+      "平",
+      "盛",
+      "世"
+    ],
+    "uniqueChars": [
+      "太",
+      "平",
+      "盛",
+      "世"
+    ],
+    "charCountMap": {
+      "太": 1,
+      "平": 1,
+      "盛": 1,
+      "世": 1
+    },
+    "bopomofo": "ㄊㄞˋ ㄆㄧㄥˊ ㄕㄥˋ ㄕˋ",
+    "usage": "極為祥和安定，繁榮興 盛的時代",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1767",
+    "sourceNo": "1767",
+    "text": "貪生怕死",
+    "chars": [
+      "貪",
+      "生",
+      "怕",
+      "死"
+    ],
+    "uniqueChars": [
+      "貪",
+      "生",
+      "怕",
+      "死"
+    ],
+    "charCountMap": {
+      "貪": 1,
+      "生": 1,
+      "怕": 1,
+      "死": 1
+    },
+    "bopomofo": "ㄊㄢ ㄕㄥ ㄆㄚˋ ㄙˇ",
+    "usage": "貪戀生存，害怕死亡。指人面臨生死關頭時，只求 活命而不顧一切。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1768",
+    "sourceNo": "1768",
+    "text": "貪榮慕利",
+    "chars": [
+      "貪",
+      "榮",
+      "慕",
+      "利"
+    ],
+    "uniqueChars": [
+      "貪",
+      "榮",
+      "慕",
+      "利"
+    ],
+    "charCountMap": {
+      "貪": 1,
+      "榮": 1,
+      "慕": 1,
+      "利": 1
+    },
+    "bopomofo": "ㄊㄢ ㄖㄨㄥˊ ㄇㄨˋ ㄌㄧˋ",
+    "usage": "指貪圖榮華，愛慕財利。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1772",
+    "sourceNo": "1772",
+    "text": "替罪羔羊",
+    "chars": [
+      "替",
+      "罪",
+      "羔",
+      "羊"
+    ],
+    "uniqueChars": [
+      "替",
+      "罪",
+      "羔",
+      "羊"
+    ],
+    "charCountMap": {
+      "替": 1,
+      "罪": 1,
+      "羔": 1,
+      "羊": 1
+    },
+    "bopomofo": "ㄊㄧˋ ㄗㄨㄟˋ ㄍㄠ ㄧㄤˊ",
+    "usage": "比喻代人受過的人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1773",
+    "sourceNo": "1773",
+    "text": "啼笑皆非",
+    "chars": [
+      "啼",
+      "笑",
+      "皆",
+      "非"
+    ],
+    "uniqueChars": [
+      "啼",
+      "笑",
+      "皆",
+      "非"
+    ],
+    "charCountMap": {
+      "啼": 1,
+      "笑": 1,
+      "皆": 1,
+      "非": 1
+    },
+    "bopomofo": "ㄊㄧˊ ㄒㄧㄠˋ ㄐㄧㄝ ㄈㄟ",
+    "usage": "哭笑不得。形容不知如何是 好。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1774",
+    "sourceNo": "1774",
+    "text": "提心吊膽",
+    "chars": [
+      "提",
+      "心",
+      "吊",
+      "膽"
+    ],
+    "uniqueChars": [
+      "提",
+      "心",
+      "吊",
+      "膽"
+    ],
+    "charCountMap": {
+      "提": 1,
+      "心": 1,
+      "吊": 1,
+      "膽": 1
+    },
+    "bopomofo": "ㄊㄧˊ ㄒㄧㄣ ㄉㄧㄠˋ ㄉㄢˇ",
+    "usage": "形容心理上、精神上擔憂恐 懼，無法平靜下來。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1776",
+    "sourceNo": "1776",
+    "text": "挑三揀四",
+    "chars": [
+      "挑",
+      "三",
+      "揀",
+      "四"
+    ],
+    "uniqueChars": [
+      "挑",
+      "三",
+      "揀",
+      "四"
+    ],
+    "charCountMap": {
+      "挑": 1,
+      "三": 1,
+      "揀": 1,
+      "四": 1
+    },
+    "bopomofo": "ㄊㄧㄠ ㄙㄢ ㄐㄧㄢˇ ㄙˋ",
+    "usage": "形容過份地挑剔。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1780",
+    "sourceNo": "1780",
+    "text": "痌瘝在抱",
+    "chars": [
+      "痌",
+      "瘝",
+      "在",
+      "抱"
+    ],
+    "uniqueChars": [
+      "痌",
+      "瘝",
+      "在",
+      "抱"
+    ],
+    "charCountMap": {
+      "痌": 1,
+      "瘝": 1,
+      "在": 1,
+      "抱": 1
+    },
+    "bopomofo": "ㄊㄨㄥ ㄍㄨㄢ ㄗㄞˋ ㄅㄠˋ",
+    "usage": "對人民的疾苦感同身受。形 容愛民殷切。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1782",
+    "sourceNo": "1782",
+    "text": "同甘共苦",
+    "chars": [
+      "同",
+      "甘",
+      "共",
+      "苦"
+    ],
+    "uniqueChars": [
+      "同",
+      "甘",
+      "共",
+      "苦"
+    ],
+    "charCountMap": {
+      "同": 1,
+      "甘": 1,
+      "共": 1,
+      "苦": 1
+    },
+    "bopomofo": "ㄊㄨㄥˊ ㄍㄢ ㄍㄨㄥˋ ㄎㄨˇ",
+    "usage": "不論喜樂與困苦都 在一起。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1788",
+    "sourceNo": "1788",
+    "text": "泥古不化",
+    "chars": [
+      "泥",
+      "古",
+      "不",
+      "化"
+    ],
+    "uniqueChars": [
+      "泥",
+      "古",
+      "不",
+      "化"
+    ],
+    "charCountMap": {
+      "泥": 1,
+      "古": 1,
+      "不": 1,
+      "化": 1
+    },
+    "bopomofo": "ㄋㄧˋ ㄍㄨˇ ㄅㄨˋ ㄏㄨㄚˋ",
+    "usage": "指拘泥於古代成 規、言論而不知變通",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1789",
+    "sourceNo": "1789",
+    "text": "牛頭馬面",
+    "chars": [
+      "牛",
+      "頭",
+      "馬",
+      "面"
+    ],
+    "uniqueChars": [
+      "牛",
+      "頭",
+      "馬",
+      "面"
+    ],
+    "charCountMap": {
+      "牛": 1,
+      "頭": 1,
+      "馬": 1,
+      "面": 1
+    },
+    "bopomofo": "ㄋㄧㄡˊ ㄊㄡˊ ㄇㄚˇ ㄇㄧㄢˋ",
+    "usage": "比喻容貌醜惡的人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1794",
+    "sourceNo": "1794",
+    "text": "弄假成真",
+    "chars": [
+      "弄",
+      "假",
+      "成",
+      "真"
+    ],
+    "uniqueChars": [
+      "弄",
+      "假",
+      "成",
+      "真"
+    ],
+    "charCountMap": {
+      "弄": 1,
+      "假": 1,
+      "成": 1,
+      "真": 1
+    },
+    "bopomofo": "ㄋㄨㄥˋ ㄐㄧㄚˇ ㄔㄥˊ ㄓㄣ",
+    "usage": "本來假裝做某事，結果竟然成為事實",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1797",
+    "sourceNo": "1797",
+    "text": "累卵之危",
+    "chars": [
+      "累",
+      "卵",
+      "之",
+      "危"
+    ],
+    "uniqueChars": [
+      "累",
+      "卵",
+      "之",
+      "危"
+    ],
+    "charCountMap": {
+      "累": 1,
+      "卵": 1,
+      "之": 1,
+      "危": 1
+    },
+    "bopomofo": "ㄌㄟˇ ㄌㄨㄢˇ ㄓ ㄨㄟˊ",
+    "usage": "指蛋一個個疊高，則容易墜地破碎。比喻極其危險的情勢。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1798",
+    "sourceNo": "1798",
+    "text": "勞民傷財",
+    "chars": [
+      "勞",
+      "民",
+      "傷",
+      "財"
+    ],
+    "uniqueChars": [
+      "勞",
+      "民",
+      "傷",
+      "財"
+    ],
+    "charCountMap": {
+      "勞": 1,
+      "民": 1,
+      "傷": 1,
+      "財": 1
+    },
+    "bopomofo": "ㄌㄠˊ ㄇㄧㄣˊ ㄕㄤ ㄘㄞˊ",
+    "usage": "勞役人民，損傷錢財。比喻 行為措施不當或無意義。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1810",
+    "sourceNo": "1810",
+    "text": "料事如神",
+    "chars": [
+      "料",
+      "事",
+      "如",
+      "神"
+    ],
+    "uniqueChars": [
+      "料",
+      "事",
+      "如",
+      "神"
+    ],
+    "charCountMap": {
+      "料": 1,
+      "事": 1,
+      "如": 1,
+      "神": 1
+    },
+    "bopomofo": "ㄌㄧㄠˋ ㄕˋ ㄖㄨˊ ㄕㄣˊ",
+    "usage": "預料事情非常準確。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1811",
+    "sourceNo": "1811",
+    "text": "聊表心意",
+    "chars": [
+      "聊",
+      "表",
+      "心",
+      "意"
+    ],
+    "uniqueChars": [
+      "聊",
+      "表",
+      "心",
+      "意"
+    ],
+    "charCountMap": {
+      "聊": 1,
+      "表": 1,
+      "心": 1,
+      "意": 1
+    },
+    "bopomofo": "ㄌㄧㄠˊ ㄅㄧㄠˇ ㄒㄧㄣ ㄧˋ",
+    "usage": "略微表示一下心意。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1813",
+    "sourceNo": "1813",
+    "text": "連篇累冊",
+    "chars": [
+      "連",
+      "篇",
+      "累",
+      "冊"
+    ],
+    "uniqueChars": [
+      "連",
+      "篇",
+      "累",
+      "冊"
+    ],
+    "charCountMap": {
+      "連": 1,
+      "篇": 1,
+      "累": 1,
+      "冊": 1
+    },
+    "bopomofo": "ㄌㄧㄢˊ ㄆㄧㄢ ㄌㄟˇ ㄘㄜˋ",
+    "usage": "形容文章篇幅冗長。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1815",
+    "sourceNo": "1815",
+    "text": "林林總總",
+    "chars": [
+      "林",
+      "林",
+      "總",
+      "總"
+    ],
+    "uniqueChars": [
+      "林",
+      "總"
+    ],
+    "charCountMap": {
+      "林": 2,
+      "總": 2
+    },
+    "bopomofo": "ㄌㄧㄣˊ ㄌㄧㄣˊ ㄗㄨㄥˇ ㄗㄨㄥˇ",
+    "usage": "形容事物眾多。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1817",
+    "sourceNo": "1817",
+    "text": "鱗次櫛比",
+    "chars": [
+      "鱗",
+      "次",
+      "櫛",
+      "比"
+    ],
+    "uniqueChars": [
+      "鱗",
+      "次",
+      "櫛",
+      "比"
+    ],
+    "charCountMap": {
+      "鱗": 1,
+      "次": 1,
+      "櫛": 1,
+      "比": 1
+    },
+    "bopomofo": "ㄌㄧㄣˊ ㄘˋ ㄐㄧㄝˊ ㄅㄧˋ",
+    "usage": "像魚鱗和梳齒那樣相次排 列。形容建築物排列的密集。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1818",
+    "sourceNo": "1818",
+    "text": "另闢蹊徑",
+    "chars": [
+      "另",
+      "闢",
+      "蹊",
+      "徑"
+    ],
+    "uniqueChars": [
+      "另",
+      "闢",
+      "蹊",
+      "徑"
+    ],
+    "charCountMap": {
+      "另": 1,
+      "闢": 1,
+      "蹊": 1,
+      "徑": 1
+    },
+    "bopomofo": "ㄌㄧㄥˋ ㄆㄧˋ ㄒㄧ ㄐㄧㄥˋ",
+    "usage": "另外尋求其他的方法或途 徑。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1820",
+    "sourceNo": "1820",
+    "text": "落落大方",
+    "chars": [
+      "落",
+      "落",
+      "大",
+      "方"
+    ],
+    "uniqueChars": [
+      "落",
+      "大",
+      "方"
+    ],
+    "charCountMap": {
+      "落": 2,
+      "大": 1,
+      "方": 1
+    },
+    "bopomofo": "ㄌㄨㄛˋ ㄌㄨㄛˋ ㄉㄚˋ ㄈㄤ",
+    "usage": "指人曠達率真。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1828",
+    "sourceNo": "1828",
+    "text": "顧全大局",
+    "chars": [
+      "顧",
+      "全",
+      "大",
+      "局"
+    ],
+    "uniqueChars": [
+      "顧",
+      "全",
+      "大",
+      "局"
+    ],
+    "charCountMap": {
+      "顧": 1,
+      "全": 1,
+      "大": 1,
+      "局": 1
+    },
+    "bopomofo": "ㄍㄨˋ ㄑㄩㄢˊ ㄉㄚˋ ㄐㄩˊ",
+    "usage": "顧慮整體的利益，使不受損 害。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1829",
+    "sourceNo": "1829",
+    "text": "固若金湯",
+    "chars": [
+      "固",
+      "若",
+      "金",
+      "湯"
+    ],
+    "uniqueChars": [
+      "固",
+      "若",
+      "金",
+      "湯"
+    ],
+    "charCountMap": {
+      "固": 1,
+      "若": 1,
+      "金": 1,
+      "湯": 1
+    },
+    "bopomofo": "ㄍㄨˋ ㄖㄨㄛˋ ㄐㄧㄣ ㄊㄤ",
+    "usage": "比喻防守嚴密，無懈可擊。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1830",
+    "sourceNo": "1830",
+    "text": "掛冠而去",
+    "chars": [
+      "掛",
+      "冠",
+      "而",
+      "去"
+    ],
+    "uniqueChars": [
+      "掛",
+      "冠",
+      "而",
+      "去"
+    ],
+    "charCountMap": {
+      "掛": 1,
+      "冠": 1,
+      "而": 1,
+      "去": 1
+    },
+    "bopomofo": "ㄍㄨㄚˋ ㄍㄨㄢ ㄦˊ ㄑㄩˋ",
+    "usage": "自動辭去職務。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1832",
+    "sourceNo": "1832",
+    "text": "國破家亡",
+    "chars": [
+      "國",
+      "破",
+      "家",
+      "亡"
+    ],
+    "uniqueChars": [
+      "國",
+      "破",
+      "家",
+      "亡"
+    ],
+    "charCountMap": {
+      "國": 1,
+      "破": 1,
+      "家": 1,
+      "亡": 1
+    },
+    "bopomofo": "ㄍㄨㄛˊ ㄆㄛˋ ㄐㄧㄚ ㄨㄤˊ",
+    "usage": "國家殘破親人散亡。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1833",
+    "sourceNo": "1833",
+    "text": "觀貌察色",
+    "chars": [
+      "觀",
+      "貌",
+      "察",
+      "色"
+    ],
+    "uniqueChars": [
+      "觀",
+      "貌",
+      "察",
+      "色"
+    ],
+    "charCountMap": {
+      "觀": 1,
+      "貌": 1,
+      "察": 1,
+      "色": 1
+    },
+    "bopomofo": "ㄍㄨㄢ ㄇㄠˋ ㄔㄚˊ ㄙㄜˋ",
+    "usage": "觀察表情、臉色，以猜測對方心意。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1836",
+    "sourceNo": "1836",
+    "text": "苦苦哀求",
+    "chars": [
+      "苦",
+      "苦",
+      "哀",
+      "求"
+    ],
+    "uniqueChars": [
+      "苦",
+      "哀",
+      "求"
+    ],
+    "charCountMap": {
+      "苦": 2,
+      "哀": 1,
+      "求": 1
+    },
+    "bopomofo": "ㄎㄨˇ ㄎㄨˇ ㄞ ㄑㄧㄡˊ",
+    "usage": "再三懇求。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1838",
+    "sourceNo": "1838",
+    "text": "喟然而嘆",
+    "chars": [
+      "喟",
+      "然",
+      "而",
+      "嘆"
+    ],
+    "uniqueChars": [
+      "喟",
+      "然",
+      "而",
+      "嘆"
+    ],
+    "charCountMap": {
+      "喟": 1,
+      "然": 1,
+      "而": 1,
+      "嘆": 1
+    },
+    "bopomofo": "ㄎㄨㄟˋ ㄖㄢˊ ㄦˊ ㄊㄢˋ",
+    "usage": "長聲嘆息。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1843",
+    "sourceNo": "1843",
+    "text": "和顏悅色",
+    "chars": [
+      "和",
+      "顏",
+      "悅",
+      "色"
+    ],
+    "uniqueChars": [
+      "和",
+      "顏",
+      "悅",
+      "色"
+    ],
+    "charCountMap": {
+      "和": 1,
+      "顏": 1,
+      "悅": 1,
+      "色": 1
+    },
+    "bopomofo": "ㄏㄜˊ ㄧㄢˊ ㄩㄝˋ ㄙㄜˋ",
+    "usage": "臉色溫柔而愉快的樣 子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1845",
+    "sourceNo": "1845",
+    "text": "後會有期",
+    "chars": [
+      "後",
+      "會",
+      "有",
+      "期"
+    ],
+    "uniqueChars": [
+      "後",
+      "會",
+      "有",
+      "期"
+    ],
+    "charCountMap": {
+      "後": 1,
+      "會": 1,
+      "有": 1,
+      "期": 1
+    },
+    "bopomofo": "ㄏㄡˋ ㄏㄨㄟˋ ㄧㄡˇ ㄑㄧˊ",
+    "usage": "以後會有相見的日 子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1847",
+    "sourceNo": "1847",
+    "text": "寒來暑往",
+    "chars": [
+      "寒",
+      "來",
+      "暑",
+      "往"
+    ],
+    "uniqueChars": [
+      "寒",
+      "來",
+      "暑",
+      "往"
+    ],
+    "charCountMap": {
+      "寒": 1,
+      "來": 1,
+      "暑": 1,
+      "往": 1
+    },
+    "bopomofo": "ㄏㄢˊ ㄌㄞˊ ㄕㄨˇ ㄨㄤˇ",
+    "usage": "泛指時光流逝，歲月變遷。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1850",
+    "sourceNo": "1850",
+    "text": "迴腸盪氣",
+    "chars": [
+      "迴",
+      "腸",
+      "盪",
+      "氣"
+    ],
+    "uniqueChars": [
+      "迴",
+      "腸",
+      "盪",
+      "氣"
+    ],
+    "charCountMap": {
+      "迴": 1,
+      "腸": 1,
+      "盪": 1,
+      "氣": 1
+    },
+    "bopomofo": "ㄏㄨㄟˊ ㄔㄤˊ ㄉㄤˋ ㄑㄧˋ",
+    "usage": "形容音樂或文辭感人至深。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1851",
+    "sourceNo": "1851",
+    "text": "煥然一新",
+    "chars": [
+      "煥",
+      "然",
+      "一",
+      "新"
+    ],
+    "uniqueChars": [
+      "煥",
+      "然",
+      "一",
+      "新"
+    ],
+    "charCountMap": {
+      "煥": 1,
+      "然": 1,
+      "一": 1,
+      "新": 1
+    },
+    "bopomofo": "ㄏㄨㄢˋ ㄖㄢˊ ㄧ ㄒㄧㄣ",
+    "usage": "形容散發光彩，呈現出新的 氣象、風貌。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1855",
+    "sourceNo": "1855",
+    "text": "激濁揚清",
+    "chars": [
+      "激",
+      "濁",
+      "揚",
+      "清"
+    ],
+    "uniqueChars": [
+      "激",
+      "濁",
+      "揚",
+      "清"
+    ],
+    "charCountMap": {
+      "激": 1,
+      "濁": 1,
+      "揚": 1,
+      "清": 1
+    },
+    "bopomofo": "ㄐㄧ ㄓㄨㄛˊ ㄧㄤˊ ㄑㄧㄥ",
+    "usage": "比喻除惡揚善。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1861",
+    "sourceNo": "1861",
+    "text": "街頭巷尾",
+    "chars": [
+      "街",
+      "頭",
+      "巷",
+      "尾"
+    ],
+    "uniqueChars": [
+      "街",
+      "頭",
+      "巷",
+      "尾"
+    ],
+    "charCountMap": {
+      "街": 1,
+      "頭": 1,
+      "巷": 1,
+      "尾": 1
+    },
+    "bopomofo": "ㄐㄧㄝ ㄊㄡˊ ㄒㄧㄤˋ ㄨㄟˇ",
+    "usage": "指街巷的各個地方。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1864",
+    "sourceNo": "1864",
+    "text": "就地取材",
+    "chars": [
+      "就",
+      "地",
+      "取",
+      "材"
+    ],
+    "uniqueChars": [
+      "就",
+      "地",
+      "取",
+      "材"
+    ],
+    "charCountMap": {
+      "就": 1,
+      "地": 1,
+      "取": 1,
+      "材": 1
+    },
+    "bopomofo": "ㄐㄧㄡˋ ㄉㄧˋ ㄑㄩˇ ㄘㄞˊ",
+    "usage": "指在自己所處之 地，選取合意的人才或事物。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1866",
+    "sourceNo": "1866",
+    "text": "建功立業",
+    "chars": [
+      "建",
+      "功",
+      "立",
+      "業"
+    ],
+    "uniqueChars": [
+      "建",
+      "功",
+      "立",
+      "業"
+    ],
+    "charCountMap": {
+      "建": 1,
+      "功": 1,
+      "立": 1,
+      "業": 1
+    },
+    "bopomofo": "ㄐㄧㄢˋ ㄍㄨㄥ ㄌㄧˋ ㄧㄝˋ",
+    "usage": "建立功勳事業。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1867",
+    "sourceNo": "1867",
+    "text": "見錢眼開",
+    "chars": [
+      "見",
+      "錢",
+      "眼",
+      "開"
+    ],
+    "uniqueChars": [
+      "見",
+      "錢",
+      "眼",
+      "開"
+    ],
+    "charCountMap": {
+      "見": 1,
+      "錢": 1,
+      "眼": 1,
+      "開": 1
+    },
+    "bopomofo": "ㄐㄧㄢˋ ㄑㄧㄢˊ ㄧㄢˇ ㄎㄞ",
+    "usage": "形容貪婪無度。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1869",
+    "sourceNo": "1869",
+    "text": "筋疲力竭",
+    "chars": [
+      "筋",
+      "疲",
+      "力",
+      "竭"
+    ],
+    "uniqueChars": [
+      "筋",
+      "疲",
+      "力",
+      "竭"
+    ],
+    "charCountMap": {
+      "筋": 1,
+      "疲": 1,
+      "力": 1,
+      "竭": 1
+    },
+    "bopomofo": "ㄐㄧㄣ ㄆㄧˊ ㄌㄧˋ ㄐㄧㄝˊ",
+    "usage": "形容非常疲倦。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1870",
+    "sourceNo": "1870",
+    "text": "巾幗英雄",
+    "chars": [
+      "巾",
+      "幗",
+      "英",
+      "雄"
+    ],
+    "uniqueChars": [
+      "巾",
+      "幗",
+      "英",
+      "雄"
+    ],
+    "charCountMap": {
+      "巾": 1,
+      "幗": 1,
+      "英": 1,
+      "雄": 1
+    },
+    "bopomofo": "ㄐㄧㄣ ㄍㄨㄛˊ ㄧㄥ ㄒㄩㄥˊ",
+    "usage": "稱讚女中豪傑。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1874",
+    "sourceNo": "1874",
+    "text": "金玉良言",
+    "chars": [
+      "金",
+      "玉",
+      "良",
+      "言"
+    ],
+    "uniqueChars": [
+      "金",
+      "玉",
+      "良",
+      "言"
+    ],
+    "charCountMap": {
+      "金": 1,
+      "玉": 1,
+      "良": 1,
+      "言": 1
+    },
+    "bopomofo": "ㄐㄧㄣ ㄩˋ ㄌㄧㄤˊ ㄧㄢˊ",
+    "usage": "珍貴而不可多得的 勸告。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1878",
+    "sourceNo": "1878",
+    "text": "匠心獨具",
+    "chars": [
+      "匠",
+      "心",
+      "獨",
+      "具"
+    ],
+    "uniqueChars": [
+      "匠",
+      "心",
+      "獨",
+      "具"
+    ],
+    "charCountMap": {
+      "匠": 1,
+      "心": 1,
+      "獨": 1,
+      "具": 1
+    },
+    "bopomofo": "ㄐㄧㄤˋ ㄒㄧㄣ ㄉㄨˊ ㄐㄩˋ",
+    "usage": "別具巧思的心意",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1884",
+    "sourceNo": "1884",
+    "text": "井然有序",
+    "chars": [
+      "井",
+      "然",
+      "有",
+      "序"
+    ],
+    "uniqueChars": [
+      "井",
+      "然",
+      "有",
+      "序"
+    ],
+    "charCountMap": {
+      "井": 1,
+      "然": 1,
+      "有": 1,
+      "序": 1
+    },
+    "bopomofo": "ㄐㄧㄥˇ ㄖㄢˊ ㄧㄡˇ ㄒㄩˋ",
+    "usage": "秩序整齊的樣子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1887",
+    "sourceNo": "1887",
+    "text": "絕口不提",
+    "chars": [
+      "絕",
+      "口",
+      "不",
+      "提"
+    ],
+    "uniqueChars": [
+      "絕",
+      "口",
+      "不",
+      "提"
+    ],
+    "charCountMap": {
+      "絕": 1,
+      "口": 1,
+      "不": 1,
+      "提": 1
+    },
+    "bopomofo": "ㄐㄩㄝˊ ㄎㄡˇ ㄅㄨˋ ㄊㄧˊ",
+    "usage": "從此閉口，不再提起。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1890",
+    "sourceNo": "1890",
+    "text": "氣喘如牛",
+    "chars": [
+      "氣",
+      "喘",
+      "如",
+      "牛"
+    ],
+    "uniqueChars": [
+      "氣",
+      "喘",
+      "如",
+      "牛"
+    ],
+    "charCountMap": {
+      "氣": 1,
+      "喘": 1,
+      "如": 1,
+      "牛": 1
+    },
+    "bopomofo": "ㄑㄧˋ ㄔㄨㄢˇ ㄖㄨˊ ㄋㄧㄡˊ",
+    "usage": "形容呼吸急促，大聲喘 氣",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1893",
+    "sourceNo": "1893",
+    "text": "期頤之壽",
+    "chars": [
+      "期",
+      "頤",
+      "之",
+      "壽"
+    ],
+    "uniqueChars": [
+      "期",
+      "頤",
+      "之",
+      "壽"
+    ],
+    "charCountMap": {
+      "期": 1,
+      "頤": 1,
+      "之": 1,
+      "壽": 1
+    },
+    "bopomofo": "ㄑㄧˊ ㄧˊ ㄓ ㄕㄡˋ",
+    "usage": "一百歲",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1894",
+    "sourceNo": "1894",
+    "text": "喬遷之喜",
+    "chars": [
+      "喬",
+      "遷",
+      "之",
+      "喜"
+    ],
+    "uniqueChars": [
+      "喬",
+      "遷",
+      "之",
+      "喜"
+    ],
+    "charCountMap": {
+      "喬": 1,
+      "遷": 1,
+      "之": 1,
+      "喜": 1
+    },
+    "bopomofo": "ㄑㄧㄠˊ ㄑㄧㄢ ㄓ ㄒㄧˇ",
+    "usage": "祝賀他人升官或遷居的 賀詞。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1895",
+    "sourceNo": "1895",
+    "text": "秋高氣爽",
+    "chars": [
+      "秋",
+      "高",
+      "氣",
+      "爽"
+    ],
+    "uniqueChars": [
+      "秋",
+      "高",
+      "氣",
+      "爽"
+    ],
+    "charCountMap": {
+      "秋": 1,
+      "高": 1,
+      "氣": 1,
+      "爽": 1
+    },
+    "bopomofo": "ㄑㄧㄡ ㄍㄠ ㄑㄧˋ ㄕㄨㄤˇ",
+    "usage": "形容天氣很好。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1899",
+    "sourceNo": "1899",
+    "text": "前仆後繼",
+    "chars": [
+      "前",
+      "仆",
+      "後",
+      "繼"
+    ],
+    "uniqueChars": [
+      "前",
+      "仆",
+      "後",
+      "繼"
+    ],
+    "charCountMap": {
+      "前": 1,
+      "仆": 1,
+      "後": 1,
+      "繼": 1
+    },
+    "bopomofo": "ㄑㄧㄢˊ ㄆㄨ ㄏㄡˋ ㄐㄧˋ",
+    "usage": "形容不怕犧牲，奮勇向 前。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1902",
+    "sourceNo": "1902",
+    "text": "槍林彈雨",
+    "chars": [
+      "槍",
+      "林",
+      "彈",
+      "雨"
+    ],
+    "uniqueChars": [
+      "槍",
+      "林",
+      "彈",
+      "雨"
+    ],
+    "charCountMap": {
+      "槍": 1,
+      "林": 1,
+      "彈": 1,
+      "雨": 1
+    },
+    "bopomofo": "ㄑㄧㄤ ㄌㄧㄣˊ ㄉㄢˋ ㄩˇ",
+    "usage": "形容戰爭猛烈。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1906",
+    "sourceNo": "1906",
+    "text": "晴天霹靂",
+    "chars": [
+      "晴",
+      "天",
+      "霹",
+      "靂"
+    ],
+    "uniqueChars": [
+      "晴",
+      "天",
+      "霹",
+      "靂"
+    ],
+    "charCountMap": {
+      "晴": 1,
+      "天": 1,
+      "霹": 1,
+      "靂": 1
+    },
+    "bopomofo": "ㄑㄧㄥˊ ㄊㄧㄢ ㄆㄧ ㄌㄧˋ",
+    "usage": "晴朗的天空裡突然打起響 雷；比喻突發的驚人事件。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1909",
+    "sourceNo": "1909",
+    "text": "情有獨鍾",
+    "chars": [
+      "情",
+      "有",
+      "獨",
+      "鍾"
+    ],
+    "uniqueChars": [
+      "情",
+      "有",
+      "獨",
+      "鍾"
+    ],
+    "charCountMap": {
+      "情": 1,
+      "有": 1,
+      "獨": 1,
+      "鍾": 1
+    },
+    "bopomofo": "ㄑㄧㄥˊ ㄧㄡˇ ㄉㄨˊ ㄓㄨㄥ",
+    "usage": "特別鍾愛某一事物。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1916",
+    "sourceNo": "1916",
+    "text": "喜不自勝",
+    "chars": [
+      "喜",
+      "不",
+      "自",
+      "勝"
+    ],
+    "uniqueChars": [
+      "喜",
+      "不",
+      "自",
+      "勝"
+    ],
+    "charCountMap": {
+      "喜": 1,
+      "不": 1,
+      "自": 1,
+      "勝": 1
+    },
+    "bopomofo": "ㄒㄧˇ ㄅㄨˋ ㄗˋ ㄕㄥ",
+    "usage": "歡喜得控制不了自己。形容 非常高興。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1917",
+    "sourceNo": "1917",
+    "text": "喜上眉梢",
+    "chars": [
+      "喜",
+      "上",
+      "眉",
+      "梢"
+    ],
+    "uniqueChars": [
+      "喜",
+      "上",
+      "眉",
+      "梢"
+    ],
+    "charCountMap": {
+      "喜": 1,
+      "上": 1,
+      "眉": 1,
+      "梢": 1
+    },
+    "bopomofo": "ㄒㄧˇ ㄕㄤˋ ㄇㄟˊ ㄕㄠ",
+    "usage": "形容喜悅之情流露在眉宇 之間。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1918",
+    "sourceNo": "1918",
+    "text": "下筆千言",
+    "chars": [
+      "下",
+      "筆",
+      "千",
+      "言"
+    ],
+    "uniqueChars": [
+      "下",
+      "筆",
+      "千",
+      "言"
+    ],
+    "charCountMap": {
+      "下": 1,
+      "筆": 1,
+      "千": 1,
+      "言": 1
+    },
+    "bopomofo": "ㄒㄧㄚˋ ㄅㄧˇ ㄑㄧㄢ ㄧㄢˊ",
+    "usage": "形容文章寫得極為快 速，極為妙。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1919",
+    "sourceNo": "1919",
+    "text": "夏雨雨人",
+    "chars": [
+      "夏",
+      "雨",
+      "雨",
+      "人"
+    ],
+    "uniqueChars": [
+      "夏",
+      "雨",
+      "人"
+    ],
+    "charCountMap": {
+      "夏": 1,
+      "雨": 2,
+      "人": 1
+    },
+    "bopomofo": "ㄒㄧㄚˋ ㄩˇ ㄩˋ ㄖㄣˊ",
+    "usage": "指只夏天水落在人身 上，使人涼爽舒適。比喻及時給人帶來好處。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1921",
+    "sourceNo": "1921",
+    "text": "小題大作",
+    "chars": [
+      "小",
+      "題",
+      "大",
+      "作"
+    ],
+    "uniqueChars": [
+      "小",
+      "題",
+      "大",
+      "作"
+    ],
+    "charCountMap": {
+      "小": 1,
+      "題": 1,
+      "大": 1,
+      "作": 1
+    },
+    "bopomofo": "ㄒㄧㄠˇ ㄊㄧˊ ㄉㄚˋ ㄗㄨㄛˋ",
+    "usage": "比喻將小事當成大事來處理",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1922",
+    "sourceNo": "1922",
+    "text": "先斬後奏",
+    "chars": [
+      "先",
+      "斬",
+      "後",
+      "奏"
+    ],
+    "uniqueChars": [
+      "先",
+      "斬",
+      "後",
+      "奏"
+    ],
+    "charCountMap": {
+      "先": 1,
+      "斬": 1,
+      "後": 1,
+      "奏": 1
+    },
+    "bopomofo": "ㄒㄧㄢ ㄓㄢˇ ㄏㄡˋ ㄗㄡˋ",
+    "usage": "比喻先採取果斷行為，再向上級報告，或先做了再 說。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1924",
+    "sourceNo": "1924",
+    "text": "絃歌不輟",
+    "chars": [
+      "絃",
+      "歌",
+      "不",
+      "輟"
+    ],
+    "uniqueChars": [
+      "絃",
+      "歌",
+      "不",
+      "輟"
+    ],
+    "charCountMap": {
+      "絃": 1,
+      "歌": 1,
+      "不": 1,
+      "輟": 1
+    },
+    "bopomofo": "ㄒㄧㄢˊ ㄍㄜ ㄅㄨˋ ㄔㄨㄛˋ",
+    "usage": "用於對教育界或教育人 士的題辭。絃歌，原指音樂，此處指教育學術殿堂。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1927",
+    "sourceNo": "1927",
+    "text": "閒言閒語",
+    "chars": [
+      "閒",
+      "言",
+      "閒",
+      "語"
+    ],
+    "uniqueChars": [
+      "閒",
+      "言",
+      "語"
+    ],
+    "charCountMap": {
+      "閒": 2,
+      "言": 1,
+      "語": 1
+    },
+    "bopomofo": "ㄒㄧㄢˊ ㄧㄢˊ ㄒㄧㄢˊ ㄩˇ",
+    "usage": "在別人背後批評。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1929",
+    "sourceNo": "1929",
+    "text": "心靈手巧",
+    "chars": [
+      "心",
+      "靈",
+      "手",
+      "巧"
+    ],
+    "uniqueChars": [
+      "心",
+      "靈",
+      "手",
+      "巧"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "靈": 1,
+      "手": 1,
+      "巧": 1
+    },
+    "bopomofo": "ㄒㄧㄣ ㄌㄧㄥˊ ㄕㄡˇ ㄑㄧㄠˇ",
+    "usage": "指心思聰敏而手藝精巧。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1932",
+    "sourceNo": "1932",
+    "text": "心知肚明",
+    "chars": [
+      "心",
+      "知",
+      "肚",
+      "明"
+    ],
+    "uniqueChars": [
+      "心",
+      "知",
+      "肚",
+      "明"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "知": 1,
+      "肚": 1,
+      "明": 1
+    },
+    "bopomofo": "ㄒㄧㄣ ㄓ ㄉㄨˋ ㄇㄧㄥˊ",
+    "usage": "形容心裡很明白",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1933",
+    "sourceNo": "1933",
+    "text": "心如止水",
+    "chars": [
+      "心",
+      "如",
+      "止",
+      "水"
+    ],
+    "uniqueChars": [
+      "心",
+      "如",
+      "止",
+      "水"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "如": 1,
+      "止": 1,
+      "水": 1
+    },
+    "bopomofo": "ㄒㄧㄣ ㄖㄨˊ ㄓˇ ㄕㄨㄟˇ",
+    "usage": "形容心情安定，像停止 的水一樣平靜。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1935",
+    "sourceNo": "1935",
+    "text": "心有餘悸",
+    "chars": [
+      "心",
+      "有",
+      "餘",
+      "悸"
+    ],
+    "uniqueChars": [
+      "心",
+      "有",
+      "餘",
+      "悸"
+    ],
+    "charCountMap": {
+      "心": 1,
+      "有": 1,
+      "餘": 1,
+      "悸": 1
+    },
+    "bopomofo": "ㄒㄧㄣ ㄧㄡˇ ㄩˊ ㄐㄧˋ",
+    "usage": "形容危險不安的事情雖然過去，但回想起來心裡仍感到緊張、害怕。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1938",
+    "sourceNo": "1938",
+    "text": "相提並論",
+    "chars": [
+      "相",
+      "提",
+      "並",
+      "論"
+    ],
+    "uniqueChars": [
+      "相",
+      "提",
+      "並",
+      "論"
+    ],
+    "charCountMap": {
+      "相": 1,
+      "提": 1,
+      "並": 1,
+      "論": 1
+    },
+    "bopomofo": "ㄒㄧㄤ ㄊㄧˊ ㄅㄧㄥˋ ㄌㄨㄣˋ",
+    "usage": "把性質相似的情況 放在一起討論。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1943",
+    "sourceNo": "1943",
+    "text": "行不顧言",
+    "chars": [
+      "行",
+      "不",
+      "顧",
+      "言"
+    ],
+    "uniqueChars": [
+      "行",
+      "不",
+      "顧",
+      "言"
+    ],
+    "charCountMap": {
+      "行": 1,
+      "不": 1,
+      "顧": 1,
+      "言": 1
+    },
+    "bopomofo": "ㄒㄧㄥˊ ㄅㄨˋ ㄍㄨˋ ㄧㄢˊ",
+    "usage": "亦作「行不及言」。顧言： 顧慮到已經說了的。做事不守信用。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1947",
+    "sourceNo": "1947",
+    "text": "蓄勢待發",
+    "chars": [
+      "蓄",
+      "勢",
+      "待",
+      "發"
+    ],
+    "uniqueChars": [
+      "蓄",
+      "勢",
+      "待",
+      "發"
+    ],
+    "charCountMap": {
+      "蓄": 1,
+      "勢": 1,
+      "待": 1,
+      "發": 1
+    },
+    "bopomofo": "ㄒㄩˋ ㄕˋ ㄉㄞˋ ㄈㄚ",
+    "usage": "貯備隨時可以展現的實力，待機而發。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1949",
+    "sourceNo": "1949",
+    "text": "尋根究底",
+    "chars": [
+      "尋",
+      "根",
+      "究",
+      "底"
+    ],
+    "uniqueChars": [
+      "尋",
+      "根",
+      "究",
+      "底"
+    ],
+    "charCountMap": {
+      "尋": 1,
+      "根": 1,
+      "究": 1,
+      "底": 1
+    },
+    "bopomofo": "ㄒㄩㄣˊ ㄍㄣ ㄐㄧㄡˋ ㄉㄧˇ",
+    "usage": "指追究根由底細。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1951",
+    "sourceNo": "1951",
+    "text": "胸無城府",
+    "chars": [
+      "胸",
+      "無",
+      "城",
+      "府"
+    ],
+    "uniqueChars": [
+      "胸",
+      "無",
+      "城",
+      "府"
+    ],
+    "charCountMap": {
+      "胸": 1,
+      "無": 1,
+      "城": 1,
+      "府": 1
+    },
+    "bopomofo": "ㄒㄩㄥ ㄨˊ ㄔㄥˊ ㄈㄨˇ",
+    "usage": "比喻為人坦率正直，沒有心 機。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1952",
+    "sourceNo": "1952",
+    "text": "雄心萬丈",
+    "chars": [
+      "雄",
+      "心",
+      "萬",
+      "丈"
+    ],
+    "uniqueChars": [
+      "雄",
+      "心",
+      "萬",
+      "丈"
+    ],
+    "charCountMap": {
+      "雄": 1,
+      "心": 1,
+      "萬": 1,
+      "丈": 1
+    },
+    "bopomofo": "ㄒㄩㄥˊ ㄒㄧㄣ ㄨㄢˋ ㄓㄤˋ",
+    "usage": "壯志很高。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1957",
+    "sourceNo": "1957",
+    "text": "朝思暮想",
+    "chars": [
+      "朝",
+      "思",
+      "暮",
+      "想"
+    ],
+    "uniqueChars": [
+      "朝",
+      "思",
+      "暮",
+      "想"
+    ],
+    "charCountMap": {
+      "朝": 1,
+      "思": 1,
+      "暮": 1,
+      "想": 1
+    },
+    "bopomofo": "ㄓㄠ ㄙ ㄇㄨˋ ㄒㄧㄤˇ",
+    "usage": "形容思念極深",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1962",
+    "sourceNo": "1962",
+    "text": "震古鑠今",
+    "chars": [
+      "震",
+      "古",
+      "鑠",
+      "今"
+    ],
+    "uniqueChars": [
+      "震",
+      "古",
+      "鑠",
+      "今"
+    ],
+    "charCountMap": {
+      "震": 1,
+      "古": 1,
+      "鑠": 1,
+      "今": 1
+    },
+    "bopomofo": "ㄓㄣˋ ㄍㄨˇ ㄕㄨㄛˋ ㄐㄧㄣ",
+    "usage": "形容功業的偉大，可以震驚 古人，誇耀今世。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1965",
+    "sourceNo": "1965",
+    "text": "仗義疏財",
+    "chars": [
+      "仗",
+      "義",
+      "疏",
+      "財"
+    ],
+    "uniqueChars": [
+      "仗",
+      "義",
+      "疏",
+      "財"
+    ],
+    "charCountMap": {
+      "仗": 1,
+      "義": 1,
+      "疏": 1,
+      "財": 1
+    },
+    "bopomofo": "ㄓㄤˋ ㄧˋ ㄕㄨ ㄘㄞˊ",
+    "usage": "疏：分散。形容慷慨解囊，救助危困者。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1967",
+    "sourceNo": "1967",
+    "text": "鄭人買履",
+    "chars": [
+      "鄭",
+      "人",
+      "買",
+      "履"
+    ],
+    "uniqueChars": [
+      "鄭",
+      "人",
+      "買",
+      "履"
+    ],
+    "charCountMap": {
+      "鄭": 1,
+      "人": 1,
+      "買": 1,
+      "履": 1
+    },
+    "bopomofo": "ㄓㄥˋ ㄖㄣˊ ㄇㄞˇ ㄌㄩˇ",
+    "usage": "用以譏諷墨守成規而不重 視實際狀況的人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1970",
+    "sourceNo": "1970",
+    "text": "莊周夢蝶",
+    "chars": [
+      "莊",
+      "周",
+      "夢",
+      "蝶"
+    ],
+    "uniqueChars": [
+      "莊",
+      "周",
+      "夢",
+      "蝶"
+    ],
+    "charCountMap": {
+      "莊": 1,
+      "周": 1,
+      "夢": 1,
+      "蝶": 1
+    },
+    "bopomofo": "ㄓㄨㄤ ㄓㄡ ㄇㄥˋ ㄉㄧㄝˊ",
+    "usage": "比喻人生變幻無常。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1972",
+    "sourceNo": "1972",
+    "text": "中規中矩",
+    "chars": [
+      "中",
+      "規",
+      "中",
+      "矩"
+    ],
+    "uniqueChars": [
+      "中",
+      "規",
+      "矩"
+    ],
+    "charCountMap": {
+      "中": 2,
+      "規": 1,
+      "矩": 1
+    },
+    "bopomofo": "ㄓㄨㄥˋ ㄍㄨㄟ ㄓㄨㄥˋ ㄐㄩˇ",
+    "usage": "言行舉止合乎禮節、法度",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1973",
+    "sourceNo": "1973",
+    "text": "眾擎易舉",
+    "chars": [
+      "眾",
+      "擎",
+      "易",
+      "舉"
+    ],
+    "uniqueChars": [
+      "眾",
+      "擎",
+      "易",
+      "舉"
+    ],
+    "charCountMap": {
+      "眾": 1,
+      "擎": 1,
+      "易": 1,
+      "舉": 1
+    },
+    "bopomofo": "ㄓㄨㄥˋ ㄑㄧㄥˊ ㄧˋ ㄐㄩˇ",
+    "usage": "指眾人用力托住，容易將 重物舉起。比喻大家的力量集合起來，容易把事情做好。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1974",
+    "sourceNo": "1974",
+    "text": "眾說紛紜",
+    "chars": [
+      "眾",
+      "說",
+      "紛",
+      "紜"
+    ],
+    "uniqueChars": [
+      "眾",
+      "說",
+      "紛",
+      "紜"
+    ],
+    "charCountMap": {
+      "眾": 1,
+      "說": 1,
+      "紛": 1,
+      "紜": 1
+    },
+    "bopomofo": "ㄓㄨㄥˋ ㄕㄨㄛ ㄈㄣ ㄩㄣˊ",
+    "usage": "指各式各樣的說法紛亂不一致。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1975",
+    "sourceNo": "1975",
+    "text": "眾所周知",
+    "chars": [
+      "眾",
+      "所",
+      "周",
+      "知"
+    ],
+    "uniqueChars": [
+      "眾",
+      "所",
+      "周",
+      "知"
+    ],
+    "charCountMap": {
+      "眾": 1,
+      "所": 1,
+      "周": 1,
+      "知": 1
+    },
+    "bopomofo": "ㄓㄨㄥˋ ㄙㄨㄛˇ ㄓㄡ ㄓ",
+    "usage": "大家都知道的事情。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1976",
+    "sourceNo": "1976",
+    "text": "插科打諢",
+    "chars": [
+      "插",
+      "科",
+      "打",
+      "諢"
+    ],
+    "uniqueChars": [
+      "插",
+      "科",
+      "打",
+      "諢"
+    ],
+    "charCountMap": {
+      "插": 1,
+      "科": 1,
+      "打": 1,
+      "諢": 1
+    },
+    "bopomofo": "ㄔㄚ ㄎㄜ ㄉㄚˇ ㄏㄨㄣˋ",
+    "usage": "本指戲劇表演時，以滑稽的動作或言語引人發笑。亦泛 指引人發笑的舉動或言談。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1977",
+    "sourceNo": "1977",
+    "text": "插翅難飛",
+    "chars": [
+      "插",
+      "翅",
+      "難",
+      "飛"
+    ],
+    "uniqueChars": [
+      "插",
+      "翅",
+      "難",
+      "飛"
+    ],
+    "charCountMap": {
+      "插": 1,
+      "翅": 1,
+      "難": 1,
+      "飛": 1
+    },
+    "bopomofo": "ㄔㄚ ㄔˋ ㄋㄢˊ ㄈㄟ",
+    "usage": "比喻難以脫身逃走。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1979",
+    "sourceNo": "1979",
+    "text": "趁虛而入",
+    "chars": [
+      "趁",
+      "虛",
+      "而",
+      "入"
+    ],
+    "uniqueChars": [
+      "趁",
+      "虛",
+      "而",
+      "入"
+    ],
+    "charCountMap": {
+      "趁": 1,
+      "虛": 1,
+      "而": 1,
+      "入": 1
+    },
+    "bopomofo": "ㄔㄣˋ ㄒㄩ ㄦˊ ㄖㄨˋ",
+    "usage": "趁力量虛弱時侵入。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1980",
+    "sourceNo": "1980",
+    "text": "陳腔濫調",
+    "chars": [
+      "陳",
+      "腔",
+      "濫",
+      "調"
+    ],
+    "uniqueChars": [
+      "陳",
+      "腔",
+      "濫",
+      "調"
+    ],
+    "charCountMap": {
+      "陳": 1,
+      "腔": 1,
+      "濫": 1,
+      "調": 1
+    },
+    "bopomofo": "ㄔㄣˊ ㄑㄧㄤ ㄌㄢˋ ㄉㄧㄠˋ",
+    "usage": "指形容文章中的內容沒 有新的創見。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1982",
+    "sourceNo": "1982",
+    "text": "程門立雪",
+    "chars": [
+      "程",
+      "門",
+      "立",
+      "雪"
+    ],
+    "uniqueChars": [
+      "程",
+      "門",
+      "立",
+      "雪"
+    ],
+    "charCountMap": {
+      "程": 1,
+      "門": 1,
+      "立": 1,
+      "雪": 1
+    },
+    "bopomofo": "ㄔㄥˊ ㄇㄣˊ ㄌㄧˋ ㄒㄩㄝˇ",
+    "usage": "比喻尊敬師長和虔誠向學。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1983",
+    "sourceNo": "1983",
+    "text": "除暴安良",
+    "chars": [
+      "除",
+      "暴",
+      "安",
+      "良"
+    ],
+    "uniqueChars": [
+      "除",
+      "暴",
+      "安",
+      "良"
+    ],
+    "charCountMap": {
+      "除": 1,
+      "暴": 1,
+      "安": 1,
+      "良": 1
+    },
+    "bopomofo": "ㄔㄨˊ ㄅㄠˋ ㄢ ㄌㄧㄤˊ",
+    "usage": "除去殘暴之徒，安撫善 良百姓。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1984",
+    "sourceNo": "1984",
+    "text": "除舊布新",
+    "chars": [
+      "除",
+      "舊",
+      "布",
+      "新"
+    ],
+    "uniqueChars": [
+      "除",
+      "舊",
+      "布",
+      "新"
+    ],
+    "charCountMap": {
+      "除": 1,
+      "舊": 1,
+      "布": 1,
+      "新": 1
+    },
+    "bopomofo": "ㄔㄨˊ ㄐㄧㄡˋ ㄅㄨˋ ㄒㄧㄣ",
+    "usage": "去除舊的，建立新的。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1997",
+    "sourceNo": "1997",
+    "text": "使羊將狼",
+    "chars": [
+      "使",
+      "羊",
+      "將",
+      "狼"
+    ],
+    "uniqueChars": [
+      "使",
+      "羊",
+      "將",
+      "狼"
+    ],
+    "charCountMap": {
+      "使": 1,
+      "羊": 1,
+      "將": 1,
+      "狼": 1
+    },
+    "bopomofo": "ㄕˇ ㄧㄤˊ ㄐㄧㄤˋ ㄌㄤˊ",
+    "usage": "比喻能力弱的人去 管理強悍的人必定失敗。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_1998",
+    "sourceNo": "1998",
+    "text": "捨近求遠",
+    "chars": [
+      "捨",
+      "近",
+      "求",
+      "遠"
+    ],
+    "uniqueChars": [
+      "捨",
+      "近",
+      "求",
+      "遠"
+    ],
+    "charCountMap": {
+      "捨": 1,
+      "近": 1,
+      "求": 1,
+      "遠": 1
+    },
+    "bopomofo": "ㄕㄜˇ ㄐㄧㄣˋ ㄑㄧㄡˊ ㄩㄢˇ",
+    "usage": "比喻人迂腐而不切實際。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2002",
+    "sourceNo": "2002",
+    "text": "神情恍惚",
+    "chars": [
+      "神",
+      "情",
+      "恍",
+      "惚"
+    ],
+    "uniqueChars": [
+      "神",
+      "情",
+      "恍",
+      "惚"
+    ],
+    "charCountMap": {
+      "神": 1,
+      "情": 1,
+      "恍": 1,
+      "惚": 1
+    },
+    "bopomofo": "ㄕㄣˊ ㄑㄧㄥˊ ㄏㄨㄤˇ ㄏㄨ",
+    "usage": "意志不清，心思不 定。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2005",
+    "sourceNo": "2005",
+    "text": "生離死別",
+    "chars": [
+      "生",
+      "離",
+      "死",
+      "別"
+    ],
+    "uniqueChars": [
+      "生",
+      "離",
+      "死",
+      "別"
+    ],
+    "charCountMap": {
+      "生": 1,
+      "離": 1,
+      "死": 1,
+      "別": 1
+    },
+    "bopomofo": "ㄕㄥ ㄌㄧˊ ㄙˇ ㄅㄧㄝˊ",
+    "usage": "生的分離和死的永 別",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2007",
+    "sourceNo": "2007",
+    "text": "勝券在握",
+    "chars": [
+      "勝",
+      "券",
+      "在",
+      "握"
+    ],
+    "uniqueChars": [
+      "勝",
+      "券",
+      "在",
+      "握"
+    ],
+    "charCountMap": {
+      "勝": 1,
+      "券": 1,
+      "在": 1,
+      "握": 1
+    },
+    "bopomofo": "ㄕㄥˋ ㄑㄩㄢˋ ㄗㄞˋ ㄨㄛˋ",
+    "usage": "就是說對於勝利十拿九穩。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2008",
+    "sourceNo": "2008",
+    "text": "書空咄咄",
+    "chars": [
+      "書",
+      "空",
+      "咄",
+      "咄"
+    ],
+    "uniqueChars": [
+      "書",
+      "空",
+      "咄"
+    ],
+    "charCountMap": {
+      "書": 1,
+      "空": 1,
+      "咄": 2
+    },
+    "bopomofo": "ㄕㄨ ㄎㄨㄥ ㄉㄨㄛˋ ㄉㄨㄛˋ",
+    "usage": "比喻失意、激憤的狀態。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2011",
+    "sourceNo": "2011",
+    "text": "水磨功夫",
+    "chars": [
+      "水",
+      "磨",
+      "功",
+      "夫"
+    ],
+    "uniqueChars": [
+      "水",
+      "磨",
+      "功",
+      "夫"
+    ],
+    "charCountMap": {
+      "水": 1,
+      "磨": 1,
+      "功": 1,
+      "夫": 1
+    },
+    "bopomofo": "ㄕㄨㄟˇ ㄇㄛˊ ㄍㄨㄥ ˙ㄈㄨ",
+    "usage": "形容工作細緻，細密功 夫。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2019",
+    "sourceNo": "2019",
+    "text": "人老珠黃",
+    "chars": [
+      "人",
+      "老",
+      "珠",
+      "黃"
+    ],
+    "uniqueChars": [
+      "人",
+      "老",
+      "珠",
+      "黃"
+    ],
+    "charCountMap": {
+      "人": 1,
+      "老": 1,
+      "珠": 1,
+      "黃": 1
+    },
+    "bopomofo": "ㄖㄣˊ ㄌㄠˇ ㄓㄨ ㄏㄨㄤˊ",
+    "usage": "比喻女人老了，好沒有看的外貌。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2024",
+    "sourceNo": "2024",
+    "text": "人生如夢",
+    "chars": [
+      "人",
+      "生",
+      "如",
+      "夢"
+    ],
+    "uniqueChars": [
+      "人",
+      "生",
+      "如",
+      "夢"
+    ],
+    "charCountMap": {
+      "人": 1,
+      "生": 1,
+      "如": 1,
+      "夢": 1
+    },
+    "bopomofo": "ㄖㄣˊ ㄕㄥ ㄖㄨˊ ㄇㄥˋ",
+    "usage": "比喻人生短促，猶如做一場夢的時間而已。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2028",
+    "sourceNo": "2028",
+    "text": "軟硬兼施",
+    "chars": [
+      "軟",
+      "硬",
+      "兼",
+      "施"
+    ],
+    "uniqueChars": [
+      "軟",
+      "硬",
+      "兼",
+      "施"
+    ],
+    "charCountMap": {
+      "軟": 1,
+      "硬": 1,
+      "兼": 1,
+      "施": 1
+    },
+    "bopomofo": "ㄖㄨㄢˇ ㄧㄥˋ ㄐㄧㄢ ㄕ",
+    "usage": "指委婉勸說和強悍威嚇 的手段交替使用",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2032",
+    "sourceNo": "2032",
+    "text": "自食其果",
+    "chars": [
+      "自",
+      "食",
+      "其",
+      "果"
+    ],
+    "uniqueChars": [
+      "自",
+      "食",
+      "其",
+      "果"
+    ],
+    "charCountMap": {
+      "自": 1,
+      "食": 1,
+      "其": 1,
+      "果": 1
+    },
+    "bopomofo": "ㄗˋ ㄕˊ ㄑㄧˊ ㄍㄨㄛˇ",
+    "usage": "比喻做了壞事，由自己 承擔其後果。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2033",
+    "sourceNo": "2033",
+    "text": "嘖嘖稱奇",
+    "chars": [
+      "嘖",
+      "嘖",
+      "稱",
+      "奇"
+    ],
+    "uniqueChars": [
+      "嘖",
+      "稱",
+      "奇"
+    ],
+    "charCountMap": {
+      "嘖": 2,
+      "稱": 1,
+      "奇": 1
+    },
+    "bopomofo": "ㄗㄜˊ ㄗㄜˊ ㄔㄥ ㄑㄧˊ",
+    "usage": "對事物的奇妙讚嘆不已。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2034",
+    "sourceNo": "2034",
+    "text": "造謠生事",
+    "chars": [
+      "造",
+      "謠",
+      "生",
+      "事"
+    ],
+    "uniqueChars": [
+      "造",
+      "謠",
+      "生",
+      "事"
+    ],
+    "charCountMap": {
+      "造": 1,
+      "謠": 1,
+      "生": 1,
+      "事": 1
+    },
+    "bopomofo": "ㄗㄠˋ ㄧㄠˊ ㄕㄥ ㄕˋ",
+    "usage": "指興造謠言，挑起事端。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2039",
+    "sourceNo": "2039",
+    "text": "坐享其成",
+    "chars": [
+      "坐",
+      "享",
+      "其",
+      "成"
+    ],
+    "uniqueChars": [
+      "坐",
+      "享",
+      "其",
+      "成"
+    ],
+    "charCountMap": {
+      "坐": 1,
+      "享": 1,
+      "其": 1,
+      "成": 1
+    },
+    "bopomofo": "ㄗㄨㄛˋ ㄒㄧㄤˇ ㄑㄧˊ ㄔㄥˊ",
+    "usage": "不付出心力，卻享受別人努力的成果。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2041",
+    "sourceNo": "2041",
+    "text": "作如是觀",
+    "chars": [
+      "作",
+      "如",
+      "是",
+      "觀"
+    ],
+    "uniqueChars": [
+      "作",
+      "如",
+      "是",
+      "觀"
+    ],
+    "charCountMap": {
+      "作": 1,
+      "如": 1,
+      "是": 1,
+      "觀": 1
+    },
+    "bopomofo": "ㄗㄨㄛˋ ㄖㄨˊ ㄕˋ ㄍㄨㄢ",
+    "usage": "形容對事持某種觀點、某 種看法。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2046",
+    "sourceNo": "2046",
+    "text": "曾經滄海",
+    "chars": [
+      "曾",
+      "經",
+      "滄",
+      "海"
+    ],
+    "uniqueChars": [
+      "曾",
+      "經",
+      "滄",
+      "海"
+    ],
+    "charCountMap": {
+      "曾": 1,
+      "經": 1,
+      "滄": 1,
+      "海": 1
+    },
+    "bopomofo": "ㄘㄥˊ ㄐㄧㄥ ㄘㄤ ㄏㄞˇ",
+    "usage": "比喻見識廣博，經驗豐富， 眼界開闊，對平常事物便覺微渺不足為奇。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2048",
+    "sourceNo": "2048",
+    "text": "粗製濫造",
+    "chars": [
+      "粗",
+      "製",
+      "濫",
+      "造"
+    ],
+    "uniqueChars": [
+      "粗",
+      "製",
+      "濫",
+      "造"
+    ],
+    "charCountMap": {
+      "粗": 1,
+      "製": 1,
+      "濫": 1,
+      "造": 1
+    },
+    "bopomofo": "ㄘㄨ ㄓˋ ㄌㄢˋ ㄗㄠˋ",
+    "usage": "指製作粗劣，量多而不講 究品質。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2053",
+    "sourceNo": "2053",
+    "text": "死不足惜",
+    "chars": [
+      "死",
+      "不",
+      "足",
+      "惜"
+    ],
+    "uniqueChars": [
+      "死",
+      "不",
+      "足",
+      "惜"
+    ],
+    "charCountMap": {
+      "死": 1,
+      "不": 1,
+      "足": 1,
+      "惜": 1
+    },
+    "bopomofo": "ㄙˇ ㄅㄨˋ ㄗㄨˊ ㄒㄧˊ",
+    "usage": "生死有命不值得可 惜。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2055",
+    "sourceNo": "2055",
+    "text": "三十而立",
+    "chars": [
+      "三",
+      "十",
+      "而",
+      "立"
+    ],
+    "uniqueChars": [
+      "三",
+      "十",
+      "而",
+      "立"
+    ],
+    "charCountMap": {
+      "三": 1,
+      "十": 1,
+      "而": 1,
+      "立": 1
+    },
+    "bopomofo": "ㄙㄢ ㄕˊ ㄦˊ ㄌㄧˋ",
+    "usage": "三十歲始能自立於社 會，並有所成就。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2056",
+    "sourceNo": "2056",
+    "text": "三生有幸",
+    "chars": [
+      "三",
+      "生",
+      "有",
+      "幸"
+    ],
+    "uniqueChars": [
+      "三",
+      "生",
+      "有",
+      "幸"
+    ],
+    "charCountMap": {
+      "三": 1,
+      "生": 1,
+      "有": 1,
+      "幸": 1
+    },
+    "bopomofo": "ㄙㄢ ㄕㄥ ㄧㄡˇ ㄒㄧㄥˋ",
+    "usage": "佛教指前三世修來的福分，今多用以謙 稱榮幸之至。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2057",
+    "sourceNo": "2057",
+    "text": "森羅萬象",
+    "chars": [
+      "森",
+      "羅",
+      "萬",
+      "象"
+    ],
+    "uniqueChars": [
+      "森",
+      "羅",
+      "萬",
+      "象"
+    ],
+    "charCountMap": {
+      "森": 1,
+      "羅": 1,
+      "萬": 1,
+      "象": 1
+    },
+    "bopomofo": "ㄙㄣ ㄌㄨㄛˊ ㄨㄢˋ ㄒㄧㄤˋ",
+    "usage": "宇宙間的各種現象繁多 而整齊的排列在眼前。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2058",
+    "sourceNo": "2058",
+    "text": "喪明之痛",
+    "chars": [
+      "喪",
+      "明",
+      "之",
+      "痛"
+    ],
+    "uniqueChars": [
+      "喪",
+      "明",
+      "之",
+      "痛"
+    ],
+    "charCountMap": {
+      "喪": 1,
+      "明": 1,
+      "之": 1,
+      "痛": 1
+    },
+    "bopomofo": "ㄙㄤˋ ㄇㄧㄥˊ ㄓ ㄊㄨㄥˋ",
+    "usage": "比喻喪子之傷痛。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2061",
+    "sourceNo": "2061",
+    "text": "阿諛取容",
+    "chars": [
+      "阿",
+      "諛",
+      "取",
+      "容"
+    ],
+    "uniqueChars": [
+      "阿",
+      "諛",
+      "取",
+      "容"
+    ],
+    "charCountMap": {
+      "阿": 1,
+      "諛": 1,
+      "取": 1,
+      "容": 1
+    },
+    "bopomofo": "ㄜ ㄩˊ ㄑㄩˇ ㄖㄨㄥˊ",
+    "usage": "刻意的逢迎取悅。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2066",
+    "sourceNo": "2066",
+    "text": "恩斷義絕",
+    "chars": [
+      "恩",
+      "斷",
+      "義",
+      "絕"
+    ],
+    "uniqueChars": [
+      "恩",
+      "斷",
+      "義",
+      "絕"
+    ],
+    "charCountMap": {
+      "恩": 1,
+      "斷": 1,
+      "義": 1,
+      "絕": 1
+    },
+    "bopomofo": "ㄣ ㄉㄨㄢˋ ㄧˋ ㄐㄩㄝˊ",
+    "usage": "指恩惠、情義斷絕，今多 指男女朋友，夫婦之間感 情絕裂而致分離。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2067",
+    "sourceNo": "2067",
+    "text": "恩將仇報",
+    "chars": [
+      "恩",
+      "將",
+      "仇",
+      "報"
+    ],
+    "uniqueChars": [
+      "恩",
+      "將",
+      "仇",
+      "報"
+    ],
+    "charCountMap": {
+      "恩": 1,
+      "將": 1,
+      "仇": 1,
+      "報": 1
+    },
+    "bopomofo": "ㄣ ㄐㄧㄤ ㄔㄡˊ ㄅㄠˋ",
+    "usage": "以仇恨的舉動來報 答所賜恩惠的人。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2068",
+    "sourceNo": "2068",
+    "text": "一面之交",
+    "chars": [
+      "一",
+      "面",
+      "之",
+      "交"
+    ],
+    "uniqueChars": [
+      "一",
+      "面",
+      "之",
+      "交"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "面": 1,
+      "之": 1,
+      "交": 1
+    },
+    "bopomofo": "ㄧ ㄇㄧㄢˋ ㄓ ㄐㄧㄠ",
+    "usage": "形容交情淺薄，並非 深交",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2069",
+    "sourceNo": "2069",
+    "text": "一木難支",
+    "chars": [
+      "一",
+      "木",
+      "難",
+      "支"
+    ],
+    "uniqueChars": [
+      "一",
+      "木",
+      "難",
+      "支"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "木": 1,
+      "難": 1,
+      "支": 1
+    },
+    "bopomofo": "ㄧ ㄇㄨˋ ㄋㄢˊ ㄓ （變） ㄧˊ ㄇㄨˋ ㄋㄢˊ ㄓ",
+    "usage": "比喻事情異常艱鉅，非一 人所能支持。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2070",
+    "sourceNo": "2070",
+    "text": "一飯千金",
+    "chars": [
+      "一",
+      "飯",
+      "千",
+      "金"
+    ],
+    "uniqueChars": [
+      "一",
+      "飯",
+      "千",
+      "金"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "飯": 1,
+      "千": 1,
+      "金": 1
+    },
+    "bopomofo": "ㄧ ㄈㄢˋ ㄑㄧㄢ ㄐㄧㄣ",
+    "usage": "比喻報恩隆厚。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2071",
+    "sourceNo": "2071",
+    "text": "一丁不識",
+    "chars": [
+      "一",
+      "丁",
+      "不",
+      "識"
+    ],
+    "uniqueChars": [
+      "一",
+      "丁",
+      "不",
+      "識"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "丁": 1,
+      "不": 1,
+      "識": 1
+    },
+    "bopomofo": "ㄧ ㄉㄧㄥ ㄅㄨˋ ㄕˋ （變） ㄧˋ ㄉㄧㄥ ㄅㄨˊ ㄕˋ",
+    "usage": "比喻不識字或毫無學 問。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2073",
+    "sourceNo": "2073",
+    "text": "一見鍾情",
+    "chars": [
+      "一",
+      "見",
+      "鍾",
+      "情"
+    ],
+    "uniqueChars": [
+      "一",
+      "見",
+      "鍾",
+      "情"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "見": 1,
+      "鍾": 1,
+      "情": 1
+    },
+    "bopomofo": "ㄧ ㄐㄧㄢˋ ㄓㄨㄥ ㄑㄧㄥˊ",
+    "usage": "男女初次相見就彼 此愛悅。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2075",
+    "sourceNo": "2075",
+    "text": "一枝獨秀",
+    "chars": [
+      "一",
+      "枝",
+      "獨",
+      "秀"
+    ],
+    "uniqueChars": [
+      "一",
+      "枝",
+      "獨",
+      "秀"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "枝": 1,
+      "獨": 1,
+      "秀": 1
+    },
+    "bopomofo": "ㄧ ㄓ ㄉㄨˊ ㄒㄧㄡˋ",
+    "usage": "比喻最為傑出的人",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2077",
+    "sourceNo": "2077",
+    "text": "一寸丹心",
+    "chars": [
+      "一",
+      "寸",
+      "丹",
+      "心"
+    ],
+    "uniqueChars": [
+      "一",
+      "寸",
+      "丹",
+      "心"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "寸": 1,
+      "丹": 1,
+      "心": 1
+    },
+    "bopomofo": "ㄧ ㄘㄨㄣˋ ㄉㄢ ㄒㄧㄣ",
+    "usage": "指有一顆忠誠之心，是 一種謙稱語。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2079",
+    "sourceNo": "2079",
+    "text": "一文不值",
+    "chars": [
+      "一",
+      "文",
+      "不",
+      "值"
+    ],
+    "uniqueChars": [
+      "一",
+      "文",
+      "不",
+      "值"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "文": 1,
+      "不": 1,
+      "值": 1
+    },
+    "bopomofo": "ㄧ ㄨㄣˊ ㄅㄨˋ ㄓˊ （變） ㄧˋ ㄨㄣˊ ㄅㄨˋ ㄓˊ",
+    "usage": "比喻東西非常不值 錢。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2081",
+    "sourceNo": "2081",
+    "text": "一元復始",
+    "chars": [
+      "一",
+      "元",
+      "復",
+      "始"
+    ],
+    "uniqueChars": [
+      "一",
+      "元",
+      "復",
+      "始"
+    ],
+    "charCountMap": {
+      "一": 1,
+      "元": 1,
+      "復": 1,
+      "始": 1
+    },
+    "bopomofo": "ㄧ ㄩㄢˊ ㄈㄨˋ ㄕˇ",
+    "usage": "一元：一年。指一年又 開始了。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2083",
+    "sourceNo": "2083",
+    "text": "衣錦之榮",
+    "chars": [
+      "衣",
+      "錦",
+      "之",
+      "榮"
+    ],
+    "uniqueChars": [
+      "衣",
+      "錦",
+      "之",
+      "榮"
+    ],
+    "charCountMap": {
+      "衣": 1,
+      "錦": 1,
+      "之": 1,
+      "榮": 1
+    },
+    "bopomofo": "ㄧˋ ㄐㄧㄣˇ ㄓ ㄖㄨㄥˊ",
+    "usage": "形容人功成名就後榮歸故鄉",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2089",
+    "sourceNo": "2089",
+    "text": "移山倒海",
+    "chars": [
+      "移",
+      "山",
+      "倒",
+      "海"
+    ],
+    "uniqueChars": [
+      "移",
+      "山",
+      "倒",
+      "海"
+    ],
+    "charCountMap": {
+      "移": 1,
+      "山": 1,
+      "倒": 1,
+      "海": 1
+    },
+    "bopomofo": "ㄧˊ ㄕㄢ ㄉㄠˇ ㄏㄞˇ",
+    "usage": "比喻本領很大。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2095",
+    "sourceNo": "2095",
+    "text": "有機可乘",
+    "chars": [
+      "有",
+      "機",
+      "可",
+      "乘"
+    ],
+    "uniqueChars": [
+      "有",
+      "機",
+      "可",
+      "乘"
+    ],
+    "charCountMap": {
+      "有": 1,
+      "機": 1,
+      "可": 1,
+      "乘": 1
+    },
+    "bopomofo": "ㄧㄡˇ ㄐㄧ ㄎㄜˇ ㄔㄥˊ",
+    "usage": "有可供利用的機會。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2097",
+    "sourceNo": "2097",
+    "text": "燕語鶯聲",
+    "chars": [
+      "燕",
+      "語",
+      "鶯",
+      "聲"
+    ],
+    "uniqueChars": [
+      "燕",
+      "語",
+      "鶯",
+      "聲"
+    ],
+    "charCountMap": {
+      "燕": 1,
+      "語": 1,
+      "鶯": 1,
+      "聲": 1
+    },
+    "bopomofo": "ㄧㄢˋ ㄩˇ ㄧㄥ ㄕㄥ",
+    "usage": "原形容美麗的春色，今用以 形容女子聲音之嬌細柔美。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2102",
+    "sourceNo": "2102",
+    "text": "陽關大道",
+    "chars": [
+      "陽",
+      "關",
+      "大",
+      "道"
+    ],
+    "uniqueChars": [
+      "陽",
+      "關",
+      "大",
+      "道"
+    ],
+    "charCountMap": {
+      "陽": 1,
+      "關": 1,
+      "大": 1,
+      "道": 1
+    },
+    "bopomofo": "ㄧㄤˊ ㄍㄨㄢ ㄉㄚˋ ㄉㄠˋ",
+    "usage": "指寬闊的長路。比喻光明 的道路。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2103",
+    "sourceNo": "2103",
+    "text": "揚揚得意",
+    "chars": [
+      "揚",
+      "揚",
+      "得",
+      "意"
+    ],
+    "uniqueChars": [
+      "揚",
+      "得",
+      "意"
+    ],
+    "charCountMap": {
+      "揚": 2,
+      "得": 1,
+      "意": 1
+    },
+    "bopomofo": "ㄧㄤˊ ㄧㄤˊ ㄉㄜˊ ㄧˋ",
+    "usage": "形容非常得意的樣 子。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2109",
+    "sourceNo": "2109",
+    "text": "惡濕居下",
+    "chars": [
+      "惡",
+      "濕",
+      "居",
+      "下"
+    ],
+    "uniqueChars": [
+      "惡",
+      "濕",
+      "居",
+      "下"
+    ],
+    "charCountMap": {
+      "惡": 1,
+      "濕": 1,
+      "居": 1,
+      "下": 1
+    },
+    "bopomofo": "ㄨˋ ㄕ ㄐㄩ ㄒㄧㄚˋ",
+    "usage": "比喻想法與行為相違背。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2110",
+    "sourceNo": "2110",
+    "text": "惡醉強酒",
+    "chars": [
+      "惡",
+      "醉",
+      "強",
+      "酒"
+    ],
+    "uniqueChars": [
+      "惡",
+      "醉",
+      "強",
+      "酒"
+    ],
+    "charCountMap": {
+      "惡": 1,
+      "醉": 1,
+      "強": 1,
+      "酒": 1
+    },
+    "bopomofo": "ㄨˋ ㄗㄨㄟˋ ㄑㄧㄤˇ ㄐㄧㄡˇ",
+    "usage": "比喻明知故犯。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2115",
+    "sourceNo": "2115",
+    "text": "無稽之談",
+    "chars": [
+      "無",
+      "稽",
+      "之",
+      "談"
+    ],
+    "uniqueChars": [
+      "無",
+      "稽",
+      "之",
+      "談"
+    ],
+    "charCountMap": {
+      "無": 1,
+      "稽": 1,
+      "之": 1,
+      "談": 1
+    },
+    "bopomofo": "ㄨˊ ㄐㄧ ㄓ ㄊㄢˊ",
+    "usage": "沒有根據，無從考查的話。 稽，考證、考核、考察。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2116",
+    "sourceNo": "2116",
+    "text": "無奇不有",
+    "chars": [
+      "無",
+      "奇",
+      "不",
+      "有"
+    ],
+    "uniqueChars": [
+      "無",
+      "奇",
+      "不",
+      "有"
+    ],
+    "charCountMap": {
+      "無": 1,
+      "奇": 1,
+      "不": 1,
+      "有": 1
+    },
+    "bopomofo": "ㄨˊ ㄑㄧˊ ㄅㄨˋ ㄧㄡˇ",
+    "usage": "各種稀奇古怪的事物或現象都有。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2119",
+    "sourceNo": "2119",
+    "text": "無往不利",
+    "chars": [
+      "無",
+      "往",
+      "不",
+      "利"
+    ],
+    "uniqueChars": [
+      "無",
+      "往",
+      "不",
+      "利"
+    ],
+    "charCountMap": {
+      "無": 1,
+      "往": 1,
+      "不": 1,
+      "利": 1
+    },
+    "bopomofo": "ㄨˊ ㄨㄤˇ ㄅㄨˋ ㄌㄧˋ",
+    "usage": "形容事事順利",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2128",
+    "sourceNo": "2128",
+    "text": "萬不得已",
+    "chars": [
+      "萬",
+      "不",
+      "得",
+      "已"
+    ],
+    "uniqueChars": [
+      "萬",
+      "不",
+      "得",
+      "已"
+    ],
+    "charCountMap": {
+      "萬": 1,
+      "不": 1,
+      "得": 1,
+      "已": 1
+    },
+    "bopomofo": "ㄨㄢˋ ㄅㄨˋ ㄉㄜˊ ㄧˇ",
+    "usage": "指毫無辦法，不得不如 此。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2131",
+    "sourceNo": "2131",
+    "text": "萬眾一心",
+    "chars": [
+      "萬",
+      "眾",
+      "一",
+      "心"
+    ],
+    "uniqueChars": [
+      "萬",
+      "眾",
+      "一",
+      "心"
+    ],
+    "charCountMap": {
+      "萬": 1,
+      "眾": 1,
+      "一": 1,
+      "心": 1
+    },
+    "bopomofo": "ㄨㄢˋ ㄓㄨㄥˋ ㄧ ㄒㄧㄣ",
+    "usage": "千萬人都同一條 心。形容全國上下團結一致。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2132",
+    "sourceNo": "2132",
+    "text": "萬人空巷",
+    "chars": [
+      "萬",
+      "人",
+      "空",
+      "巷"
+    ],
+    "uniqueChars": [
+      "萬",
+      "人",
+      "空",
+      "巷"
+    ],
+    "charCountMap": {
+      "萬": 1,
+      "人": 1,
+      "空": 1,
+      "巷": 1
+    },
+    "bopomofo": "ㄨㄢˋ ㄖㄣˊ ㄎㄨㄥ ㄒㄧㄤˋ",
+    "usage": "形容人多",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2133",
+    "sourceNo": "2133",
+    "text": "萬無一失",
+    "chars": [
+      "萬",
+      "無",
+      "一",
+      "失"
+    ],
+    "uniqueChars": [
+      "萬",
+      "無",
+      "一",
+      "失"
+    ],
+    "charCountMap": {
+      "萬": 1,
+      "無": 1,
+      "一": 1,
+      "失": 1
+    },
+    "bopomofo": "ㄨㄢˋ ㄨˊ ㄧ ㄕ",
+    "usage": "絕對不會出差錯。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2136",
+    "sourceNo": "2136",
+    "text": "王侯將相",
+    "chars": [
+      "王",
+      "侯",
+      "將",
+      "相"
+    ],
+    "uniqueChars": [
+      "王",
+      "侯",
+      "將",
+      "相"
+    ],
+    "charCountMap": {
+      "王": 1,
+      "侯": 1,
+      "將": 1,
+      "相": 1
+    },
+    "bopomofo": "ㄨㄤˊ ㄏㄡˊ ㄐㄧㄤˋ ㄒㄧㄤˋ",
+    "usage": "高官顯貴的地位",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2140",
+    "sourceNo": "2140",
+    "text": "魚游沸鼎",
+    "chars": [
+      "魚",
+      "游",
+      "沸",
+      "鼎"
+    ],
+    "uniqueChars": [
+      "魚",
+      "游",
+      "沸",
+      "鼎"
+    ],
+    "charCountMap": {
+      "魚": 1,
+      "游": 1,
+      "沸": 1,
+      "鼎": 1
+    },
+    "bopomofo": "ㄩˊ ㄧㄡˊ ㄈㄟˋ ㄉㄧㄥˇ",
+    "usage": "指魚在沸騰的鼎裡游 泳，比喻處境非常危險。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2141",
+    "sourceNo": "2141",
+    "text": "羽化登仙",
+    "chars": [
+      "羽",
+      "化",
+      "登",
+      "仙"
+    ],
+    "uniqueChars": [
+      "羽",
+      "化",
+      "登",
+      "仙"
+    ],
+    "charCountMap": {
+      "羽": 1,
+      "化": 1,
+      "登": 1,
+      "仙": 1
+    },
+    "bopomofo": "ㄩˇ ㄏㄨㄚˋ ㄉㄥ ㄒㄧㄢ",
+    "usage": "古稱得道成仙為羽化，謂 其飛昇變化，若生羽翼。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  },
+  {
+    "id": "idiom2_2146",
+    "sourceNo": "2146",
+    "text": "遠近知名",
+    "chars": [
+      "遠",
+      "近",
+      "知",
+      "名"
+    ],
+    "uniqueChars": [
+      "遠",
+      "近",
+      "知",
+      "名"
+    ],
+    "charCountMap": {
+      "遠": 1,
+      "近": 1,
+      "知": 1,
+      "名": 1
+    },
+    "bopomofo": "ㄩㄢˇ ㄐㄧㄣˋ ㄓ ㄇㄧㄥˊ",
+    "usage": "很有名望。",
+    "level": "elementary",
+    "levelLabel": "國小"
+  }
+]

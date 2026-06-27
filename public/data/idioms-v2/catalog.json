@@ -1,0 +1,23 @@
+{
+  "levels": [
+    {
+      "key": "elementary",
+      "label": "國小",
+      "count": 364,
+      "file": "levels/elementary/chunk-001.json"
+    },
+    {
+      "key": "junior",
+      "label": "國中",
+      "count": 414,
+      "file": "levels/junior/chunk-001.json"
+    },
+    {
+      "key": "senior",
+      "label": "高中以上",
+      "count": 1378,
+      "file": "levels/senior/chunk-001.json"
+    }
+  ],
+  "generatedAt": "2026-06-26T19:27:14.075Z"
+}

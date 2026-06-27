@@ -63,7 +63,9 @@ button:disabled { cursor: default; }
 
 .hero-logo {
   display: block;
-  width: 220px;
+  width: min(100%, 360px);
+  max-width: 100%;
+  height: auto;
   margin: 0 auto 16px;
 }
 
@@ -1408,7 +1410,7 @@ button:disabled { cursor: default; }
 @media (max-width: 430px) {
   .app-shell { padding: 12px 10px 24px; }
   .hero-panel { padding: 16px; }
-  .hero-logo { width: 330px; }
+  .hero-logo { width: min(100%, 330px); }
   .hero-stats { gap: 8px; }
   .metric-card { padding: 10px 6px; }
   .metric-card strong { font-size: 1.3rem; }
@@ -1428,15 +1430,150 @@ button:disabled { cursor: default; }
 
 @media (max-width: 375px) {
   .char-tile { width: 32px; height: 36px; font-size: 14px; }
-  .hero-logo { width: 220px; }
+  .hero-logo { width: min(100%, 220px); }
 }
 
 @media (min-width: 431px) {
-  .hero-logo { width: 240px; }
-  /* 240 */
+  .hero-logo { width: min(100%, 360px); }
 }
 
 @media (min-width: 768px) {
-  .hero-logo { width: 400px; }
-  /* 280 */
+  .hero-logo { width: min(100%, 360px); }
+}
+
+/* ===== V2 Level Segmented Control ===== */
+.level-segmented-control {
+  display: flex;
+  gap: 0;
+  margin: 0 auto 12px;
+  background: var(--panel-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  width: fit-content;
+}
+
+.segmented-btn {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.segmented-btn--active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.segmented-btn:not(.segmented-btn--active):hover {
+  background: var(--accent-soft);
+}
+
+/* ===== V2 Hero Stats (4-col) ===== */
+.hero-stats.hero-stats--4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===== Cloze V2 ===== */
+.cloze-page {
+  padding-bottom: 24px;
+}
+
+.cloze-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.cloze-sentence-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  box-shadow: var(--shadow);
+}
+
+.cloze-sentence {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.cloze-answer-reveal {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--accent);
+  padding: 8px;
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+}
+
+.cloze-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cloze-option {
+  padding: 14px 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: var(--panel-strong);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+}
+
+.cloze-option:disabled {
+  cursor: default;
+}
+
+.cloze-option--correct {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.cloze-option--wrong {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cloze-option--dimmed {
+  opacity: 0.4;
+}
+
+.cloze-unfamiliar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cloze-unfamiliar-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.cloze-unfamiliar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cloze-unfamiliar-tag {
+  font-size: 0.82rem;
+  padding: 3px 10px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  border-radius: var(--radius-sm);
 }

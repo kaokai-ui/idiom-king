@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { ChainMode, Direction, PlacedIdiom } from '../types/game';
-import { idiomsById } from '../data/idiomDb';
+import { idiomsById as idiomsByIdV1 } from '../data/idiomDb';
 
 type Props = {
   mode: ChainMode;
@@ -15,6 +15,7 @@ type Props = {
   onRevealAnswer: () => void;
   onToggleStarred?: (id: string) => void;
   isStarred?: (id: string) => boolean;
+  idiomsByIdOverride?: Record<string, { usage?: string; text?: string }>;
 };
 
 const ChainHintPanel: FC<Props> = ({
@@ -30,9 +31,11 @@ const ChainHintPanel: FC<Props> = ({
   onRevealAnswer,
   onToggleStarred,
   isStarred,
+  idiomsByIdOverride,
 }) => {
+  const getEntry = (id: string) => idiomsByIdOverride?.[id] ?? idiomsByIdV1[id];
   if (mode !== 'legacy') {
-    const entry = selectedIdiom ? idiomsById[selectedIdiom.id] : null;
+    const entry = selectedIdiom ? getEntry(selectedIdiom.id) : null;
     const starred = selectedIdiom && isStarred ? isStarred(selectedIdiom.id) : false;
     const idiomId = selectedIdiom?.id;
     return (
@@ -86,7 +89,7 @@ const ChainHintPanel: FC<Props> = ({
       {hintVisible && (
         <div className="hint-content">
           {idioms.map((p) => {
-            const entry = idiomsById[p.id];
+            const entry = getEntry(p.id);
             const isExpanded = expandedIdiomId === p.id;
             return (
               <div key={p.id} className="hint-idiom-row">

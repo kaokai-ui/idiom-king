@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        idiom2: resolve(__dirname, 'idiom2.html'),
         'board-test': resolve(__dirname, 'board-test.html'),
       },
     },
