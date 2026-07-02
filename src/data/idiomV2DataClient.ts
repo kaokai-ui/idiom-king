@@ -1,4 +1,5 @@
 import type { IdiomV2Entry, IdiomLevel, IdiomV2Catalog } from '../types/idiomV2';
+import { buildCharIndex } from '../lib/charIndex';
 
 type LevelCache = {
   idioms: IdiomV2Entry[];
@@ -33,22 +34,6 @@ function buildIdiomIndexes(idioms: IdiomV2Entry[]): {
   return { idiomsById, idiomIdByText };
 }
 
-function buildCharIndexFromIdioms(idioms: IdiomV2Entry[]): Map<string, number[]> {
-  const charIndex = new Map<string, number[]>();
-  for (let i = 0; i < idioms.length; i++) {
-    const seen = new Set<string>();
-    for (const ch of idioms[i].chars) {
-      if (!seen.has(ch)) {
-        seen.add(ch);
-        let arr = charIndex.get(ch);
-        if (!arr) { arr = []; charIndex.set(ch, arr); }
-        arr.push(i);
-      }
-    }
-  }
-  return charIndex;
-}
-
 function parseCharIndexJson(raw: Record<string, number[]>): Map<string, number[]> {
   const charIndex = new Map<string, number[]>();
   for (const [ch, indices] of Object.entries(raw)) {
@@ -79,7 +64,7 @@ export async function loadLevelData(level: IdiomLevel): Promise<LevelCache> {
     const rawCharIndex = await fetchJson<Record<string, number[]>>(`${BASE}data/idioms-v2/levels/${level}/charIndex.json`);
     charIndex = parseCharIndexJson(rawCharIndex);
   } catch {
-    charIndex = buildCharIndexFromIdioms(idioms);
+    charIndex = buildCharIndex(idioms);
   }
 
   const { idiomsById, idiomIdByText } = buildIdiomIndexes(idioms);

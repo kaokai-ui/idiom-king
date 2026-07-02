@@ -57,14 +57,18 @@ export async function cleanupLegacyPwa(): Promise<void> {
     }
   }
 
-  const shouldReload = unregisteredAny && sessionStorage.getItem(PWA_CLEANUP_RELOAD_KEY) !== '1';
-  if (shouldReload) {
-    sessionStorage.setItem(PWA_CLEANUP_RELOAD_KEY, '1');
-    window.location.reload();
-    return;
-  }
+  try {
+    const shouldReload = unregisteredAny && sessionStorage.getItem(PWA_CLEANUP_RELOAD_KEY) !== '1';
+    if (shouldReload) {
+      sessionStorage.setItem(PWA_CLEANUP_RELOAD_KEY, '1');
+      window.location.reload();
+      return;
+    }
 
-  if (!unregisteredAny) {
-    sessionStorage.removeItem(PWA_CLEANUP_RELOAD_KEY);
+    if (!unregisteredAny) {
+      sessionStorage.removeItem(PWA_CLEANUP_RELOAD_KEY);
+    }
+  } catch (error) {
+    console.warn('Failed to access sessionStorage during PWA cleanup.', error);
   }
 }

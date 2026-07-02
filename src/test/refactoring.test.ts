@@ -171,8 +171,8 @@ describe('R6: Error Boundary exists', () => {
 });
 
 describe('R8: Single shuffle implementation (no duplicate)', () => {
-  it('levelGenerator should import shuffle from lib/utils', async () => {
-    const content = await readFile('src/game/levelGenerator.ts');
+  it('level generator core should import shuffle from lib/utils', async () => {
+    const content = await readFile('src/game/levelGenCore.ts');
     expect(content).toContain("from '../lib/utils'");
     expect(content).not.toContain('function shuffleArray');
   });
@@ -417,6 +417,14 @@ describe('R28: idiomSentences.json lazy loaded', () => {
   });
 });
 
+describe('R28b: IDIOM_TOTAL_COUNT stays in sync with idioms.json', () => {
+  it('IDIOM_TOTAL_COUNT should equal the actual idiom count', async () => {
+    await ready;
+    const { IDIOM_TOTAL_COUNT } = await import('../data/idiomMeta');
+    expect(IDIOM_TOTAL_COUNT).toBe(idioms.length);
+  });
+});
+
 describe('R29: session not persisted to localStorage', () => {
   it('useIdiomApp should not write full session to localStorage', async () => {
     const content = await readFile('src/hooks/useIdiomApp.ts');
@@ -634,11 +642,16 @@ describe('Core logic still works after refactoring', () => {
   });
 
   it('useChainState awaits idiomDb.ready before generating levels', async () => {
-    const content = await readFile('src/game/useChainState.ts');
-    expect(content).toContain('idiomDbReady');
-    expect(content).toContain('const loadLevel = useCallback');
-    expect(content).not.toContain('loadLevel(lvl - 1)');
-    expect(content).toContain("missingLevelStrategy === 'retry-current-level'");
+    // v1 wires the idiomDb readiness gate; the shared loader lives in chainStateCore.
+    const wrapper = await readFile('src/game/useChainState.ts');
+    expect(wrapper).toContain('idiomDbReady');
+    expect(wrapper).toContain('isDbReady');
+
+    const core = await readFile('src/game/chainStateCore.ts');
+    expect(core).toContain('const loadLevel = useCallback');
+    expect(core).not.toContain('loadLevel(lvl - 1)');
+    expect(core).toContain("missingLevelStrategy === 'retry-current-level'");
+    expect(core).toContain('waitForReady');
   });
 
   it('generateLevel returns LevelData or null', () => {

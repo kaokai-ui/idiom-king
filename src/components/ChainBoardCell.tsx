@@ -5,14 +5,16 @@ import type { ChainPhase } from '../types/chain';
 
 type Props = {
   cell: Cell;
+  row: number;
+  col: number;
   isSelected: boolean;
   isLineHighlighted: boolean;
   isWrong: boolean;
   phase: ChainPhase;
-  onClick: () => void;
+  onClick: (row: number, col: number) => void;
 };
 
-const ChainBoardCell: FC<Props> = memo(({ cell, isSelected, isLineHighlighted, isWrong, phase, onClick }) => {
+const ChainBoardCell: FC<Props> = memo(({ cell, row, col, isSelected, isLineHighlighted, isWrong, phase, onClick }) => {
   if (!cell.isActive) return <div className="board-cell disabled" />;
 
   const canInteract = phase === 'playing' || phase === 'checking';
@@ -23,8 +25,26 @@ const ChainBoardCell: FC<Props> = memo(({ cell, isSelected, isLineHighlighted, i
   if (isWrong) className += ' wrong';
   if (phase === 'complete' && cell.currentValue !== null && cell.currentValue === cell.answer) className += ' correct';
 
+  const handleActivate = canInteract ? () => onClick(row, col) : undefined;
+
   return (
-    <div className={className} onClick={canInteract ? onClick : undefined}>
+    <div
+      className={className}
+      onClick={handleActivate}
+      role={canInteract ? 'button' : undefined}
+      tabIndex={canInteract ? 0 : undefined}
+      aria-pressed={canInteract ? isSelected : undefined}
+      onKeyDown={
+        handleActivate
+          ? (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleActivate();
+              }
+            }
+          : undefined
+      }
+    >
       <span className="cell-text">{cell.currentValue || ''}</span>
     </div>
   );

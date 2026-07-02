@@ -13,7 +13,12 @@ export function useIdiomApp() {
   const flashcardSeenRef = useRef<string | null>(null);
   const [dataReady, setDataReady] = useState(false);
 
-  useEffect(() => { ready.then(() => setDataReady(true)); }, []);
+  useEffect(() => {
+    ready.then(
+      () => setDataReady(true),
+      (err) => console.error('[useIdiomApp] Failed to load idiom data:', err),
+    );
+  }, []);
 
   const { settings, progress, session } = state;
 
@@ -118,7 +123,9 @@ export function useIdiomApp() {
         });
       };
       if (!dataReady) {
-        void ready.then(launch);
+        ready.then(launch, (err) =>
+          console.error('[useIdiomApp] Failed to load idiom data for flashcards:', err),
+        );
         return;
       }
       launch();

@@ -1,71 +1,31 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import type { ClozeEntry, ClozeCoreQuestion } from './clozeCore';
+import { buildClozeQuestion } from './clozeCore';
 
 type IdiomSentencesMap = Record<string, string[]>;
 
-let idiomSentences: IdiomSentencesMap | null = null;
 let idiomTexts: string[] = [];
+let clozeEntries: ClozeEntry[] = [];
+let entryByText: Map<string, ClozeEntry> = new Map();
 
 const sentencesReady: Promise<void> = import('../data/idiomSentences.json').then(mod => {
-  idiomSentences = (mod.default ?? mod) as IdiomSentencesMap;
+  const idiomSentences = (mod.default ?? mod) as IdiomSentencesMap;
   idiomTexts = Object.keys(idiomSentences);
+  // v1 has no idiom ids in this dataset, so the text doubles as the id.
+  clozeEntries = idiomTexts.map(text => ({ id: text, text, sentences: idiomSentences[text] }));
+  entryByText = new Map(clozeEntries.map(e => [e.text, e]));
 });
 
 export { sentencesReady };
 
 export type ClozePhase = 'question' | 'correct' | 'wrong';
 
-export type ClozeQuestion = {
-  sentence: string;
-  blankedSentence: string;
-  answerIdiom: string;
-  options: string[];
-};
-
-function pickRandom<T>(arr: T[], count: number, exclude?: Set<T>): T[] {
-  const pool = exclude ? arr.filter(x => !exclude.has(x)) : [...arr];
-  const result: T[] = [];
-  for (let i = 0; i < count && pool.length > 0; i++) {
-    const idx = Math.floor(Math.random() * pool.length);
-    result.push(pool[idx]);
-    pool.splice(idx, 1);
-  }
-  return result;
-}
+export type ClozeQuestion = ClozeCoreQuestion;
 
 export function generateQuestion(answerIdiom?: string): ClozeQuestion | null {
-  if (idiomTexts.length < 4) return null;
-
-  const answer = answerIdiom ?? idiomTexts[Math.floor(Math.random() * idiomTexts.length)];
-  const sentences = idiomSentences![answer];
-  if (!sentences || sentences.length === 0) return null;
-
-  const sentence = sentences[Math.floor(Math.random() * sentences.length)];
-
-  let blanked = sentence;
-  let first = true;
-  blanked = blanked.replace(new RegExp(answer.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), () => {
-    if (first) {
-      first = false;
-      return '____';
-    }
-    return answer;
-  });
-  if (first) return null;
-
-  const wrongOptions = pickRandom(
-    idiomTexts,
-    3,
-    new Set([answer])
-  );
-  if (wrongOptions.length < 3) return null;
-
-  const options = [answer, ...wrongOptions];
-  for (let i = options.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [options[i], options[j]] = [options[j], options[i]];
-  }
-
-  return { sentence, blankedSentence: blanked, answerIdiom: answer, options };
+  const answerEntry = answerIdiom ? entryByText.get(answerIdiom) : undefined;
+  if (answerIdiom && !answerEntry) return null;
+  return buildClozeQuestion(clozeEntries, answerEntry);
 }
 
 export function useIdiomCloze(onWrong?: (idiomText: string) => void) {

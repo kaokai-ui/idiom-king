@@ -7,7 +7,7 @@ import type {
 } from '../types/idiomV2';
 import { idiomV2ActionTypes } from './idiomV2ActionTypes';
 import type { IdiomV2Action } from './idiomV2ActionTypes';
-import { defaultSession, defaultSettings, emptyLevelProgress } from '../lib/idiomV2Storage';
+import { defaultSession, defaultSettings, emptyLevelProgress, createEmptyByLevel } from '../lib/idiomV2Storage';
 
 export function v2SettingsReducer(state: IdiomV2Settings, action: IdiomV2Action): IdiomV2Settings {
   switch (action.type) {
@@ -31,11 +31,7 @@ export function v2ProgressReducer(state: IdiomV2Progress, action: IdiomV2Action)
     case idiomV2ActionTypes.HYDRATE:
       return {
         starredIdioms: Array.isArray(action.payload.progress?.starredIdioms) ? action.payload.progress.starredIdioms : [],
-        byLevel: {
-          elementary: { ...emptyLevelProgress, ...(action.payload.progress?.byLevel?.elementary ?? {}) },
-          junior: { ...emptyLevelProgress, ...(action.payload.progress?.byLevel?.junior ?? {}) },
-          senior: { ...emptyLevelProgress, ...(action.payload.progress?.byLevel?.senior ?? {}) },
-        },
+        byLevel: createEmptyByLevel(action.payload.progress?.byLevel),
       };
     case idiomV2ActionTypes.TOGGLE_STARRED: {
       const entry = action.payload as IdiomV2StarredEntry;
@@ -64,6 +60,20 @@ export function v2ProgressReducer(state: IdiomV2Progress, action: IdiomV2Action)
         byLevel: {
           ...state.byLevel,
           [level]: { ...levelProg, knownIds: [...set] },
+        },
+      };
+    }
+    case idiomV2ActionTypes.REMOVE_FROM_KNOWN: {
+      const { id, level } = action.payload;
+      const levelProg = state.byLevel[level] ?? { ...emptyLevelProgress };
+      const knownIds = (levelProg.knownIds ?? []).filter(knownId => knownId !== id);
+      const wordStats = { ...(levelProg.wordStats ?? {}) };
+      delete wordStats[id];
+      return {
+        ...state,
+        byLevel: {
+          ...state.byLevel,
+          [level]: { ...levelProg, knownIds, wordStats },
         },
       };
     }

@@ -22,6 +22,13 @@ export function appReducer(state: AppState, action: AppAction): AppState {
 const nextSettings = settingsReducer(state.settings, action);
 const nextProgress = progressReducer(state.progress, action);
 const nextSession = sessionReducer(state.session, action);
+if (
+nextSettings === state.settings &&
+nextProgress === state.progress &&
+nextSession === state.session
+) {
+return state;
+}
 return {
 settings: nextSettings,
 progress: nextProgress,

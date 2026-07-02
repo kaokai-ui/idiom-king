@@ -31,6 +31,7 @@ function AppV2() {
     setIdiomLevel,
     toggleStarred,
     toggleKnown,
+    removeKnown,
     removeFromStarred,
     startFlashcards,
     advanceFlashcard,
@@ -127,8 +128,6 @@ function AppV2() {
         onHome={goHome}
         developerMode={settings.developerMode}
         mode="random"
-        idioms={null}
-        charIndex={null}
         onToggleStarred={handleToggleStarred}
         isStarred={isStarred}
         activeLevel={activeLevel}
@@ -142,8 +141,6 @@ function AppV2() {
         onHome={goHome}
         developerMode={settings.developerMode}
         mode="challenge"
-        idioms={null}
-        charIndex={null}
         onToggleStarred={handleToggleStarred}
         isStarred={isStarred}
         activeLevel={activeLevel}
@@ -170,7 +167,7 @@ function AppV2() {
         knownIdioms={knownIdioms}
         onBack={() => setDetailView(null)}
         onRemoveFromStarred={removeFromStarred}
-        onRemoveKnown={(id: string) => toggleKnown(id)}
+        onRemoveKnown={(id: string) => removeKnown(id)}
       />
     );
   }

@@ -1,13 +1,9 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import type { IdiomLevel } from '../types/idiomV2';
+import type { ClozeEntry } from './clozeCore';
+import { buildClozeQuestion } from './clozeCore';
 
 const BASE = import.meta.env.BASE_URL;
-
-type ClozeEntry = {
-  id: string;
-  text: string;
-  sentences: string[];
-};
 
 type ClozeCache = {
   entries: ClozeEntry[];
@@ -36,52 +32,7 @@ export type ClozeV2Question = {
   options: string[];
 };
 
-function pickRandom<T>(arr: T[], count: number, exclude?: Set<T>): T[] {
-  const pool = exclude ? arr.filter(x => !exclude.has(x)) : [...arr];
-  const result: T[] = [];
-  for (let i = 0; i < count && pool.length > 0; i++) {
-    const idx = Math.floor(Math.random() * pool.length);
-    result.push(pool[idx]);
-    pool.splice(idx, 1);
-  }
-  return result;
-}
-
-function generateV2Question(entries: ClozeEntry[], answerEntry?: ClozeEntry): ClozeV2Question | null {
-  if (entries.length < 4) return null;
-
-  const entry = answerEntry ?? entries[Math.floor(Math.random() * entries.length)];
-  const sentences = entry.sentences;
-  if (!sentences || sentences.length === 0) return null;
-
-  const sentence = sentences[Math.floor(Math.random() * sentences.length)];
-
-  let blanked = sentence;
-  let first = true;
-  blanked = blanked.replace(new RegExp(entry.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), () => {
-    if (first) {
-      first = false;
-      return '____';
-    }
-    return entry.text;
-  });
-  if (first) return null;
-
-  const wrongOptions = pickRandom(
-    entries.map(e => e.text),
-    3,
-    new Set([entry.text]),
-  );
-  if (wrongOptions.length < 3) return null;
-
-  const options = [entry.text, ...wrongOptions];
-  for (let i = options.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [options[i], options[j]] = [options[j], options[i]];
-  }
-
-  return { sentence, blankedSentence: blanked, answerIdiom: entry.text, answerId: entry.id, options };
-}
+const generateV2Question = buildClozeQuestion;
 
 export function useIdiomV2Cloze(activeLevel: IdiomLevel, onWrong?: (idiomId: string, idiomText: string) => void) {
   const [question, setQuestion] = useState<ClozeV2Question | null>(null);

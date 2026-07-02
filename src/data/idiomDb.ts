@@ -1,4 +1,5 @@
 import type { IdiomEntry } from '../types/game';
+import { buildCharIndex } from '../lib/charIndex';
 
 let _idioms: IdiomEntry[] = [];
 let _idiomsById: Record<string, IdiomEntry> = {};
@@ -11,20 +12,11 @@ export const ready: Promise<void> = import('../data/idioms.json').then(mod => {
   _idioms = data;
   _idiomsById = Object.fromEntries(data.map(i => [i.id, i]));
   _idiomIdByText = Object.fromEntries(data.map(i => [i.text, i.id]));
-  const idx = new Map<string, number[]>();
-  for (let i = 0; i < data.length; i++) {
-    const seen = new Set<string>();
-    for (const ch of data[i].chars) {
-      if (!seen.has(ch)) {
-        seen.add(ch);
-        let arr = idx.get(ch);
-        if (!arr) { arr = []; idx.set(ch, arr); }
-        arr.push(i);
-      }
-    }
-  }
-  _charIndex = idx;
+  _charIndex = buildCharIndex(data);
   _isReady = true;
+}).catch((err) => {
+  console.error('[idiomDb] Failed to load idioms.json:', err);
+  throw err;
 });
 
 export function isDbReady(): boolean { return _isReady; }

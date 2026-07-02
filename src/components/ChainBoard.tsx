@@ -127,11 +127,13 @@ const ChainBoard: FC<Props> = ({ board, selectedCell, highlightedCellKeys, wrong
               <ChainBoardCellComp
                 key={`${r}-${c}`}
                 cell={cell}
+                row={r}
+                col={c}
                 isSelected={selectedCell?.row === r && selectedCell?.col === c}
                 isLineHighlighted={highlightedCellKeys?.has(`${r}-${c}`) ?? false}
                 isWrong={wrongCells.has(`${r}-${c}`)}
                 phase={phase}
-                onClick={() => onCellClick(r, c)}
+                onClick={onCellClick}
               />
             ))
           )}

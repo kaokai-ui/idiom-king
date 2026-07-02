@@ -1,10 +1,12 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import type { FC } from 'react';
 import type { ChainMode } from '../../types/game';
 import type { IdiomLevel, IdiomV2StarredEntry } from '../../types/idiomV2';
 import { useIdiomChainV2 } from '../../game/useIdiomChainV2';
+import { useChainScreenChrome } from '../../game/useChainScreenChrome';
 import { IDIOM_LEVEL_LABELS } from '../../constants/idiomLevels';
 import { getCachedLevelData } from '../../data/idiomV2DataClient';
+import { getIdiomV2ByIdSync } from '../../data/idiomV2Db';
 import ChainBoard from '../ChainBoard';
 import ChainCharBank from '../ChainCharBank';
 import ChainHintPanel from '../ChainHintPanel';
@@ -14,8 +16,6 @@ type Props = {
   onHome: () => void;
   developerMode: boolean;
   mode: ChainMode;
-  idioms: unknown;
-  charIndex: unknown;
   onToggleStarred?: (entry: IdiomV2StarredEntry) => void;
   isStarred?: (id: string) => boolean;
   activeLevel?: IdiomLevel;
@@ -73,53 +73,13 @@ const IdiomChainV2Screen: FC<Props> = ({ onHome, developerMode, mode, onToggleSt
     return map;
   }, [activeLevel]);
 
-  const [footerCompactedForHint, setFooterCompactedForHint] = useState(false);
-  const [seedCopyState, setSeedCopyState] = useState<{ seed: number; status: 'copied' | 'error' } | null>(null);
-
-  const handleBoardOverflowChange = useCallback((tooSmall: boolean) => {
-    if (tooSmall && hintVisible && !footerCompactedForHint) {
-      setFooterCompactedForHint(true);
-    }
-  }, [footerCompactedForHint, hintVisible]);
-
-  const footerHidden = footerCompactedForHint;
-
-  const handleToggleHint = useCallback(() => {
-    if (hintVisible) {
-      setFooterCompactedForHint(false);
-    }
-    onToggleHint();
-  }, [hintVisible, onToggleHint]);
-
-  const handleCopySeed = useCallback(async () => {
-    if (mode !== 'random' || currentSeed === null) return;
-    const seedText = String(currentSeed);
-
-    try {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(seedText);
-      } else {
-        const textarea = document.createElement('textarea');
-        textarea.value = seedText;
-        textarea.setAttribute('readonly', '');
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-      }
-      setSeedCopyState({ seed: currentSeed, status: 'copied' });
-      window.setTimeout(() => setSeedCopyState((prev) => (
-        prev?.seed === currentSeed ? null : prev
-      )), 1200);
-    } catch {
-      setSeedCopyState({ seed: currentSeed, status: 'error' });
-      window.setTimeout(() => setSeedCopyState((prev) => (
-        prev?.seed === currentSeed ? null : prev
-      )), 1200);
-    }
-  }, [currentSeed, mode]);
+  const {
+    footerHidden,
+    handleBoardOverflowChange,
+    handleToggleHint,
+    handleCopySeed,
+    seedPillLabel,
+  } = useChainScreenChrome({ mode, currentSeed, hintVisible, onToggleHint });
 
   const loadingLabel = isChallengeMode
     ? '正在載入挑戰模式關卡...'
@@ -192,23 +152,22 @@ const IdiomChainV2Screen: FC<Props> = ({ onHome, developerMode, mode, onToggleSt
     : `第 ${levelNumber} 關`;
   const nextLevelLabel = isChallengeMode && levelNumber >= challengeCampaign.totalLevels ? '完成挑戰' : '下一關';
   const currentLevel = level!;
-  const seedPillLabel = mode === 'random' && currentSeed !== null && seedCopyState?.seed === currentSeed
-    ? (seedCopyState.status === 'copied' ? 'Copied' : 'Copy failed')
-    : (currentSeed !== null ? `ID ${currentSeed}` : null);
 
   const handleToggleStarredIdiom = onToggleStarred
     ? (id: string) => {
-        const idiom = currentLevel.idioms.find(i => i.id === id);
-        if (idiom) {
-          onToggleStarred({
-            id: idiom.id,
-            text: idiom.text,
-            bopomofo: '',
-            usage: '',
-            level: activeLevel,
-            levelLabel: IDIOM_LEVEL_LABELS[activeLevel],
-          });
-        }
+        const placed = currentLevel.idioms.find(i => i.id === id);
+        if (!placed) return;
+        // The placed idiom only carries text/chars; look up the full entry
+        // (across all cached levels for challenge mode) to keep bopomofo/usage.
+        const full = getIdiomV2ByIdSync(id);
+        onToggleStarred({
+          id,
+          text: full?.text ?? placed.text,
+          bopomofo: full?.bopomofo ?? '',
+          usage: full?.usage ?? '',
+          level: full?.level ?? activeLevel,
+          levelLabel: full?.levelLabel ?? IDIOM_LEVEL_LABELS[activeLevel],
+        });
       }
     : undefined;
 

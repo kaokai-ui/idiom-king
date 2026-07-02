@@ -64,6 +64,7 @@ function dataReducer(state: DataState, action: DataAction): DataState {
 export function useIdiomV2Data(activeLevel: IdiomLevel) {
   const [state, dispatch] = useReducer(dataReducer, initialState);
   const activeRequestRef = useRef(0);
+  const catalogLoadedRef = useRef(false);
 
   const loadData = useCallback(async (level: IdiomLevel) => {
     const requestId = activeRequestRef.current + 1;
@@ -71,6 +72,7 @@ export function useIdiomV2Data(activeLevel: IdiomLevel) {
     dispatch({ type: 'SET_LOADING' });
     try {
       const cat = await loadCatalog();
+      catalogLoadedRef.current = true;
       if (activeRequestRef.current !== requestId) return;
       const data = await loadLevelData(level);
       if (activeRequestRef.current !== requestId) return;
@@ -85,13 +87,19 @@ export function useIdiomV2Data(activeLevel: IdiomLevel) {
     const cached = getCachedLevelData(activeLevel);
     if (cached) {
       dispatch({ type: 'LOAD_CACHED', payload: cached });
-      if (!state.catalog) {
-        loadCatalog().then(cat => dispatch({ type: 'SET_CATALOG', payload: cat })).catch(() => {});
+      // Catalog is level-independent; only fetch it once.
+      if (!catalogLoadedRef.current) {
+        loadCatalog()
+          .then(cat => {
+            catalogLoadedRef.current = true;
+            dispatch({ type: 'SET_CATALOG', payload: cat });
+          })
+          .catch(() => {});
       }
       return;
     }
     void loadData(activeLevel);
-  }, [activeLevel, loadData, state.catalog]);
+  }, [activeLevel, loadData]);
 
   const retry = useCallback(() => {
     void loadData(activeLevel);

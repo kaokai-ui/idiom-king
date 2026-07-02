@@ -1,5 +1,6 @@
 import type { IdiomV2Entry, IdiomLevel } from '../types/idiomV2';
 import { loadCatalog, loadLevelData, getCachedLevelData } from './idiomV2DataClient';
+import { IDIOM_LEVELS } from '../constants/idiomLevels';
 
 const globalIdiomsByLevel = new Map<IdiomLevel, Record<string, IdiomV2Entry>>();
 let _catalogLoaded = false;
@@ -21,26 +22,26 @@ async function ensureLevelLoaded(level: IdiomLevel): Promise<Record<string, Idio
 
 export async function getIdiomV2ByIdGlobal(id: string): Promise<IdiomV2Entry | null> {
   if (!_catalogLoaded) {
-    await loadCatalog();
-    _catalogLoaded = true;
-  }
-
-  const levels: IdiomLevel[] = ['elementary', 'junior', 'senior'];
-  for (const level of levels) {
-    const cached = getCachedLevelData(level);
-    if (cached && cached.idiomsById[id]) {
-      return cached.idiomsById[id];
+    try {
+      await loadCatalog();
+      _catalogLoaded = true;
+    } catch (err) {
+      // Catalog unavailable (offline / malformed): fall back to any cached level data below.
+      console.error('[idiomV2Db] Failed to load catalog:', err);
     }
   }
 
-  for (const level of levels) {
-    if (!globalIdiomsByLevel.has(level) && !getCachedLevelData(level)) {
-      try {
-        const idiomsById = await ensureLevelLoaded(level);
-        if (idiomsById[id]) return idiomsById[id];
-      } catch {
-        continue;
-      }
+  // Fast path: any level already cached synchronously.
+  const sync = getIdiomV2ByIdSync(id);
+  if (sync) return sync;
+
+  // Otherwise load levels on demand (ensureLevelLoaded re-checks caches itself).
+  for (const level of IDIOM_LEVELS) {
+    try {
+      const idiomsById = await ensureLevelLoaded(level);
+      if (idiomsById[id]) return idiomsById[id];
+    } catch {
+      continue;
     }
   }
 
@@ -48,8 +49,7 @@ export async function getIdiomV2ByIdGlobal(id: string): Promise<IdiomV2Entry | n
 }
 
 export function getIdiomV2ByIdSync(id: string): IdiomV2Entry | null {
-  const levels: IdiomLevel[] = ['elementary', 'junior', 'senior'];
-  for (const level of levels) {
+  for (const level of IDIOM_LEVELS) {
     const cached = getCachedLevelData(level);
     if (cached?.idiomsById[id]) {
       return cached.idiomsById[id];

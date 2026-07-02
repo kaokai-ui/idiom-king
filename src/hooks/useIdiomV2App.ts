@@ -215,6 +215,13 @@ export function useIdiomV2App() {
     []
   );
 
+  const removeKnown = useCallback(
+    (id: string, level: IdiomLevel = activeLevel) => {
+      dispatch({ type: idiomV2ActionTypes.REMOVE_FROM_KNOWN, payload: { id, level } });
+    },
+    [activeLevel]
+  );
+
   const startFlashcards = useCallback(
     (mode: 'random' | 'unfamiliar') => {
       if (!dataReady) return;
@@ -280,6 +287,7 @@ export function useIdiomV2App() {
     setIdiomLevel,
     toggleStarred,
     toggleKnown,
+    removeKnown,
     removeFromStarred,
     startFlashcards,
     advanceFlashcard,

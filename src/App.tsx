@@ -64,7 +64,7 @@ function App() {
       if (entry) result.push(entry);
     }
     return result;
-  }, [progress.starredIds]);
+  }, [progress.starredIds, dataReady]);
 
   const knownIdioms = useMemo(() => {
     const result: IdiomEntry[] = [];
@@ -73,7 +73,7 @@ function App() {
       if (entry) result.push(entry);
     }
     return result;
-  }, [progress.knownIds]);
+  }, [progress.knownIds, dataReady]);
 
   const handleRemove = (type: 'unfamiliar' | 'mastered', id: string) => {
     if (type === 'unfamiliar') {

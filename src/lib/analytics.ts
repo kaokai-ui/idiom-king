@@ -27,7 +27,12 @@ export function trackAnalyticsEvent(eventName: string, params: AnalyticsParams =
     return;
   }
 
-  window.gtag('event', eventName, removeUndefinedParams(params));
+  try {
+    window.gtag('event', eventName, removeUndefinedParams(params));
+  } catch (err) {
+    // Analytics must never break user actions.
+    console.warn('[analytics] Failed to send event:', eventName, err);
+  }
 }
 
 export function trackIdiomV2LevelSelection(nextLevel: IdiomLevel, previousLevel: IdiomLevel): void {

@@ -21,6 +21,13 @@ export function idiomV2AppReducer(state: IdiomV2AppState, action: IdiomV2Action)
   const nextSettings = v2SettingsReducer(state.settings, action);
   const nextProgress = v2ProgressReducer(state.progress, action);
   const nextSession = v2SessionReducer(state.session, action);
+  if (
+    nextSettings === state.settings &&
+    nextProgress === state.progress &&
+    nextSession === state.session
+  ) {
+    return state;
+  }
   return {
     settings: nextSettings,
     progress: nextProgress,

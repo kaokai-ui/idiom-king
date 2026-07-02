@@ -106,7 +106,7 @@ async function fetchJson<T>(url: string): Promise<T> {
   return response.json() as Promise<T>;
 }
 
-function countActiveCells(level: LevelData): { activeCells: number; crossingCells: number } {
+function computeCellStats(level: LevelData): { activeCells: number; crossingCells: number } {
   const counts = new Map<string, number>();
   for (const idiom of level.idioms) {
     for (let i = 0; i < idiom.chars.length; i++) {
@@ -126,7 +126,7 @@ function countActiveCells(level: LevelData): { activeCells: number; crossingCell
 }
 
 function scoreChallengeLevel(level: LevelData): number {
-  const { activeCells, crossingCells } = countActiveCells(level);
+  const { activeCells, crossingCells } = computeCellStats(level);
   const longestWord = Math.max(...level.idioms.map((idiom) => idiom.chars.length));
   return (
     level.idioms.length * 120 +

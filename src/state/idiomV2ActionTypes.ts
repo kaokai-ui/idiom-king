@@ -16,6 +16,7 @@ export const idiomV2ActionTypes = {
   SET_IDIOM_LEVEL: 'SET_IDIOM_LEVEL',
   TOGGLE_STARRED: 'TOGGLE_STARRED',
   TOGGLE_KNOWN: 'TOGGLE_KNOWN',
+  REMOVE_FROM_KNOWN: 'REMOVE_FROM_KNOWN',
   MARK_SEEN: 'MARK_SEEN',
   START_FLASHCARDS: 'START_FLASHCARDS',
   ADVANCE_FLASHCARD: 'ADVANCE_FLASHCARD',
@@ -32,6 +33,7 @@ export type IdiomV2Action =
   | { type: 'SET_IDIOM_LEVEL'; payload: IdiomLevel }
   | { type: 'TOGGLE_STARRED'; payload: IdiomV2StarredEntry }
   | { type: 'TOGGLE_KNOWN'; payload: { id: string; level: IdiomLevel } }
+  | { type: 'REMOVE_FROM_KNOWN'; payload: { id: string; level: IdiomLevel } }
   | { type: 'REMOVE_FROM_STARRED'; payload: string }
   | { type: 'MARK_SEEN'; payload: { idiomId: string; seenAt: number; level: IdiomLevel } }
   | { type: 'START_FLASHCARDS'; payload: { mode: 'random' | 'unfamiliar'; idiomIds: string[]; showBopomofo: boolean; showUsage: boolean } }

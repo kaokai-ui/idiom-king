@@ -1,8 +1,8 @@
-import { useCallback, useState } from 'react';
 import type { FC } from 'react';
 import type { ChainMode } from '../types/game';
 import { useChallengeCampaign } from '../game/useChallengeCampaign';
 import { useIdiomChain } from '../game/useIdiomChain';
+import { useChainScreenChrome } from '../game/useChainScreenChrome';
 import ChainBoard from './ChainBoard';
 import ChainCharBank from './ChainCharBank';
 import ChainHintPanel from './ChainHintPanel';
@@ -62,50 +62,14 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, initialSeed 
     onLevelComplete: isChallengeMode ? challengeCampaign.onLevelComplete : undefined,
   });
 
-  const [footerCompactedForHint, setFooterCompactedForHint] = useState(false);
-  const [seedCopyState, setSeedCopyState] = useState<{ seed: number; status: 'copied' | 'error' } | null>(null);
-  const handleBoardOverflowChange = useCallback((tooSmall: boolean) => {
-    if (tooSmall && hintVisible && !footerCompactedForHint) {
-      setFooterCompactedForHint(true);
-    }
-  }, [footerCompactedForHint, hintVisible]);
-  const footerHidden = footerCompactedForHint;
-  const handleToggleHint = useCallback(() => {
-    if (hintVisible) {
-      setFooterCompactedForHint(false);
-    }
-    onToggleHint();
-  }, [hintVisible, onToggleHint]);
+  const {
+    footerHidden,
+    handleBoardOverflowChange,
+    handleToggleHint,
+    handleCopySeed,
+    seedPillLabel,
+  } = useChainScreenChrome({ mode, currentSeed, hintVisible, onToggleHint });
 
-  const handleCopySeed = useCallback(async () => {
-    if (mode !== 'random' || currentSeed === null) return;
-    const seedText = String(currentSeed);
-
-    try {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(seedText);
-      } else {
-        const textarea = document.createElement('textarea');
-        textarea.value = seedText;
-        textarea.setAttribute('readonly', '');
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-      }
-      setSeedCopyState({ seed: currentSeed, status: 'copied' });
-      window.setTimeout(() => setSeedCopyState((prev) => (
-        prev?.seed === currentSeed ? null : prev
-      )), 1200);
-    } catch {
-      setSeedCopyState({ seed: currentSeed, status: 'error' });
-      window.setTimeout(() => setSeedCopyState((prev) => (
-        prev?.seed === currentSeed ? null : prev
-      )), 1200);
-    }
-  }, [currentSeed, mode]);
   const loadingLabel = isChallengeMode
     ? '正在載入挑戰模式關卡...'
     : mode === 'test'
@@ -188,9 +152,6 @@ const IdiomChainScreen: FC<Props> = ({ onHome, developerMode, mode, initialSeed 
     : `第 ${levelNumber} 關`;
   const nextLevelLabel = isChallengeMode && levelNumber >= challengeCampaign.totalLevels ? '完成挑戰' : '下一關';
   const currentLevel = level!;
-  const seedPillLabel = mode === 'random' && currentSeed !== null && seedCopyState?.seed === currentSeed
-    ? (seedCopyState.status === 'copied' ? 'Copied' : 'Copy failed')
-    : (currentSeed !== null ? `ID ${currentSeed}` : null);
 
   return (
     <div className="page-shell game-page">
